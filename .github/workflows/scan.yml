@@ -1,8 +1,10 @@
 name: Scan Sales
 
 on:
+  workflow_dispatch:          # 수동 실행 계속 가능
   schedule:
-    - cron: "0 * * * *"      # 매 정시
+    - cron: '0 3 * * *'       # 매일 UTC 03:00 에 자동 실행
+
   workflow_dispatch:
 
 jobs:
