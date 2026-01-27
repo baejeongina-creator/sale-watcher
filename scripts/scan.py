@@ -1,17 +1,37 @@
 import csv, json, re, time
 from datetime import datetime
-from urllib.parse import urljoin
+from urllib.parse import urljoin, urlparse
+
 import requests
 from bs4 import BeautifulSoup
 
+# Google Sheets → CSV 링크
 CSV_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vRPol5yt4wsLuE8G-4lgzu1x2I9zo8dLRTHQQ3C7Pc5871wvpcQUHq6pLJS4FUcS05G86VLdKguSf9M/pub?gid=1024238622&single=true&output=csv"
 
+# 페이지 전체에서 "세일 중인지" 감지하는 키워드
 GLOBAL_KEYWORDS = [
     "SALE", "SEASON OFF", "SEASONAL", "WINTER", "SUMMER", "SPRING", "FALL",
     "CLEARANCE", "FINAL", "LAST CHANCE", "OUTLET", "ARCHIVE",
     "REFURB", "REFURBISHED", "B-GRADE", "SAMPLE",
     "UP TO", "%", "DEAL",
     "세일", "할인", "시즌오프", "클리어런스", "아울렛", "특가", "최대"
+]
+
+# 개별 링크가 "세일 페이지일 가능성" 판단용 키워드
+LINK_SALE_KEYWORDS = [
+    "SALE", "SEASON", "OFF", "CLEARANCE", "OUTLET", "ARCHIVE",
+    "REFURB", "DISCOUNT", "PROMOTION", "EVENT", "WINTER", "SUMMER",
+]
+
+# 절대 들어가면 안 되는 링크 (로그인, 회원가입, 마이페이지 등)
+LINK_BLACKLIST = [
+    "LOGIN", "LOG-IN", "SIGNIN", "SIGN-IN", "SIGNUP", "SIGN-UP", "REGISTER",
+    "JOIN", "MEMBER", "MYSHOP", "MYPAGE", "MY PAGE",
+    "CART", "BAG", "BASKET", "CHECKOUT", "ORDER",
+    "ACCOUNT", "PROFILE",
+    "PRESS", "STORY", "LOOKBOOK", "LOOK BOOK",
+    "INSTAGRAM", "FACEBOOK", "YOUTUBE", "TWITTER",
+    "KAKAO", "PF.KAKAO.COM"
 ]
 
 HEADERS = {
@@ -28,8 +48,12 @@ def fetch_rows():
 
 
 def find_sale_link(html: str, base_url: str, keywords):
-    """페이지 안의 <a> 중 세일 관련 링크로 보이는 것 골라서 full URL로 반환."""
+    """
+    페이지 안의 <a> 태그들 중에서
+    '세일 페이지'일 가능성이 높은 링크를 점수 매겨서 하나 고름.
+    """
     soup = BeautifulSoup(html, "html.parser")
+    base_host = urlparse(base_url).netloc.split(":")[0]
     candidates = []
 
     for a in soup.find_all("a", href=True):
@@ -37,28 +61,51 @@ def find_sale_link(html: str, base_url: str, keywords):
         if not href:
             continue
 
-        low = href.lower()
-        if low.startswith("#") or low.startswith("mailto:") or low.startswith("tel:") or low.startswith("javascript:"):
+        # full URL 만들고 host 비교
+        full_url = urljoin(base_url, href)
+        parsed = urlparse(full_url)
+        host = parsed.netloc.split(":")[0]
+
+        # 외부 도메인은 일단 패스 (쇼핑몰이 완전 다른 도메인인 케이스는 나중에 필요하면 풀자)
+        if host and host != "" and host != base_host:
             continue
 
+        low = full_url.lower()
         text = (a.get_text(" ", strip=True) or "").upper()
-        target = href.upper()
+        target = full_url.upper()
+
+        # 블랙리스트 단어 포함하면 버리기 (로그인/회원가입/카트 등)
+        if any(b in text or b in target for b in LINK_BLACKLIST):
+            continue
 
         score = 0
+
+        # 세일 관련 키워드 많을수록 점수 ↑
         for kw in keywords:
             up = kw.upper()
             if up in text or up in target:
-                score += 1
+                score += 5
 
-        if score == 0:
+        # URL 패턴 점수 조정
+        # 카테고리/리스트/컬렉션 페이지 선호
+        if "cate_no=" in low or "category" in low or "collection" in low or "product/list" in low:
+            score += 3
+
+        # product detail / 단일 상품 페이지는 약간 패널티
+        if ("product/detail" in low or "product_no=" in low) and "list" not in low:
+            score -= 2
+
+        # 점수가 0 이하이면 후보에서 제외
+        if score <= 0:
             continue
 
-        full_url = urljoin(base_url, href)
+        # 텍스트가 너무 긴 버튼/메뉴보다는 적당히 짧은 쪽 선호
         candidates.append((score, len(text), full_url))
 
     if not candidates:
         return None
 
+    # 점수 높은 순, 텍스트 짧은 순
     candidates.sort(key=lambda x: (-x[0], x[1]))
     return candidates[0][2]
 
@@ -68,10 +115,12 @@ def detect_sale_for_brand(row):
     url = (row.get("official_url") or row.get("url") or "").strip()
     enabled = (row.get("enabled") or "TRUE").strip().lower()
     override = (row.get("keywords_override") or "").strip()
+    sale_url_override = (row.get("sale_url_override") or "").strip()
 
     if enabled in ("false", "0", "no"):
         return None
 
+    # 키워드 셋 구성
     keywords = GLOBAL_KEYWORDS[:]
     if override:
         for kw in override.split("|"):
@@ -97,9 +146,15 @@ def detect_sale_for_brand(row):
                 matched_kw = kw
                 break
 
-        if status == "sale":
-            sale_url = find_sale_link(html, url, keywords)
+        # 1) 시트에 override가 있으면 무조건 그걸 우선 사용
+        if sale_url_override:
+            sale_url = sale_url_override
 
+        # 2) override 없고, 세일로 감지되면 자동으로 세일 링크 탐색
+        elif status == "sale":
+            sale_url = find_sale_link(html, url, LINK_SALE_KEYWORDS)
+
+        # 3) 그래도 못 찾으면 최소 공홈이라도
         if not sale_url:
             sale_url = url
 
@@ -128,7 +183,7 @@ def main():
             continue
         res["checked_at"] = now
         results.append(res)
-        time.sleep(1)
+        time.sleep(1)  # 너무 빨리 돌지 않게
 
     out = {"generated_at": now, "sales": results}
     with open("docs/sales.json", "w", encoding="utf-8") as f:
