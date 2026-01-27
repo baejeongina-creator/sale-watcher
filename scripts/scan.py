@@ -1,11 +1,11 @@
 import csv, json, re, time
 from datetime import datetime
+from urllib.parse import urljoin
 import requests
+from bs4 import BeautifulSoup
 
-# 네 Google Sheets → CSV 링크
 CSV_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vRPol5yt4wsLuE8G-4lgzu1x2I9zo8dLRTHQQ3C7Pc5871wvpcQUHq6pLJS4FUcS05G86VLdKguSf9M/pub?gid=1024238622&single=true&output=csv"
 
-# 전 브랜드 공통으로 쓸 세일 키워드들
 GLOBAL_KEYWORDS = [
     "SALE", "SEASON OFF", "SEASONAL", "WINTER", "SUMMER", "SPRING", "FALL",
     "CLEARANCE", "FINAL", "LAST CHANCE", "OUTLET", "ARCHIVE",
@@ -27,17 +27,51 @@ def fetch_rows():
     return list(reader)
 
 
+def find_sale_link(html: str, base_url: str, keywords):
+    """페이지 안의 <a> 중 세일 관련 링크로 보이는 것 골라서 full URL로 반환."""
+    soup = BeautifulSoup(html, "html.parser")
+    candidates = []
+
+    for a in soup.find_all("a", href=True):
+        href = (a.get("href") or "").strip()
+        if not href:
+            continue
+
+        low = href.lower()
+        if low.startswith("#") or low.startswith("mailto:") or low.startswith("tel:") or low.startswith("javascript:"):
+            continue
+
+        text = (a.get_text(" ", strip=True) or "").upper()
+        target = href.upper()
+
+        score = 0
+        for kw in keywords:
+            up = kw.upper()
+            if up in text or up in target:
+                score += 1
+
+        if score == 0:
+            continue
+
+        full_url = urljoin(base_url, href)
+        candidates.append((score, len(text), full_url))
+
+    if not candidates:
+        return None
+
+    candidates.sort(key=lambda x: (-x[0], x[1]))
+    return candidates[0][2]
+
+
 def detect_sale_for_brand(row):
     brand = (row.get("brand") or "").strip()
     url = (row.get("official_url") or row.get("url") or "").strip()
     enabled = (row.get("enabled") or "TRUE").strip().lower()
     override = (row.get("keywords_override") or "").strip()
 
-    # enabled 가 FALSE/0/no 면 스킵
     if enabled in ("false", "0", "no"):
         return None
 
-    # 기본 키워드 + 브랜드별 override
     keywords = GLOBAL_KEYWORDS[:]
     if override:
         for kw in override.split("|"):
@@ -48,25 +82,36 @@ def detect_sale_for_brand(row):
     status = "error"
     matched_kw = None
     error_msg = None
+    sale_url = None
 
     try:
         resp = requests.get(url, headers=HEADERS, timeout=20)
         resp.raise_for_status()
-        text = re.sub(r"\s+", " ", resp.text).upper()
+        html = resp.text
+        text_upper = re.sub(r"\s+", " ", html).upper()
 
         status = "nosale"
         for kw in keywords:
-            if kw.upper() in text:
+            if kw.upper() in text_upper:
                 status = "sale"
                 matched_kw = kw
                 break
+
+        if status == "sale":
+            sale_url = find_sale_link(html, url, keywords)
+
+        if not sale_url:
+            sale_url = url
+
     except Exception as e:
         error_msg = str(e)
+        sale_url = url  # 에러 나도 최소 공홈은 유지
 
     return {
         "brand": brand,
         "official_url": url,
-        "status": status,            # "sale" / "nosale" / "error"
+        "sale_url": sale_url,
+        "status": status,
         "matched_keyword": matched_kw,
         "error": error_msg,
     }
@@ -83,7 +128,7 @@ def main():
             continue
         res["checked_at"] = now
         results.append(res)
-        time.sleep(1)  # 너무 빨리 돌지 않게
+        time.sleep(1)
 
     out = {"generated_at": now, "sales": results}
     with open("docs/sales.json", "w", encoding="utf-8") as f:
