@@ -1,42 +1,151 @@
 <!doctype html>
-<html lang="en">
+<html lang="ko">
 <head>
   <meta charset="utf-8" />
   <title>Sale Watcher</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", system-ui, sans-serif;
+      margin: 32px;
+      line-height: 1.6;
+    }
+    h1 {
+      font-size: 40px;
+      margin-bottom: 8px;
+    }
+    h2 {
+      margin-top: 32px;
+      margin-bottom: 8px;
+      font-size: 22px;
+    }
+    p.desc {
+      margin-top: 0;
+      margin-bottom: 24px;
+      color: #444;
+      font-size: 15px;
+    }
+    .group-section {
+      margin-bottom: 32px;
+    }
+    .brand-list {
+      list-style: none;
+      padding-left: 0;
+      margin: 0;
+    }
+    .brand-item {
+      margin-bottom: 8px;
+      font-size: 15px;
+    }
+    .brand-name {
+      font-weight: 600;
+    }
+    .badge {
+      display: inline-block;
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-size: 11px;
+      margin-left: 4px;
+      vertical-align: middle;
+    }
+    .badge-a {
+      background: #111;
+      color: #fff;
+    }
+    .badge-b {
+      background: #eee;
+      color: #333;
+    }
+    .badge-sale {
+      background: #fce5e5;
+      color: #b30000;
+    }
+    a {
+      color: #0645ad;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .error {
+      color: #b00020;
+      margin-top: 16px;
+    }
+  </style>
 </head>
 <body>
   <h1>Sale Watcher</h1>
-  <p>현재 세일 중인 브랜드 목록:</p>
-  <ul id="list"></ul>
+  <p class="desc">현재 세일 중인 브랜드 목록 (자동 감지, C 그룹은 제외).</p>
 
-<script>
-  fetch("sales.json")
-    .then(r => r.json())
-    .then(data => {
-      const ul = document.getElementById("list");
-      data.sales.forEach(item => {
-        const group = (item.group || "").toUpperCase();
+  <div class="group-section" id="section-a">
+    <h2>A 그룹</h2>
+    <p class="desc">구조가 안정적이고 자동 감지를 믿을 수 있는 브랜드.</p>
+    <ul class="brand-list" id="list-a"></ul>
+  </div>
 
-        // C 그룹은 화면에서 숨기기
-        if (item.status !== "sale" || group === "C") {
-          return;
-        }
+  <div class="group-section" id="section-b">
+    <h2>B 그룹</h2>
+    <p class="desc">대부분 잘 잡히지만 가끔 확인이 필요한 브랜드.</p>
+    <ul class="brand-list" id="list-b"></ul>
+  </div>
 
-        const url = item.official_url;  // 항상 공홈으로 링크
-        const label = item.matched_keyword || "SALE";
-        const groupTag = group ? `[${group}] ` : "";
+  <script>
+    fetch("sales.json")
+      .then(r => r.json())
+      .then(data => {
+        const listA = document.getElementById("list-a");
+        const listB = document.getElementById("list-b");
 
-        const li = document.createElement("li");
-        li.innerHTML = `<strong>${groupTag}${item.brand}</strong> – <a href="${url}" target="_blank">${url}</a> (${label})`;
-        ul.appendChild(li);
+        data.sales.forEach(item => {
+          const group = (item.group || "").toUpperCase();
+          const status = item.status;
+
+          // 세일 아니거나 C 그룹이면 화면에 안 보이게
+          if (status !== "sale" || group === "C") return;
+
+          const url = item.official_url;
+          const label = item.matched_keyword || "SALE";
+
+          const li = document.createElement("li");
+          li.className = "brand-item";
+
+          const nameSpan = document.createElement("span");
+          nameSpan.className = "brand-name";
+          nameSpan.textContent = item.brand;
+
+          const link = document.createElement("a");
+          link.href = url;
+          link.target = "_blank";
+          link.rel = "noopener noreferrer";
+          link.textContent = url;
+
+          const groupBadge = document.createElement("span");
+          groupBadge.className = "badge " + (group === "A" ? "badge-a" : "badge-b");
+          groupBadge.textContent = group + " 그룹";
+
+          const saleBadge = document.createElement("span");
+          saleBadge.className = "badge badge-sale";
+          saleBadge.textContent = label;
+
+          li.appendChild(nameSpan);
+          li.appendChild(groupBadge);
+          li.appendChild(saleBadge);
+          li.appendChild(document.createTextNode(" – "));
+          li.appendChild(link);
+
+          if (group === "A") {
+            listA.appendChild(li);
+          } else {
+            listB.appendChild(li);
+          }
+        });
+      })
+      .catch(err => {
+        const p = document.createElement("p");
+        p.className = "error";
+        p.textContent = "sales.json 불러오기에 실패했어.";
+        document.body.appendChild(p);
+        console.error(err);
       });
-    })
-    .catch(err => {
-      document.body.insertAdjacentHTML("beforeend", "<p>sales.json 불러오기에 실패했어.</p>");
-      console.error(err);
-    });
-</script>
-
-
+  </script>
 </body>
 </html>
