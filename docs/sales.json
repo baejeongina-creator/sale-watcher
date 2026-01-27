@@ -1,5 +1,9 @@
 {
+<<<<<<< Updated upstream
   "generated_at": "2026-01-27T16:50:34.158299Z",
+=======
+  "generated_at": "2026-01-27T16:50:22.353878Z",
+>>>>>>> Stashed changes
   "sales": [
     {
       "brand": "Sie",
@@ -9,7 +13,11 @@
       "matched_keyword": "SALE",
       "group": "A",
       "error": null,
+<<<<<<< Updated upstream
       "checked_at": "2026-01-27T16:50:34.158299Z"
+=======
+      "checked_at": "2026-01-27T16:50:22.353878Z"
+>>>>>>> Stashed changes
     },
     {
       "brand": "Bohemian Seoul",
@@ -19,7 +27,11 @@
       "matched_keyword": "SALE",
       "group": "A",
       "error": null,
+<<<<<<< Updated upstream
       "checked_at": "2026-01-27T16:50:34.158299Z"
+=======
+      "checked_at": "2026-01-27T16:50:22.353878Z"
+>>>>>>> Stashed changes
     },
     {
       "brand": "Maison Marais",
@@ -29,7 +41,11 @@
       "matched_keyword": "SALE",
       "group": "A",
       "error": null,
+<<<<<<< Updated upstream
       "checked_at": "2026-01-27T16:50:34.158299Z"
+=======
+      "checked_at": "2026-01-27T16:50:22.353878Z"
+>>>>>>> Stashed changes
     },
     {
       "brand": "Kijun",
@@ -39,7 +55,11 @@
       "matched_keyword": "SALE",
       "group": "A",
       "error": null,
+<<<<<<< Updated upstream
       "checked_at": "2026-01-27T16:50:34.158299Z"
+=======
+      "checked_at": "2026-01-27T16:50:22.353878Z"
+>>>>>>> Stashed changes
     },
     {
       "brand": "Nuuanu",
@@ -49,7 +69,11 @@
       "matched_keyword": "SALE",
       "group": "A",
       "error": null,
+<<<<<<< Updated upstream
       "checked_at": "2026-01-27T16:50:34.158299Z"
+=======
+      "checked_at": "2026-01-27T16:50:22.353878Z"
+>>>>>>> Stashed changes
     },
     {
       "brand": "Howus",
@@ -59,7 +83,11 @@
       "matched_keyword": "SALE",
       "group": "A",
       "error": null,
+<<<<<<< Updated upstream
       "checked_at": "2026-01-27T16:50:34.158299Z"
+=======
+      "checked_at": "2026-01-27T16:50:22.353878Z"
+>>>>>>> Stashed changes
     },
     {
       "brand": "Shop M",
@@ -69,7 +97,11 @@
       "matched_keyword": "SALE",
       "group": "B",
       "error": null,
+<<<<<<< Updated upstream
       "checked_at": "2026-01-27T16:50:34.158299Z"
+=======
+      "checked_at": "2026-01-27T16:50:22.353878Z"
+>>>>>>> Stashed changes
     },
     {
       "brand": "Rouchneck",
@@ -79,7 +111,11 @@
       "matched_keyword": "SALE",
       "group": "A",
       "error": null,
+<<<<<<< Updated upstream
       "checked_at": "2026-01-27T16:50:34.158299Z"
+=======
+      "checked_at": "2026-01-27T16:50:22.353878Z"
+>>>>>>> Stashed changes
     },
     {
       "brand": "Gongderine",
@@ -89,7 +125,11 @@
       "matched_keyword": "SALE",
       "group": "A",
       "error": null,
+<<<<<<< Updated upstream
       "checked_at": "2026-01-27T16:50:34.158299Z"
+=======
+      "checked_at": "2026-01-27T16:50:22.353878Z"
+>>>>>>> Stashed changes
     },
     {
       "brand": "Asura",
@@ -99,7 +139,11 @@
       "matched_keyword": "SALE",
       "group": "C",
       "error": null,
+<<<<<<< Updated upstream
       "checked_at": "2026-01-27T16:50:34.158299Z"
+=======
+      "checked_at": "2026-01-27T16:50:22.353878Z"
+>>>>>>> Stashed changes
     },
     {
       "brand": "Sinoon",
@@ -109,7 +153,11 @@
       "matched_keyword": "WINTER",
       "group": "A",
       "error": null,
+<<<<<<< Updated upstream
       "checked_at": "2026-01-27T16:50:34.158299Z"
+=======
+      "checked_at": "2026-01-27T16:50:22.353878Z"
+>>>>>>> Stashed changes
     },
     {
       "brand": "KHAKI POINT",
@@ -119,7 +167,11 @@
       "matched_keyword": "SALE",
       "group": "A",
       "error": null,
+<<<<<<< Updated upstream
       "checked_at": "2026-01-27T16:50:34.158299Z"
+=======
+      "checked_at": "2026-01-27T16:50:22.353878Z"
+>>>>>>> Stashed changes
     },
     {
       "brand": "NOT YOUR ROSE",
@@ -129,7 +181,11 @@
       "matched_keyword": "SALE",
       "group": "A",
       "error": null,
+<<<<<<< Updated upstream
       "checked_at": "2026-01-27T16:50:34.158299Z"
+=======
+      "checked_at": "2026-01-27T16:50:22.353878Z"
+>>>>>>> Stashed changes
     },
     {
       "brand": "WELLBEING EXPRESS",
@@ -139,7 +195,11 @@
       "matched_keyword": null,
       "group": "A",
       "error": null,
+<<<<<<< Updated upstream
       "checked_at": "2026-01-27T16:50:34.158299Z"
+=======
+      "checked_at": "2026-01-27T16:50:22.353878Z"
+>>>>>>> Stashed changes
     },
     {
       "brand": "SUNBURN PROJECT",
@@ -149,7 +209,11 @@
       "matched_keyword": "SALE",
       "group": "A",
       "error": null,
+<<<<<<< Updated upstream
       "checked_at": "2026-01-27T16:50:34.158299Z"
+=======
+      "checked_at": "2026-01-27T16:50:22.353878Z"
+>>>>>>> Stashed changes
     },
     {
       "brand": "LEBANE",
@@ -159,7 +223,11 @@
       "matched_keyword": "SALE",
       "group": "A",
       "error": null,
+<<<<<<< Updated upstream
       "checked_at": "2026-01-27T16:50:34.158299Z"
+=======
+      "checked_at": "2026-01-27T16:50:22.353878Z"
+>>>>>>> Stashed changes
     },
     {
       "brand": "MA JOURNÃE",
@@ -169,7 +237,11 @@
       "matched_keyword": "SALE",
       "group": "A",
       "error": null,
+<<<<<<< Updated upstream
       "checked_at": "2026-01-27T16:50:34.158299Z"
+=======
+      "checked_at": "2026-01-27T16:50:22.353878Z"
+>>>>>>> Stashed changes
     },
     {
       "brand": "MARGESHERWOOD",
@@ -179,7 +251,11 @@
       "matched_keyword": "CLEARANCE",
       "group": "A",
       "error": null,
+<<<<<<< Updated upstream
       "checked_at": "2026-01-27T16:50:34.158299Z"
+=======
+      "checked_at": "2026-01-27T16:50:22.353878Z"
+>>>>>>> Stashed changes
     },
     {
       "brand": "SCULPTOR",
@@ -189,7 +265,11 @@
       "matched_keyword": "SALE",
       "group": "A",
       "error": null,
+<<<<<<< Updated upstream
       "checked_at": "2026-01-27T16:50:34.158299Z"
+=======
+      "checked_at": "2026-01-27T16:50:22.353878Z"
+>>>>>>> Stashed changes
     },
     {
       "brand": "NOTHING WRITTEN",
@@ -199,7 +279,11 @@
       "matched_keyword": "SALE",
       "group": "A",
       "error": null,
+<<<<<<< Updated upstream
       "checked_at": "2026-01-27T16:50:34.158299Z"
+=======
+      "checked_at": "2026-01-27T16:50:22.353878Z"
+>>>>>>> Stashed changes
     },
     {
       "brand": "OPEN YY",
@@ -209,7 +293,11 @@
       "matched_keyword": "SALE",
       "group": "A",
       "error": null,
+<<<<<<< Updated upstream
       "checked_at": "2026-01-27T16:50:34.158299Z"
+=======
+      "checked_at": "2026-01-27T16:50:22.353878Z"
+>>>>>>> Stashed changes
     },
     {
       "brand": "DUNST",
@@ -219,7 +307,11 @@
       "matched_keyword": "SALE",
       "group": "A",
       "error": null,
+<<<<<<< Updated upstream
       "checked_at": "2026-01-27T16:50:34.158299Z"
+=======
+      "checked_at": "2026-01-27T16:50:22.353878Z"
+>>>>>>> Stashed changes
     },
     {
       "brand": "LUCIR ZU",
@@ -229,7 +321,11 @@
       "matched_keyword": "SALE",
       "group": "C",
       "error": null,
+<<<<<<< Updated upstream
       "checked_at": "2026-01-27T16:50:34.158299Z"
+=======
+      "checked_at": "2026-01-27T16:50:22.353878Z"
+>>>>>>> Stashed changes
     },
     {
       "brand": "MONGDOL",
@@ -239,7 +335,11 @@
       "matched_keyword": "SALE",
       "group": "B",
       "error": null,
+<<<<<<< Updated upstream
       "checked_at": "2026-01-27T16:50:34.158299Z"
+=======
+      "checked_at": "2026-01-27T16:50:22.353878Z"
+>>>>>>> Stashed changes
     },
     {
       "brand": "LEVAR",
@@ -249,7 +349,11 @@
       "matched_keyword": "SALE",
       "group": "C",
       "error": null,
+<<<<<<< Updated upstream
       "checked_at": "2026-01-27T16:50:34.158299Z"
+=======
+      "checked_at": "2026-01-27T16:50:22.353878Z"
+>>>>>>> Stashed changes
     },
     {
       "brand": "Blossom H",
@@ -259,7 +363,11 @@
       "matched_keyword": "SALE",
       "group": "A",
       "error": null,
+<<<<<<< Updated upstream
       "checked_at": "2026-01-27T16:50:34.158299Z"
+=======
+      "checked_at": "2026-01-27T16:50:22.353878Z"
+>>>>>>> Stashed changes
     },
     {
       "brand": "INSILENCE",
@@ -269,7 +377,11 @@
       "matched_keyword": "SALE",
       "group": "A",
       "error": null,
+<<<<<<< Updated upstream
       "checked_at": "2026-01-27T16:50:34.158299Z"
+=======
+      "checked_at": "2026-01-27T16:50:22.353878Z"
+>>>>>>> Stashed changes
     },
     {
       "brand": "Fillintheblank",
@@ -279,7 +391,11 @@
       "matched_keyword": "SEASON OFF",
       "group": "A",
       "error": null,
+<<<<<<< Updated upstream
       "checked_at": "2026-01-27T16:50:34.158299Z"
+=======
+      "checked_at": "2026-01-27T16:50:22.353878Z"
+>>>>>>> Stashed changes
     },
     {
       "brand": "Amabe",
@@ -289,7 +405,11 @@
       "matched_keyword": "SALE",
       "group": "A",
       "error": null,
+<<<<<<< Updated upstream
       "checked_at": "2026-01-27T16:50:34.158299Z"
+=======
+      "checked_at": "2026-01-27T16:50:22.353878Z"
+>>>>>>> Stashed changes
     },
     {
       "brand": "Thetis",
@@ -299,7 +419,11 @@
       "matched_keyword": "SALE",
       "group": "A",
       "error": null,
+<<<<<<< Updated upstream
       "checked_at": "2026-01-27T16:50:34.158299Z"
+=======
+      "checked_at": "2026-01-27T16:50:22.353878Z"
+>>>>>>> Stashed changes
     },
     {
       "brand": "Gimmetheyoung",
@@ -309,7 +433,11 @@
       "matched_keyword": "SALE",
       "group": "A",
       "error": null,
+<<<<<<< Updated upstream
       "checked_at": "2026-01-27T16:50:34.158299Z"
+=======
+      "checked_at": "2026-01-27T16:50:22.353878Z"
+>>>>>>> Stashed changes
     },
     {
       "brand": "Ders",
@@ -319,7 +447,11 @@
       "matched_keyword": "SALE",
       "group": "A",
       "error": null,
+<<<<<<< Updated upstream
       "checked_at": "2026-01-27T16:50:34.158299Z"
+=======
+      "checked_at": "2026-01-27T16:50:22.353878Z"
+>>>>>>> Stashed changes
     },
     {
       "brand": "Typeserviceweb",
@@ -329,7 +461,11 @@
       "matched_keyword": "SALE",
       "group": "A",
       "error": null,
+<<<<<<< Updated upstream
       "checked_at": "2026-01-27T16:50:34.158299Z"
+=======
+      "checked_at": "2026-01-27T16:50:22.353878Z"
+>>>>>>> Stashed changes
     },
     {
       "brand": "Milloarchive",
@@ -339,7 +475,11 @@
       "matched_keyword": "SALE",
       "group": "A",
       "error": null,
+<<<<<<< Updated upstream
       "checked_at": "2026-01-27T16:50:34.158299Z"
+=======
+      "checked_at": "2026-01-27T16:50:22.353878Z"
+>>>>>>> Stashed changes
     },
     {
       "brand": "Cacele",
@@ -349,7 +489,11 @@
       "matched_keyword": "SALE",
       "group": "A",
       "error": null,
+<<<<<<< Updated upstream
       "checked_at": "2026-01-27T16:50:34.158299Z"
+=======
+      "checked_at": "2026-01-27T16:50:22.353878Z"
+>>>>>>> Stashed changes
     },
     {
       "brand": "Afterhours",
@@ -359,7 +503,11 @@
       "matched_keyword": "SALE",
       "group": "A",
       "error": null,
+<<<<<<< Updated upstream
       "checked_at": "2026-01-27T16:50:34.158299Z"
+=======
+      "checked_at": "2026-01-27T16:50:22.353878Z"
+>>>>>>> Stashed changes
     },
     {
       "brand": "Prevail",
@@ -369,7 +517,11 @@
       "matched_keyword": "SALE",
       "group": "A",
       "error": null,
+<<<<<<< Updated upstream
       "checked_at": "2026-01-27T16:50:34.158299Z"
+=======
+      "checked_at": "2026-01-27T16:50:22.353878Z"
+>>>>>>> Stashed changes
     },
     {
       "brand": "Itzavibe",
@@ -379,7 +531,11 @@
       "matched_keyword": "SALE",
       "group": "A",
       "error": null,
+<<<<<<< Updated upstream
       "checked_at": "2026-01-27T16:50:34.158299Z"
+=======
+      "checked_at": "2026-01-27T16:50:22.353878Z"
+>>>>>>> Stashed changes
     },
     {
       "brand": "Miseki Seoul",
@@ -389,7 +545,11 @@
       "matched_keyword": "SALE",
       "group": "A",
       "error": null,
+<<<<<<< Updated upstream
       "checked_at": "2026-01-27T16:50:34.158299Z"
+=======
+      "checked_at": "2026-01-27T16:50:22.353878Z"
+>>>>>>> Stashed changes
     },
     {
       "brand": "Epure",
@@ -399,7 +559,11 @@
       "matched_keyword": "SALE",
       "group": "A",
       "error": null,
+<<<<<<< Updated upstream
       "checked_at": "2026-01-27T16:50:34.158299Z"
+=======
+      "checked_at": "2026-01-27T16:50:22.353878Z"
+>>>>>>> Stashed changes
     },
     {
       "brand": "Umarmung",
@@ -409,7 +573,11 @@
       "matched_keyword": "SALE",
       "group": "A",
       "error": null,
+<<<<<<< Updated upstream
       "checked_at": "2026-01-27T16:50:34.158299Z"
+=======
+      "checked_at": "2026-01-27T16:50:22.353878Z"
+>>>>>>> Stashed changes
     },
     {
       "brand": "Thema",
@@ -419,7 +587,11 @@
       "matched_keyword": "SALE",
       "group": "A",
       "error": null,
+<<<<<<< Updated upstream
       "checked_at": "2026-01-27T16:50:34.158299Z"
+=======
+      "checked_at": "2026-01-27T16:50:22.353878Z"
+>>>>>>> Stashed changes
     },
     {
       "brand": "Lowclassic",
@@ -429,7 +601,11 @@
       "matched_keyword": "SALE",
       "group": "A",
       "error": null,
+<<<<<<< Updated upstream
       "checked_at": "2026-01-27T16:50:34.158299Z"
+=======
+      "checked_at": "2026-01-27T16:50:22.353878Z"
+>>>>>>> Stashed changes
     },
     {
       "brand": "Hane",
@@ -439,7 +615,11 @@
       "matched_keyword": "SALE",
       "group": "A",
       "error": null,
+<<<<<<< Updated upstream
       "checked_at": "2026-01-27T16:50:34.158299Z"
+=======
+      "checked_at": "2026-01-27T16:50:22.353878Z"
+>>>>>>> Stashed changes
     },
     {
       "brand": "Le",
@@ -449,7 +629,11 @@
       "matched_keyword": "SALE",
       "group": "A",
       "error": null,
+<<<<<<< Updated upstream
       "checked_at": "2026-01-27T16:50:34.158299Z"
+=======
+      "checked_at": "2026-01-27T16:50:22.353878Z"
+>>>>>>> Stashed changes
     },
     {
       "brand": "Yunse",
@@ -459,7 +643,11 @@
       "matched_keyword": "SALE",
       "group": "A",
       "error": null,
+<<<<<<< Updated upstream
       "checked_at": "2026-01-27T16:50:34.158299Z"
+=======
+      "checked_at": "2026-01-27T16:50:22.353878Z"
+>>>>>>> Stashed changes
     },
     {
       "brand": "NOMINATE",
@@ -469,7 +657,11 @@
       "matched_keyword": "SALE",
       "group": "A",
       "error": null,
+<<<<<<< Updated upstream
       "checked_at": "2026-01-27T16:50:34.158299Z"
+=======
+      "checked_at": "2026-01-27T16:50:22.353878Z"
+>>>>>>> Stashed changes
     },
     {
       "brand": "Poev",
@@ -479,7 +671,11 @@
       "matched_keyword": "SALE",
       "group": "A",
       "error": null,
+<<<<<<< Updated upstream
       "checked_at": "2026-01-27T16:50:34.158299Z"
+=======
+      "checked_at": "2026-01-27T16:50:22.353878Z"
+>>>>>>> Stashed changes
     },
     {
       "brand": "For your eyes only",
@@ -489,7 +685,11 @@
       "matched_keyword": "SALE",
       "group": "A",
       "error": null,
+<<<<<<< Updated upstream
       "checked_at": "2026-01-27T16:50:34.158299Z"
+=======
+      "checked_at": "2026-01-27T16:50:22.353878Z"
+>>>>>>> Stashed changes
     },
     {
       "brand": "GBH",
@@ -499,7 +699,11 @@
       "matched_keyword": "SALE",
       "group": "A",
       "error": null,
+<<<<<<< Updated upstream
       "checked_at": "2026-01-27T16:50:34.158299Z"
+=======
+      "checked_at": "2026-01-27T16:50:22.353878Z"
+>>>>>>> Stashed changes
     }
   ]
 }
