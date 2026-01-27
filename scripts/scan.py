@@ -266,7 +266,8 @@ def detect_sale_for_brand(row):
         sale_url = url  # 에러여도 공홈은 유지
 
     # 날짜 기반으로 'upcoming' / 'nosale' 여부 한 번 더 체크
-    status = refine_status_with_dates(official_url, status)
+    status = refine_status_with_dates(url, status)
+
 
     return {
         "brand": brand,
