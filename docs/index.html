@@ -10,22 +10,24 @@
   <ul id="list"></ul>
 
   <script>
-    fetch("sales.json")
-      .then(r => r.json())
-      .then(data => {
-        const ul = document.getElementById("list");
-        data.sales.forEach(item => {
-          if (item.status === "sale") {
-            const li = document.createElement("li");
-            li.innerHTML = `<strong>${item.brand}</strong> – <a href="${item.official_url}" target="_blank">${item.official_url}</a> (${item.matched_keyword || "SALE"})`;
-            ul.appendChild(li);
-          }
-        });
-      })
-      .catch(err => {
-        document.body.insertAdjacentHTML("beforeend", "<p>sales.json 불러오기에 실패했어.</p>");
-        console.error(err);
+  fetch("sales.json")
+    .then(r => r.json())
+    .then(data => {
+      const ul = document.getElementById("list");
+      data.sales.forEach(item => {
+        if (item.status === "sale") {
+          const li = document.createElement("li");
+          const url = item.sale_url || item.official_url;
+          li.innerHTML = `<strong>${item.brand}</strong> – <a href="${url}" target="_blank">${url}</a> (${item.matched_keyword || "SALE"})`;
+          ul.appendChild(li);
+        }
       });
-  </script>
+    })
+    .catch(err => {
+      document.body.insertAdjacentHTML("beforeend", "<p>sales.json 불러오기에 실패했어.</p>");
+      console.error(err);
+    });
+</script>
+
 </body>
 </html>
