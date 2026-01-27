@@ -113,11 +113,43 @@ def refine_status_with_dates(official_url: str, cur_status: str, timeout: int = 
 
 
 def fetch_rows():
-    resp = requests.get(CSV_URL, timeout=20)
+    import csv, io
+    import requests
+
+    SHEETS_CSV_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vRPol5yt4wsLuE8G-4lgzu1x2I9zo8dLRTHQQ3C7Pc5871wvpcQUHq6pLJS4FUcS05G86VLdKguSf9M/pub?gid=1024238622&single=true&output=csv"
+
+    resp = requests.get(SHEETS_CSV_URL, timeout=20)
     resp.raise_for_status()
-    lines = resp.text.splitlines()
-    reader = csv.DictReader(lines)
-    return list(reader)
+
+    rows = []
+    f = io.StringIO(resp.text)
+    reader = csv.DictReader(f)
+
+    for row in reader:
+        brand = (row.get("brand") or "").strip()
+        url = (row.get("official_url") or "").strip()
+
+        # brand / url 둘 중 하나라도 없으면 그냥 스킵
+        if not brand or not url:
+            continue
+
+        enabled = (row.get("enabled") or "").strip().upper()
+        if enabled != "TRUE":
+            continue
+
+        rows.append({
+            "brand": brand,
+            "official_url": url,
+            "logo_url": (row.get("logo_url") or "").strip(),
+            "keywords_override": (row.get("keywords_override") or "").strip(),
+            "sale_url_override": (row.get("sale_url_override") or "").strip(),
+            "detector_group": (row.get("detector_group") or "A").strip().upper(),
+            "manual_check": (row.get("manual_check") or "").strip().upper() == "TRUE",
+            "notes": (row.get("notes") or "").strip(),
+        })
+
+    return rows
+
 
 
 def find_sale_link(html: str, base_url: str, keywords):
