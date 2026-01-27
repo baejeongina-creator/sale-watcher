@@ -39,6 +39,78 @@ HEADERS = {
     "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome Safari"
 }
 
+# === 날짜 기반 세일 기간 판단 헬퍼들 ===
+import datetime as _dt
+
+# 1) "1.28 - 2.11" / "1.28~2.11" 같은 형식
+DATE_RANGE_PATTERNS = [
+    re.compile(r'(\d{1,2})[./]\s*(\d{1,2}).{0,40}?[-~–]\s*(\d{1,2})[./]\s*(\d{1,2})'),
+    # 2) "1월 28일 - 2월 11일" / "1월 28일~2월 11일" 같은 한글 형식
+    re.compile(r'(\d{1,2})\s*월\s*(\d{1,2})\s*일.{0,40}?[-~–]\s*(\d{1,2})\s*월\s*(\d{1,2})\s*일'),
+]
+
+def _extract_date_range_from_text(text: str):
+    """
+    텍스트에서 '1.28 - 2.11' / '1월 28일 - 2월 11일' 같은 패턴을 찾아
+    (start_date, end_date)를 date 객체로 리턴.
+    못 찾으면 None.
+    """
+    if not text:
+        return None
+
+    for pat in DATE_RANGE_PATTERNS:
+        m = pat.search(text)
+        if m:
+            sm, sd, em, ed = map(int, m.groups())
+            today = _dt.date.today()
+            year = today.year
+
+            start = _dt.date(year, sm, sd)
+            end = _dt.date(year, em, ed)
+
+            # 연말/연초 걸쳐 있는 경우 대략 처리 (예: 12.20 - 1.10)
+            if end < start:
+                # 오늘이 끝나는 달보다 앞이면, 세일이 이전 해에서 이어진 걸로 가정
+                end = _dt.date(year + 1, em, ed)
+
+            return start, end
+
+    return None
+
+def refine_status_with_dates(official_url: str, cur_status: str, timeout: int = 10) -> str:
+    """
+    현재 status가 'sale'일 때만,
+    공홈 HTML에서 날짜 범위를 찾아 세일이 'upcoming' / 'sale' / 'nosale'인지 다시 판단한다.
+    날짜를 못 찾으면 원래 status를 그대로 돌려준다.
+    """
+    if cur_status != "sale":
+        return cur_status
+
+    try:
+        resp = requests.get(official_url, headers=HEADERS, timeout=timeout)
+        resp.raise_for_status()
+        html = resp.text
+    except Exception:
+        # 공홈을 못 불러오면 그냥 기존 상태 유지
+        return cur_status
+
+    # 공백을 정리해서 한 줄짜리 텍스트로 만들기
+    text = re.sub(r"\s+", " ", html)
+
+    rng = _extract_date_range_from_text(text)
+    if not rng:
+        return cur_status
+
+    start, end = rng
+    today = _dt.date.today()
+
+    if today < start:
+        return "upcoming"
+    if today > end:
+        return "nosale"
+    return "sale"
+# === 날짜 헬퍼 끝 ===
+
 
 def fetch_rows():
     resp = requests.get(CSV_URL, timeout=20)
