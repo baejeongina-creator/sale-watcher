@@ -233,6 +233,9 @@ def detect_sale_for_brand(row):
         error_msg = str(e)
         sale_url = url  # 에러여도 공홈은 유지
 
+    # 날짜 기반으로 'upcoming' / 'nosale' 여부 한 번 더 체크
+    status = refine_status_with_dates(official_url, status)
+
     return {
         "brand": brand,
         "official_url": url,
