@@ -1,0 +1,405 @@
+{
+  "generated_at": "2026-01-27T09:44:08.625432Z",
+  "sales": [
+    {
+      "brand": "Sie",
+      "official_url": "https://sie-official.kr/",
+      "status": "sale",
+      "matched_keyword": "SALE",
+      "error": null,
+      "checked_at": "2026-01-27T09:44:08.625432Z"
+    },
+    {
+      "brand": "Bohemian Seoul",
+      "official_url": "https://bohemseo.com/",
+      "status": "sale",
+      "matched_keyword": "SALE",
+      "error": null,
+      "checked_at": "2026-01-27T09:44:08.625432Z"
+    },
+    {
+      "brand": "Maison Marais",
+      "official_url": "http://maisonmarais.com/",
+      "status": "sale",
+      "matched_keyword": "SALE",
+      "error": null,
+      "checked_at": "2026-01-27T09:44:08.625432Z"
+    },
+    {
+      "brand": "Kijun",
+      "official_url": "https://kijun.co/",
+      "status": "sale",
+      "matched_keyword": "SALE",
+      "error": null,
+      "checked_at": "2026-01-27T09:44:08.625432Z"
+    },
+    {
+      "brand": "Nuuanu",
+      "official_url": "https://nuuanu.kr/?redirect=T/",
+      "status": "sale",
+      "matched_keyword": "SALE",
+      "error": null,
+      "checked_at": "2026-01-27T09:44:08.625432Z"
+    },
+    {
+      "brand": "Howus",
+      "official_url": "https://www.howus.co.kr",
+      "status": "sale",
+      "matched_keyword": "SALE",
+      "error": null,
+      "checked_at": "2026-01-27T09:44:08.625432Z"
+    },
+    {
+      "brand": "Shop M",
+      "official_url": "https://shopm.kr/",
+      "status": "sale",
+      "matched_keyword": "SALE",
+      "error": null,
+      "checked_at": "2026-01-27T09:44:08.625432Z"
+    },
+    {
+      "brand": "Rouchneck",
+      "official_url": "https://roughneckseoul.com/",
+      "status": "sale",
+      "matched_keyword": "SALE",
+      "error": null,
+      "checked_at": "2026-01-27T09:44:08.625432Z"
+    },
+    {
+      "brand": "Gongderine",
+      "official_url": "https://gongderine.co.kr/",
+      "status": "sale",
+      "matched_keyword": "SALE",
+      "error": null,
+      "checked_at": "2026-01-27T09:44:08.625432Z"
+    },
+    {
+      "brand": "Asura",
+      "official_url": "https://s2asuras2.com/",
+      "status": "sale",
+      "matched_keyword": "SALE",
+      "error": null,
+      "checked_at": "2026-01-27T09:44:08.625432Z"
+    },
+    {
+      "brand": "Sinoon",
+      "official_url": "https://sinoon.co.kr/",
+      "status": "sale",
+      "matched_keyword": "WINTER",
+      "error": null,
+      "checked_at": "2026-01-27T09:44:08.625432Z"
+    },
+    {
+      "brand": "KHAKI POINT",
+      "official_url": "https://khakipoint.kr/",
+      "status": "sale",
+      "matched_keyword": "SALE",
+      "error": null,
+      "checked_at": "2026-01-27T09:44:08.625432Z"
+    },
+    {
+      "brand": "NOT YOUR ROSE",
+      "official_url": "https://notyourrose.com/",
+      "status": "sale",
+      "matched_keyword": "SALE",
+      "error": null,
+      "checked_at": "2026-01-27T09:44:08.625432Z"
+    },
+    {
+      "brand": "WELLBEING EXPRESS",
+      "official_url": "https://wellbeingexpress.com/",
+      "status": "nosale",
+      "matched_keyword": null,
+      "error": null,
+      "checked_at": "2026-01-27T09:44:08.625432Z"
+    },
+    {
+      "brand": "SUNBURN PROJECT",
+      "official_url": "https://sunburnproject.com/",
+      "status": "sale",
+      "matched_keyword": "SALE",
+      "error": null,
+      "checked_at": "2026-01-27T09:44:08.625432Z"
+    },
+    {
+      "brand": "LEBANE",
+      "official_url": "https://www.lebane.kr/",
+      "status": "sale",
+      "matched_keyword": "SALE",
+      "error": null,
+      "checked_at": "2026-01-27T09:44:08.625432Z"
+    },
+    {
+      "brand": "MA JOURNÃE",
+      "official_url": "https://majournee.co.kr/",
+      "status": "sale",
+      "matched_keyword": "SALE",
+      "error": null,
+      "checked_at": "2026-01-27T09:44:08.625432Z"
+    },
+    {
+      "brand": "MARGESHERWOOD",
+      "official_url": "https://margesherwood.com/",
+      "status": "sale",
+      "matched_keyword": "CLEARANCE",
+      "error": null,
+      "checked_at": "2026-01-27T09:44:08.625432Z"
+    },
+    {
+      "brand": "SCULPTOR",
+      "official_url": "https://sculptor-worldwide.com/",
+      "status": "sale",
+      "matched_keyword": "SALE",
+      "error": null,
+      "checked_at": "2026-01-27T09:44:08.625432Z"
+    },
+    {
+      "brand": "NOTHING WRITTEN",
+      "official_url": "http://nothing-written.com/",
+      "status": "sale",
+      "matched_keyword": "SALE",
+      "error": null,
+      "checked_at": "2026-01-27T09:44:08.625432Z"
+    },
+    {
+      "brand": "OPEN YY",
+      "official_url": "http://open-yy.com/",
+      "status": "sale",
+      "matched_keyword": "SALE",
+      "error": null,
+      "checked_at": "2026-01-27T09:44:08.625432Z"
+    },
+    {
+      "brand": "DUNST",
+      "official_url": "https://dunststudio.com/",
+      "status": "sale",
+      "matched_keyword": "SALE",
+      "error": null,
+      "checked_at": "2026-01-27T09:44:08.625432Z"
+    },
+    {
+      "brand": "LUCIR ZU",
+      "official_url": "http://lucirzu.kr/",
+      "status": "sale",
+      "matched_keyword": "SALE",
+      "error": null,
+      "checked_at": "2026-01-27T09:44:08.625432Z"
+    },
+    {
+      "brand": "MONGDOL",
+      "official_url": "https://mongdolstore.com/",
+      "status": "sale",
+      "matched_keyword": "SALE",
+      "error": null,
+      "checked_at": "2026-01-27T09:44:08.625432Z"
+    },
+    {
+      "brand": "LEVAR",
+      "official_url": "https://levar.kr/",
+      "status": "sale",
+      "matched_keyword": "SALE",
+      "error": null,
+      "checked_at": "2026-01-27T09:44:08.625432Z"
+    },
+    {
+      "brand": "Blossom H",
+      "official_url": "https://blossomhcompany.com/index.html",
+      "status": "sale",
+      "matched_keyword": "SALE",
+      "error": null,
+      "checked_at": "2026-01-27T09:44:08.625432Z"
+    },
+    {
+      "brand": "INSILENCE",
+      "official_url": "https://www.insilence.co.kr/",
+      "status": "sale",
+      "matched_keyword": "SALE",
+      "error": null,
+      "checked_at": "2026-01-27T09:44:08.625432Z"
+    },
+    {
+      "brand": "Fillintheblank",
+      "official_url": "https://fillintheblank-fitb.com/",
+      "status": "sale",
+      "matched_keyword": "SEASON OFF",
+      "error": null,
+      "checked_at": "2026-01-27T09:44:08.625432Z"
+    },
+    {
+      "brand": "Amabe",
+      "official_url": "https://amabe.kr/",
+      "status": "sale",
+      "matched_keyword": "SALE",
+      "error": null,
+      "checked_at": "2026-01-27T09:44:08.625432Z"
+    },
+    {
+      "brand": "Thetis",
+      "official_url": "https://thetisofficial.com/",
+      "status": "sale",
+      "matched_keyword": "SALE",
+      "error": null,
+      "checked_at": "2026-01-27T09:44:08.625432Z"
+    },
+    {
+      "brand": "Gimmetheyoung",
+      "official_url": "https://gimmetheyoung.com/",
+      "status": "sale",
+      "matched_keyword": "SALE",
+      "error": null,
+      "checked_at": "2026-01-27T09:44:08.625432Z"
+    },
+    {
+      "brand": "Ders",
+      "official_url": "https://ders.kr/",
+      "status": "sale",
+      "matched_keyword": "SALE",
+      "error": null,
+      "checked_at": "2026-01-27T09:44:08.625432Z"
+    },
+    {
+      "brand": "Typeserviceweb",
+      "official_url": "https://typeserviceweb.com/",
+      "status": "sale",
+      "matched_keyword": "SALE",
+      "error": null,
+      "checked_at": "2026-01-27T09:44:08.625432Z"
+    },
+    {
+      "brand": "Milloarchive",
+      "official_url": "https://milloarchive.com/",
+      "status": "sale",
+      "matched_keyword": "SALE",
+      "error": null,
+      "checked_at": "2026-01-27T09:44:08.625432Z"
+    },
+    {
+      "brand": "Cacele",
+      "official_url": "https://ca-cele.com/",
+      "status": "sale",
+      "matched_keyword": "SALE",
+      "error": null,
+      "checked_at": "2026-01-27T09:44:08.625432Z"
+    },
+    {
+      "brand": "Afterhours",
+      "official_url": "https://afterhours.co.kr/",
+      "status": "sale",
+      "matched_keyword": "SALE",
+      "error": null,
+      "checked_at": "2026-01-27T09:44:08.625432Z"
+    },
+    {
+      "brand": "Prevail",
+      "official_url": "https://prevail.kr/",
+      "status": "sale",
+      "matched_keyword": "SALE",
+      "error": null,
+      "checked_at": "2026-01-27T09:44:08.625432Z"
+    },
+    {
+      "brand": "Itzavibe",
+      "official_url": "https://itzavibeofficial.com/",
+      "status": "sale",
+      "matched_keyword": "SALE",
+      "error": null,
+      "checked_at": "2026-01-27T09:44:08.625432Z"
+    },
+    {
+      "brand": "Miseki Seoul",
+      "official_url": "https://misekiseoul.kr/",
+      "status": "sale",
+      "matched_keyword": "SALE",
+      "error": null,
+      "checked_at": "2026-01-27T09:44:08.625432Z"
+    },
+    {
+      "brand": "Epure",
+      "official_url": "https://www.epure.co.kr/",
+      "status": "sale",
+      "matched_keyword": "SALE",
+      "error": null,
+      "checked_at": "2026-01-27T09:44:08.625432Z"
+    },
+    {
+      "brand": "Umarmung",
+      "official_url": "https://umarmung.kr/",
+      "status": "sale",
+      "matched_keyword": "SALE",
+      "error": null,
+      "checked_at": "2026-01-27T09:44:08.625432Z"
+    },
+    {
+      "brand": "Thema",
+      "official_url": "https://www.theearlymorningair.com/",
+      "status": "sale",
+      "matched_keyword": "SALE",
+      "error": null,
+      "checked_at": "2026-01-27T09:44:08.625432Z"
+    },
+    {
+      "brand": "Lowclassic",
+      "official_url": "https://lowclassic.com/",
+      "status": "sale",
+      "matched_keyword": "SALE",
+      "error": null,
+      "checked_at": "2026-01-27T09:44:08.625432Z"
+    },
+    {
+      "brand": "Hane",
+      "official_url": "https://hane.kr/",
+      "status": "sale",
+      "matched_keyword": "SALE",
+      "error": null,
+      "checked_at": "2026-01-27T09:44:08.625432Z"
+    },
+    {
+      "brand": "Le",
+      "official_url": "https://le-official.co.kr/",
+      "status": "sale",
+      "matched_keyword": "SALE",
+      "error": null,
+      "checked_at": "2026-01-27T09:44:08.625432Z"
+    },
+    {
+      "brand": "Yunse",
+      "official_url": "https://yunse.co/",
+      "status": "sale",
+      "matched_keyword": "SALE",
+      "error": null,
+      "checked_at": "2026-01-27T09:44:08.625432Z"
+    },
+    {
+      "brand": "NOMINATE",
+      "official_url": "https://nominate.kr/",
+      "status": "sale",
+      "matched_keyword": "SALE",
+      "error": null,
+      "checked_at": "2026-01-27T09:44:08.625432Z"
+    },
+    {
+      "brand": "Poev",
+      "official_url": "https://poev.kr/",
+      "status": "sale",
+      "matched_keyword": "SALE",
+      "error": null,
+      "checked_at": "2026-01-27T09:44:08.625432Z"
+    },
+    {
+      "brand": "For your eyes only",
+      "official_url": "https://fyeo.kr/",
+      "status": "sale",
+      "matched_keyword": "SALE",
+      "error": null,
+      "checked_at": "2026-01-27T09:44:08.625432Z"
+    },
+    {
+      "brand": "GBH",
+      "official_url": "https://gbh.kr/",
+      "status": "sale",
+      "matched_keyword": "SALE",
+      "error": null,
+      "checked_at": "2026-01-27T09:44:08.625432Z"
+    }
+  ]
+}
