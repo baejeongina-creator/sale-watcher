@@ -9,18 +9,26 @@
   <p>현재 세일 중인 브랜드 목록:</p>
   <ul id="list"></ul>
 
-  <script>
+<script>
   fetch("sales.json")
     .then(r => r.json())
     .then(data => {
       const ul = document.getElementById("list");
       data.sales.forEach(item => {
-        if (item.status === "sale") {
-          const li = document.createElement("li");
-          const url = item.official_url;  // 항상 공홈으로 링크
-          li.innerHTML = `<strong>${item.brand}</strong> – <a href="${url}" target="_blank">${url}</a> (${item.matched_keyword || "SALE"})`;
-          ul.appendChild(li);
+        const group = (item.group || "").toUpperCase();
+
+        // C 그룹은 화면에서 숨기기
+        if (item.status !== "sale" || group === "C") {
+          return;
         }
+
+        const url = item.official_url;  // 항상 공홈으로 링크
+        const label = item.matched_keyword || "SALE";
+        const groupTag = group ? `[${group}] ` : "";
+
+        const li = document.createElement("li");
+        li.innerHTML = `<strong>${groupTag}${item.brand}</strong> – <a href="${url}" target="_blank">${url}</a> (${label})`;
+        ul.appendChild(li);
       });
     })
     .catch(err => {
@@ -28,6 +36,7 @@
       console.error(err);
     });
 </script>
+
 
 </body>
 </html>
