@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-01-27T14:00:51.199862Z",
+  "generated_at": "2026-01-27T15:53:49.266523Z",
   "sales": [
     {
       "brand": "Sie",
@@ -8,7 +8,7 @@
       "status": "sale",
       "matched_keyword": "SALE",
       "error": null,
-      "checked_at": "2026-01-27T14:00:51.199862Z"
+      "checked_at": "2026-01-27T15:53:49.266523Z"
     },
     {
       "brand": "Bohemian Seoul",
@@ -17,7 +17,7 @@
       "status": "sale",
       "matched_keyword": "SALE",
       "error": null,
-      "checked_at": "2026-01-27T14:00:51.199862Z"
+      "checked_at": "2026-01-27T15:53:49.266523Z"
     },
     {
       "brand": "Maison Marais",
@@ -26,7 +26,7 @@
       "status": "sale",
       "matched_keyword": "SALE",
       "error": null,
-      "checked_at": "2026-01-27T14:00:51.199862Z"
+      "checked_at": "2026-01-27T15:53:49.266523Z"
     },
     {
       "brand": "Kijun",
@@ -35,7 +35,7 @@
       "status": "sale",
       "matched_keyword": "SALE",
       "error": null,
-      "checked_at": "2026-01-27T14:00:51.199862Z"
+      "checked_at": "2026-01-27T15:53:49.266523Z"
     },
     {
       "brand": "Nuuanu",
@@ -44,7 +44,7 @@
       "status": "sale",
       "matched_keyword": "SALE",
       "error": null,
-      "checked_at": "2026-01-27T14:00:51.199862Z"
+      "checked_at": "2026-01-27T15:53:49.266523Z"
     },
     {
       "brand": "Howus",
@@ -53,7 +53,7 @@
       "status": "sale",
       "matched_keyword": "SALE",
       "error": null,
-      "checked_at": "2026-01-27T14:00:51.199862Z"
+      "checked_at": "2026-01-27T15:53:49.266523Z"
     },
     {
       "brand": "Shop M",
@@ -62,7 +62,7 @@
       "status": "sale",
       "matched_keyword": "SALE",
       "error": null,
-      "checked_at": "2026-01-27T14:00:51.199862Z"
+      "checked_at": "2026-01-27T15:53:49.266523Z"
     },
     {
       "brand": "Rouchneck",
@@ -71,7 +71,7 @@
       "status": "sale",
       "matched_keyword": "SALE",
       "error": null,
-      "checked_at": "2026-01-27T14:00:51.199862Z"
+      "checked_at": "2026-01-27T15:53:49.266523Z"
     },
     {
       "brand": "Gongderine",
@@ -80,16 +80,16 @@
       "status": "sale",
       "matched_keyword": "SALE",
       "error": null,
-      "checked_at": "2026-01-27T14:00:51.199862Z"
+      "checked_at": "2026-01-27T15:53:49.266523Z"
     },
     {
       "brand": "Asura",
       "official_url": "https://s2asuras2.com/",
-      "sale_url": "https://s2asuras2.com/59",
-      "status": "sale",
-      "matched_keyword": "SALE",
-      "error": null,
-      "checked_at": "2026-01-27T14:00:51.199862Z"
+      "sale_url": "https://s2asuras2.com/",
+      "status": "error",
+      "matched_keyword": null,
+      "error": "403 Client Error: Forbidden for url: https://s2asuras2.com/",
+      "checked_at": "2026-01-27T15:53:49.266523Z"
     },
     {
       "brand": "Sinoon",
@@ -98,7 +98,7 @@
       "status": "sale",
       "matched_keyword": "WINTER",
       "error": null,
-      "checked_at": "2026-01-27T14:00:51.199862Z"
+      "checked_at": "2026-01-27T15:53:49.266523Z"
     },
     {
       "brand": "KHAKI POINT",
@@ -107,7 +107,7 @@
       "status": "sale",
       "matched_keyword": "SALE",
       "error": null,
-      "checked_at": "2026-01-27T14:00:51.199862Z"
+      "checked_at": "2026-01-27T15:53:49.266523Z"
     },
     {
       "brand": "NOT YOUR ROSE",
@@ -116,7 +116,7 @@
       "status": "sale",
       "matched_keyword": "SALE",
       "error": null,
-      "checked_at": "2026-01-27T14:00:51.199862Z"
+      "checked_at": "2026-01-27T15:53:49.266523Z"
     },
     {
       "brand": "WELLBEING EXPRESS",
@@ -125,7 +125,7 @@
       "status": "nosale",
       "matched_keyword": null,
       "error": null,
-      "checked_at": "2026-01-27T14:00:51.199862Z"
+      "checked_at": "2026-01-27T15:53:49.266523Z"
     },
     {
       "brand": "SUNBURN PROJECT",
@@ -134,7 +134,7 @@
       "status": "sale",
       "matched_keyword": "SALE",
       "error": null,
-      "checked_at": "2026-01-27T14:00:51.199862Z"
+      "checked_at": "2026-01-27T15:53:49.266523Z"
     },
     {
       "brand": "LEBANE",
@@ -143,7 +143,7 @@
       "status": "sale",
       "matched_keyword": "SALE",
       "error": null,
-      "checked_at": "2026-01-27T14:00:51.199862Z"
+      "checked_at": "2026-01-27T15:53:49.266523Z"
     },
     {
       "brand": "MA JOURNÃE",
@@ -152,7 +152,7 @@
       "status": "sale",
       "matched_keyword": "SALE",
       "error": null,
-      "checked_at": "2026-01-27T14:00:51.199862Z"
+      "checked_at": "2026-01-27T15:53:49.266523Z"
     },
     {
       "brand": "MARGESHERWOOD",
@@ -161,7 +161,7 @@
       "status": "sale",
       "matched_keyword": "CLEARANCE",
       "error": null,
-      "checked_at": "2026-01-27T14:00:51.199862Z"
+      "checked_at": "2026-01-27T15:53:49.266523Z"
     },
     {
       "brand": "SCULPTOR",
@@ -170,7 +170,7 @@
       "status": "sale",
       "matched_keyword": "SALE",
       "error": null,
-      "checked_at": "2026-01-27T14:00:51.199862Z"
+      "checked_at": "2026-01-27T15:53:49.266523Z"
     },
     {
       "brand": "NOTHING WRITTEN",
@@ -179,7 +179,7 @@
       "status": "sale",
       "matched_keyword": "SALE",
       "error": null,
-      "checked_at": "2026-01-27T14:00:51.199862Z"
+      "checked_at": "2026-01-27T15:53:49.266523Z"
     },
     {
       "brand": "OPEN YY",
@@ -188,7 +188,7 @@
       "status": "sale",
       "matched_keyword": "SALE",
       "error": null,
-      "checked_at": "2026-01-27T14:00:51.199862Z"
+      "checked_at": "2026-01-27T15:53:49.266523Z"
     },
     {
       "brand": "DUNST",
@@ -197,7 +197,7 @@
       "status": "sale",
       "matched_keyword": "SALE",
       "error": null,
-      "checked_at": "2026-01-27T14:00:51.199862Z"
+      "checked_at": "2026-01-27T15:53:49.266523Z"
     },
     {
       "brand": "LUCIR ZU",
@@ -206,7 +206,7 @@
       "status": "sale",
       "matched_keyword": "SALE",
       "error": null,
-      "checked_at": "2026-01-27T14:00:51.199862Z"
+      "checked_at": "2026-01-27T15:53:49.266523Z"
     },
     {
       "brand": "MONGDOL",
@@ -215,7 +215,7 @@
       "status": "sale",
       "matched_keyword": "SALE",
       "error": null,
-      "checked_at": "2026-01-27T14:00:51.199862Z"
+      "checked_at": "2026-01-27T15:53:49.266523Z"
     },
     {
       "brand": "LEVAR",
@@ -224,7 +224,7 @@
       "status": "sale",
       "matched_keyword": "SALE",
       "error": null,
-      "checked_at": "2026-01-27T14:00:51.199862Z"
+      "checked_at": "2026-01-27T15:53:49.266523Z"
     },
     {
       "brand": "Blossom H",
@@ -233,7 +233,7 @@
       "status": "sale",
       "matched_keyword": "SALE",
       "error": null,
-      "checked_at": "2026-01-27T14:00:51.199862Z"
+      "checked_at": "2026-01-27T15:53:49.266523Z"
     },
     {
       "brand": "INSILENCE",
@@ -242,7 +242,7 @@
       "status": "sale",
       "matched_keyword": "SALE",
       "error": null,
-      "checked_at": "2026-01-27T14:00:51.199862Z"
+      "checked_at": "2026-01-27T15:53:49.266523Z"
     },
     {
       "brand": "Fillintheblank",
@@ -251,16 +251,16 @@
       "status": "sale",
       "matched_keyword": "SEASON OFF",
       "error": null,
-      "checked_at": "2026-01-27T14:00:51.199862Z"
+      "checked_at": "2026-01-27T15:53:49.266523Z"
     },
     {
       "brand": "Amabe",
       "official_url": "https://amabe.kr/",
-      "sale_url": "https://amabe.kr/159",
-      "status": "sale",
-      "matched_keyword": "SALE",
-      "error": null,
-      "checked_at": "2026-01-27T14:00:51.199862Z"
+      "sale_url": "https://amabe.kr/",
+      "status": "error",
+      "matched_keyword": null,
+      "error": "403 Client Error: Forbidden for url: https://amabe.kr/",
+      "checked_at": "2026-01-27T15:53:49.266523Z"
     },
     {
       "brand": "Thetis",
@@ -269,7 +269,7 @@
       "status": "sale",
       "matched_keyword": "SALE",
       "error": null,
-      "checked_at": "2026-01-27T14:00:51.199862Z"
+      "checked_at": "2026-01-27T15:53:49.266523Z"
     },
     {
       "brand": "Gimmetheyoung",
@@ -278,7 +278,7 @@
       "status": "sale",
       "matched_keyword": "SALE",
       "error": null,
-      "checked_at": "2026-01-27T14:00:51.199862Z"
+      "checked_at": "2026-01-27T15:53:49.266523Z"
     },
     {
       "brand": "Ders",
@@ -287,7 +287,7 @@
       "status": "sale",
       "matched_keyword": "SALE",
       "error": null,
-      "checked_at": "2026-01-27T14:00:51.199862Z"
+      "checked_at": "2026-01-27T15:53:49.266523Z"
     },
     {
       "brand": "Typeserviceweb",
@@ -296,7 +296,7 @@
       "status": "sale",
       "matched_keyword": "SALE",
       "error": null,
-      "checked_at": "2026-01-27T14:00:51.199862Z"
+      "checked_at": "2026-01-27T15:53:49.266523Z"
     },
     {
       "brand": "Milloarchive",
@@ -305,7 +305,7 @@
       "status": "sale",
       "matched_keyword": "SALE",
       "error": null,
-      "checked_at": "2026-01-27T14:00:51.199862Z"
+      "checked_at": "2026-01-27T15:53:49.266523Z"
     },
     {
       "brand": "Cacele",
@@ -314,7 +314,7 @@
       "status": "sale",
       "matched_keyword": "SALE",
       "error": null,
-      "checked_at": "2026-01-27T14:00:51.199862Z"
+      "checked_at": "2026-01-27T15:53:49.266523Z"
     },
     {
       "brand": "Afterhours",
@@ -323,7 +323,7 @@
       "status": "sale",
       "matched_keyword": "SALE",
       "error": null,
-      "checked_at": "2026-01-27T14:00:51.199862Z"
+      "checked_at": "2026-01-27T15:53:49.266523Z"
     },
     {
       "brand": "Prevail",
@@ -332,7 +332,7 @@
       "status": "sale",
       "matched_keyword": "SALE",
       "error": null,
-      "checked_at": "2026-01-27T14:00:51.199862Z"
+      "checked_at": "2026-01-27T15:53:49.266523Z"
     },
     {
       "brand": "Itzavibe",
@@ -341,7 +341,7 @@
       "status": "sale",
       "matched_keyword": "SALE",
       "error": null,
-      "checked_at": "2026-01-27T14:00:51.199862Z"
+      "checked_at": "2026-01-27T15:53:49.266523Z"
     },
     {
       "brand": "Miseki Seoul",
@@ -350,7 +350,7 @@
       "status": "sale",
       "matched_keyword": "SALE",
       "error": null,
-      "checked_at": "2026-01-27T14:00:51.199862Z"
+      "checked_at": "2026-01-27T15:53:49.266523Z"
     },
     {
       "brand": "Epure",
@@ -359,7 +359,7 @@
       "status": "sale",
       "matched_keyword": "SALE",
       "error": null,
-      "checked_at": "2026-01-27T14:00:51.199862Z"
+      "checked_at": "2026-01-27T15:53:49.266523Z"
     },
     {
       "brand": "Umarmung",
@@ -368,7 +368,7 @@
       "status": "sale",
       "matched_keyword": "SALE",
       "error": null,
-      "checked_at": "2026-01-27T14:00:51.199862Z"
+      "checked_at": "2026-01-27T15:53:49.266523Z"
     },
     {
       "brand": "Thema",
@@ -377,7 +377,7 @@
       "status": "sale",
       "matched_keyword": "SALE",
       "error": null,
-      "checked_at": "2026-01-27T14:00:51.199862Z"
+      "checked_at": "2026-01-27T15:53:49.266523Z"
     },
     {
       "brand": "Lowclassic",
@@ -386,7 +386,7 @@
       "status": "sale",
       "matched_keyword": "SALE",
       "error": null,
-      "checked_at": "2026-01-27T14:00:51.199862Z"
+      "checked_at": "2026-01-27T15:53:49.266523Z"
     },
     {
       "brand": "Hane",
@@ -395,7 +395,7 @@
       "status": "sale",
       "matched_keyword": "SALE",
       "error": null,
-      "checked_at": "2026-01-27T14:00:51.199862Z"
+      "checked_at": "2026-01-27T15:53:49.266523Z"
     },
     {
       "brand": "Le",
@@ -404,7 +404,7 @@
       "status": "sale",
       "matched_keyword": "SALE",
       "error": null,
-      "checked_at": "2026-01-27T14:00:51.199862Z"
+      "checked_at": "2026-01-27T15:53:49.266523Z"
     },
     {
       "brand": "Yunse",
@@ -413,7 +413,7 @@
       "status": "sale",
       "matched_keyword": "SALE",
       "error": null,
-      "checked_at": "2026-01-27T14:00:51.199862Z"
+      "checked_at": "2026-01-27T15:53:49.266523Z"
     },
     {
       "brand": "NOMINATE",
@@ -422,7 +422,7 @@
       "status": "sale",
       "matched_keyword": "SALE",
       "error": null,
-      "checked_at": "2026-01-27T14:00:51.199862Z"
+      "checked_at": "2026-01-27T15:53:49.266523Z"
     },
     {
       "brand": "Poev",
@@ -431,7 +431,7 @@
       "status": "sale",
       "matched_keyword": "SALE",
       "error": null,
-      "checked_at": "2026-01-27T14:00:51.199862Z"
+      "checked_at": "2026-01-27T15:53:49.266523Z"
     },
     {
       "brand": "For your eyes only",
@@ -440,7 +440,7 @@
       "status": "sale",
       "matched_keyword": "SALE",
       "error": null,
-      "checked_at": "2026-01-27T14:00:51.199862Z"
+      "checked_at": "2026-01-27T15:53:49.266523Z"
     },
     {
       "brand": "GBH",
@@ -449,7 +449,7 @@
       "status": "sale",
       "matched_keyword": "SALE",
       "error": null,
-      "checked_at": "2026-01-27T14:00:51.199862Z"
+      "checked_at": "2026-01-27T15:53:49.266523Z"
     }
   ]
 }
