@@ -1,151 +1,151 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="utf-8" />
+  <meta charset="UTF-8" />
   <title>Sale Watcher</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <style>
     body {
-      font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", system-ui, sans-serif;
-      margin: 32px;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 0 16px;
       line-height: 1.6;
     }
     h1 {
-      font-size: 40px;
+      font-size: 28px;
       margin-bottom: 8px;
     }
     h2 {
       margin-top: 32px;
-      margin-bottom: 8px;
-      font-size: 22px;
-    }
-    p.desc {
-      margin-top: 0;
-      margin-bottom: 24px;
-      color: #444;
-      font-size: 15px;
-    }
-    .group-section {
-      margin-bottom: 32px;
-    }
-    .brand-list {
-      list-style: none;
-      padding-left: 0;
-      margin: 0;
+      font-size: 20px;
     }
     .brand-item {
-      margin-bottom: 8px;
-      font-size: 15px;
-    }
-    .brand-name {
-      font-weight: 600;
+      margin-bottom: 6px;
     }
     .badge {
       display: inline-block;
-      padding: 2px 6px;
-      border-radius: 4px;
       font-size: 11px;
+      padding: 2px 6px;
+      border-radius: 999px;
+      border: 1px solid #ccc;
+      margin-left: 6px;
+    }
+    .badge-a { border-color: #4caf50; color: #4caf50; }
+    .badge-b { border-color: #ff9800; color: #ff9800; }
+    .badge-upcoming { border-color: #3f51b5; color: #3f51b5; }
+    .badge-error { border-color: #f44336; color: #f44336; }
+    .matched {
+      font-size: 11px;
+      color: #666;
       margin-left: 4px;
-      vertical-align: middle;
     }
-    .badge-a {
-      background: #111;
-      color: #fff;
-    }
-    .badge-b {
-      background: #eee;
-      color: #333;
-    }
-    .badge-sale {
-      background: #fce5e5;
-      color: #b30000;
-    }
-    a {
-      color: #0645ad;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-    .error {
-      color: #b00020;
-      margin-top: 16px;
+    .error-text {
+      color: #f44336;
+      font-size: 12px;
     }
   </style>
 </head>
 <body>
   <h1>Sale Watcher</h1>
-  <p class="desc">현재 세일 중인 브랜드 목록 (자동 감지, C 그룹은 제외).</p>
+  <p>현재 세일 중인 브랜드 목록 (자동 감지, C 그룹은 제외).</p>
 
-  <div class="group-section" id="section-a">
-    <h2>A 그룹</h2>
-    <p class="desc">구조가 안정적이고 자동 감지를 믿을 수 있는 브랜드.</p>
-    <ul class="brand-list" id="list-a"></ul>
-  </div>
+  <h2>A 그룹</h2>
+  <p style="font-size: 13px; color: #555;">
+    구조가 안정적이고 자동 감지를 믿을 수 있는 브랜드.
+  </p>
+  <div id="group-a"></div>
 
-  <div class="group-section" id="section-b">
-    <h2>B 그룹</h2>
-    <p class="desc">대부분 잘 잡히지만 가끔 확인이 필요한 브랜드.</p>
-    <ul class="brand-list" id="list-b"></ul>
-  </div>
+  <h2>B 그룹</h2>
+  <p style="font-size: 13px; color: #555;">
+    대부분 잘 잡히지만 가끔 확인이 필요한 브랜드.
+  </p>
+  <div id="group-b"></div>
 
   <script>
-    fetch("sales.json")
-      .then(r => r.json())
-      .then(data => {
-        const listA = document.getElementById("list-a");
-        const listB = document.getElementById("list-b");
+    async function loadSales() {
+      const res = await fetch("sales.json?" + Date.now()); // 캐시 방지
+      const data = await res.json();
+      const sales = data.sales || [];
 
-        data.sales.forEach(item => {
-          const group = (item.group || "").toUpperCase();
-          const status = item.status;
+      const groupA = document.getElementById("group-a");
+      const groupB = document.getElementById("group-b");
 
-          // 세일 아니거나 C 그룹이면 화면에 안 보이게
-          if (status !== "sale" || group === "C") return;
+      // status === "sale" 이고, group !== "C" 인 것만 화면에 표시
+      const visible = sales.filter(item =>
+        (item.status === "sale") &&
+        (item.group !== "C")
+      );
 
-          const url = item.official_url;
-          const label = item.matched_keyword || "SALE";
+      const byGroup = { A: [], B: [] };
+      for (const item of visible) {
+        const g = item.group === "B" ? "B" : "A"; // 기본 A 취급
+        byGroup[g].push(item);
+      }
 
-          const li = document.createElement("li");
-          li.className = "brand-item";
+      function render(list, container, groupLabel) {
+        if (!list.length) {
+          container.innerHTML = "<p style='font-size:13px;color:#999;'>현재 표시할 " + groupLabel + " 그룹 브랜드가 없습니다.</p>";
+          return;
+        }
 
-          const nameSpan = document.createElement("span");
-          nameSpan.className = "brand-name";
-          nameSpan.textContent = item.brand;
+        list.sort((a, b) => a.brand.localeCompare(b.brand, "ko"));
 
-          const link = document.createElement("a");
-          link.href = url;
-          link.target = "_blank";
-          link.rel = "noopener noreferrer";
-          link.textContent = url;
+        const frag = document.createDocumentFragment();
+        for (const item of list) {
+          const div = document.createElement("div");
+          div.className = "brand-item";
 
-          const groupBadge = document.createElement("span");
-          groupBadge.className = "badge " + (group === "A" ? "badge-a" : "badge-b");
-          groupBadge.textContent = group + " 그룹";
+          const a = document.createElement("a");
+          a.href = item.sale_url || item.official_url;
+          a.textContent = item.brand;
+          a.target = "_blank";
+          a.rel = "noopener noreferrer";
 
-          const saleBadge = document.createElement("span");
-          saleBadge.className = "badge badge-sale";
-          saleBadge.textContent = label;
+          const badge = document.createElement("span");
+          badge.className = "badge " + (groupLabel === "A" ? "badge-a" : "badge-b");
+          badge.textContent = groupLabel + "그룹";
 
-          li.appendChild(nameSpan);
-          li.appendChild(groupBadge);
-          li.appendChild(saleBadge);
-          li.appendChild(document.createTextNode(" – "));
-          li.appendChild(link);
-
-          if (group === "A") {
-            listA.appendChild(li);
-          } else {
-            listB.appendChild(li);
+          const matched = document.createElement("span");
+          matched.className = "matched";
+          if (item.status === "upcoming") {
+            const up = document.createElement("span");
+            up.className = "badge badge-upcoming";
+            up.textContent = "곧 시작";
+            matched.appendChild(up);
+          } else if (item.matched_keyword) {
+            matched.textContent = "(" + item.matched_keyword + ")";
           }
-        });
-      })
-      .catch(err => {
-        const p = document.createElement("p");
-        p.className = "error";
-        p.textContent = "sales.json 불러오기에 실패했어.";
-        document.body.appendChild(p);
-        console.error(err);
-      });
+
+          div.appendChild(a);
+          div.appendChild(badge);
+          if (matched.textContent || matched.children.length > 0) {
+            div.appendChild(matched);
+          }
+
+          if (item.error) {
+            const err = document.createElement("div");
+            err.className = "error-text";
+            err.textContent = "에러: " + item.error;
+            div.appendChild(err);
+          }
+
+          frag.appendChild(div);
+        }
+
+        container.innerHTML = "";
+        container.appendChild(frag);
+      }
+
+      render(byGroup.A, groupA, "A");
+      render(byGroup.B, groupB, "B");
+    }
+
+    loadSales().catch(err => {
+      console.error("Failed to load sales.json", err);
+      const ga = document.getElementById("group-a");
+      ga.innerHTML = "<p style='color:#f44336;font-size:13px;'>sales.json을 불러오는 데 실패했습니다.</p>";
+    });
   </script>
 </body>
 </html>
