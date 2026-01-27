@@ -28,6 +28,9 @@ jobs:
         run: |
           git config user.name "github-actions"
           git config user.email "actions@github.com"
+          # 원격에 더 앞선 커밋이 있으면 먼저 가져오기
+          git pull --rebase --autostash
           git add docs/sales.json
           git commit -m "Update sales.json" || echo "No changes"
           git push
+
