@@ -1,15 +1,24 @@
-import csv, json, re, time
+import csv
+import json
+import re
+import time
 from datetime import datetime
 from urllib.parse import urljoin, urlparse
+import io
 
 import requests
 from bs4 import BeautifulSoup
+import datetime as _dt
 
-# Google Sheets → CSV 링크
+# =====================
+#  기본 설정
+# =====================
+
+# 🔗 Google Sheets → CSV 링크 (지금 네 시트)
 CSV_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vRPol5yt4wsLuE8G-4lgzu1x2I9zo8dLRTHQQ3C7Pc5871wvpcQUHq6pLJS4FUcS05G86VLdKguSf9M/pub?gid=1024238622&single=true&output=csv"
 
 # 페이지 전체에서 "세일 중인지" 감지하는 키워드
-# 🔥 ARCHIVE 뺐음 (기본적으로는 세일로 안 본다)
+# ARCHIVE 는 기본 세일 키워드에서 제외 (트랩 방지)
 GLOBAL_KEYWORDS = [
     "SALE", "SEASON OFF", "SEASONAL", "WINTER", "SUMMER", "SPRING", "FALL",
     "CLEARANCE", "FINAL", "LAST CHANCE", "OUTLET",
@@ -18,7 +27,7 @@ GLOBAL_KEYWORDS = [
     "세일", "할인", "시즌오프", "클리어런스", "아울렛", "특가", "최대"
 ]
 
-# 링크가 세일 페이지일 가능성을 보는 키워드 (지금은 크게 안 쓰지만 유지)
+# 링크가 세일 페이지일 가능성을 보는 키워드
 LINK_SALE_KEYWORDS = [
     "SALE", "SEASON", "OFF", "CLEARANCE", "OUTLET",
     "REFURB", "DISCOUNT", "PROMOTION", "EVENT", "WINTER", "SUMMER",
@@ -39,15 +48,17 @@ HEADERS = {
     "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome Safari"
 }
 
-# === 날짜 기반 세일 기간 판단 헬퍼들 ===
-import datetime as _dt
+# =====================
+#  날짜 기반 세일 기간 판단
+# =====================
 
-# 1) "1.28 - 2.11" / "1.28~2.11" 같은 형식
+# 1) "1.28 - 2.11" / "1.28~2.11"
+# 2) "1월 28일 - 2월 11일" / "1월 28일~2월 11일"
 DATE_RANGE_PATTERNS = [
     re.compile(r'(\d{1,2})[./]\s*(\d{1,2}).{0,40}?[-~–]\s*(\d{1,2})[./]\s*(\d{1,2})'),
-    # 2) "1월 28일 - 2월 11일" / "1월 28일~2월 11일" 같은 한글 형식
     re.compile(r'(\d{1,2})\s*월\s*(\d{1,2})\s*일.{0,40}?[-~–]\s*(\d{1,2})\s*월\s*(\d{1,2})\s*일'),
 ]
+
 
 def _extract_date_range_from_text(text: str):
     """
@@ -70,18 +81,18 @@ def _extract_date_range_from_text(text: str):
 
             # 연말/연초 걸쳐 있는 경우 대략 처리 (예: 12.20 - 1.10)
             if end < start:
-                # 오늘이 끝나는 달보다 앞이면, 세일이 이전 해에서 이어진 걸로 가정
                 end = _dt.date(year + 1, em, ed)
 
             return start, end
 
     return None
 
+
 def refine_status_with_dates(official_url: str, cur_status: str, timeout: int = 10) -> str:
     """
     현재 status가 'sale'일 때만,
-    공홈 HTML에서 날짜 범위를 찾아 세일이 'upcoming' / 'sale' / 'nosale'인지 다시 판단한다.
-    날짜를 못 찾으면 원래 status를 그대로 돌려준다.
+    공홈 HTML에서 날짜 범위를 찾아 세일이 'upcoming' / 'sale' / 'nosale'인지 다시 판단.
+    날짜 못 찾으면 원래 status 유지.
     """
     if cur_status != "sale":
         return cur_status
@@ -94,7 +105,6 @@ def refine_status_with_dates(official_url: str, cur_status: str, timeout: int = 
         # 공홈을 못 불러오면 그냥 기존 상태 유지
         return cur_status
 
-    # 공백을 정리해서 한 줄짜리 텍스트로 만들기
     text = re.sub(r"\s+", " ", html)
 
     rng = _extract_date_range_from_text(text)
@@ -109,16 +119,14 @@ def refine_status_with_dates(official_url: str, cur_status: str, timeout: int = 
     if today > end:
         return "nosale"
     return "sale"
-# === 날짜 헬퍼 끝 ===
 
+
+# =====================
+#  Google Sheets → 행 읽기
+# =====================
 
 def fetch_rows():
-    import csv, io
-    import requests
-
-    SHEETS_CSV_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vRPol5yt4wsLuE8G-4lgzu1x2I9zo8dLRTHQQ3C7Pc5871wvpcQUHq6pLJS4FUcS05G86VLdKguSf9M/pub?gid=1024238622&single=true&output=csv"
-
-    resp = requests.get(SHEETS_CSV_URL, timeout=20)
+    resp = requests.get(CSV_URL, timeout=20)
     resp.raise_for_status()
 
     rows = []
@@ -129,12 +137,13 @@ def fetch_rows():
         brand = (row.get("brand") or "").strip()
         url = (row.get("official_url") or "").strip()
 
-        # brand / url 둘 중 하나라도 없으면 그냥 스킵
+        # brand / url 둘 중 하나라도 없으면 스킵
         if not brand or not url:
             continue
 
         enabled = (row.get("enabled") or "").strip().upper()
-        if enabled != "TRUE":
+        if enabled and enabled != "TRUE":
+            # enabled 칸이 비어 있으면 기본 TRUE 취급
             continue
 
         rows.append({
@@ -151,12 +160,14 @@ def fetch_rows():
     return rows
 
 
+# =====================
+#  세일 링크 후보 찾기
+# =====================
 
 def find_sale_link(html: str, base_url: str, keywords):
     """
     페이지 안의 <a> 태그들 중에서
     '세일 페이지'일 가능성이 높은 링크를 점수 매겨서 하나 고름.
-    (지금은 UI에서 sale_url을 안 쓰지만, 나중을 위해 유지)
     """
     soup = BeautifulSoup(html, "html.parser")
     base_host = urlparse(base_url).netloc.split(":")[0]
@@ -211,22 +222,24 @@ def find_sale_link(html: str, base_url: str, keywords):
     return candidates[0][2]
 
 
+# =====================
+#  브랜드별 세일 감지
+# =====================
+
 def detect_sale_for_brand(row):
     brand = (row.get("brand") or "").strip()
     url = (row.get("official_url") or row.get("url") or "").strip()
-    enabled = (row.get("enabled") or "TRUE").strip().lower()
     override = (row.get("keywords_override") or "").strip()
     sale_url_override = (row.get("sale_url_override") or "").strip()
-    # group / detector_group 둘 다 지원
-    group = (row.get("group") or row.get("detector_group") or "").strip().upper()
-
-    if enabled in ("false", "0", "no"):
-        return None
+    group = (row.get("detector_group") or "").strip().upper()
+    manual_check = bool(row.get("manual_check"))
 
     # 키워드 셋 구성
     keywords = GLOBAL_KEYWORDS[:]
     if override:
-        for kw in override.split("|"):
+        # 콤마 or | 둘 다 지원
+        tmp = override.replace(",", "|")
+        for kw in tmp.split("|"):
             kw = kw.strip()
             if kw and kw.upper() not in [k.upper() for k in keywords]:
                 keywords.append(kw)
@@ -249,25 +262,25 @@ def detect_sale_for_brand(row):
                 matched_kw = kw
                 break
 
-        # 1) override 있으면 무조건 그 링크 우선
+        # override 있으면 그 링크 우선
         if sale_url_override:
             sale_url = sale_url_override
 
-        # 2) override 없고, 세일로 감지되면 세일 링크 후보 탐색
+        # override 없고, 세일로 감지되면 세일 링크 후보 탐색
         elif status == "sale":
             sale_url = find_sale_link(html, url, LINK_SALE_KEYWORDS)
 
-        # 3) 그래도 없으면 공홈
+        # 그래도 없으면 공홈
         if not sale_url:
             sale_url = url
 
     except Exception as e:
         error_msg = str(e)
+        status = "error"
         sale_url = url  # 에러여도 공홈은 유지
 
     # 날짜 기반으로 'upcoming' / 'nosale' 여부 한 번 더 체크
     status = refine_status_with_dates(url, status)
-
 
     return {
         "brand": brand,
@@ -276,9 +289,14 @@ def detect_sale_for_brand(row):
         "status": status,
         "matched_keyword": matched_kw,
         "group": group or None,
+        "manual_check": manual_check,
         "error": error_msg,
     }
 
+
+# =====================
+#  메인 실행부
+# =====================
 
 def main():
     rows = fetch_rows()
@@ -291,9 +309,14 @@ def main():
             continue
         res["checked_at"] = now
         results.append(res)
-        time.sleep(1)
+        time.sleep(1)  # 너무 빠르게 때리지 않도록
 
-    out = {"generated_at": now, "sales": results}
+    out = {
+        "generated_at": now,
+        "total_brands": len(rows),
+        "brand_list": [r["brand"] for r in rows],
+        "sales": results,
+    }
     with open("docs/sales.json", "w", encoding="utf-8") as f:
         json.dump(out, f, ensure_ascii=False, indent=2)
 
