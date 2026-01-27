@@ -64,28 +64,39 @@ def _extract_date_range_from_text(text: str):
     """
     텍스트에서 '1.28 - 2.11' / '1월 28일 - 2월 11일' 같은 패턴을 찾아
     (start_date, end_date)를 date 객체로 리턴.
-    못 찾으면 None.
+    못 찾거나 이상한 날짜면 None.
     """
     if not text:
         return None
 
     for pat in DATE_RANGE_PATTERNS:
         m = pat.search(text)
-        if m:
-            sm, sd, em, ed = map(int, m.groups())
-            today = _dt.date.today()
-            year = today.year
+        if not m:
+            continue
 
+        sm, sd, em, ed = map(int, m.groups())
+        today = _dt.date.today()
+        year = today.year
+
+        # 말이 안 되는 month 값(13월, 24월 등)이면 그냥 버린다
+        if not (1 <= sm <= 12 and 1 <= em <= 12):
+            return None
+
+        try:
             start = _dt.date(year, sm, sd)
             end = _dt.date(year, em, ed)
+        except ValueError:
+            # 일(day)이 32일 이런 식으로 말이 안 되면 역시 버림
+            return None
 
-            # 연말/연초 걸쳐 있는 경우 대략 처리 (예: 12.20 - 1.10)
-            if end < start:
-                end = _dt.date(year + 1, em, ed)
+        # 연말/연초 걸쳐 있는 경우 대략 처리 (예: 12.20 - 1.10)
+        if end < start:
+            end = _dt.date(year + 1, em, ed)
 
-            return start, end
+        return start, end
 
     return None
+
 
 
 def refine_status_with_dates(official_url: str, cur_status: str, timeout: int = 10) -> str:
