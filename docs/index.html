@@ -17,7 +17,7 @@
       data.sales.forEach(item => {
         if (item.status === "sale") {
           const li = document.createElement("li");
-          const url = item.sale_url || item.official_url;
+          const url = item.official_url;  // 항상 공홈으로 링크
           li.innerHTML = `<strong>${item.brand}</strong> – <a href="${url}" target="_blank">${url}</a> (${item.matched_keyword || "SALE"})`;
           ul.appendChild(li);
         }
