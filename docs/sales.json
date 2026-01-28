@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-01-27T19:02:10.879268Z",
+  "generated_at": "2026-01-28T04:59:21.951749Z",
   "total_brands": 58,
   "brand_list": [
     "Sie",
@@ -9,7 +9,7 @@
     "Nuuanu",
     "Howus",
     "Shop M",
-    "Rouchneck",
+    "Roughneck",
     "Gongderine",
     "Asura",
     "Sinoon",
@@ -71,7 +71,7 @@
       "group": "A",
       "manual_check": false,
       "error": null,
-      "checked_at": "2026-01-27T19:02:10.879268Z"
+      "checked_at": "2026-01-28T04:59:21.951749Z"
     },
     {
       "brand": "Bohemian Seoul",
@@ -82,7 +82,7 @@
       "group": "A",
       "manual_check": false,
       "error": null,
-      "checked_at": "2026-01-27T19:02:10.879268Z"
+      "checked_at": "2026-01-28T04:59:21.951749Z"
     },
     {
       "brand": "Maison Marais",
@@ -93,7 +93,7 @@
       "group": "A",
       "manual_check": false,
       "error": null,
-      "checked_at": "2026-01-27T19:02:10.879268Z"
+      "checked_at": "2026-01-28T04:59:21.951749Z"
     },
     {
       "brand": "Kijun",
@@ -104,7 +104,7 @@
       "group": "A",
       "manual_check": false,
       "error": null,
-      "checked_at": "2026-01-27T19:02:10.879268Z"
+      "checked_at": "2026-01-28T04:59:21.951749Z"
     },
     {
       "brand": "Nuuanu",
@@ -115,7 +115,7 @@
       "group": "A",
       "manual_check": false,
       "error": null,
-      "checked_at": "2026-01-27T19:02:10.879268Z"
+      "checked_at": "2026-01-28T04:59:21.951749Z"
     },
     {
       "brand": "Howus",
@@ -126,7 +126,7 @@
       "group": "A",
       "manual_check": false,
       "error": null,
-      "checked_at": "2026-01-27T19:02:10.879268Z"
+      "checked_at": "2026-01-28T04:59:21.951749Z"
     },
     {
       "brand": "Shop M",
@@ -137,10 +137,10 @@
       "group": "B",
       "manual_check": false,
       "error": null,
-      "checked_at": "2026-01-27T19:02:10.879268Z"
+      "checked_at": "2026-01-28T04:59:21.951749Z"
     },
     {
-      "brand": "Rouchneck",
+      "brand": "Roughneck",
       "official_url": "https://roughneckseoul.com/",
       "sale_url": "https://roughneckseoul.com/product/list.html?cate_no=198",
       "status": "sale",
@@ -148,7 +148,7 @@
       "group": "A",
       "manual_check": false,
       "error": null,
-      "checked_at": "2026-01-27T19:02:10.879268Z"
+      "checked_at": "2026-01-28T04:59:21.951749Z"
     },
     {
       "brand": "Gongderine",
@@ -159,18 +159,18 @@
       "group": "A",
       "manual_check": false,
       "error": null,
-      "checked_at": "2026-01-27T19:02:10.879268Z"
+      "checked_at": "2026-01-28T04:59:21.951749Z"
     },
     {
       "brand": "Asura",
       "official_url": "https://s2asuras2.com/",
-      "sale_url": "https://s2asuras2.com/",
-      "status": "error",
-      "matched_keyword": null,
+      "sale_url": "https://s2asuras2.com/59",
+      "status": "sale",
+      "matched_keyword": "SALE",
       "group": "C",
       "manual_check": true,
-      "error": "403 Client Error: Forbidden for url: https://s2asuras2.com/",
-      "checked_at": "2026-01-27T19:02:10.879268Z"
+      "error": null,
+      "checked_at": "2026-01-28T04:59:21.951749Z"
     },
     {
       "brand": "Sinoon",
@@ -181,7 +181,7 @@
       "group": "A",
       "manual_check": false,
       "error": null,
-      "checked_at": "2026-01-27T19:02:10.879268Z"
+      "checked_at": "2026-01-28T04:59:21.951749Z"
     },
     {
       "brand": "KHAKI POINT",
@@ -192,7 +192,7 @@
       "group": "A",
       "manual_check": false,
       "error": null,
-      "checked_at": "2026-01-27T19:02:10.879268Z"
+      "checked_at": "2026-01-28T04:59:21.951749Z"
     },
     {
       "brand": "NOT YOUR ROSE",
@@ -203,7 +203,7 @@
       "group": "A",
       "manual_check": false,
       "error": null,
-      "checked_at": "2026-01-27T19:02:10.879268Z"
+      "checked_at": "2026-01-28T04:59:21.951749Z"
     },
     {
       "brand": "WELLBEING EXPRESS",
@@ -214,7 +214,7 @@
       "group": "A",
       "manual_check": false,
       "error": null,
-      "checked_at": "2026-01-27T19:02:10.879268Z"
+      "checked_at": "2026-01-28T04:59:21.951749Z"
     },
     {
       "brand": "SUNBURN PROJECT",
@@ -225,7 +225,7 @@
       "group": "A",
       "manual_check": false,
       "error": null,
-      "checked_at": "2026-01-27T19:02:10.879268Z"
+      "checked_at": "2026-01-28T04:59:21.951749Z"
     },
     {
       "brand": "LEBANE",
@@ -236,7 +236,7 @@
       "group": "A",
       "manual_check": false,
       "error": null,
-      "checked_at": "2026-01-27T19:02:10.879268Z"
+      "checked_at": "2026-01-28T04:59:21.951749Z"
     },
     {
       "brand": "MA JOURNÃE",
@@ -247,7 +247,7 @@
       "group": "A",
       "manual_check": false,
       "error": null,
-      "checked_at": "2026-01-27T19:02:10.879268Z"
+      "checked_at": "2026-01-28T04:59:21.951749Z"
     },
     {
       "brand": "MARGESHERWOOD",
@@ -258,7 +258,7 @@
       "group": "A",
       "manual_check": false,
       "error": null,
-      "checked_at": "2026-01-27T19:02:10.879268Z"
+      "checked_at": "2026-01-28T04:59:21.951749Z"
     },
     {
       "brand": "SCULPTOR",
@@ -269,7 +269,7 @@
       "group": "A",
       "manual_check": false,
       "error": null,
-      "checked_at": "2026-01-27T19:02:10.879268Z"
+      "checked_at": "2026-01-28T04:59:21.951749Z"
     },
     {
       "brand": "NOTHING WRITTEN",
@@ -280,7 +280,7 @@
       "group": "A",
       "manual_check": false,
       "error": null,
-      "checked_at": "2026-01-27T19:02:10.879268Z"
+      "checked_at": "2026-01-28T04:59:21.951749Z"
     },
     {
       "brand": "OPEN YY",
@@ -291,7 +291,7 @@
       "group": "A",
       "manual_check": false,
       "error": null,
-      "checked_at": "2026-01-27T19:02:10.879268Z"
+      "checked_at": "2026-01-28T04:59:21.951749Z"
     },
     {
       "brand": "DUNST",
@@ -302,7 +302,7 @@
       "group": "A",
       "manual_check": false,
       "error": null,
-      "checked_at": "2026-01-27T19:02:10.879268Z"
+      "checked_at": "2026-01-28T04:59:21.951749Z"
     },
     {
       "brand": "LUCIR ZU",
@@ -313,7 +313,7 @@
       "group": "C",
       "manual_check": true,
       "error": null,
-      "checked_at": "2026-01-27T19:02:10.879268Z"
+      "checked_at": "2026-01-28T04:59:21.951749Z"
     },
     {
       "brand": "MONGDOL",
@@ -324,7 +324,7 @@
       "group": "B",
       "manual_check": false,
       "error": null,
-      "checked_at": "2026-01-27T19:02:10.879268Z"
+      "checked_at": "2026-01-28T04:59:21.951749Z"
     },
     {
       "brand": "LEVAR",
@@ -335,7 +335,7 @@
       "group": "C",
       "manual_check": true,
       "error": null,
-      "checked_at": "2026-01-27T19:02:10.879268Z"
+      "checked_at": "2026-01-28T04:59:21.951749Z"
     },
     {
       "brand": "Blossom H",
@@ -346,7 +346,7 @@
       "group": "A",
       "manual_check": false,
       "error": null,
-      "checked_at": "2026-01-27T19:02:10.879268Z"
+      "checked_at": "2026-01-28T04:59:21.951749Z"
     },
     {
       "brand": "INSILENCE",
@@ -357,7 +357,7 @@
       "group": "A",
       "manual_check": false,
       "error": null,
-      "checked_at": "2026-01-27T19:02:10.879268Z"
+      "checked_at": "2026-01-28T04:59:21.951749Z"
     },
     {
       "brand": "Fillintheblank",
@@ -368,18 +368,18 @@
       "group": "A",
       "manual_check": false,
       "error": null,
-      "checked_at": "2026-01-27T19:02:10.879268Z"
+      "checked_at": "2026-01-28T04:59:21.951749Z"
     },
     {
       "brand": "Amabe",
       "official_url": "https://amabe.kr/",
-      "sale_url": "https://amabe.kr/",
-      "status": "error",
-      "matched_keyword": null,
+      "sale_url": "https://amabe.kr/159",
+      "status": "sale",
+      "matched_keyword": "SALE",
       "group": "A",
       "manual_check": false,
-      "error": "403 Client Error: Forbidden for url: https://amabe.kr/",
-      "checked_at": "2026-01-27T19:02:10.879268Z"
+      "error": null,
+      "checked_at": "2026-01-28T04:59:21.951749Z"
     },
     {
       "brand": "Thetis",
@@ -390,7 +390,7 @@
       "group": "A",
       "manual_check": false,
       "error": null,
-      "checked_at": "2026-01-27T19:02:10.879268Z"
+      "checked_at": "2026-01-28T04:59:21.951749Z"
     },
     {
       "brand": "Gimmetheyoung",
@@ -401,7 +401,7 @@
       "group": "A",
       "manual_check": false,
       "error": null,
-      "checked_at": "2026-01-27T19:02:10.879268Z"
+      "checked_at": "2026-01-28T04:59:21.951749Z"
     },
     {
       "brand": "Ders",
@@ -412,7 +412,7 @@
       "group": "A",
       "manual_check": false,
       "error": null,
-      "checked_at": "2026-01-27T19:02:10.879268Z"
+      "checked_at": "2026-01-28T04:59:21.951749Z"
     },
     {
       "brand": "Typeserviceweb",
@@ -423,7 +423,7 @@
       "group": "A",
       "manual_check": false,
       "error": null,
-      "checked_at": "2026-01-27T19:02:10.879268Z"
+      "checked_at": "2026-01-28T04:59:21.951749Z"
     },
     {
       "brand": "Milloarchive",
@@ -434,7 +434,7 @@
       "group": "A",
       "manual_check": false,
       "error": null,
-      "checked_at": "2026-01-27T19:02:10.879268Z"
+      "checked_at": "2026-01-28T04:59:21.951749Z"
     },
     {
       "brand": "Cacele",
@@ -445,7 +445,7 @@
       "group": "A",
       "manual_check": false,
       "error": null,
-      "checked_at": "2026-01-27T19:02:10.879268Z"
+      "checked_at": "2026-01-28T04:59:21.951749Z"
     },
     {
       "brand": "Afterhours",
@@ -456,7 +456,7 @@
       "group": "A",
       "manual_check": false,
       "error": null,
-      "checked_at": "2026-01-27T19:02:10.879268Z"
+      "checked_at": "2026-01-28T04:59:21.951749Z"
     },
     {
       "brand": "Prevail",
@@ -467,7 +467,7 @@
       "group": "A",
       "manual_check": false,
       "error": null,
-      "checked_at": "2026-01-27T19:02:10.879268Z"
+      "checked_at": "2026-01-28T04:59:21.951749Z"
     },
     {
       "brand": "Itzavibe",
@@ -478,7 +478,7 @@
       "group": "A",
       "manual_check": false,
       "error": null,
-      "checked_at": "2026-01-27T19:02:10.879268Z"
+      "checked_at": "2026-01-28T04:59:21.951749Z"
     },
     {
       "brand": "Miseki Seoul",
@@ -489,7 +489,7 @@
       "group": "A",
       "manual_check": false,
       "error": null,
-      "checked_at": "2026-01-27T19:02:10.879268Z"
+      "checked_at": "2026-01-28T04:59:21.951749Z"
     },
     {
       "brand": "Epure",
@@ -500,7 +500,7 @@
       "group": "A",
       "manual_check": false,
       "error": null,
-      "checked_at": "2026-01-27T19:02:10.879268Z"
+      "checked_at": "2026-01-28T04:59:21.951749Z"
     },
     {
       "brand": "Umarmung",
@@ -511,7 +511,7 @@
       "group": "A",
       "manual_check": false,
       "error": null,
-      "checked_at": "2026-01-27T19:02:10.879268Z"
+      "checked_at": "2026-01-28T04:59:21.951749Z"
     },
     {
       "brand": "Thema",
@@ -522,7 +522,7 @@
       "group": "A",
       "manual_check": false,
       "error": null,
-      "checked_at": "2026-01-27T19:02:10.879268Z"
+      "checked_at": "2026-01-28T04:59:21.951749Z"
     },
     {
       "brand": "Lowclassic",
@@ -533,7 +533,7 @@
       "group": "A",
       "manual_check": false,
       "error": null,
-      "checked_at": "2026-01-27T19:02:10.879268Z"
+      "checked_at": "2026-01-28T04:59:21.951749Z"
     },
     {
       "brand": "Hane",
@@ -544,7 +544,7 @@
       "group": "A",
       "manual_check": false,
       "error": null,
-      "checked_at": "2026-01-27T19:02:10.879268Z"
+      "checked_at": "2026-01-28T04:59:21.951749Z"
     },
     {
       "brand": "Le",
@@ -555,7 +555,7 @@
       "group": "A",
       "manual_check": false,
       "error": null,
-      "checked_at": "2026-01-27T19:02:10.879268Z"
+      "checked_at": "2026-01-28T04:59:21.951749Z"
     },
     {
       "brand": "Yunse",
@@ -566,7 +566,7 @@
       "group": "A",
       "manual_check": false,
       "error": null,
-      "checked_at": "2026-01-27T19:02:10.879268Z"
+      "checked_at": "2026-01-28T04:59:21.951749Z"
     },
     {
       "brand": "NOMINATE",
@@ -577,7 +577,7 @@
       "group": "A",
       "manual_check": false,
       "error": null,
-      "checked_at": "2026-01-27T19:02:10.879268Z"
+      "checked_at": "2026-01-28T04:59:21.951749Z"
     },
     {
       "brand": "Poev",
@@ -588,7 +588,7 @@
       "group": "A",
       "manual_check": false,
       "error": null,
-      "checked_at": "2026-01-27T19:02:10.879268Z"
+      "checked_at": "2026-01-28T04:59:21.951749Z"
     },
     {
       "brand": "For your eyes only",
@@ -599,7 +599,7 @@
       "group": "A",
       "manual_check": false,
       "error": null,
-      "checked_at": "2026-01-27T19:02:10.879268Z"
+      "checked_at": "2026-01-28T04:59:21.951749Z"
     },
     {
       "brand": "GBH",
@@ -610,7 +610,7 @@
       "group": "A",
       "manual_check": false,
       "error": null,
-      "checked_at": "2026-01-27T19:02:10.879268Z"
+      "checked_at": "2026-01-28T04:59:21.951749Z"
     },
     {
       "brand": "DEINET",
@@ -621,7 +621,7 @@
       "group": "A",
       "manual_check": false,
       "error": null,
-      "checked_at": "2026-01-27T19:02:10.879268Z"
+      "checked_at": "2026-01-28T04:59:21.951749Z"
     },
     {
       "brand": "PONYTAIL",
@@ -632,7 +632,7 @@
       "group": "A",
       "manual_check": false,
       "error": null,
-      "checked_at": "2026-01-27T19:02:10.879268Z"
+      "checked_at": "2026-01-28T04:59:21.951749Z"
     },
     {
       "brand": "QDUROY",
@@ -643,7 +643,7 @@
       "group": "A",
       "manual_check": false,
       "error": null,
-      "checked_at": "2026-01-27T19:02:10.879268Z"
+      "checked_at": "2026-01-28T04:59:21.951749Z"
     },
     {
       "brand": "PORTOFCALL",
@@ -654,7 +654,7 @@
       "group": "A",
       "manual_check": false,
       "error": null,
-      "checked_at": "2026-01-27T19:02:10.879268Z"
+      "checked_at": "2026-01-28T04:59:21.951749Z"
     },
     {
       "brand": "SIO",
@@ -665,7 +665,7 @@
       "group": "A",
       "manual_check": false,
       "error": null,
-      "checked_at": "2026-01-27T19:02:10.879268Z"
+      "checked_at": "2026-01-28T04:59:21.951749Z"
     },
     {
       "brand": "fadeiin",
@@ -676,7 +676,7 @@
       "group": "B",
       "manual_check": false,
       "error": null,
-      "checked_at": "2026-01-27T19:02:10.879268Z"
+      "checked_at": "2026-01-28T04:59:21.951749Z"
     },
     {
       "brand": "Lenina",
@@ -687,7 +687,7 @@
       "group": "A",
       "manual_check": false,
       "error": null,
-      "checked_at": "2026-01-27T19:02:10.879268Z"
+      "checked_at": "2026-01-28T04:59:21.951749Z"
     },
     {
       "brand": "Neev",
@@ -698,7 +698,7 @@
       "group": "A",
       "manual_check": false,
       "error": null,
-      "checked_at": "2026-01-27T19:02:10.879268Z"
+      "checked_at": "2026-01-28T04:59:21.951749Z"
     }
   ]
 }
