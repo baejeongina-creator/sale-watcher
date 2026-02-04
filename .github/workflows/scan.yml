@@ -1,11 +1,12 @@
 name: Scan Sales
 
 on:
-  # 수동으로 Actions 화면에서 Run workflow 눌러서 실행
+  # Manual trigger from Actions tab
   workflow_dispatch:
-  # 매일 UTC 03:00 (한국/홍콩 정오쯤)에 자동 실행
+  
+  # Automatic scan every 3 hours
   schedule:
-    - cron: '0 3 * * *'
+    - cron: '0 */3 * * *'  # Every 3 hours (8 times per day)
 
 permissions:
   contents: write
