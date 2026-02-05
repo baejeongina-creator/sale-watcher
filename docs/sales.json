@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-02-05T17:37:30.041188Z",
+  "generated_at": "2026-02-05T19:53:58.547966Z",
   "sales": [
     {
       "brand_en": "Sie",
@@ -106,10 +106,10 @@
       "official_url": "https://s2asuras2.com/",
       "sale_url": "https://s2asuras2.com/",
       "banner_url": "https://cdn.imweb.me/thumbnail/20250626/4e07ef726e867.jpg",
-      "status": "sale",
-      "discount": 90,
+      "status": "error",
+      "discount": 0,
       "region": "KR",
-      "sale_type": "SEASON OFF"
+      "sale_type": "SALE"
     },
     {
       "brand_en": "Sinoon",
@@ -315,7 +315,7 @@
       "official_url": "https://amabe.kr/",
       "sale_url": "https://amabe.kr/",
       "banner_url": "",
-      "status": "nosale",
+      "status": "error",
       "discount": 0,
       "region": "KR",
       "sale_type": "SALE"
@@ -523,9 +523,9 @@
       "brand_ko": "í¬ìë¸",
       "official_url": "https://poev.kr/",
       "sale_url": "https://poev.kr/",
-      "banner_url": "https://poev.kr/web/upload/share-image-1-dc250b5e657b5679c12003dcce9e4ad7.jpg",
-      "status": "sale",
-      "discount": 52,
+      "banner_url": "",
+      "status": "nosale",
+      "discount": 0,
       "region": "KR",
       "sale_type": "SALE"
     },
