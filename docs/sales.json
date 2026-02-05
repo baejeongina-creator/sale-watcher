@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-02-05T05:11:40.760100Z",
+  "generated_at": "2026-02-05T08:03:54.451493Z",
   "sales": [
     {
       "brand_en": "Sie",
@@ -828,6 +828,17 @@
     },
     {
       "brand_en": "Carhartt",
+      "brand_ko": "",
+      "official_url": "",
+      "sale_url": "",
+      "banner_url": "",
+      "status": "error",
+      "discount": 0,
+      "region": "KR",
+      "sale_type": "SALE"
+    },
+    {
+      "brand_en": "With Jean",
       "brand_ko": "",
       "official_url": "",
       "sale_url": "",
