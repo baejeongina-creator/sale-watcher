@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-02-04T21:58:09.355766Z",
+  "generated_at": "2026-02-05T05:11:40.760100Z",
   "sales": [
     {
       "brand_en": "Sie",
@@ -140,9 +140,9 @@
       "sale_url": "https://notyourrose.com/",
       "banner_url": "https://cafe24img.poxo.com/notyourrosee/web/upload/NNEditor/20240111/copy-1704957319-12028129.jpg",
       "status": "sale",
-      "discount": 30,
+      "discount": 80,
       "region": "KR",
-      "sale_type": "SALE"
+      "sale_type": "CLEARANCE"
     },
     {
       "brand_en": "WELLBEING EXPRESS",
@@ -657,7 +657,7 @@
       "sale_url": "https://www.apc-korea.com/",
       "banner_url": "https://www.apc-korea.com/image/apc/apcLogo.jpg",
       "status": "sale",
-      "discount": 0,
+      "discount": 10,
       "region": "GLOBAL",
       "sale_type": "SEASON OFF"
     },
