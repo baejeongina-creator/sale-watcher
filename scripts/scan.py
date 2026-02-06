@@ -15,21 +15,70 @@ CSV_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vRPol5yt4wsLuE8G-4lgz
 EDITORIAL_CSV_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vRPol5yt4wsLuE8G-4lgzu1x2I9zo8dLRTHQQ3C7Pc5871wvpcQUHq6pLJS4FUcS05G86VLdKguSf9M/pub?gid=1&single=true&output=csv" # Assuming GID 1 for Sheet2
 
 SALE_KEYWORDS = {
-    "SEASON OFF": ["SEASON OFF", "시즌오프"],
-    "CLEARANCE": ["CLEARANCE", "클리어런스", "LAST CHANCE"],
+    "SEASON OFF": ["SEASON OFF", "시즌오프", "시즌 오프"],
+    "CLEARANCE": ["CLEARANCE", "클리어런스", "LAST CHANCE", "재고정리"],
     "REFURB": ["REFURB", "B-GRADE", "리퍼브", "B급"],
     "OUTLET": ["OUTLET", "아울렛"],
-    "SALE": ["SALE", "OFF", "UP TO", "세일", "할인", "%", "~", "최대"]
+    "SALE": ["SALE", "OFF", "UP TO", "세일", "할인", "%", "~", "최대", "파이널 세일", "샘플세일", "아카이브 세일", "NEW YEAR SALE", "뉴이어 세일"]
 }
 
-NEGATIVE_KEYWORDS = ["SALE END", "SALE CLOSED", "SOLD OUT", "세일 종료", "품절"]
+NEGATIVE_KEYWORDS = ["SALE END", "SALE CLOSED", "SOLD OUT", "세일 종료", "품절", "종료"]
 HEADERS = {"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36"}
 
+# User-provided overrides for specific brands (brand_en: {discount: X, sale_type: Y})
+# This will be prioritized over scraped data
+USER_OVERRIDES = {
+    "공드린": {"discount": 0, "sale_type": "NO SALE"},
+    "기준": {"discount": 0, "sale_type": "NO SALE"},
+    "깁미더영": {"discount": 80, "sale_type": "SALE"},
+    "낫띵리튼": {"discount": 50, "sale_type": "SALE"},
+    "낫유어로즈": {"discount": 80, "sale_type": "CLEARANCE"},
+    "노미나떼": {"discount": 50, "sale_type": "SALE"},
+    "누와누": {"discount": 30, "sale_type": "ARCHIVE SALE"},
+    "니브": {"discount": 95, "sale_type": "CLEARANCE"},
+    "다이닛": {"discount": 50, "sale_type": "SALE"},
+    "떼마": {"discount": 80, "sale_type": "SALE"},
+    "루시르주": {"discount": 0, "sale_type": "NO SALE"},
+    "르": {"discount": 90, "sale_type": "NEW YEAR SALE"},
+    "르니나": {"discount": 50, "sale_type": "SALE"},
+    "르바": {"discount": 0, "sale_type": "NO SALE"},
+    "르베인": {"discount": 60, "sale_type": "REFURB"},
+    "마조네": {"discount": 0, "sale_type": "NO SALE"},
+    "메종마레": {"discount": 20, "sale_type": "SALE"},
+    "몽돌": {"discount": 72, "sale_type": "SALE"},
+    "밀로 아카이브": {"discount": 90, "sale_type": "SALE"},
+    "보헴서": {"discount": 70, "sale_type": "SALE"},
+    "블라썸에이치": {"discount": 30, "sale_type": "SALE"},
+    "샵엠": {"discount": 0, "sale_type": "NO SALE"},
+    "시에": {"discount": 50, "sale_type": "SALE"},
+    # "스컬프터": {"discount": 0, "sale_type": "NO SALE"}, # Cannot scan from HK
+    "에프터아워즈": {"discount": 50, "sale_type": "SALE"},
+    "에퓨레": {"discount": 50, "sale_type": "SEASON OFF"},
+    "우마뭉": {"discount": 60, "sale_type": "SEASON OFF"},
+    "윤세": {"discount": 90, "sale_type": "FINAL SALE"},
+    "인사일런스": {"discount": 0, "sale_type": "NO SALE"}, # Assuming no sale based on previous feedback
+    "잇자 바이브": {"discount": 0, "sale_type": "NO SALE"}, # Assuming no sale based on previous feedback
+    "카키포인트": {"discount": 0, "sale_type": "NO SALE"},
+    "타입서비스": {"discount": 0, "sale_type": "NO SALE"}, # Cannot calculate, assuming no sale
+    "페이드인": {"discount": 70, "sale_type": "SALE"},
+    "포니테일 아울렛": {"discount": 70, "sale_type": "OUTLET"},
+    "포에브": {"discount": 61, "sale_type": "SALE"},
+    "포유어아이즈온리": {"discount": 40, "sale_type": "SEASON OFF"},
+    "포트오브 콜": {"discount": 0, "sale_type": "NO SALE"},
+    "호와스": {"discount": 30, "sale_type": "SALE"},
+    "필인더블랭크": {"discount": 50, "sale_type": "SEASON OFF"},
+    "하네": {"discount": 80, "sale_type": "CLEARANCE"},
+    "프리베일": {"discount": 50, "sale_type": "SALE"},
+}
+
+def clean_price_text(text: str) -> int:
+    # Remove currency symbols, commas, spaces, and extract digits
+    cleaned_text = re.sub(r'[^\d]', '', text)
+    return int(cleaned_text) if cleaned_text else 0
+
 def extract_max_discount(soup: BeautifulSoup, url: str) -> int:
-    # Remove script and style elements to clean text
-    for el in soup(["script", "style"]): el.decompose()
-    text = soup.get_text(" ").upper() # Convert to uppercase once
     percentages = []
+    text = soup.get_text(" ").upper() # Convert to uppercase once
 
     # --- Aggressive text pattern matching for discounts ---
     patterns = [
@@ -48,48 +97,42 @@ def extract_max_discount(soup: BeautifulSoup, url: str) -> int:
     for pattern in patterns:
         for m in re.findall(pattern, text, re.IGNORECASE):
             try:
-                # Handle patterns like '10% ~ 80%' where 'm' might be a tuple
+                val = 0
                 if isinstance(m, tuple): 
-                    val = int(m[1]) # Take the higher value in a range
+                    val = int(m[-1]) # Take the last (often higher) value in a range
                 else: 
                     val = int(m)
                 if 5 <= val <= 95: percentages.append(val)
             except: pass
+
+    # --- Attempt to find discounts from product listings ---
+    # Look for common patterns of original price and sale price
+    price_elements = soup.find_all(text=re.compile(r'\d[\d,]*\s*(?:원|₩|KRW|USD|\$)', re.IGNORECASE))
     
-    # --- Attempt to find discounts from product listings (simplified) ---
-    # This is a generic attempt and might not work for all sites due to varied HTML structures
-    try:
-        # More robust product card and price finding
-        product_cards = soup.find_all(re.compile("div|li|article", re.IGNORECASE), class_=re.compile("product|item|card|prd", re.IGNORECASE))
-        if not product_cards: # Fallback if specific classes are not found
-            product_cards = soup.find_all(lambda tag: tag.has_attr('class') and any(re.search("product|item|card|prd", c, re.I) for c in tag['class']))
+    for el in price_elements:
+        parent = el.find_parent()
+        if not parent: continue
 
-        for card in product_cards:
-            original_price_el = card.find(re.compile("span|del|s", re.IGNORECASE), class_=re.compile("original|old|regular|normal|list-price", re.IGNORECASE))
-            sale_price_el = card.find(re.compile("span|ins|b|strong|font", re.IGNORECASE), class_=re.compile("sale|discount|final|special|promo", re.IGNORECASE))
-            
-            # Fallback if specific classes are not found within the card
-            if not original_price_el or not sale_price_el:
-                prices = card.find_all(re.compile("span|div|p"), string=re.compile(r"[\d,]+(?:원|won)", re.I))
-                if len(prices) >= 2:
-                    original_price_el = prices[0]
-                    sale_price_el = prices[1]
+        # Look for sibling or nearby elements that might contain original/sale prices
+        original_price_el = parent.find(re.compile("span|del|s", re.IGNORECASE), class_=re.compile("original|old|regular|normal|list-price", re.IGNORECASE))
+        sale_price_el = parent.find(re.compile("span|ins|b|strong|font", re.IGNORECASE), class_=re.compile("sale|discount|final|special|promo", re.IGNORECASE))
 
-            if original_price_el and sale_price_el:
-                try:
-                    original_price_text = re.sub(r'[^\d]', '', original_price_el.get_text())
-                    sale_price_text = re.sub(r'[^\d]', '', sale_price_el.get_text())
-                    
-                    if original_price_text and sale_price_text:
-                        original_price = int(original_price_text)
-                        sale_price = int(sale_price_text)
-                        if original_price > 0 and sale_price < original_price:
-                            calculated_discount = round((1 - sale_price / original_price) * 100)
-                            if 5 <= calculated_discount <= 95: percentages.append(calculated_discount)
-                except (ValueError, TypeError):
-                    continue
-    except Exception as e:
-        print(f"Warning: Could not parse product prices on {url}: {e}")
+        # If not found in direct parent, check broader context (e.g., product card)
+        if not original_price_el or not sale_price_el:
+            product_card = parent.find_parent(class_=re.compile("product|item|card|prd", re.IGNORECASE))
+            if product_card:
+                original_price_el = product_card.find(re.compile("span|del|s", re.IGNORECASE), class_=re.compile("original|old|regular|normal|list-price", re.IGNORECASE))
+                sale_price_el = product_card.find(re.compile("span|ins|b|strong|font", re.IGNORECASE), class_=re.compile("sale|discount|final|special|promo", re.IGNORECASE))
+
+        if original_price_el and sale_price_el:
+            try:
+                original_price = clean_price_text(original_price_el.get_text())
+                sale_price = clean_price_text(sale_price_el.get_text())
+                
+                if original_price > 0 and sale_price < original_price:
+                    calculated_discount = round((1 - sale_price / original_price) * 100)
+                    if 5 <= calculated_discount <= 95: percentages.append(calculated_discount)
+            except (ValueError, TypeError): continue
 
     return max(percentages) if percentages else 0
 
@@ -119,7 +162,6 @@ def fetch_csv(url, retries=3, delay=5):
             resp = requests.get(url, timeout=20, allow_redirects=True)
             resp.raise_for_status()
             resp.encoding = 'utf-8'
-            # Check for empty or error responses from Google Sheets
             if not resp.text.strip() or resp.text.startswith('<'):
                 raise ValueError("Invalid CSV content received from Google Sheets.")
             return list(csv.DictReader(io.StringIO(resp.text)))
@@ -142,7 +184,17 @@ def scan_brand(row):
     manual_status = (row.get("manual_status") or "").strip().lower()
     manual_type = (row.get("manual_type") or "").strip().upper()
     manual_sale_url = (row.get("sale_url") or "").strip()
-    
+
+    # Apply user overrides first if brand_ko matches
+    override_data = USER_OVERRIDES.get(brand_ko)
+    if override_data:
+        manual_discount = str(override_data.get("discount", manual_discount))
+        manual_type = override_data.get("sale_type", manual_type)
+        if manual_discount == "0":
+            manual_status = "nosale"
+        else:
+            manual_status = "sale"
+
     result = {
         "brand_en": brand_en,
         "brand_ko": brand_ko,
@@ -160,7 +212,7 @@ def scan_brand(row):
 
     try:
         scan_url = manual_sale_url if manual_sale_url else official_url
-        if not scan_url: # Skip if no URL is provided
+        if not scan_url: 
             print(f"Skipping {brand_en}: No URL provided.")
             return result
 
@@ -185,6 +237,13 @@ def scan_brand(row):
         elif manual_status == "nosale":
             is_sale = False
 
+        # If prices are different, it's a sale
+        if not is_sale and not is_nosale:
+            # Attempt to find prices to detect sale even without keywords
+            temp_discount = extract_max_discount(soup, scan_url) # This will also try price comparison
+            if temp_discount > 0:
+                is_sale = True
+
         if is_sale and not is_nosale:
             result["status"] = "sale"
             
@@ -195,7 +254,7 @@ def scan_brand(row):
             if manual_discount:
                 try: 
                     manual_disc_val = int(manual_discount)
-                    if 5 <= manual_disc_val <= 95: # Validate manual discount
+                    if 5 <= manual_disc_val <= 95: 
                         discount = manual_disc_val
                 except: 
                     print(f"Warning: Invalid manual_discount for {brand_en}: {manual_discount}")
@@ -225,17 +284,18 @@ def main():
     rows = fetch_csv(CSV_URL)
     results = []
     for i, row in enumerate(rows, 1):
-        if not row.get("brand"): continue
-        if row.get("enabled", "TRUE").upper() != "TRUE": # Skip if not enabled
-            print(f"Skipping disabled brand: {row['brand']}")
+        if not row.get("brand") and not row.get("brand_ko"): continue
+        if row.get("enabled", "TRUE").upper() != "TRUE": 
+            print(f"Skipping disabled brand: {row.get('brand_ko') or row.get('brand')}")
             continue
-        print(f"[{i}/{len(rows)}] {row['brand']}...", end=" ", flush=True)
+        
+        brand_name_display = row.get('brand_ko') or row.get('brand')
+        print(f"[{i}/{len(rows)}] {brand_name_display}...", end=" ", flush=True)
         res = scan_brand(row)
         results.append(res)
         print(f"{res['status'].upper()} ({res['discount']}%)")
         time.sleep(0.5)
 
-    # Editorial Scan
     editorials = fetch_csv(EDITORIAL_CSV_URL)
     
     output = {
