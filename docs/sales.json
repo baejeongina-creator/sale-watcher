@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-02-06T08:01:17.007108Z",
+  "generated_at": "2026-02-06T11:08:36.155974Z",
   "sales": [
     {
       "brand_en": "Sie",
@@ -63,7 +63,7 @@
       "sale_url": "https://sinoon.co.kr/",
       "banner_url": "https://sinoonlab.cafe24.com/web/upload/category/editor/2023/01/logo(black).jpg",
       "status": "sale",
-      "discount": 5,
+      "discount": 10,
       "region": "KR",
       "sale_type": "SALE"
     },
