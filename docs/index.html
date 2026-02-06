@@ -341,16 +341,16 @@
     <header>
         <div class="header-left">
             <div class="nav-menu">
-                <a class="nav-item" onclick="showPage('sales-kr'); return false;">KOREAN BRANDS</a>
-                <a class="nav-item" onclick="showPage('sales-global'); return false;">GLOBAL BRANDS</a>
-                <a class="nav-item" onclick="showPage('editorial'); return false;">EDITORIAL</a>
-                <a class="nav-item" onclick="showPage('about'); return false;">ABOUT</a>
+                <a class="nav-item" id="nav-kr">KOREAN BRANDS</a>
+                <a class="nav-item" id="nav-global">GLOBAL BRANDS</a>
+                <a class="nav-item" id="nav-editorial">EDITORIAL</a>
+                <a class="nav-item" id="nav-about">ABOUT</a>
             </div>
         </div>
-        <div class="logo" onclick="showPage('home'); return false;">SALE ARCHIVE</div>
+        <div class="logo" id="nav-home">SALE ARCHIVE</div>
         <div class="header-right">
             <input type="text" class="search-input-header" id="search-input" placeholder="SEARCH">
-            <div class="lang-switch" onclick="toggleLang()">EN / KR</div>
+            <div class="lang-switch" id="lang-switch">EN / KR</div>
         </div>
     </header>
 
@@ -675,8 +675,16 @@
             }
         });
 
-        // Initialize
+        // Event Listeners for Navigation
         document.addEventListener('DOMContentLoaded', () => {
+            // Set up navigation listeners
+            document.getElementById('nav-home').addEventListener('click', () => showPage('home'));
+            document.getElementById('nav-kr').addEventListener('click', () => showPage('sales-kr'));
+            document.getElementById('nav-global').addEventListener('click', () => showPage('sales-global'));
+            document.getElementById('nav-editorial').addEventListener('click', () => showPage('editorial'));
+            document.getElementById('nav-about').addEventListener('click', () => showPage('about'));
+            document.getElementById('lang-switch').addEventListener('click', toggleLang);
+            
             document.body.classList.toggle('en', currentLang === 'en');
             loadData().then(() => {
                 showPage('home');
