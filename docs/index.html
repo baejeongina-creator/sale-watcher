@@ -3,478 +3,936 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SALE WATCHER</title>
+    <title>SALE ARCHIVE</title>
+    <!-- Google Fonts for Noto Sans KR (Korean) and Inter (English) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Noto+Sans+KR:wght@300;400;600;700&display=swap" rel="stylesheet">
+
     <style>
         :root {
             --black: #000000;
             --white: #ffffff;
-            --gray-100: #f8f8f8;
-            --gray-200: #eeeeee;
-            --gray-500: #767676;
-            --border: #e5e5e5;
-            --spacing: 20px;
+            --gray: #f5f5f5;
+            --dark-gray: #666666;
+            --border: #e0e0e0;
+            --main-font-en: 'Inter', sans-serif;
+            --main-font-ko: 'Noto Sans KR', sans-serif;
         }
 
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", sans-serif;
-            -webkit-font-smoothing: antialiased;
         }
 
         body {
             background-color: var(--white);
             color: var(--black);
             overflow-x: hidden;
+            font-family: var(--main-font-ko);
         }
 
+        body.en {
+            font-family: var(--main-font-en);
+        }
+
+        /* Header */
         header {
-            height: 70px;
+            padding: 20px 40px;
+            border-bottom: 1px solid var(--border);
             display: flex;
             align-items: center;
             justify-content: space-between;
-            padding: 0 var(--spacing);
-            border-bottom: 1px solid var(--border);
             position: sticky;
             top: 0;
             background: var(--white);
-            z-index: 1000;
+            z-index: 100;
         }
 
-        .menu-trigger {
-            cursor: pointer;
-            width: 20px;
-            height: 14px;
+        .header-left {
             display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-        }
-
-        .menu-trigger span {
-            display: block;
-            width: 100%;
-            height: 1.5px;
-            background: var(--black);
+            align-items: center;
+            gap: 30px; /* Increased gap for minimalist feel */
         }
 
         .logo {
-            font-size: 20px;
-            font-weight: 700;
-            letter-spacing: 2px;
-            text-decoration: none;
-            color: var(--black);
-            position: absolute;
+            font-size: 1.5rem;
+            font-weight: bold;
+            letter-spacing: 0.3rem;
+            cursor: pointer;
+            text-transform: uppercase;
+            flex-grow: 1; /* Allow logo to take available space */
+            text-align: center; /* Center the logo */
+            position: absolute; /* Position absolutely to center */
             left: 50%;
             transform: translateX(-50%);
+        }
+
+        .nav-menu {
+            display: flex;
+            gap: 30px; /* Spacing between menu items */
+        }
+
+        .nav-item {
+            text-decoration: none;
+            color: var(--black);
+            font-size: 0.9rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            transition: opacity 0.3s;
+        }
+
+        .nav-item:hover {
+            opacity: 0.7;
+        }
+
+        .header-right {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .search-input-header {
+            border: none;
+            border-bottom: 1px solid var(--black);
+            padding: 5px;
+            outline: none;
+            font-size: 0.8rem;
+            width: 150px;
             text-transform: uppercase;
         }
 
         .lang-switch {
-            font-size: 11px;
-            font-weight: 600;
             cursor: pointer;
-            letter-spacing: 0.5px;
+            font-size: 0.8rem;
+            font-weight: bold;
         }
 
-        .side-menu {
-            position: fixed;
-            top: 0;
-            left: -100%;
+        /* Main Content Area */
+        #main-content {
+            padding: 40px 0; /* Remove horizontal padding */
             width: 100%;
-            max-width: 400px;
-            height: 100vh;
-            background: var(--white);
-            z-index: 2000;
-            transition: 0.4s cubic-bezier(0.16, 1, 0.3, 1);
-            padding: 100px 40px;
-            border-right: 1px solid var(--border);
+            margin: 0 auto;
+            min-height: calc(100vh - 80px); /* Adjust based on header height */
+            background-color: var(--white); /* Ensure white background */
         }
 
-        .side-menu.active { left: 0; }
-        .side-menu ul { list-style: none; }
-        .side-menu li { margin-bottom: 30px; }
-        .side-menu a {
-            text-decoration: none;
-            color: var(--black);
-            font-size: 24px;
-            font-weight: 700;
-            text-transform: uppercase;
-        }
-
-        .overlay {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0,0,0,0.3);
-            z-index: 1500;
-            display: none;
-            backdrop-filter: blur(4px);
-        }
-
-        .overlay.active { display: block; }
-
-        .sub-nav {
-            padding: 15px var(--spacing);
-            border-bottom: 1px solid var(--border);
-            background: var(--white);
-        }
-
-        .filter-row {
+        /* Filter Bar (for sales page) */
+        .filter-bar {
+            padding: 20px 0;
             display: flex;
-            justify-content: space-between;
             align-items: center;
-            margin-bottom: 15px;
+            justify-content: space-between;
+            border-bottom: 1px solid var(--border);
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-bottom: 40px;
+            width: 100%;
         }
 
-        .type-filters {
+        .grid-switcher {
             display: flex;
-            gap: 15px;
-            overflow-x: auto;
-            scrollbar-width: none;
+            gap: 10px;
+            align-items: center;
         }
 
-        .type-filters::-webkit-scrollbar { display: none; }
-
-        .type-btn {
-            font-size: 12px;
-            font-weight: 600;
-            color: var(--gray-500);
+        .grid-btn {
             cursor: pointer;
-            text-transform: uppercase;
-            white-space: nowrap;
+            width: 30px;
+            height: 30px;
+            border: 1px solid var(--border);
+            background: var(--white);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.7rem;
+            font-weight: bold;
+            transition: all 0.3s;
         }
 
-        .type-btn.active {
+        .grid-btn:hover {
+            background: var(--gray);
+        }
+
+        .grid-btn.active {
+            background: var(--black);
+            color: var(--white);
+            border-color: var(--black);
+        }
+
+        .filter-group {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+        }
+
+        .filter-btn {
+            cursor: pointer;
+            font-size: 0.8rem;
+            color: var(--dark-gray);
+            text-transform: uppercase;
+            background: none;
+            border: none;
+            font-weight: 600;
+        }
+
+        .filter-btn.active {
             color: var(--black);
+            font-weight: bold;
             text-decoration: underline;
             text-underline-offset: 4px;
         }
 
-        .sort-select {
-            border: none;
-            font-size: 11px;
-            font-weight: 600;
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: var(--white);
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+            border: 1px solid var(--border);
+            padding: 10px 0;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 8px 16px;
+            text-decoration: none;
+            display: block;
+            font-size: 0.8rem;
             text-transform: uppercase;
-            cursor: pointer;
-            outline: none;
         }
 
-        .discount-row {
-            display: flex;
-            gap: 15px;
-            overflow-x: auto;
-            scrollbar-width: none;
-            padding-bottom: 5px;
-        }
+        .dropdown-content a:hover {background-color: var(--gray);}
 
-        .discount-row.hidden { display: none; }
-        .discount-row::-webkit-scrollbar { display: none; }
+        .dropdown:hover .dropdown-content {display: block;}
 
-        .discount-btn {
-            font-size: 11px;
-            color: var(--gray-500);
-            cursor: pointer;
-            white-space: nowrap;
-        }
-
-        .discount-btn.active {
-            color: var(--black);
-            font-weight: 700;
-        }
-
-        .brand-grid {
+        /* Grid */
+        .grid {
             display: grid;
-            grid-template-columns: repeat(4, 1fr);
+            grid-template-columns: repeat(var(--grid-cols, 4), 1fr);
             gap: 1px;
             background-color: var(--border);
-        }
-
-        .brand-card {
-            background-color: var(--white);
-            text-decoration: none;
-            color: var(--black);
-            display: flex;
-            flex-direction: column;
-            transition: 0.3s;
-        }
-
-        .brand-image-container {
+            border-bottom: 1px solid var(--border);
             width: 100%;
-            aspect-ratio: 3/4;
-            background-color: var(--gray-100);
-            overflow: hidden;
-            position: relative;
+            padding: 0 20px; /* Add back padding to the grid itself, not main-content */
+            max-width: 1600px; /* Limit max width for very large screens */
+            margin: 0 auto;
         }
 
-        .brand-image-container img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            transition: 0.5s;
+        .grid.cols-3 {
+            grid-template-columns: repeat(3, 1fr);
         }
 
-        .brand-card:hover img { transform: scale(1.05); }
-
-        .brand-info {
-            padding: 20px;
-            display: flex;
-            flex-direction: column;
-            gap: 4px;
+        .grid.cols-4 {
+            grid-template-columns: repeat(4, 1fr);
         }
 
-        .brand-name-row {
-            display: flex;
-            align-items: baseline;
-            gap: 6px;
-            flex-wrap: wrap;
+        .grid.cols-6 {
+            grid-template-columns: repeat(6, 1fr);
         }
 
-        .brand-en {
-            font-size: 13px;
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-        }
-
-        .brand-ko {
-            font-size: 11px;
-            color: var(--gray-500);
-            font-weight: 400;
-        }
-
-        .discount-info {
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            margin-top: 4px;
-        }
-
-        .discount-pct {
-            font-size: 18px;
-            font-weight: 800;
-            color: var(--black);
-        }
-
-        .sale-label {
-            font-size: 10px;
-            font-weight: 700;
-            color: var(--white);
-            background: var(--black);
-            padding: 2px 6px;
-            text-transform: uppercase;
-        }
-
-        footer {
-            padding: 80px 20px;
-            text-align: center;
-            font-size: 10px;
-            color: var(--gray-500);
-            letter-spacing: 1px;
-            text-transform: uppercase;
-            border-top: 1px solid var(--border);
-        }
-
-        @media (max-width: 1200px) { .brand-grid { grid-template-columns: repeat(3, 1fr); } }
-        @media (max-width: 768px) { 
-            .brand-grid { grid-template-columns: repeat(2, 1fr); }
-            .brand-info { padding: 15px; }
-            .discount-pct { font-size: 16px; }
-        }
-    </style>
-</head>
-<body>
-
-    <div class="overlay" id="overlay"></div>
-
-    <nav class="side-menu" id="sideMenu">
-        <ul>
-            <li><a href="#" onclick="filterRegion('KR')" data-en="Korean Brands" data-ko="국내 브랜드">Korean Brands</a></li>
-            <li><a href="#" onclick="filterRegion('GLOBAL')" data-en="Global Brands" data-ko="해외 브랜드">Global Brands</a></li>
-            <li><a href="#" onclick="showPage('editorial')" data-en="Editorial" data-ko="에디토리얼">Editorial</a></li>
-            <li><a href="#" onclick="showPage('about')" data-en="About" data-ko="소개">About</a></li>
-        </ul>
-    </nav>
-
-    <header>
-        <div class="menu-trigger" id="menuTrigger">
-            <span></span><span></span><span></span>
-        </div>
-        <a href="/" class="logo" id="siteLogo">SALE WATCHER</a>
-        <div class="lang-switch" id="langSwitch" onclick="toggleLang()">EN / KR</div>
-    </header>
-
-    <div id="mainContent">
-        <div class="sub-nav" id="subNav">
-            <div class="filter-row">
-                <div class="type-filters">
-                    <div class="type-btn active" onclick="filterType('ALL')" data-en="ALL" data-ko="전체">ALL</div>
-                    <div class="type-btn" onclick="filterType('SEASON OFF')" data-en="SEASON OFF" data-ko="시즌오프">SEASON OFF</div>
-                    <div class="type-btn" onclick="filterType('CLEARANCE')" data-en="CLEARANCE" data-ko="클리어런스">CLEARANCE</div>
-                    <div class="type-btn" onclick="filterType('REFURB')" data-en="REFURB (B-GRADE)" data-ko="리퍼브 (B급)">REFURB (B-GRADE)</div>
-                </div>
-                <select class="sort-select" id="sortSelect" onchange="render()">
-                    <option value="name_asc" data-en="Sort: A-Z" data-ko="정렬: 가나다순">Sort: A-Z</option>
-                    <option value="name_desc" data-en="Sort: Z-A" data-ko="정렬: 역순">Sort: Z-A</option>
-                    <option value="disc_desc" data-en="Sort: Discount High" data-ko="정렬: 할인율 높은순">Sort: Discount High</option>
-                    <option value="disc_asc" data-en="Sort: Discount Low" data-ko="정렬: 할인율 낮은순">Sort: Discount Low</option>
-                </select>
-            </div>
-            <div class="discount-row" id="discountRow">
-                <div class="discount-btn active" onclick="filterDiscount(0)" data-en="All Discounts" data-ko="전체 할인율">All Discounts</div>
-                <div class="discount-btn" onclick="filterDiscount(10)">10-30%</div>
-                <div class="discount-btn" onclick="filterDiscount(40)">40-60%</div>
-                <div class="discount-btn" onclick="filterDiscount(70)">70-90%</div>
-            </div>
-        </div>
-
-        <main class="brand-grid" id="brandGrid"></main>
-    </div>
-
-    <footer>
-        &copy; 2026 <span id="footerLogo">SALE WATCHER</span>. ALL RIGHTS RESERVED.
-    </footer>
-
-    <script>
-        let allSales = [];
-        let currentRegion = 'KR';
-        let currentType = 'ALL';
-        let currentDiscount = 0;
-        let currentLang = 'EN';
-
-        const menuTrigger = document.getElementById('menuTrigger');
-        const sideMenu = document.getElementById('sideMenu');
-        const overlay = document.getElementById('overlay');
-        const brandGrid = document.getElementById('brandGrid');
-        const discountRow = document.getElementById('discountRow');
-
-        menuTrigger.onclick = () => { sideMenu.classList.toggle('active'); overlay.classList.toggle('active'); };
-        overlay.onclick = () => { sideMenu.classList.remove('active'); overlay.classList.remove('active'); };
-
-        function toggleLang() {
-            currentLang = currentLang === 'EN' ? 'KR' : 'EN';
-            document.querySelectorAll('[data-en]').forEach(el => {
-                el.innerText = el.getAttribute('data-' + currentLang.toLowerCase());
-            });
-            render();
-        }
-
-        async function loadData() {
-            try {
-                const res = await fetch('sales.json?t=' + Date.now());
-                const data = await res.json();
-                allSales = data.sales.filter(s => s.status === 'sale');
-                render();
-            } catch (e) {
-                brandGrid.innerHTML = '<div style="grid-column: 1/-1; padding: 100px; text-align: center;">Error loading data.</div>';
+        @media (max-width: 1200px) {
+            .grid.cols-6 {
+                grid-template-columns: repeat(4, 1fr);
             }
         }
 
-        function filterRegion(region) {
+        @media (max-width: 768px) {
+            .grid.cols-4,
+            .grid.cols-6 {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        .card {
+            background-color: var(--white);
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            text-decoration: none;
+            color: var(--black);
+            transition: opacity 0.3s;
+        }
+
+        .card:hover {
+            opacity: 0.8;
+        }
+
+        .card-image {
+            width: 100%;
+            aspect-ratio: 3/4;
+            object-fit: cover;
+            background-color: var(--gray);
+        }
+
+        .card-info {
+            padding: 20px;
+        }
+
+        .card-brand {
+            font-weight: bold;
+            font-size: 1rem;
+            margin-bottom: 5px;
+            text-transform: uppercase;
+        }
+
+        .card-brand-ko {
+            font-weight: 300;
+            font-size: 0.8rem;
+            color: var(--dark-gray);
+            margin-left: 8px;
+        }
+
+        .card-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 10px;
+        }
+
+        .card-discount {
+            font-size: 1.2rem;
+            font-weight: normal;
+        }
+
+        .card-type {
+            font-size: 0.7rem;
+            background: var(--black);
+            color: var(--white);
+            padding: 2px 6px;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        /* Editorial Section */
+        #editorial-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
+        .editorial-card {
+            border: 1px solid var(--border);
+            display: flex;
+            flex-direction: column;
+            text-decoration: none;
+            color: var(--black);
+            overflow: hidden;
+        }
+
+        .editorial-card:hover {
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .editorial-img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            background: var(--gray);
+        }
+
+        .editorial-content-wrapper {
+            padding: 15px;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .editorial-title {
+            font-size: 1.1rem;
+            font-weight: bold;
+            margin-bottom: 8px;
+            text-transform: uppercase;
+            line-height: 1.4;
+        }
+
+        .editorial-date {
+            color: var(--dark-gray);
+            font-size: 0.75rem;
+            margin-bottom: 10px;
+        }
+
+        .editorial-content-preview {
+            font-size: 0.85rem;
+            line-height: 1.6;
+            color: var(--dark-gray);
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+        }
+
+        /* Editorial Detail Page */
+        #editorial-detail-page {
+            padding: 40px 0;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        #editorial-detail-img {
+            width: 100%;
+            max-height: 500px;
+            object-fit: cover;
+            margin-bottom: 30px;
+            background: var(--gray);
+        }
+
+        #editorial-detail-title {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+        }
+
+        #editorial-detail-date {
+            color: var(--dark-gray);
+            font-size: 0.9rem;
+            margin-bottom: 20px;
+        }
+
+        #editorial-detail-content {
+            line-height: 1.8;
+            font-size: 1.1rem;
+        }
+
+        #editorial-detail-page button {
+            margin-top: 40px;
+            padding: 10px 20px;
+            background: var(--black);
+            color: var(--white);
+            border: none;
+            cursor: pointer;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        /* About Page */
+        #about-page {
+            padding: 40px 0;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        #about-page h1 {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+        }
+
+        #about-page p {
+            line-height: 1.8;
+            font-size: 1.1rem;
+            margin-top: 20px;
+        }
+
+        @media (max-width: 768px) {
+            header {
+                padding: 15px 20px;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            .header-left {
+                width: 100%;
+                justify-content: center;
+                margin-bottom: 10px;
+            }
+            .logo {
+                position: static;
+                transform: none;
+            }
+            .nav-menu {
+                width: 100%;
+                justify-content: center;
+                margin-bottom: 10px;
+            }
+            .header-right {
+                width: 100%;
+                justify-content: center;
+            }
+            #main-content {
+                padding: 20px;
+            }
+            .filter-bar {
+                padding: 15px 0;
+            }
+            .grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            #editorial-grid {
+                grid-template-columns: 1fr;
+            }
+            #editorial-detail-title {
+                font-size: 1.8rem;
+            }
+            #about-page h1 {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="header-left">
+            <div class="nav-menu">
+                <a href="#" class="nav-item" onclick="showSales('KR'); return false;" id="menu-kr">KOREAN BRANDS</a>
+                <a href="#" class="nav-item" onclick="showSales('GLOBAL'); return false;" id="menu-global">GLOBAL BRANDS</a>
+                <a href="#" class="nav-item" onclick="showEditorial(); return false;" id="menu-editorial">EDITORIAL</a>
+                <a href="#" class="nav-item" onclick="showAbout(); return false;" id="menu-about">ABOUT</a>
+            </div>
+        </div>
+        <div class="logo" onclick="showHome()">SALE ARCHIVE</div>
+        <div class="header-right">
+            <input type="text" class="search-input-header" id="search-input" placeholder="SEARCH">
+            <div class="lang-switch" onclick="toggleLang()" id="lang-btn">EN / KR</div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <div id="main-content">
+        <!-- Sales Page (Initially hidden, shown when menu item is clicked) -->
+        <div id="sales-page" style="display: none;">
+            <div class="filter-bar">
+                <div class="filter-group">
+                    <button class="filter-btn active" onclick="filterType(\'ALL\')" id="btn-all">ALL</button>
+                    <button class="filter-btn" onclick="filterType(\'SALE\')" id="btn-sale">SALE</button>
+                    <button class="filter-btn" onclick="filterType(\'SEASON OFF\')" id="btn-season">SEASON OFF</button>
+                    <button class="filter-btn" onclick="filterType(\'CLEARANCE\')" id="btn-clearance">CLEARANCE</button>
+                    <button class="filter-btn" onclick="filterType(\'REFURB\')" id="btn-refurb">REFURB</button>
+                    <button class="filter-btn" onclick="filterType(\'OUTLET\')" id="btn-outlet">OUTLET</button>
+                </div>
+                <div class="filter-group">
+                    <button class="filter-btn active" onclick="filterDiscountRange(0, 100)" id="btn-discount-all">ALL DISCOUNTS</button>
+                    <button class="filter-btn" onclick="filterDiscountRange(10, 30)" id="btn-discount-10-30">10-30%</button>
+                    <button class="filter-btn" onclick="filterDiscountRange(40, 60)" id="btn-discount-40-60">40-60%</button>
+                    <button class="filter-btn" onclick="filterDiscountRange(70, 90)" id="btn-discount-70-90">70-90%</button>
+                </div>
+                <div class="filter-group">
+                    <div class="dropdown">
+                        <button class="filter-btn" id="btn-sort">SORT</button>
+                        <div class="dropdown-content" id="sort-dropdown">
+                            <a href="#" onclick="sortSales(\"name_asc\")">NAME (A-Z)</a>
+                            <a href="#" onclick="sortSales(\"name_desc\")">NAME (Z-A)</a>
+                            <a href="#" onclick="sortSales(\"discount_desc\")">DISCOUNT (HIGH-LOW)</a>
+                            <a href="#" onclick="sortSales(\"discount_asc\")">DISCOUNT (LOW-HIGH)</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-switcher">
+                    <button class="grid-btn active" onclick="setGridCols(4)" title="4 columns">4</button>
+                    <button class="grid-btn" onclick="setGridCols(3)" title="3 columns">3</button>
+                    <button class="grid-btn" onclick="setGridCols(6)" title="6 columns">6</button>
+                </div>
+            </div>
+            <div class="grid" id="sales-grid"></div>
+        </div>
+
+        <!-- Editorial Grid Page -->
+        <div id="editorial-page" style="display: none;">
+            <h1 style="font-size: 2.5rem; font-weight: bold; text-transform: uppercase; margin-bottom: 40px; text-align: center;">EDITORIAL</h1>
+            <div id="editorial-grid"></div>
+        </div>
+
+        <!-- Editorial Detail Page -->
+        <div id="editorial-detail-page" style="display: none;">
+            <img id="editorial-detail-img" alt="Editorial Image">
+            <h2 id="editorial-detail-title"></h2>
+            <p id="editorial-detail-date"></p>
+            <div id="editorial-detail-content"></div>
+            <button onclick="showEditorial()">BACK TO EDITORIALS</button>
+        </div>
+
+        <!-- About Page -->
+        <div id="about-page" style="display: none;">
+            <h1>ABOUT SALE ARCHIVE</h1>
+            <p>SALE ARCHIVE는 국내외 패션 브랜드의 세일 정보를 실시간으로 수집하고 큐레이션하여 제공하는 플랫폼입니다. 놓치지 말아야 할 세일 소식을 가장 빠르고 정확하게 전달해 드립니다.</p>
+            <p>문의: contact@salearchive.com</p>
+        </div>
+
+    </div>
+
+    <script>
+        let salesData = [];
+        let editorialsData = [];
+        let currentRegion = null; // No default region on initial load
+        let currentType = 'ALL';
+        let currentSort = 'name_asc';
+        let currentLang = 'ko';
+        let searchTerm = '';
+
+        const translations = {
+            'ko': {
+                'SALE ARCHIVE': '세일 아카이브',
+                'KOREAN BRANDS': '한국 브랜드',
+                'GLOBAL BRANDS': '글로벌 브랜드',
+                'EDITORIAL': '에디토리얼',
+                'ABOUT': '소개',
+                'SEARCH': '검색',
+                'EN / KR': 'EN / KR',
+                'ALL': '전체',
+                'SEASON OFF': '시즌오프',
+                'CLEARANCE': '클리어런스',
+                'REFURB': '리퍼브',
+                'OUTLET': '아울렛',
+                'SALE': '세일',
+                'SORT': '정렬',
+                'NAME (A-Z)': '이름 (가-힣)',
+                'NAME (Z-A)': '이름 (힣-가)',
+                'DISCOUNT (HIGH-LOW)': '할인율 (높은순)',
+                'DISCOUNT (LOW-HIGH)': '할인율 (낮은순)',
+                'NO SALES FOUND': '현재 세일 중인 브랜드가 없습니다.',
+                'ABOUT SALE ARCHIVE': '세일 아카이브 소개',
+                'SALE ARCHIVE는 국내외 패션 브랜드의 세일 정보를 실시간으로 수집하고 큐레이션하여 제공하는 플랫폼입니다. 놓치지 말아야 할 세일 소식을 가장 빠르고 정확하게 전달해 드립니다.': 'SALE ARCHIVE는 국내외 패션 브랜드의 세일 정보를 실시간으로 수집하고 큐레이션하여 제공하는 플랫폼입니다. 놓치지 말아야 할 세일 소식을 가장 빠르고 정확하게 전달해 드립니다.',
+                '문의: contact@salearchive.com': '문의: contact@salearchive.com',
+                'BACK TO EDITORIALS': '에디토리얼 목록으로 돌아가기',
+                'UP TO': '최대',
+                'NO SALE': '세일 없음'
+            },
+            'en': {
+                'SALE ARCHIVE': 'SALE ARCHIVE',
+                'KOREAN BRANDS': 'KOREAN BRANDS',
+                'GLOBAL BRANDS': 'GLOBAL BRANDS',
+                'EDITORIAL': 'EDITORIAL',
+                'ABOUT': 'ABOUT',
+                'SEARCH': 'SEARCH',
+                'EN / KR': 'KR / EN',
+                'ALL': 'ALL',
+                'SEASON OFF': 'SEASON OFF',
+                'CLEARANCE': 'CLEARANCE',
+                'REFURB': 'REFURB',
+                'OUTLET': 'OUTLET',
+                'SALE': 'SALE',
+                'SORT': 'SORT',
+                'NAME (A-Z)': 'NAME (A-Z)',
+                'NAME (Z-A)': 'NAME (Z-A)',
+                'DISCOUNT (HIGH-LOW)': 'DISCOUNT (HIGH-LOW)',
+                'DISCOUNT (LOW-HIGH)': 'DISCOUNT (LOW-HIGH)',
+                'NO SALES FOUND': 'NO SALES FOUND.',
+                'ABOUT SALE ARCHIVE': 'ABOUT SALE ARCHIVE',
+                'SALE ARCHIVE는 국내외 패션 브랜드의 세일 정보를 실시간으로 수집하고 큐레이션하여 제공하는 플랫폼입니다. 놓치지 말아야 할 세일 소식을 가장 빠르고 정확하게 전달해 드립니다.': 'SALE ARCHIVE is a platform that collects and curates real-time sale information from domestic and international fashion brands. We deliver the fastest and most accurate sale news you shouldn\'t miss.',
+                '문의: contact@salearchive.com': 'Contact: contact@salearchive.com',
+                'BACK TO EDITORIALS': 'BACK TO EDITORIALS',
+                'UP TO': 'UP TO',
+                'NO SALE': 'NO SALE'
+            }
+        };
+
+        function translateText() {
+            document.title = translations[currentLang]['SALE ARCHIVE'];
+            document.querySelector('.logo').textContent = translations[currentLang]['SALE ARCHIVE'];
+            document.getElementById('lang-btn').textContent = translations[currentLang]['EN / KR'];
+            document.getElementById('search-input').placeholder = translations[currentLang]['SEARCH'];
+
+            document.getElementById('menu-kr').textContent = translations[currentLang]['KOREAN BRANDS'];
+            document.getElementById('menu-global').textContent = translations[currentLang]['GLOBAL BRANDS'];
+            document.getElementById('menu-editorial').textContent = translations[currentLang]['EDITORIAL'];
+            document.getElementById('menu-about').textContent = translations[currentLang]['ABOUT'];
+
+            // Filter bar
+            const btnAll = document.getElementById('btn-all');
+            if (btnAll) btnAll.textContent = translations[currentLang]['ALL'];
+            const btnSeason = document.getElementById('btn-season');
+            if (btnSeason) btnSeason.textContent = translations[currentLang]['SEASON OFF'];
+            const btnClearance = document.getElementById('btn-clearance');
+            if (btnClearance) btnClearance.textContent = translations[currentLang]['CLEARANCE'];
+            const btnRefurb = document.getElementById('btn-refurb');
+            if (btnRefurb) btnRefurb.textContent = translations[currentLang]['REFURB'];
+            const btnOutlet = document.getElementById('btn-outlet');
+            if (btnOutlet) btnOutlet.textContent = translations[currentLang]['OUTLET'];
+
+            // Re-render sales to update card type labels
+            if (currentRegion !== null) {
+                renderSales();
+            }
+            
+            const btnSort = document.getElementById('btn-sort');
+            if (btnSort) btnSort.textContent = translations[currentLang]['SORT'];
+
+            const sortNameAsc = document.querySelector('#sort-dropdown a[onclick="sortSales(\'name_asc\')"]');
+            if (sortNameAsc) sortNameAsc.textContent = translations[currentLang]['NAME (A-Z)'];
+            const sortNameDesc = document.querySelector('#sort-dropdown a[onclick="sortSales(\'name_desc\')"]');
+            if (sortNameDesc) sortNameDesc.textContent = translations[currentLang]['NAME (Z-A)'];
+            const sortDiscountDesc = document.querySelector('#sort-dropdown a[onclick="sortSales(\'discount_desc\')"]');
+            if (sortDiscountDesc) sortDiscountDesc.textContent = translations[currentLang]['DISCOUNT (HIGH-LOW)'];
+            const sortDiscountAsc = document.querySelector('#sort-dropdown a[onclick="sortSales(\'discount_asc\')"]');
+            if (sortDiscountAsc) sortDiscountAsc.textContent = translations[currentLang]['DISCOUNT (LOW-HIGH)'];
+
+            // About page
+            const aboutPage = document.getElementById('about-page');
+            if (aboutPage && aboutPage.style.display !== 'none') {
+                aboutPage.querySelector('h1').textContent = translations[currentLang]['ABOUT SALE ARCHIVE'];
+                aboutPage.querySelector('p:nth-of-type(1)').textContent = translations[currentLang]['SALE ARCHIVE는 국내외 패션 브랜드의 세일 정보를 실시간으로 수집하고 큐레이션하여 제공하는 플랫폼입니다. 놓치지 말아야 할 세일 소식을 가장 빠르고 정확하게 전달해 드립니다.'];
+                aboutPage.querySelector('p:nth-of-type(2)').textContent = translations[currentLang]['문의: contact@salearchive.com'];
+            }
+
+            // Editorial detail page
+            const editorialDetailPage = document.getElementById('editorial-detail-page');
+            if (editorialDetailPage && editorialDetailPage.style.display !== 'none') {
+                editorialDetailPage.querySelector('button').textContent = translations[currentLang]['BACK TO EDITORIALS'];
+            }
+
+            renderSales(); // Re-render sales to update brand names
+            renderEditorials(); // Re-render editorials to update content
+        }
+
+        function toggleLang() {
+            currentLang = currentLang === 'ko' ? 'en' : 'ko';
+            document.documentElement.lang = currentLang;
+            document.body.classList.toggle('en', currentLang === 'en');
+            translateText();
+        }
+
+        function setGridCols(cols) {
+            const grid = document.getElementById('sales-grid');
+            if (!grid) return;
+            
+            // Remove all column classes
+            grid.classList.remove('cols-3', 'cols-4', 'cols-6');
+            
+            // Add the new column class
+            if (cols === 3) grid.classList.add('cols-3');
+            else if (cols === 4) grid.classList.add('cols-4');
+            else if (cols === 6) grid.classList.add('cols-6');
+            
+            // Update active button
+            const gridBtns = document.querySelectorAll('.grid-btn');
+            gridBtns.forEach(btn => btn.classList.remove('active'));
+            event.target.classList.add('active');
+        }
+
+        function hideAllSections() {
+            document.getElementById('sales-page').style.display = 'none';
+            document.getElementById('editorial-page').style.display = 'none';
+            document.getElementById('editorial-detail-page').style.display = 'none';
+            document.getElementById('about-page').style.display = 'none';
+        }
+
+        function showHome() {
+            hideAllSections();
+            // Optionally show a default view or just a blank white page
+            // For now, it will just be a blank white page below the header
+            window.scrollTo(0, 0);
+        }
+
+        function showSales(region) {
+            hideAllSections();
+            const salesPage = document.getElementById('sales-page');
+            if (salesPage) {
+                salesPage.style.display = 'block';
+            }
             currentRegion = region;
-            document.getElementById('mainContent').style.display = 'block';
-            sideMenu.classList.remove('active');
-            overlay.classList.remove('active');
-            render();
+            currentType = 'ALL';
+            currentSort = 'name_asc';
+            currentDiscountMin = 0;
+            currentDiscountMax = 100;
+            
+            // Reset filter buttons
+            document.querySelectorAll('.filter-btn').forEach(btn => btn.classList.remove('active'));
+            
+            const btnAll = document.getElementById('btn-all');
+            if (btnAll) btnAll.classList.add('active');
+            
+            const btnDiscAll = document.getElementById('btn-discount-all');
+            if (btnDiscAll) btnDiscAll.classList.add('active');
+            
+            const btnSort = document.getElementById('btn-sort');
+            if (btnSort) btnSort.textContent = translations[currentLang]['SORT'];
+
+            renderSales();
+            window.scrollTo(0, 0);
+        }
+
+        function showEditorial() {
+            hideAllSections();
+            document.getElementById('editorial-page').style.display = 'block';
+            renderEditorials();
+            window.scrollTo(0, 0);
+        }
+
+        function showEditorialDetail(index) {
+            hideAllSections();
+            document.getElementById('editorial-detail-page').style.display = 'block';
+            const editorial = editorialsData[index];
+            document.getElementById('editorial-detail-img').src = editorial.image || '';
+            document.getElementById('editorial-detail-img').alt = editorial.title;
+            document.getElementById('editorial-detail-title').textContent = editorial.title;
+            document.getElementById('editorial-detail-date').textContent = new Date(editorial.date).toLocaleDateString(currentLang === 'ko' ? 'ko-KR' : 'en-US', {
+                year: 'numeric', month: 'long', day: 'numeric'
+            });
+            document.getElementById('editorial-detail-content').innerHTML = marked.parse(editorial.content || '');
+            window.scrollTo(0, 0);
+        }
+
+        function showAbout() {
+            hideAllSections();
+            document.getElementById('about-page').style.display = 'block';
+            translateText();
+            window.scrollTo(0, 0);
         }
 
         function filterType(type) {
             currentType = type;
-            currentDiscount = 0;
-            
-            // Show/hide discount row based on type
-            if (type === 'ALL') {
-                discountRow.classList.remove('hidden');
-            } else {
-                discountRow.classList.add('hidden');
+            document.querySelectorAll('.filter-group .filter-btn').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            document.getElementById(`btn-${type.toLowerCase().replace(/ /g, '-')}`).classList.add('active');
+            renderSales();
+        }
+
+        function sortSales(sortOption) {
+            currentSort = sortOption;
+            let sortText = '';
+            switch(sortOption) {
+                case 'name_asc': sortText = translations[currentLang]['NAME (A-Z)']; break;
+                case 'name_desc': sortText = translations[currentLang]['NAME (Z-A)']; break;
+                case 'discount_desc': sortText = translations[currentLang]['DISCOUNT (HIGH-LOW)']; break;
+                case 'discount_asc': sortText = translations[currentLang]['DISCOUNT (LOW-HIGH)']; break;
             }
-            
-            document.querySelectorAll('.type-btn').forEach(btn => {
-                btn.classList.toggle('active', btn.innerText.includes(type) || (type === 'ALL' && (btn.innerText === 'ALL' || btn.innerText === '전체')));
-            });
-            
-            // Reset discount filter buttons
-            document.querySelectorAll('.discount-btn').forEach(btn => {
-                btn.classList.toggle('active', btn.innerText.includes(currentLang === 'EN' ? 'All' : '전체'));
-            });
-            
-            render();
+            document.getElementById(\'btn-sort\').textContent = sortText;
+            renderSales();
         }
 
-        function filterDiscount(val) {
-            currentDiscount = val;
-            document.querySelectorAll('.discount-btn').forEach(btn => {
-                let match = false;
-                if (val === 0) {
-                    match = btn.innerText.includes(currentLang === 'EN' ? 'All' : '전체');
-                } else if (val === 10) {
-                    match = btn.innerText.includes('10-30');
-                } else if (val === 40) {
-                    match = btn.innerText.includes('40-60');
-                } else if (val === 70) {
-                    match = btn.innerText.includes('70-90');
+        let currentDiscountMin = 0;
+        let currentDiscountMax = 100;
+
+        function filterDiscountRange(min, max) {
+            currentDiscountMin = min;
+            currentDiscountMax = max;
+            document.querySelectorAll(".filter-group .filter-btn").forEach(btn => {
+                btn.classList.remove("active");
+            });
+            document.getElementById(`btn-discount-${min}-${max}`).classList.add("active");
+            renderSales();
+        }
+
+        document.getElementById('search-input').addEventListener('input', (event) => {
+            searchTerm = event.target.value.toLowerCase();
+            renderSales();
+        });
+
+        function renderSales() {
+            const grid = document.getElementById('sales-grid');
+            if (!grid) return; // Ensure grid element exists
+            grid.innerHTML = '';
+
+            let filteredSales = salesData.filter(sale => {
+                const matchesRegion = currentRegion === null || sale.region === currentRegion;
+                const matchesType = currentType === 'ALL' || sale.sale_type === currentType;
+                const matchesSearch = sale.brand_en.toLowerCase().includes(searchTerm) || sale.brand_ko.toLowerCase().includes(searchTerm);
+                const matchesDiscountRange = sale.discount >= currentDiscountMin && sale.discount <= currentDiscountMax;
+                return matchesRegion && matchesType && matchesSearch && matchesDiscountRange;
+            });
+
+            // Apply sorting
+            filteredSales.sort((a, b) => {
+                if (currentSort === 'name_asc') {
+                    const nameA = currentLang === 'ko' ? a.brand_ko : a.brand_en;
+                    const nameB = currentLang === 'ko' ? b.brand_ko : b.brand_en;
+                    return nameA.localeCompare(nameB, currentLang);
+                } else if (currentSort === 'name_desc') {
+                    const nameA = currentLang === 'ko' ? a.brand_ko : a.brand_en;
+                    const nameB = currentLang === 'ko' ? b.brand_ko : b.brand_en;
+                    return nameB.localeCompare(nameA, currentLang);
+                } else if (currentSort === 'discount_desc') {
+                    return b.discount - a.discount;
+                } else if (currentSort === 'discount_asc') {
+                    return a.discount - b.discount;
                 }
-                btn.classList.toggle('active', match);
-            });
-            render();
-        }
-
-        function showPage(page) {
-            document.getElementById('mainContent').style.display = 'none';
-            sideMenu.classList.remove('active');
-            overlay.classList.remove('active');
-            alert(page.toUpperCase() + " page coming soon.");
-        }
-
-        function render() {
-            let filtered = allSales.filter(s => s.region === currentRegion);
-            if (currentType !== 'ALL') filtered = filtered.filter(s => s.sale_type === currentType);
-            
-            if (currentType === 'ALL' && currentDiscount > 0) {
-                if (currentDiscount === 10) {
-                    filtered = filtered.filter(s => s.discount >= 10 && s.discount < 40);
-                } else if (currentDiscount === 40) {
-                    filtered = filtered.filter(s => s.discount >= 40 && s.discount < 70);
-                } else if (currentDiscount === 70) {
-                    filtered = filtered.filter(s => s.discount >= 70);
-                }
-            }
-
-            const sortBy = document.getElementById('sortSelect').value;
-            filtered.sort((a, b) => {
-                if (sortBy === 'name_asc') return a.brand_en.localeCompare(b.brand_en);
-                if (sortBy === 'name_desc') return b.brand_en.localeCompare(a.brand_en);
-                if (sortBy === 'disc_desc') return b.discount - a.discount;
-                if (sortBy === 'disc_asc') return a.discount - b.discount;
+                return 0;
             });
 
-            if (filtered.length === 0) {
-                brandGrid.innerHTML = '<div style="grid-column: 1/-1; padding: 100px; text-align: center; text-transform: uppercase; font-size: 12px; letter-spacing: 1px;">No items found.</div>';
+            if (filteredSales.length === 0) {
+                grid.innerHTML = `<p style="padding: 20px; text-align: center;">${translations[currentLang]['NO SALES FOUND']}</p>`;
                 return;
             }
 
-            brandGrid.innerHTML = filtered.map(item => `
-                <a href="${item.sale_url}" class="brand-card" target="_blank">
-                    <div class="brand-image-container">
-                        <img src="${item.banner_url || 'https://via.placeholder.com/600x800?text=' + item.brand_en}" alt="${item.brand_en}" onerror="this.src='https://via.placeholder.com/600x800?text=${item.brand_en}'">
-                    </div>
-                    <div class="brand-info">
-                        <div class="brand-name-row">
-                            <span class="brand-en">${item.brand_en}</span>
-                            <span class="brand-ko">${item.brand_ko || ''}</span>
+            filteredSales.forEach(sale => {
+                const card = document.createElement('a');
+                card.href = sale.sale_url; // Always use sale_url now
+                card.target = '_blank';
+                card.rel = 'noopener noreferrer';
+                card.classList.add('card');
+
+                const brandName = currentLang === 'ko' ? sale.brand_ko : sale.brand_en;
+                const otherBrandName = currentLang === 'ko' ? sale.brand_en : sale.brand_ko;
+                const saleTypeKey = sale.sale_type === 'SALE' ? 'SALE' : sale.sale_type;
+                const saleType = translations[currentLang][saleTypeKey] || sale.sale_type;
+
+                const bannerUrl = sale.banner_url || 'https://via.placeholder.com/600x400?text=' + encodeURIComponent(brandName);
+                card.innerHTML = `
+                    <img src="${bannerUrl}" alt="${brandName} Sale" class="card-image">
+                    <div class="card-info">
+                        <div class="card-brand">${brandName} <span class="card-brand-ko">${otherBrandName}</span></div>
+                        <div class="card-meta">
+                            <span class="card-discount">${sale.discount > 0 ? `${translations[currentLang]["UP TO"]} ${sale.discount}%` : translations[currentLang]["NO SALE"]}</span>
+                            <span class="card-type">${saleType}</span>
                         </div>
-                        <div class="discount-info">
-                            <span class="discount-pct">${item.discount > 0 ? item.discount + '%' : 'SALE'}</span>
-                            <span class="sale-label">${item.sale_type}</span>
-                        </div>
                     </div>
-                </a>
-            `).join('');
+                `;
+                grid.appendChild(card);
+            });
         }
 
-        loadData();
+        function renderEditorials() {
+            const editorialGrid = document.getElementById('editorial-grid');
+            if (!editorialGrid) return; // Ensure grid element exists
+            editorialGrid.innerHTML = '';
+
+            editorialsData.forEach((editorial, index) => {
+                const editorialCard = document.createElement('a');
+                editorialCard.href = '#';
+                editorialCard.onclick = (e) => { e.preventDefault(); showEditorialDetail(index); };
+                editorialCard.classList.add('editorial-card');
+
+                const formattedDate = new Date(editorial.date).toLocaleDateString(currentLang === 'ko' ? 'ko-KR' : 'en-US', {
+                    year: 'numeric', month: 'long', day: 'numeric'
+                });
+
+                editorialCard.innerHTML = `
+                    ${editorial.image ? `<img src="${editorial.image}" alt="${editorial.title}" class="editorial-img">` : ''}
+                    <div class="editorial-content-wrapper">
+                        <h3 class="editorial-title">${editorial.title}</h3>
+                        <p class="editorial-date">${formattedDate}</p>
+                        <div class="editorial-content-preview">${marked.parse(editorial.content || '')}</div>
+                    </div>
+                `;
+                editorialGrid.appendChild(editorialCard);
+            });
+        }
+
+        async function fetchData() {
+            try {
+                const response = await fetch('./sales.json');
+                const data = await response.json();
+                salesData = data.sales.filter(sale => sale.status === 'sale');
+                editorialsData = data.editorials;
+                
+                // Default view: Show Korean Brands on load
+                showSales('KR');
+                translateText();
+            } catch (error) {
+                console.error('Error fetching sales data:', error);
+                // Even if data fails, allow navigation to show empty states or about page
+                translateText();
+            }
+        }
+
+        // Initial load: set language class and translate
+        document.addEventListener('DOMContentLoaded', () => {
+            document.body.classList.toggle('en', currentLang === 'en');
+            fetchData();
+        });
     </script>
 </body>
 </html>
