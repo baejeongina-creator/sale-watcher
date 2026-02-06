@@ -19,7 +19,10 @@ SALE_KEYWORDS = {
     "CLEARANCE": ["CLEARANCE", "클리어런스", "LAST CHANCE", "재고정리"],
     "REFURB": ["REFURB", "B-GRADE", "리퍼브", "B급"],
     "OUTLET": ["OUTLET", "아울렛"],
-    "SALE": ["SALE", "OFF", "UP TO", "세일", "할인", "%", "~", "최대", "파이널 세일", "샘플세일", "아카이브 세일", "NEW YEAR SALE", "뉴이어 세일"]
+    "SALE": ["SALE", "OFF", "UP TO", "세일", "할인", "%", "~", "최대"],
+    "FINAL SALE": ["FINAL SALE", "파이널 세일", "샘플세일"],
+    "ARCHIVE SALE": ["ARCHIVE SALE", "아카이브 세일"],
+    "NEW YEAR SALE": ["NEW YEAR SALE", "뉴이어 세일"]
 }
 
 NEGATIVE_KEYWORDS = ["SALE END", "SALE CLOSED", "SOLD OUT", "세일 종료", "품절", "종료"]
@@ -177,17 +180,7 @@ def scan_brand(row):
     manual_type = (row.get("manual_type") or "").strip().upper()
     manual_sale_url = (row.get("sale_url") or "").strip()
 
-    # Apply user overrides first if brand_ko matches
-    override_data = USER_OVERRIDES.get(brand_ko)
-    if override_data:
-        manual_discount = str(override_data.get("discount", manual_discount))
-        manual_type = override_data.get("sale_type", manual_type)
-        # If user override discount is 0, explicitly set status to nosale
-        if manual_discount == "0":
-            manual_status = "nosale"
-        elif manual_discount != "0": # If user provided discount, force sale
-            manual_status = "sale"
-
+    # Initialize result with default values
     result = {
         "brand_en": brand_en,
         "brand_ko": brand_ko,
@@ -200,13 +193,25 @@ def scan_brand(row):
         "sale_type": "SALE",
     }
 
-    if manual_status == "nosale":
+    # Apply user overrides first if brand_ko matches
+    override_data = USER_OVERRIDES.get(brand_ko)
+    if override_data:
+        result["discount"] = override_data.get("discount", result["discount"])
+        result["sale_type"] = override_data.get("sale_type", result["sale_type"])
+        if result["discount"] == 0:
+            result["status"] = "nosale"
+        else:
+            result["status"] = "sale"
+        return result # Return immediately after applying hardcoded override
+
+    # If manual_status is 'nosale' or manual_discount is '0', return as not a sale
+    if manual_status == "nosale" or (manual_discount and int(manual_discount) == 0):
         return result
 
     try:
         scan_url = manual_sale_url if manual_sale_url else official_url
         if not scan_url: 
-            print(f"Skipping {brand_en}: No URL provided.")
+            print(f"Skipping {brand_ko or brand_en}: No URL provided.")
             return result
 
         resp = requests.get(scan_url, headers=HEADERS, timeout=20)
@@ -224,7 +229,7 @@ def scan_brand(row):
         if manual_status == "sale":
             is_sale = True
             is_nosale = False
-        elif manual_status == "nosale":
+        elif manual_status == "nosale": # This should be caught by the earlier check, but for safety
             is_sale = False
 
         if not is_sale and not is_nosale:
@@ -243,7 +248,7 @@ def scan_brand(row):
                     if 5 <= manual_disc_val <= 95: 
                         discount = manual_disc_val
                 except: 
-                    print(f"Warning: Invalid manual_discount for {brand_en}: {manual_discount}")
+                    print(f"Warning: Invalid manual_discount for {brand_ko or brand_en}: {manual_discount}")
 
             result["discount"] = discount
             
@@ -256,10 +261,10 @@ def scan_brand(row):
                 result["banner_url"] = extract_banner(soup, scan_url)
                             
     except requests.exceptions.RequestException as req_err:
-        print(f"Error fetching {brand_en} ({scan_url}): {req_err}")
+        print(f"Error fetching {brand_ko or brand_en} ({scan_url}): {req_err}")
         result["status"] = "error"
     except Exception as e:
-        print(f"Error scanning {brand_en} ({scan_url}): {e}")
+        print(f"Error scanning {brand_ko or brand_en} ({scan_url}): {e}")
         result["status"] = "error"
 
     return result
@@ -271,16 +276,16 @@ def main():
     for i, row in enumerate(rows, 1):
         if not row.get("brand") and not row.get("brand_ko"): continue
         if row.get("enabled", "TRUE").upper() != "TRUE": 
-            print(f"Skipping disabled brand: {row.get("brand_ko") or row.get("brand")}")
+            print(f"Skipping disabled brand: {row.get('brand_ko') or row.get('brand')}")
             continue
         
         brand_name_display = row.get("brand_ko") or row.get("brand")
         print(f"[{i}/{len(rows)}] {brand_name_display}...", end=" ", flush=True)
         res = scan_brand(row)
-        # Only add to results if it's a sale and not an error
-        if res["status"] == "sale":
+        # Only add to results if it's a sale and not an error, and discount is > 0
+        if res["status"] == "sale" and res["discount"] > 0:
             results.append(res)
-        print(f"{res["status"].upper()} ({res["discount"]}%)")
+        print(f"{res['status'].upper()} ({res['discount']}%)")
         time.sleep(0.5)
 
     editorials = fetch_csv(EDITORIAL_CSV_URL)
