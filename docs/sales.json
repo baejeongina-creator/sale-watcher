@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-02-07T21:54:01.238232Z",
+  "generated_at": "2026-02-08T05:20:28.056800Z",
   "sales": [
     {
       "brand_en": "Sie",
@@ -44,6 +44,17 @@
       "discount": 30,
       "region": "KR",
       "sale_type": "SALE"
+    },
+    {
+      "brand_en": "Asura",
+      "brand_ko": "아수라",
+      "official_url": "https://s2asuras2.com/",
+      "sale_url": "https://s2asuras2.com/",
+      "banner_url": "https://cdn.imweb.me/thumbnail/20250626/4e07ef726e867.jpg",
+      "status": "sale",
+      "discount": 90,
+      "region": "KR",
+      "sale_type": "SEASON OFF"
     },
     {
       "brand_en": "Sinoon",
