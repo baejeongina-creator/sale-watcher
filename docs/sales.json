@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-02-08T21:54:59.842131Z",
+  "generated_at": "2026-02-09T05:27:08.950896Z",
   "sales": [
     {
       "brand_en": "Sie",
@@ -44,17 +44,6 @@
       "discount": 30,
       "region": "KR",
       "sale_type": "SALE"
-    },
-    {
-      "brand_en": "Asura",
-      "brand_ko": "아수라",
-      "official_url": "https://s2asuras2.com/",
-      "sale_url": "https://s2asuras2.com/",
-      "banner_url": "https://cdn.imweb.me/thumbnail/20250626/4e07ef726e867.jpg",
-      "status": "sale",
-      "discount": 90,
-      "region": "KR",
-      "sale_type": "SEASON OFF"
     },
     {
       "brand_en": "Sinoon",
@@ -143,17 +132,6 @@
       "discount": 80,
       "region": "KR",
       "sale_type": "SALE"
-    },
-    {
-      "brand_en": "Ders",
-      "brand_ko": "데스",
-      "official_url": "https://ders.kr/",
-      "sale_url": "https://ders.kr/",
-      "banner_url": "https://ecimg.cafe24img.com/pg1920b28728153083/fdrco/web/product/extra/small/20250822/a20766326bab5c096d1a9e2b3c124bdb.jpg",
-      "status": "sale",
-      "discount": 50,
-      "region": "KR",
-      "sale_type": "SEASON OFF"
     },
     {
       "brand_en": "Prevail",
@@ -283,7 +261,7 @@
       "sale_url": "https://ponytail.shop/",
       "banner_url": "https://ponytail.shop/web/upload/category/editor/2025/10/23/b3f404df68b31cbfb9402ff17345c72d.jpg",
       "status": "sale",
-      "discount": 30,
+      "discount": 50,
       "region": "KR",
       "sale_type": "OUTLET"
     },
@@ -341,17 +319,6 @@
       "discount": 10,
       "region": "GLOBAL",
       "sale_type": "SEASON OFF"
-    },
-    {
-      "brand_en": "GANNI",
-      "brand_ko": "가니",
-      "official_url": "https://www.ganni.com/",
-      "sale_url": "https://www.ganni.com/",
-      "banner_url": "https://www.ganni.com/on/demandware.static/-/Sites/default/dwcfb5b867/25-3-url.jpg",
-      "status": "sale",
-      "discount": 10,
-      "region": "GLOBAL",
-      "sale_type": "CLEARANCE"
     }
   ],
   "editorials": []
