@@ -240,21 +240,44 @@ def main():
     rows = fetch_csv(CSV_URL)
     
     results = []
+    failed_brands = []
     for i, row in enumerate(rows, 1):
-        if not row.get("brand"): continue
-        print(f'[{i}/{len(rows)}] {row.get("brand")}...', end=" ", flush=True)
-        res_json = scan_brand(json.dumps(row))
-        res = json.loads(res_json)
-        if res["status"] != "nosale": # Only add if not 'nosale'
-            results.append(res)
-        print(f"{res['status'].upper()} ({res['discount']}%)")
+        brand_name = row.get("brand", "Unknown Brand")
+        if not brand_name: continue
+        print(f'[{i}/{len(rows)}] {brand_name}...', end=" ", flush=True)
+        try:
+            res_json = scan_brand(json.dumps(row))
+            res = json.loads(res_json)
+            if res["status"] != "nosale": # Only add if not 'nosale'
+                results.append(res)
+            print(f"{res['status'].upper()} ({res['discount']}%)")
+        except Exception as e:
+            print(f"ERROR: Unhandled exception during scan for {brand_name}: {e}")
+            failed_brands.append(brand_name)
+            # Add a placeholder for failed brands to ensure sales.json is still generated
+            results.append({
+                "brand_en": row.get("brand", ""),
+                "brand_ko": row.get("brand_ko", ""),
+                "official_url": row.get("official_url", ""),
+                "sale_url": row.get("sale_url", ""),
+                "banner_url": row.get("banner_url", ""),
+                "status": "error",
+                "discount": 0,
+                "region": row.get("region", "KR").strip().upper(),
+                "sale_type": "ERROR"
+            })
+    
+    if failed_brands:
+        print(f"\n⚠️  Scanning completed with errors for the following brands: {', '.join(failed_brands)}")
 
     # Editorial Scan
     editorials = []
     try:
         editorials = fetch_csv(EDITORIAL_CSV_URL)
+    except requests.exceptions.RequestException as e:
+        print(f"❌ Could not fetch editorial CSV: {e}. Check URL or permissions.")
     except Exception as e:
-        print(f"❌ Could not fetch editorial CSV: {e}")
+        print(f"❌ An unexpected error occurred while fetching editorial CSV: {e}")
     
     output = {
         "generated_at": datetime.utcnow().isoformat() + "Z",
