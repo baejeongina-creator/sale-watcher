@@ -393,6 +393,7 @@
                     <div class="type-btn" onclick="filterType('SEASON OFF')" data-en="SEASON OFF" data-ko="시즌오프">SEASON OFF</div>
                     <div class="type-btn" onclick="filterType('CLEARANCE')" data-en="CLEARANCE" data-ko="클리어런스">CLEARANCE</div>
                     <div class="type-btn" onclick="filterType('REFURB')" data-en="REFURB (B-GRADE)" data-ko="리퍼브 (B급)">REFURB (B-GRADE)</div>
+                    <div class="type-btn" onclick="filterType('OUTLET')" data-en="OUTLET" data-ko="아울렛">OUTLET</div>
                 </div>
                 <select class="sort-select" id="sortSelect" onchange="render()">
                     <option value="disc_desc" data-en="Sort: Discount High" data-ko="정렬: 할인율 높은순">Sort: Discount High</option>
@@ -427,8 +428,8 @@
                 'SALE': '세일',
                 'SEASON OFF': '시즌오프',
                 'CLEARANCE': '클리어런스',
-                'OUTLET': '아울렛',
                 'REFURB': '리퍼브',
+                'OUTLET': '아울렛',
                 'DISCOUNT (HIGH-LOW)': '할인율 높은순',
                 'DISCOUNT (LOW-HIGH)': '할인율 낮은순',
                 'NO SALES FOUND': '현재 세일 중인 브랜드가 없습니다.',
@@ -446,8 +447,8 @@
                 'SALE': 'SALE',
                 'SEASON OFF': 'SEASON OFF',
                 'CLEARANCE': 'CLEARANCE',
-                'OUTLET': 'OUTLET',
                 'REFURB': 'REFURB',
+                'OUTLET': 'OUTLET',
                 'DISCOUNT (HIGH-LOW)': 'DISCOUNT (HIGH-LOW)',
                 'DISCOUNT (LOW-HIGH)': 'DISCOUNT (LOW-HIGH)',
                 'NO SALES FOUND': 'NO SALES FOUND.',
@@ -556,7 +557,7 @@
 
         function renderSales(region) {
             let filtered = allSales.filter(s => s.region === region);
-            if (currentType !== 'ALL') filtered = filtered.filter(s => s.sale_type === currentType);
+            if (currentType !== 'ALL') filtered = filtered.filter(s => s.sale_type.toUpperCase() === currentType);
             if (currentType === 'ALL' && currentDiscount > 0) {
                 if (currentDiscount === 10) filtered = filtered.filter(s => s.discount >= 10 && s.discount < 40);
                 else if (currentDiscount === 40) filtered = filtered.filter(s => s.discount >= 40 && s.discount < 70);
