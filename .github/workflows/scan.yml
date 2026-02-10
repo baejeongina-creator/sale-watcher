@@ -34,6 +34,8 @@ jobs:
       - name: Run scanner
         run: |
           python scripts/scan.py
+        env:
+          PYTHONPATH: .
 
       - name: Commit results
         run: |
