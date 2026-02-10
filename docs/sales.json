@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-02-06T18:40:54.931604Z",
+  "generated_at": "2026-02-10T10:24:01.352535Z",
   "sales": [
     {
       "brand_en": "Sie",
@@ -88,6 +88,17 @@
       "discount": 80,
       "region": "KR",
       "sale_type": "CLEARANCE"
+    },
+    {
+      "brand_en": "SUNBURN PROJECT",
+      "brand_ko": "썬번프로젝트",
+      "official_url": "https://sunburnproject.com/",
+      "sale_url": "https://sunburnproject.com/",
+      "banner_url": "https://sunburnproject.com/web/upload/share-image-1-58afefae1ffe53ef83a494ac0860abd5.jpg",
+      "status": "sale",
+      "discount": 10,
+      "region": "KR",
+      "sale_type": "SALE"
     },
     {
       "brand_en": "LEBANE",
@@ -241,7 +252,7 @@
       "status": "sale",
       "discount": 0,
       "region": "KR",
-      "sale_type": "REFURB"
+      "sale_type": "SALE"
     },
     {
       "brand_en": "Prevail",
@@ -448,7 +459,7 @@
       "sale_url": "https://www.apc-korea.com/",
       "banner_url": "https://www.apc-korea.com/image/apc/apcLogo.jpg",
       "status": "sale",
-      "discount": 10,
+      "discount": 0,
       "region": "GLOBAL",
       "sale_type": "SEASON OFF"
     },
