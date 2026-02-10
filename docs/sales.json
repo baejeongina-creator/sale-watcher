@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-02-09T23:04:59.889465Z",
+  "generated_at": "2026-02-10T05:29:45.848935Z",
   "sales": [
     {
       "brand_en": "Sie",
@@ -46,6 +46,17 @@
       "sale_type": "SALE"
     },
     {
+      "brand_en": "Asura",
+      "brand_ko": "아수라",
+      "official_url": "https://s2asuras2.com/",
+      "sale_url": "https://s2asuras2.com/",
+      "banner_url": "https://cdn.imweb.me/thumbnail/20250626/4e07ef726e867.jpg",
+      "status": "sale",
+      "discount": 90,
+      "region": "KR",
+      "sale_type": "SEASON OFF"
+    },
+    {
       "brand_en": "Sinoon",
       "brand_ko": "시눈",
       "official_url": "https://sinoon.co.kr/",
@@ -66,6 +77,17 @@
       "discount": 80,
       "region": "KR",
       "sale_type": "CLEARANCE"
+    },
+    {
+      "brand_en": "SUNBURN PROJECT",
+      "brand_ko": "썬번프로젝트",
+      "official_url": "https://sunburnproject.com/",
+      "sale_url": "https://sunburnproject.com/",
+      "banner_url": "https://sunburnproject.com/web/upload/share-image-1-58afefae1ffe53ef83a494ac0860abd5.jpg",
+      "status": "sale",
+      "discount": 10,
+      "region": "KR",
+      "sale_type": "SALE"
     },
     {
       "brand_en": "LEBANE",
@@ -308,17 +330,6 @@
       "discount": 95,
       "region": "KR",
       "sale_type": "CLEARANCE"
-    },
-    {
-      "brand_en": "A.P.C.",
-      "brand_ko": "아페쎄",
-      "official_url": "https://www.apc-korea.com/",
-      "sale_url": "https://www.apc-korea.com/",
-      "banner_url": "https://www.apc-korea.com/image/apc/apcLogo.jpg",
-      "status": "sale",
-      "discount": 10,
-      "region": "GLOBAL",
-      "sale_type": "SEASON OFF"
     }
   ],
   "editorials": []
