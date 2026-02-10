@@ -90,10 +90,15 @@
             letter-spacing: 0.05rem;
             transition: opacity 0.3s;
             cursor: pointer;
+            min-width: 130px;
+            text-align: center;
         }
 
         .nav-item:hover {
             opacity: 0.7;
+        }
+        .nav-item.active {
+            font-weight: 700;
         }
 
         .header-right {
@@ -203,10 +208,13 @@
             cursor: pointer;
             text-transform: uppercase;
             white-space: nowrap;
+            min-width: 100px;
+            text-align: center;
         }
 
         .type-btn.active {
             color: var(--black);
+            font-weight: 700;
             text-decoration: underline;
             text-underline-offset: 4px;
         }
@@ -236,6 +244,8 @@
             color: var(--gray-500);
             cursor: pointer;
             white-space: nowrap;
+            min-width: 80px;
+            text-align: center;
         }
 
         .discount-btn.active {
@@ -389,11 +399,11 @@
         <div class="sub-nav" id="subNav">
             <div class="filter-row">
                 <div class="type-filters">
-                    <div class="type-btn active" onclick="filterType('ALL')" data-en="ALL" data-ko="전체">ALL</div>
-                    <div class="type-btn" onclick="filterType('SEASON OFF')" data-en="SEASON OFF" data-ko="시즌오프">SEASON OFF</div>
-                    <div class="type-btn" onclick="filterType('CLEARANCE')" data-en="CLEARANCE" data-ko="클리어런스">CLEARANCE</div>
-                    <div class="type-btn" onclick="filterType('REFURB')" data-en="REFURB (B-GRADE)" data-ko="리퍼브 (B급)">REFURB (B-GRADE)</div>
-                    <div class="type-btn" onclick="filterType('OUTLET')" data-en="OUTLET" data-ko="아울렛">OUTLET</div>
+                    <div class="type-btn active" onclick="filterType('ALL')" data-type="ALL" data-en="ALL" data-ko="전체">ALL</div>
+                    <div class="type-btn" onclick="filterType('SEASON OFF')" data-type="SEASON OFF" data-en="SEASON OFF" data-ko="시즌오프">SEASON OFF</div>
+                    <div class="type-btn" onclick="filterType('CLEARANCE')" data-type="CLEARANCE" data-en="CLEARANCE" data-ko="클리어런스">CLEARANCE</div>
+                    <div class="type-btn" onclick="filterType('REFURB')" data-type="REFURB" data-en="REFURB (B-GRADE)" data-ko="리퍼브 (B급)">REFURB (B-GRADE)</div>
+                    <div class="type-btn" onclick="filterType('OUTLET')" data-type="OUTLET" data-en="OUTLET" data-ko="아울렛">OUTLET</div>
                 </div>
                 <select class="sort-select" id="sortSelect" onchange="render()">
                     <option value="disc_desc" data-en="Sort: Discount High" data-ko="정렬: 할인율 높은순">Sort: Discount High</option>
@@ -401,10 +411,10 @@
                 </select>
             </div>
             <div class="discount-row" id="discountRow">
-                <div class="discount-btn active" onclick="filterDiscount(0)" data-en="All Discounts" data-ko="전체 할인율">All Discounts</div>
-                <div class="discount-btn" onclick="filterDiscount(10)">10-30%</div>
-                <div class="discount-btn" onclick="filterDiscount(40)">40-60%</div>
-                <div class="discount-btn" onclick="filterDiscount(70)">70-90%</div>
+                <div class="discount-btn active" onclick="filterDiscount(0)" data-discount="0" data-en="All Discounts" data-ko="전체 할인율">All Discounts</div>
+                <div class="discount-btn" onclick="filterDiscount(10)" data-discount="10">10-30%</div>
+                <div class="discount-btn" onclick="filterDiscount(40)" data-discount="40">40-60%</div>
+                <div class="discount-btn" onclick="filterDiscount(70)" data-discount="70">70-90%</div>
             </div>
         </div>
 
@@ -493,7 +503,7 @@
                 item.textContent = translations[currentLang][item.dataset.page.replace('-brands', '').toUpperCase()] || item.dataset.page.replace('-brands', '').toUpperCase();
             });
             document.querySelectorAll('.type-btn').forEach(btn => {
-                btn.textContent = translations[currentLang][btn.dataset.type] || btn.dataset.type;
+                btn.textContent = btn.getAttribute('data-' + currentLang);
             });
             document.querySelectorAll('#sortSelect option').forEach(option => {
                 option.textContent = translations[currentLang][option.value.replace('disc_desc', 'DISCOUNT (HIGH-LOW)').replace('disc_asc', 'DISCOUNT (LOW-HIGH)').replace('name_asc', 'SORT: A-Z').replace('name_desc', 'SORT: Z-A')] || option.textContent;
