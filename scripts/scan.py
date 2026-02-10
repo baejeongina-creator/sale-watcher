@@ -287,8 +287,8 @@ def main():
 
     import os
     # Use an absolute path to ensure it's saved correctly
-    output_path = "/home/ubuntu/sale-watcher/docs/sales.json"
-    os.makedirs(os.path.dirname(output_path), exist_ok=True)
+    output_path = os.path.join(os.getcwd(), "docs", "sales.json")
+    os.makedirs(os.path.dirname(output_path), exist_ok=True, mode=0o755)
     with open(output_path, "w", encoding="utf-8") as f:
         json.dump(output, f, ensure_ascii=False, indent=2)
     print(f"✅ Complete. Saved to docs/sales.json")
