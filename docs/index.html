@@ -16,7 +16,6 @@
             --border: #e0e0e0;
             --main-font-en: 'Inter', sans-serif;
             --main-font-ko: 'Noto Sans KR', sans-serif;
-            /* Variables from uploaded CSS */
             --gray-100: #f8f8f8;
             --gray-200: #eeeeee;
             --gray-500: #767676;
@@ -27,7 +26,7 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: var(--main-font-ko); /* Default to Korean font */
+            font-family: var(--main-font-ko);
             -webkit-font-smoothing: antialiased;
         }
 
@@ -41,7 +40,6 @@
             font-family: var(--main-font-en);
         }
 
-        /* Current Header CSS */
         header {
             padding: 20px 40px;
             border-bottom: 1px solid var(--border);
@@ -137,7 +135,6 @@
             opacity: 0.7;
         }
 
-        /* Uploaded CSS (excluding header-specific rules) */
         .overlay {
             position: fixed;
             top: 0;
@@ -372,7 +369,6 @@
         </ul>
     </nav>
 
-    <!-- Current Header HTML -->
     <header>
         <div class="header-left">
             <a href="#" class="logo" id="logo-link">SALE ARCHIVE</a>
@@ -389,7 +385,6 @@
         </div>
     </header>
 
-    <!-- Uploaded Body Content -->
     <div id="mainContent">
         <div class="sub-nav" id="subNav">
             <div class="filter-row">
@@ -420,214 +415,6 @@
     </footer>
 
     <script>
-        let allSales = [];
-        let currentRegion = 'KR';
-        let currentType = 'ALL';
-        let currentDiscount = 0;
-        let currentLang = 'ko'; // Changed to 'ko' to match current site's default
-
-        const menuTrigger = document.getElementById('menuTrigger');
-        const sideMenu = document.getElementById('sideMenu');
-        const overlay = document.getElementById('overlay');
-        const brandGrid = document.getElementById('brandGrid');
-        const discountRow = document.getElementById('discountRow');
-        const searchInput = document.getElementById('search-input'); // Added search input
-
-        // Event Listeners for current header elements
-        document.getElementById('logo-link').addEventListener('click', (e) => {
-            e.preventDefault();
-            showPage('korean-brands');
-        });
-        document.getElementById('lang-toggle').addEventListener('click', toggleLang);
-        document.querySelectorAll('.nav-item').forEach(link => {
-            link.addEventListener('click', (e) => {
-                e.preventDefault();
-                showPage(e.target.dataset.page);
-            });
-        });
-        searchInput.addEventListener('input', render); // Render on search input
-
-        menuTrigger.onclick = () => { sideMenu.classList.toggle('active'); overlay.classList.toggle('active'); };
-        overlay.onclick = () => { sideMenu.classList.remove('active'); overlay.classList.remove('active'); };
-
-        function toggleLang() {
-            currentLang = currentLang === 'ko' ? 'en' : 'ko';
-            document.body.classList.toggle('en', currentLang === 'en'); // Toggle body class for font
-            document.getElementById('lang-toggle').textContent = currentLang === 'ko' ? 'EN / KR' : 'KR / EN'; // Update lang toggle text
-
-            // Update navigation and filter button texts
-            document.querySelectorAll('.nav-item').forEach(item => {
-                item.textContent = translations[currentLang][item.dataset.page.replace('-brands', '').toUpperCase()] || item.dataset.page.replace('-brands', '').toUpperCase();
-            });
-            document.querySelectorAll('.type-btn').forEach(btn => {
-                btn.textContent = translations[currentLang][btn.dataset.type] || btn.dataset.type;
-            });
-            document.querySelectorAll('#sortSelect option').forEach(option => {
-                option.textContent = translations[currentLang][option.value.replace('disc_desc', 'DISCOUNT (HIGH-LOW)').replace('disc_asc', 'DISCOUNT (LOW-HIGH)').replace('name_asc', 'SORT: A-Z').replace('name_desc', 'SORT: Z-A')] || option.textContent;
-            });
-            document.querySelectorAll('.discount-btn').forEach(btn => {
-                const originalText = btn.getAttribute('data-en');
-                btn.textContent = translations[currentLang][originalText] || originalText;
-            });
-
-            render();
-        }
-
-        async function loadData() {
-            try {
-                const res = await fetch('sales.json?t=' + Date.now());
-                const data = await res.json();
-                allSales = data.sales.filter(s => s.status === 'sale');
-                render();
-            } catch (e) {
-                brandGrid.innerHTML = '<div style="grid-column: 1/-1; padding: 100px; text-align: center;">Error loading data.</div>';
-            }
-        }
-
-        function filterRegion(region) {
-            currentRegion = region;
-            // This part needs to be adjusted to show/hide sections based on the current header's page structure
-            // For now, we'll just re-render the main grid
-            sideMenu.classList.remove('active');
-            overlay.classList.remove('active');
-            render();
-        }
-
-        function filterType(type) {
-            currentType = type;
-            currentDiscount = 0;
-            
-            if (type === 'ALL') {
-                discountRow.classList.remove('hidden');
-            } else {
-                discountRow.classList.add('hidden');
-            }
-            
-            document.querySelectorAll('.type-btn').forEach(btn => {
-                btn.classList.toggle('active', btn.dataset.type === type);
-            });
-            
-            document.querySelectorAll('.discount-btn').forEach(btn => {
-                btn.classList.toggle('active', parseInt(btn.dataset.discount) === 0);
-            });
-            
-            render();
-        }
-
-        function filterDiscount(val) {
-            currentDiscount = val;
-            document.querySelectorAll('.discount-btn').forEach(btn => {
-                btn.classList.toggle('active', parseInt(btn.dataset.discount) === val);
-            });
-            render();
-        }
-
-        function showPage(pageId) {
-            // This function needs to be adapted to the new page structure from the current index.html
-            // For now, it will just re-render the sales grid based on region
-            document.querySelectorAll('.page-section').forEach(section => section.classList.remove('active'));
-            document.getElementById(pageId + '-page').classList.add('active');
-            currentPage = pageId;
-
-            if (pageId === 'korean-brands') renderSales('KR');
-            else if (pageId === 'global-brands') renderSales('GLOBAL');
-            else if (pageId === 'editorial') renderEditorials();
-            else if (pageId === 'about') renderAbout();
-
-            sideMenu.classList.remove('active');
-            overlay.classList.remove('active');
-        }
-
-        function renderSales(region) {
-            let filtered = allSales.filter(s => s.region === region);
-
-            if (currentType !== 'ALL') filtered = filtered.filter(s => s.sale_type === currentType);
-            
-            if (currentType === 'ALL' && currentDiscount > 0) {
-                if (currentDiscount === 10) {
-                    filtered = filtered.filter(s => s.discount >= 10 && s.discount < 40);
-                } else if (currentDiscount === 40) {
-                    filtered = filtered.filter(s => s.discount >= 40 && s.discount < 70);
-                } else if (currentDiscount === 70) {
-                    filtered = filtered.filter(s => s.discount >= 70);
-                }
-            }
-
-            const searchTerm = searchInput.value.toLowerCase();
-            if (searchTerm) {
-                filtered = filtered.filter(sale => 
-                    sale.brand_ko.toLowerCase().includes(searchTerm) || 
-                    sale.brand_en.toLowerCase().includes(searchTerm)
-                );
-            }
-
-            const sortBy = document.getElementById('sortSelect').value;
-            filtered.sort((a, b) => {
-                if (sortBy === 'name_asc') return a.brand_en.localeCompare(b.brand_en);
-                if (sortBy === 'name_desc') return b.brand_en.localeCompare(a.brand_en);
-                if (sortBy === 'disc_desc') return b.discount - a.discount;
-                if (sortBy === 'disc_asc') return a.discount - b.discount;
-                return 0;
-            });
-
-            const gridId = region === 'KR' ? 'korean-sales-grid' : 'global-sales-grid';
-            const noSalesId = region === 'KR' ? 'korean-no-sales' : 'global-no-sales';
-            const salesGrid = document.getElementById('brandGrid'); // Use the existing brandGrid
-            salesGrid.innerHTML = '';
-
-            if (filtered.length === 0) {
-                salesGrid.innerHTML = '<div style="grid-column: 1/-1; padding: 100px; text-align: center; text-transform: uppercase; font-size: 12px; letter-spacing: 1px;">' + translations[currentLang]['NO SALES FOUND'] + '</div>';
-            } else {
-                filtered.forEach(item => {
-                    let primaryBrandName, secondaryBrandName;
-                    let primaryBrandClass, secondaryBrandClass;
-
-                    if (currentLang === 'ko') {
-                        primaryBrandName = item.brand_ko;
-                        secondaryBrandName = item.brand_en;
-                        primaryBrandClass = 'brand-ko-primary';
-                        secondaryBrandClass = 'brand-en-secondary';
-                    } else {
-                        primaryBrandName = item.brand_en;
-                        secondaryBrandName = item.brand_ko;
-                        primaryBrandClass = 'brand-en-primary';
-                        secondaryBrandClass = 'brand-ko-secondary';
-                    }
-
-                    const card = document.createElement('a');
-                    card.href = item.sale_url;
-                    card.className = 'brand-card';
-                    card.target = '_blank';
-                    card.innerHTML = `
-                        <div class="brand-image-container">
-                            <img src="${item.banner_url || 'https://via.placeholder.com/600x800?text=' + primaryBrand}" alt="${primaryBrand}" onerror="this.src='https://via.placeholder.com/600x800?text=${primaryBrand}'">
-                        </div>
-                        <div class="brand-info">
-                            <div class="brand-name-row">
-                                <span class="${primaryBrandClass}">${primaryBrandName}</span>
-                                ${secondaryBrandName ? `<span class="${secondaryBrandClass}" style="display: block; margin-top: 2px;">${secondaryBrandName}</span>` : ''}
-                            </div>
-                            <div class="discount-info">
-                                <span class="discount-pct">${item.discount > 0 ? item.discount + '%' : 'SALE'}</span>
-                                <span class="sale-label">${item.sale_type}</span>
-                            </div>
-                        </div>
-                    `;
-                    salesGrid.appendChild(card);
-                });
-            }
-        }
-
-        function renderEditorials() {
-            // Placeholder for editorial rendering
-            document.getElementById('brandGrid').innerHTML = '<h2 style="grid-column: 1/-1; padding: 100px; text-align: center;">' + translations[currentLang]['EDITORIAL'] + '</h2><div style="grid-column: 1/-1; padding: 100px; text-align: center; text-transform: uppercase; font-size: 12px; letter-spacing: 1px;">' + translations[currentLang]['NO SALES FOUND'] + '</div>';
-        }
-
-        function renderAbout() {
-            // Placeholder for about rendering
-            document.getElementById('brandGrid').innerHTML = '<h2 style="grid-column: 1/-1; padding: 100px; text-align: center;">' + translations[currentLang]['ABOUT'] + '</h2><div style="grid-column: 1/-1; padding: 100px; text-align: center; text-transform: uppercase; font-size: 12px; letter-spacing: 1px;">' + translations[currentLang]['NO SALES FOUND'] + '</div>';
-        }
-
         const translations = {
             'ko': {
                 'KOREAN BRANDS': '한국 브랜드',
@@ -669,9 +456,167 @@
             }
         };
 
+        let allSales = [];
+        let currentRegion = 'KR';
+        let currentType = 'ALL';
+        let currentDiscount = 0;
+        let currentLang = 'ko';
+        let currentPage = 'korean-brands';
+
+        const sideMenu = document.getElementById('sideMenu');
+        const overlay = document.getElementById('overlay');
+        const brandGrid = document.getElementById('brandGrid');
+        const discountRow = document.getElementById('discountRow');
+        const searchInput = document.getElementById('search-input');
+
+        document.getElementById('logo-link').addEventListener('click', (e) => {
+            e.preventDefault();
+            showPage('korean-brands');
+        });
+        document.getElementById('lang-toggle').addEventListener('click', toggleLang);
+        document.querySelectorAll('.nav-item').forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                showPage(e.target.dataset.page);
+            });
+        });
+        searchInput.addEventListener('input', render);
+        overlay.onclick = () => { sideMenu.classList.remove('active'); overlay.classList.remove('active'); };
+
+        function toggleLang() {
+            currentLang = currentLang === 'ko' ? 'en' : 'ko';
+            document.body.classList.toggle('en', currentLang === 'en');
+            document.getElementById('lang-toggle').textContent = currentLang === 'ko' ? 'EN / KR' : 'KR / EN';
+
+            document.querySelectorAll('.nav-item').forEach(item => {
+                item.textContent = translations[currentLang][item.dataset.page.replace('-brands', '').toUpperCase()] || item.dataset.page.replace('-brands', '').toUpperCase();
+            });
+            document.querySelectorAll('.type-btn').forEach(btn => {
+                btn.textContent = translations[currentLang][btn.dataset.type] || btn.dataset.type;
+            });
+            document.querySelectorAll('#sortSelect option').forEach(option => {
+                option.textContent = translations[currentLang][option.value.replace('disc_desc', 'DISCOUNT (HIGH-LOW)').replace('disc_asc', 'DISCOUNT (LOW-HIGH)').replace('name_asc', 'SORT: A-Z').replace('name_desc', 'SORT: Z-A')] || option.textContent;
+            });
+            document.querySelectorAll('.discount-btn').forEach(btn => {
+                const originalText = btn.getAttribute('data-en');
+                if (originalText) btn.textContent = translations[currentLang][originalText] || originalText;
+            });
+
+            render();
+        }
+
+        async function loadData() {
+            try {
+                const res = await fetch('sales.json?t=' + Date.now());
+                const data = await res.json();
+                allSales = data.sales.filter(s => s.status === 'sale');
+                render();
+            } catch (e) {
+                brandGrid.innerHTML = '<div style="grid-column: 1/-1; padding: 100px; text-align: center;">Error loading data.</div>';
+            }
+        }
+
+        function filterRegion(region) {
+            currentRegion = region;
+            sideMenu.classList.remove('active');
+            overlay.classList.remove('active');
+            render();
+        }
+
+        function filterType(type) {
+            currentType = type;
+            currentDiscount = 0;
+            if (type === 'ALL') discountRow.classList.remove('hidden');
+            else discountRow.classList.add('hidden');
+            document.querySelectorAll('.type-btn').forEach(btn => btn.classList.toggle('active', btn.dataset.type === type));
+            document.querySelectorAll('.discount-btn').forEach(btn => btn.classList.toggle('active', parseInt(btn.dataset.discount) === 0));
+            render();
+        }
+
+        function filterDiscount(val) {
+            currentDiscount = val;
+            document.querySelectorAll('.discount-btn').forEach(btn => btn.classList.toggle('active', parseInt(btn.dataset.discount) === val));
+            render();
+        }
+
+        function render() {
+            if (currentPage === 'korean-brands') renderSales('KR');
+            else if (currentPage === 'global-brands') renderSales('GLOBAL');
+            else if (currentPage === 'editorial') renderEditorials();
+            else if (currentPage === 'about') renderAbout();
+        }
+
+        function showPage(pageId) {
+            currentPage = pageId;
+            render();
+            document.querySelectorAll('.nav-item').forEach(item => item.classList.toggle('active', item.dataset.page === pageId));
+            sideMenu.classList.remove('active');
+            overlay.classList.remove('active');
+        }
+
+        function renderSales(region) {
+            let filtered = allSales.filter(s => s.region === region);
+            if (currentType !== 'ALL') filtered = filtered.filter(s => s.sale_type === currentType);
+            if (currentType === 'ALL' && currentDiscount > 0) {
+                if (currentDiscount === 10) filtered = filtered.filter(s => s.discount >= 10 && s.discount < 40);
+                else if (currentDiscount === 40) filtered = filtered.filter(s => s.discount >= 40 && s.discount < 70);
+                else if (currentDiscount === 70) filtered = filtered.filter(s => s.discount >= 70);
+            }
+            const searchTerm = searchInput.value.toLowerCase();
+            if (searchTerm) {
+                filtered = filtered.filter(sale => sale.brand_ko.toLowerCase().includes(searchTerm) || sale.brand_en.toLowerCase().includes(searchTerm));
+            }
+            const sortBy = document.getElementById('sortSelect').value;
+            filtered.sort((a, b) => {
+                if (sortBy === 'disc_desc') return b.discount - a.discount;
+                if (sortBy === 'disc_asc') return a.discount - b.discount;
+                return 0;
+            });
+            brandGrid.innerHTML = '';
+            if (filtered.length === 0) {
+                brandGrid.innerHTML = '<div style="grid-column: 1/-1; padding: 100px; text-align: center; text-transform: uppercase; font-size: 12px; letter-spacing: 1px;">' + translations[currentLang]['NO SALES FOUND'] + '</div>';
+            } else {
+                filtered.forEach(item => {
+                    let primaryBrandName, secondaryBrandName, primaryBrandClass, secondaryBrandClass;
+                    if (currentLang === 'ko') {
+                        primaryBrandName = item.brand_ko; secondaryBrandName = item.brand_en;
+                        primaryBrandClass = 'brand-ko-primary'; secondaryBrandClass = 'brand-en-secondary';
+                    } else {
+                        primaryBrandName = item.brand_en; secondaryBrandName = item.brand_ko;
+                        primaryBrandClass = 'brand-en-primary'; secondaryBrandClass = 'brand-ko-secondary';
+                    }
+                    const card = document.createElement('a');
+                    card.href = item.sale_url; card.className = 'brand-card'; card.target = '_blank';
+                    card.innerHTML = `
+                        <div class="brand-image-container">
+                            <img src="${item.banner_url || 'https://via.placeholder.com/600x800?text=' + primaryBrandName}" alt="${primaryBrandName}" onerror="this.src='https://via.placeholder.com/600x800?text=${primaryBrandName}'">
+                        </div>
+                        <div class="brand-info">
+                            <div class="brand-name-row">
+                                <span class="${primaryBrandClass}">${primaryBrandName}</span>
+                                ${secondaryBrandName ? `<span class="${secondaryBrandClass}" style="display: block; margin-top: 2px;">${secondaryBrandName}</span>` : ''}
+                            </div>
+                            <div class="discount-info">
+                                <span class="discount-pct">${item.discount > 0 ? item.discount + '%' : 'SALE'}</span>
+                                <span class="sale-label">${item.sale_type}</span>
+                            </div>
+                        </div>
+                    `;
+                    brandGrid.appendChild(card);
+                });
+            }
+        }
+
+        function renderEditorials() {
+            brandGrid.innerHTML = '<div style="grid-column: 1/-1; padding: 100px; text-align: center; text-transform: uppercase; font-size: 12px; letter-spacing: 1px;">Editorial content coming soon.</div>';
+        }
+
+        function renderAbout() {
+            brandGrid.innerHTML = '<div style="grid-column: 1/-1; padding: 100px; text-align: center; text-transform: uppercase; font-size: 12px; letter-spacing: 1px;">About SALE ARCHIVE.</div>';
+        }
+
         document.addEventListener('DOMContentLoaded', () => {
             loadData();
-            // Initial render for Korean Brands page
             showPage('korean-brands');
         });
     </script>
