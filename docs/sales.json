@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-02-10T10:24:01.352535Z",
+  "generated_at": "2026-02-10T11:40:49.522012Z",
   "sales": [
     {
       "brand_en": "Sie",
@@ -62,10 +62,10 @@
       "official_url": "https://s2asuras2.com/",
       "sale_url": "https://s2asuras2.com/",
       "banner_url": "https://cdn.imweb.me/thumbnail/20250626/4e07ef726e867.jpg",
-      "status": "sale",
-      "discount": 90,
+      "status": "error",
+      "discount": 0,
       "region": "KR",
-      "sale_type": "SEASON OFF"
+      "sale_type": "SALE"
     },
     {
       "brand_en": "Sinoon",
@@ -187,6 +187,17 @@
       "discount": 50,
       "region": "KR",
       "sale_type": "SEASON OFF"
+    },
+    {
+      "brand_en": "Amabe",
+      "brand_ko": "아마베",
+      "official_url": "https://amabe.kr/",
+      "sale_url": "https://amabe.kr/",
+      "banner_url": "",
+      "status": "error",
+      "discount": 0,
+      "region": "KR",
+      "sale_type": "SALE"
     },
     {
       "brand_en": "Thetis",
