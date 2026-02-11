@@ -215,8 +215,6 @@
         .type-btn.active {
             color: var(--black);
             font-weight: 700;
-            text-decoration: underline;
-            text-underline-offset: 4px;
         }
 
         .sort-select {
@@ -508,11 +506,29 @@
             document.querySelectorAll('#sortSelect option').forEach(option => {
                 option.textContent = translations[currentLang][option.value.replace('disc_desc', 'DISCOUNT (HIGH-LOW)').replace('disc_asc', 'DISCOUNT (LOW-HIGH)').replace('name_asc', 'SORT: A-Z').replace('name_desc', 'SORT: Z-A')] || option.textContent;
             });
-            document.querySelectorAll('.discount-btn').forEach(btn => {
-                const originalText = btn.getAttribute('data-en');
-                if (originalText) btn.textContent = translations[currentLang][originalText] || originalText;
+            document.querySelectorAll(".discount-btn").forEach(btn => {
+                if (btn.dataset.discount === "0") {
+                    btn.textContent = translations[currentLang]["All Discounts"];
+                } else {
+                    btn.textContent = btn.getAttribute("data-" + currentLang);
+                }
             });
 
+            // Re-apply current filter states to ensure active classes and visibility are correct
+            document.querySelectorAll('.type-btn').forEach(btn => btn.classList.toggle('active', btn.dataset.type === currentType));
+            document.querySelectorAll('.discount-btn').forEach(btn => btn.classList.toggle('active', parseInt(btn.dataset.discount) === currentDiscount));
+
+            // Ensure discount row visibility is maintained
+            if (currentPage === 'korean-brands' || currentPage === 'global-brands') {
+                subNav.style.display = 'block';
+                if (currentType === 'ALL') {
+                    discountRow.classList.remove('hidden');
+                } else {
+                    discountRow.classList.add('hidden');
+                }
+            } else {
+                subNav.style.display = 'none';
+            }
             render();
         }
 
