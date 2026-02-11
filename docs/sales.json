@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-02-11T11:34:19.750436Z",
+  "generated_at": "2026-02-11T15:18:02.077640Z",
   "sales": [
     {
       "brand_en": "Sie",
@@ -453,6 +453,138 @@
       "sale_type": "CLEARANCE"
     },
     {
+      "brand_en": "Siyazu",
+      "brand_ko": "시야쥬",
+      "official_url": "https://siyazu.co.kr/",
+      "sale_url": "https://siyazu.co.kr/",
+      "banner_url": "https://siyazu.co.kr/web/upload/og_image2.jpg",
+      "status": "sale",
+      "discount": 70,
+      "region": "KR",
+      "sale_type": "SALE"
+    },
+    {
+      "brand_en": "Michiko London",
+      "brand_ko": "미치코런던 코시노",
+      "official_url": "https://michiko-london.kr/",
+      "sale_url": "https://michiko-london.kr/",
+      "banner_url": "https://michiko-london.kr/web/upload/share-image-1-2c3f6f49e417b26872b939ad47bcf895.png",
+      "status": "sale",
+      "discount": 0,
+      "region": "KR",
+      "sale_type": "SALE"
+    },
+    {
+      "brand_en": "Loeuvre",
+      "brand_ko": "루에브르",
+      "official_url": "https://m.maisonloeuvre.com",
+      "sale_url": "https://m.maisonloeuvre.com",
+      "banner_url": "https://m.maisonloeuvre.com/web/upload/share-image-1-53997a6bb7b5116c6e4f284ba2e3935a.jpg",
+      "status": "sale",
+      "discount": 20,
+      "region": "KR",
+      "sale_type": "SALE"
+    },
+    {
+      "brand_en": "Teket",
+      "brand_ko": "테켓",
+      "official_url": "https://te-ket.com",
+      "sale_url": "https://te-ket.com",
+      "banner_url": "https://te-ket.com/web/upload/share-image-1-b9da55c1c393dec286f7ed6145b1e05b.jpg",
+      "status": "sale",
+      "discount": 5,
+      "region": "KR",
+      "sale_type": "SALE"
+    },
+    {
+      "brand_en": "Salty Pebble",
+      "brand_ko": "솔티페블",
+      "official_url": "https://saltypebble.com",
+      "sale_url": "https://saltypebble.com",
+      "banner_url": "http://www.saltypebble.com/images/PB_logo.jpg",
+      "status": "sale",
+      "discount": 70,
+      "region": "KR",
+      "sale_type": "SALE"
+    },
+    {
+      "brand_en": "LCDC Seoul",
+      "brand_ko": "엘씨디씨서울",
+      "official_url": "https://lcdc-seoul.com",
+      "sale_url": "https://lcdc-seoul.com",
+      "banner_url": "http://lcdcseoul.cafe24.com/web/imgs/og.jpg",
+      "status": "sale",
+      "discount": 0,
+      "region": "KR",
+      "sale_type": "SALE"
+    },
+    {
+      "brand_en": "Atelier Nain",
+      "brand_ko": "아틀리에 나인",
+      "official_url": "https://www.nain.co.kr",
+      "sale_url": "https://www.nain.co.kr",
+      "banner_url": "https://www.nain.co.kr/shopimages/byyj1/all_og__20230714141615php59aZlP.jpg",
+      "status": "sale",
+      "discount": 10,
+      "region": "KR",
+      "sale_type": "OUTLET"
+    },
+    {
+      "brand_en": "Eeah",
+      "brand_ko": "이아",
+      "official_url": "https://eaah.net",
+      "sale_url": "https://eaah.net",
+      "banner_url": "https://eaah.net/web/upload/category/editor/2026/02/06/6aea45298bbebe5ad93da6f81a45a99d.png",
+      "status": "sale",
+      "discount": 10,
+      "region": "KR",
+      "sale_type": "SALE"
+    },
+    {
+      "brand_en": "Langer",
+      "brand_ko": "랑거",
+      "official_url": "https://m.langer.kr",
+      "sale_url": "https://m.langer.kr",
+      "banner_url": "https://m.langer.kr/web/bloom_img/%EB%AA%A8%EB%B0%94%EC%9D%BC%20%EB%8C%80%ED%91%9C%EC%9D%B4%EB%AF%B8%EC%A7%80%20-%200.jpg",
+      "status": "sale",
+      "discount": 70,
+      "region": "KR",
+      "sale_type": "SALE"
+    },
+    {
+      "brand_en": "108Pound",
+      "brand_ko": "108파운드",
+      "official_url": "https://108pound.com",
+      "sale_url": "https://108pound.com",
+      "banner_url": "https://ecimg.cafe24img.com/pg1910b38338439015/company108/web/upload/category/editor/2025/06/19/3dfa89b3fab3e626125d05feb93bf06f.gif",
+      "status": "sale",
+      "discount": 10,
+      "region": "KR",
+      "sale_type": "SALE"
+    },
+    {
+      "brand_en": "overdue flair",
+      "brand_ko": "오버듀플레어",
+      "official_url": "https://overdueflair.com",
+      "sale_url": "https://overdueflair.com",
+      "banner_url": "https://overdueflair.com/web/upload/share-image-1-56123f34fa6544f424170309c4a85329.jpg",
+      "status": "sale",
+      "discount": 20,
+      "region": "KR",
+      "sale_type": "SALE"
+    },
+    {
+      "brand_en": "The Barnet",
+      "brand_ko": "더바넷",
+      "official_url": "https://the-barnnet.com",
+      "sale_url": "https://the-barnnet.com",
+      "banner_url": "https://thebarnnet.cafe24.com/web/img/seo_img.jpg",
+      "status": "sale",
+      "discount": 0,
+      "region": "KR",
+      "sale_type": "SALE"
+    },
+    {
       "brand_en": "A.P.C.",
       "brand_ko": "아페쎄",
       "official_url": "https://www.apc-korea.com/",
@@ -487,17 +619,6 @@
     },
     {
       "brand_en": "GANT",
-      "brand_ko": "",
-      "official_url": "",
-      "sale_url": "",
-      "banner_url": "",
-      "status": "invalid_url",
-      "discount": 0,
-      "region": "GLOBAL",
-      "sale_type": "SALE"
-    },
-    {
-      "brand_en": "POLO RALPH LAUREN",
       "brand_ko": "",
       "official_url": "",
       "sale_url": "",
@@ -564,17 +685,6 @@
     },
     {
       "brand_en": "Sandro",
-      "brand_ko": "",
-      "official_url": "",
-      "sale_url": "",
-      "banner_url": "",
-      "status": "invalid_url",
-      "discount": 0,
-      "region": "GLOBAL",
-      "sale_type": "SALE"
-    },
-    {
-      "brand_en": "Sam Edelman",
       "brand_ko": "",
       "official_url": "",
       "sale_url": "",
@@ -658,7 +768,7 @@
       "banner_url": "",
       "status": "invalid_url",
       "discount": 0,
-      "region": "KR",
+      "region": "GLOBAL",
       "sale_type": "SALE"
     }
   ],
