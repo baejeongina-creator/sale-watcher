@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-02-11T20:03:10.237146Z",
+  "generated_at": "2026-02-11T22:06:06.664891Z",
   "sales": [
     {
       "brand_en": "Sie",
@@ -281,7 +281,7 @@
       "brand_ko": "에퓨레",
       "official_url": "https://www.epure.co.kr/",
       "sale_url": "https://www.epure.co.kr/",
-      "banner_url": "https://epure.co.kr/web/upload/share-image-1-f35aca149ecf66ead4f7a9b4051da292.jpg",
+      "banner_url": "https://www.epure.co.kr/web/upload/share-image-1-f35aca149ecf66ead4f7a9b4051da292.jpg",
       "status": "sale",
       "discount": 50,
       "region": "KR",
@@ -523,11 +523,11 @@
       "brand_ko": "아틀리에 나인",
       "official_url": "https://www.nain.co.kr",
       "sale_url": "https://www.nain.co.kr",
-      "banner_url": "https://www.nain.co.kr/shopimages/byyj1/all_og__20230714141615php59aZlP.jpg",
-      "status": "sale",
-      "discount": 10,
+      "banner_url": "",
+      "status": "error",
+      "discount": 0,
       "region": "KR",
-      "sale_type": "OUTLET"
+      "sale_type": "SALE"
     },
     {
       "brand_en": "Eeah",
