@@ -370,142 +370,116 @@
 
     <nav class="side-menu" id="sideMenu">
         <ul>
-            <li><a href="#" onclick="filterRegion('KR')" data-en="Korean Brands" data-ko="국내 브랜드">Korean Brands</a></li>
-            <li><a href="#" onclick="filterRegion('GLOBAL')" data-en="Global Brands" data-ko="해외 브랜드">Global Brands</a></li>
-            <li><a href="#" onclick="showPage('editorial')" data-en="Editorial" data-ko="에디토리얼">Editorial</a></li>
-            <li><a href="#" onclick="showPage('about')" data-en="About" data-ko="소개">About</a></li>
+            <li><a href="#" onclick="filterRegion('KR')">KOREAN BRANDS</a></li>
+            <li><a href="#" onclick="filterRegion('GLOBAL')">GLOBAL BRANDS</a></li>
+            <li><a href="#">EDITORIAL</a></li>
+            <li><a href="#">ABOUT</a></li>
         </ul>
     </nav>
 
     <header>
         <div class="header-left">
-            <a href="#" class="logo" id="logo-link">SALE ARCHIVE</a>
+            <a href="#" class="logo" onclick="showPage('korean-brands')">SALE ARCHIVE</a>
         </div>
         <nav class="nav-menu">
-            <a href="#" class="nav-item" data-page="korean-brands">KOREAN BRANDS</a>
-            <a href="#" class="nav-item" data-page="global-brands">GLOBAL BRANDS</a>
-            <a href="#" class="nav-item" data-page="editorial">EDITORIAL</a>
-            <a href="#" class="nav-item" data-page="about">ABOUT</a>
+            <a href="#" class="nav-item active" data-page="korean-brands" onclick="showPage('korean-brands')">KOREAN BRANDS</a>
+            <a href="#" class="nav-item" data-page="global-brands" onclick="showPage('global-brands')">GLOBAL BRANDS</a>
+            <a href="#" class="nav-item" data-page="editorial" onclick="showPage('editorial')">EDITORIAL</a>
+            <a href="#" class="nav-item" data-page="about" onclick="showPage('about')">ABOUT</a>
         </nav>
         <div class="header-right">
-            <input type="text" id="search-input" class="search-input-header" placeholder="SEARCH">
-            <button class="lang-toggle" id="lang-toggle">EN / KR</button>
+            <input type="text" class="search-input-header" id="searchInput" placeholder="SEARCH" onkeyup="render()">
+            <button class="lang-toggle" id="langToggle" onclick="toggleLang()">EN / KR</button>
         </div>
     </header>
 
-    <div id="mainContent">
-        <div class="sub-nav" id="subNav">
-            <div class="filter-row">
-                <div class="type-filters">
-                    <div class="type-btn active" onclick="filterType('ALL')" data-type="ALL" data-en="ALL" data-ko="전체">ALL</div>
-                    <div class="type-btn" onclick="filterType('SEASON OFF')" data-type="SEASON OFF" data-en="SEASON OFF" data-ko="시즌오프">SEASON OFF</div>
-                    <div class="type-btn" onclick="filterType('CLEARANCE')" data-type="CLEARANCE" data-en="CLEARANCE" data-ko="클리어런스">CLEARANCE</div>
-                    <div class="type-btn" onclick="filterType('REFURB')" data-type="REFURB" data-en="REFURB (B-GRADE)" data-ko="리퍼브 (B급)">REFURB (B-GRADE)</div>
-                    <div class="type-btn" onclick="filterType('OUTLET')" data-type="OUTLET" data-en="OUTLET" data-ko="아울렛">OUTLET</div>
-                </div>
-                <select class="sort-select" id="sortSelect" onchange="render()">
-                    <option value="disc_desc" data-en="Sort: Discount High" data-ko="정렬: 할인율 높은순">Sort: Discount High</option>
-                    <option value="disc_asc" data-en="Sort: Discount Low" data-ko="정렬: 할인율 낮은순">Sort: Discount Low</option>
-                </select>
+    <div class="sub-nav" id="subNav">
+        <div class="filter-row">
+            <div class="type-filters">
+                <div class="type-btn active" data-type="ALL" data-ko="전체" data-en="ALL" onclick="filterType('ALL')">ALL</div>
+                <div class="type-btn" data-type="SEASON OFF" data-ko="시즌오프" data-en="SEASON OFF" onclick="filterType('SEASON OFF')">SEASON OFF</div>
+                <div class="type-btn" data-type="CLEARANCE" data-ko="클리어런스" data-en="CLEARANCE" onclick="filterType('CLEARANCE')">CLEARANCE</div>
+                <div class="type-btn" data-type="REFURB (B-GRADE)" data-ko="리퍼브" data-en="REFURB (B-GRADE)" onclick="filterType('REFURB (B-GRADE)')">REFURB (B-GRADE)</div>
+                <div class="type-btn" data-type="OUTLET" data-ko="아울렛" data-en="OUTLET" onclick="filterType('OUTLET')">OUTLET</div>
             </div>
-            <div class="discount-row" id="discountRow">
-                <div class="discount-btn active" onclick="filterDiscount(0)" data-discount="0" data-en="All Discounts" data-ko="전체 할인율">All Discounts</div>
-                <div class="discount-btn" onclick="filterDiscount(10)" data-discount="10">10-30%</div>
-                <div class="discount-btn" onclick="filterDiscount(40)" data-discount="40">40-60%</div>
-                <div class="discount-btn" onclick="filterDiscount(70)" data-discount="70">70-90%</div>
-            </div>
+            <select class="sort-select" id="sortSelect" onchange="render()">
+                <option value="disc_desc">SORT: DISCOUNT HIGH</option>
+                <option value="disc_asc">SORT: DISCOUNT LOW</option>
+            </select>
         </div>
-
-        <main class="brand-grid" id="brandGrid"></main>
+        <div class="discount-row" id="discountRow">
+            <div class="discount-btn active" data-discount="0" data-ko="전체 할인율" data-en="All Discounts" onclick="filterDiscount(0)">All Discounts</div>
+            <div class="discount-btn" data-discount="10" data-ko="10-30%" data-en="10-30%" onclick="filterDiscount(10)">10-30%</div>
+            <div class="discount-btn" data-discount="40" data-ko="40-60%" data-en="40-60%" onclick="filterDiscount(40)">40-60%</div>
+            <div class="discount-btn" data-discount="70" data-ko="70-90%" data-en="70-90%" onclick="filterDiscount(70)">70-90%</div>
+        </div>
     </div>
 
+    <div class="brand-grid" id="brandGrid"></div>
+
     <footer>
-        &copy; 2026 <span id="footerLogo">SALE ARCHIVE</span>. ALL RIGHTS RESERVED.
+        &copy; 2024 SALE ARCHIVE. ALL RIGHTS RESERVED.
     </footer>
 
     <script>
         const translations = {
-            'ko': {
-                'KOREAN BRANDS': '한국 브랜드',
-                'GLOBAL BRANDS': '글로벌 브랜드',
+            ko: {
+                'KOREAN BRANDS': '국내 브랜드',
+                'GLOBAL BRANDS': '해외 브랜드',
                 'EDITORIAL': '에디토리얼',
                 'ABOUT': '소개',
                 'SEARCH': '검색',
-                'EN / KR': 'EN / KR',
-                'ALL': '전체',
-                'SALE': '세일',
-                'SEASON OFF': '시즌오프',
-                'CLEARANCE': '클리어런스',
-                'REFURB': '리퍼브',
-                'OUTLET': '아울렛',
-                'DISCOUNT (HIGH-LOW)': '할인율 높은순',
-                'DISCOUNT (LOW-HIGH)': '할인율 낮은순',
-                'NO SALES FOUND': '현재 세일 중인 브랜드가 없습니다.',
-                'UP TO': '최대',
-                'All Discounts': '전체 할인율'
+                'All Discounts': '전체 할인율',
+                'SORT: DISCOUNT HIGH': '할인율 높은순',
+                'SORT: DISCOUNT LOW': '할인율 낮은순',
+                'NO SALES FOUND': '검색 결과가 없습니다.'
             },
-            'en': {
+            en: {
                 'KOREAN BRANDS': 'KOREAN BRANDS',
                 'GLOBAL BRANDS': 'GLOBAL BRANDS',
                 'EDITORIAL': 'EDITORIAL',
                 'ABOUT': 'ABOUT',
                 'SEARCH': 'SEARCH',
-                'EN / KR': 'KR / EN',
-                'ALL': 'ALL',
-                'SALE': 'SALE',
-                'SEASON OFF': 'SEASON OFF',
-                'CLEARANCE': 'CLEARANCE',
-                'REFURB': 'REFURB',
-                'OUTLET': 'OUTLET',
-                'DISCOUNT (HIGH-LOW)': 'DISCOUNT (HIGH-LOW)',
-                'DISCOUNT (LOW-HIGH)': 'DISCOUNT (LOW-HIGH)',
-                'NO SALES FOUND': 'NO SALES FOUND.',
-                'UP TO': 'UP TO',
-                'All Discounts': 'All Discounts'
+                'All Discounts': 'All Discounts',
+                'SORT: DISCOUNT HIGH': 'SORT: DISCOUNT HIGH',
+                'SORT: DISCOUNT LOW': 'SORT: DISCOUNT LOW',
+                'NO SALES FOUND': 'NO SALES FOUND'
             }
         };
 
-        let allSales = [];
-        let currentRegion = 'KR';
+        let currentLang = 'en';
+        let currentPage = 'korean-brands';
         let currentType = 'ALL';
         let currentDiscount = 0;
-        let currentLang = 'ko';
-        let currentPage = 'korean-brands';
+        let allSales = [];
 
-        const sideMenu = document.getElementById('sideMenu');
-        const overlay = document.getElementById('overlay');
         const brandGrid = document.getElementById('brandGrid');
         const discountRow = document.getElementById('discountRow');
-        const searchInput = document.getElementById('search-input');
-
-        document.getElementById('logo-link').addEventListener('click', (e) => {
-            e.preventDefault();
-            showPage('korean-brands');
-        });
-        document.getElementById('lang-toggle').addEventListener('click', toggleLang);
-        document.querySelectorAll('.nav-item').forEach(link => {
-            link.addEventListener('click', (e) => {
-                e.preventDefault();
-                showPage(e.target.dataset.page);
-            });
-        });
-        searchInput.addEventListener('input', render);
-        overlay.onclick = () => { sideMenu.classList.remove('active'); overlay.classList.remove('active'); };
+        const subNav = document.getElementById('subNav');
+        const searchInput = document.getElementById('searchInput');
+        const sideMenu = document.getElementById('sideMenu');
+        const overlay = document.getElementById('overlay');
 
         function toggleLang() {
-            currentLang = currentLang === 'ko' ? 'en' : 'ko';
-            document.body.classList.toggle('en', currentLang === 'en');
-            document.getElementById('lang-toggle').textContent = currentLang === 'ko' ? 'EN / KR' : 'KR / EN';
-
+            currentLang = currentLang === 'en' ? 'ko' : 'en';
+            document.body.className = currentLang;
+            
             document.querySelectorAll('.nav-item').forEach(item => {
-                item.textContent = translations[currentLang][item.dataset.page.replace('-brands', '').toUpperCase()] || item.dataset.page.replace('-brands', '').toUpperCase();
+                const key = item.getAttribute('data-page').toUpperCase().replace('-', ' ');
+                item.textContent = translations[currentLang][key] || key;
             });
+            
+            searchInput.placeholder = translations[currentLang]['SEARCH'];
+            
             document.querySelectorAll('.type-btn').forEach(btn => {
                 btn.textContent = btn.getAttribute('data-' + currentLang);
             });
+            
             document.querySelectorAll('#sortSelect option').forEach(option => {
-                option.textContent = translations[currentLang][option.value.replace('disc_desc', 'DISCOUNT (HIGH-LOW)').replace('disc_asc', 'DISCOUNT (LOW-HIGH)').replace('name_asc', 'SORT: A-Z').replace('name_desc', 'SORT: Z-A')] || option.textContent;
+                const key = option.value === 'disc_desc' ? 'SORT: DISCOUNT HIGH' : 'SORT: DISCOUNT LOW';
+                option.textContent = translations[currentLang][key] || option.textContent;
             });
+            
             document.querySelectorAll(".discount-btn").forEach(btn => {
                 if (btn.dataset.discount === "0") {
                     btn.textContent = translations[currentLang]["All Discounts"];
@@ -543,13 +517,6 @@
             }
         }
 
-        function filterRegion(region) {
-            currentRegion = region;
-            sideMenu.classList.remove('active');
-            overlay.classList.remove('active');
-            render();
-        }
-
         function filterType(type) {
             currentType = type;
             currentDiscount = 0;
@@ -575,10 +542,17 @@
 
         function showPage(pageId) {
             currentPage = pageId;
-            render();
             document.querySelectorAll('.nav-item').forEach(item => item.classList.toggle('active', item.dataset.page === pageId));
-            sideMenu.classList.remove('active');
-            overlay.classList.remove('active');
+            
+            if (pageId === 'korean-brands' || pageId === 'global-brands') {
+                subNav.style.display = 'block';
+                if (currentType === 'ALL') discountRow.classList.remove('hidden');
+                else discountRow.classList.add('hidden');
+            } else {
+                subNav.style.display = 'none';
+            }
+            
+            render();
         }
 
         function renderSales(region) {
