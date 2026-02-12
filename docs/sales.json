@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-02-12T05:19:37.564655Z",
+  "generated_at": "2026-02-12T08:03:57.067564Z",
   "sales": [
     {
       "brand_en": "Sie",
@@ -63,7 +63,7 @@
       "sale_url": "https://s2asuras2.com/",
       "banner_url": "https://cdn.imweb.me/thumbnail/20250626/4e07ef726e867.jpg",
       "status": "sale",
-      "discount": 90,
+      "discount": 50,
       "region": "KR",
       "sale_type": "SEASON OFF"
     },
