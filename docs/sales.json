@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-02-12T08:03:57.067564Z",
+  "generated_at": "2026-02-12T11:29:43.991401Z",
   "sales": [
     {
-      "brand_en": "Sie",
+      "brand_en": "",
       "brand_ko": "시에",
       "official_url": "https://sie-official.kr/",
       "sale_url": "https://sie-official.kr/",
@@ -13,7 +13,7 @@
       "sale_type": "SALE"
     },
     {
-      "brand_en": "Bohemseo",
+      "brand_en": "",
       "brand_ko": "보헤미안서울",
       "official_url": "https://bohemseo.com/",
       "sale_url": "https://bohemseo.com/",
@@ -24,7 +24,7 @@
       "sale_type": "SALE"
     },
     {
-      "brand_en": "Maison Marais",
+      "brand_en": "",
       "brand_ko": "메종마레",
       "official_url": "http://maisonmarais.com/",
       "sale_url": "http://maisonmarais.com/",
@@ -35,7 +35,7 @@
       "sale_type": "SALE"
     },
     {
-      "brand_en": "Nuuanu",
+      "brand_en": "",
       "brand_ko": "누와누",
       "official_url": "https://nuuanu.kr/?redirect=T/",
       "sale_url": "https://nuuanu.kr/?redirect=T/",
@@ -46,7 +46,7 @@
       "sale_type": "SALE"
     },
     {
-      "brand_en": "Howus",
+      "brand_en": "",
       "brand_ko": "호와스",
       "official_url": "https://www.howus.co.kr",
       "sale_url": "https://www.howus.co.kr",
@@ -57,18 +57,18 @@
       "sale_type": "SALE"
     },
     {
-      "brand_en": "Asura",
+      "brand_en": "",
       "brand_ko": "아수라",
       "official_url": "https://s2asuras2.com/",
       "sale_url": "https://s2asuras2.com/",
       "banner_url": "https://cdn.imweb.me/thumbnail/20250626/4e07ef726e867.jpg",
       "status": "sale",
-      "discount": 50,
+      "discount": 35,
       "region": "KR",
       "sale_type": "SEASON OFF"
     },
     {
-      "brand_en": "Sinoon",
+      "brand_en": "",
       "brand_ko": "시눈",
       "official_url": "https://sinoon.co.kr/",
       "sale_url": "https://sinoon.co.kr/",
@@ -79,7 +79,7 @@
       "sale_type": "SALE"
     },
     {
-      "brand_en": "NOT YOUR ROSE",
+      "brand_en": "",
       "brand_ko": "낫유어로즈",
       "official_url": "https://notyourrose.com/",
       "sale_url": "https://notyourrose.com/",
@@ -90,7 +90,7 @@
       "sale_type": "CLEARANCE"
     },
     {
-      "brand_en": "SUNBURN PROJECT",
+      "brand_en": "",
       "brand_ko": "썬번프로젝트",
       "official_url": "https://sunburnproject.com/",
       "sale_url": "https://sunburnproject.com/",
@@ -101,7 +101,7 @@
       "sale_type": "SALE"
     },
     {
-      "brand_en": "LEBANE",
+      "brand_en": "",
       "brand_ko": "르베인",
       "official_url": "https://www.lebane.kr/",
       "sale_url": "https://www.lebane.kr/",
@@ -112,7 +112,7 @@
       "sale_type": "REFURB"
     },
     {
-      "brand_en": "SCULPTOR",
+      "brand_en": "",
       "brand_ko": "스컬프터",
       "official_url": "https://sculptor-worldwide.com/",
       "sale_url": "https://sculptor-worldwide.com/",
@@ -123,7 +123,7 @@
       "sale_type": "SALE"
     },
     {
-      "brand_en": "NOTHING WRITTEN",
+      "brand_en": "",
       "brand_ko": "낫띵리튼",
       "official_url": "http://nothing-written.com/",
       "sale_url": "http://nothing-written.com/",
@@ -134,7 +134,7 @@
       "sale_type": "SALE"
     },
     {
-      "brand_en": "DUNST",
+      "brand_en": "",
       "brand_ko": "던스트",
       "official_url": "https://dunststudio.com/",
       "sale_url": "https://dunststudio.com/",
@@ -145,7 +145,7 @@
       "sale_type": "SEASON OFF"
     },
     {
-      "brand_en": "MONGDOL",
+      "brand_en": "",
       "brand_ko": "몽돌",
       "official_url": "https://mongdolstore.com/",
       "sale_url": "https://mongdolstore.com/",
@@ -156,7 +156,7 @@
       "sale_type": "SALE"
     },
     {
-      "brand_en": "Blossom H",
+      "brand_en": "",
       "brand_ko": "블라썸에이치",
       "official_url": "https://blossomhcompany.com/index.html",
       "sale_url": "https://blossomhcompany.com/index.html",
@@ -167,7 +167,7 @@
       "sale_type": "SALE"
     },
     {
-      "brand_en": "INSILENCE",
+      "brand_en": "",
       "brand_ko": "인사일런스",
       "official_url": "https://www.insilence.co.kr/",
       "sale_url": "https://www.insilence.co.kr/",
@@ -178,7 +178,7 @@
       "sale_type": "SEASON OFF"
     },
     {
-      "brand_en": "Fillintheblank",
+      "brand_en": "",
       "brand_ko": "필인더블랭크",
       "official_url": "https://fillintheblank-fitb.com/",
       "sale_url": "https://fillintheblank-fitb.com/",
@@ -189,7 +189,7 @@
       "sale_type": "SEASON OFF"
     },
     {
-      "brand_en": "Thetis",
+      "brand_en": "",
       "brand_ko": "더티스",
       "official_url": "https://thetisofficial.com/",
       "sale_url": "https://thetisofficial.com/",
@@ -200,7 +200,7 @@
       "sale_type": "SALE"
     },
     {
-      "brand_en": "Gimmetheyoung",
+      "brand_en": "",
       "brand_ko": "깁미더영",
       "official_url": "https://gimmetheyoung.com/",
       "sale_url": "https://gimmetheyoung.com/",
@@ -211,7 +211,7 @@
       "sale_type": "SALE"
     },
     {
-      "brand_en": "Ders",
+      "brand_en": "",
       "brand_ko": "데스",
       "official_url": "https://ders.kr/",
       "sale_url": "https://ders.kr/",
@@ -222,7 +222,7 @@
       "sale_type": "SALE"
     },
     {
-      "brand_en": "Typeserviceweb",
+      "brand_en": "",
       "brand_ko": "타입서비스",
       "official_url": "https://typeserviceweb.com/",
       "sale_url": "https://typeserviceweb.com/",
@@ -233,7 +233,7 @@
       "sale_type": "SALE"
     },
     {
-      "brand_en": "Milloarchive",
+      "brand_en": "",
       "brand_ko": "밀로아카이브",
       "official_url": "https://milloarchive.com/",
       "sale_url": "https://milloarchive.com/",
@@ -244,7 +244,7 @@
       "sale_type": "SEASON OFF"
     },
     {
-      "brand_en": "Afterhours",
+      "brand_en": "",
       "brand_ko": "애프터아워즈",
       "official_url": "https://afterhours.co.kr/",
       "sale_url": "https://afterhours.co.kr/",
@@ -255,7 +255,7 @@
       "sale_type": "SALE"
     },
     {
-      "brand_en": "Prevail",
+      "brand_en": "",
       "brand_ko": "프리베일",
       "official_url": "https://prevail.kr/",
       "sale_url": "https://prevail.kr/",
@@ -266,7 +266,7 @@
       "sale_type": "SALE"
     },
     {
-      "brand_en": "Itzavibe",
+      "brand_en": "",
       "brand_ko": "잇자바이브",
       "official_url": "https://itzavibeofficial.com/",
       "sale_url": "https://itzavibeofficial.com/",
@@ -277,7 +277,7 @@
       "sale_type": "SALE"
     },
     {
-      "brand_en": "Epure",
+      "brand_en": "",
       "brand_ko": "에퓨레",
       "official_url": "https://www.epure.co.kr/",
       "sale_url": "https://www.epure.co.kr/",
@@ -288,7 +288,7 @@
       "sale_type": "SEASON OFF"
     },
     {
-      "brand_en": "Umarmung",
+      "brand_en": "",
       "brand_ko": "우마뭉",
       "official_url": "https://umarmung.kr/",
       "sale_url": "https://umarmung.kr/",
@@ -299,7 +299,7 @@
       "sale_type": "SEASON OFF"
     },
     {
-      "brand_en": "Thema",
+      "brand_en": "",
       "brand_ko": "떼마",
       "official_url": "https://www.theearlymorningair.com/",
       "sale_url": "https://www.theearlymorningair.com/",
@@ -310,7 +310,7 @@
       "sale_type": "SALE"
     },
     {
-      "brand_en": "Hane",
+      "brand_en": "",
       "brand_ko": "하네",
       "official_url": "https://hane.kr/",
       "sale_url": "https://hane.kr/",
@@ -321,7 +321,7 @@
       "sale_type": "CLEARANCE"
     },
     {
-      "brand_en": "Le",
+      "brand_en": "",
       "brand_ko": "르",
       "official_url": "https://le-official.co.kr/",
       "sale_url": "https://le-official.co.kr/",
@@ -332,7 +332,7 @@
       "sale_type": "SALE"
     },
     {
-      "brand_en": "Yunse",
+      "brand_en": "",
       "brand_ko": "윤세",
       "official_url": "https://yunse.co/",
       "sale_url": "https://yunse.co/",
@@ -343,7 +343,7 @@
       "sale_type": "SALE"
     },
     {
-      "brand_en": "NOMINATE",
+      "brand_en": "",
       "brand_ko": "노미나떼",
       "official_url": "https://nominate.kr/",
       "sale_url": "https://nominate.kr/",
@@ -354,7 +354,7 @@
       "sale_type": "SALE"
     },
     {
-      "brand_en": "Poev",
+      "brand_en": "",
       "brand_ko": "포에브",
       "official_url": "https://poev.kr/",
       "sale_url": "https://poev.kr/",
@@ -365,7 +365,7 @@
       "sale_type": "SALE"
     },
     {
-      "brand_en": "For your eyes only",
+      "brand_en": "",
       "brand_ko": "포유어아이즈온리",
       "official_url": "https://fyeo.kr/",
       "sale_url": "https://fyeo.kr/",
@@ -376,7 +376,7 @@
       "sale_type": "SEASON OFF"
     },
     {
-      "brand_en": "DEINET",
+      "brand_en": "",
       "brand_ko": "다이닛",
       "official_url": "https://deinet.co.kr/",
       "sale_url": "https://deinet.co.kr/",
@@ -387,7 +387,7 @@
       "sale_type": "SALE"
     },
     {
-      "brand_en": "PONYTAIL",
+      "brand_en": "",
       "brand_ko": "포니테일",
       "official_url": "https://ponytail.shop/",
       "sale_url": "https://ponytail.shop/",
@@ -398,7 +398,7 @@
       "sale_type": "OUTLET"
     },
     {
-      "brand_en": "QDUROY",
+      "brand_en": "",
       "brand_ko": "큐드로이",
       "official_url": "https://qduroy.com/",
       "sale_url": "https://qduroy.com/",
@@ -409,7 +409,7 @@
       "sale_type": "CLEARANCE"
     },
     {
-      "brand_en": "PORTOFCALL",
+      "brand_en": "",
       "brand_ko": "포트오브콜",
       "official_url": "https://portofcall.co.kr/",
       "sale_url": "https://portofcall.co.kr/",
@@ -420,7 +420,7 @@
       "sale_type": "SALE"
     },
     {
-      "brand_en": "fadeiin",
+      "brand_en": "",
       "brand_ko": "페이드인",
       "official_url": "https://fadeiin.com/",
       "sale_url": "https://fadeiin.com/",
@@ -431,7 +431,7 @@
       "sale_type": "SALE"
     },
     {
-      "brand_en": "Lenina",
+      "brand_en": "",
       "brand_ko": "르니나",
       "official_url": "https://lenina.kr/",
       "sale_url": "https://lenina.kr/",
@@ -442,7 +442,7 @@
       "sale_type": "SALE"
     },
     {
-      "brand_en": "Neev",
+      "brand_en": "",
       "brand_ko": "니브",
       "official_url": "https://neev.co.kr/",
       "sale_url": "https://neev.co.kr/",
@@ -453,18 +453,18 @@
       "sale_type": "CLEARANCE"
     },
     {
-      "brand_en": "Siyazu",
+      "brand_en": "",
       "brand_ko": "시야쥬",
       "official_url": "https://siyazu.co.kr/",
       "sale_url": "https://siyazu.co.kr/",
       "banner_url": "https://siyazu.co.kr/web/upload/og_image2.jpg",
       "status": "sale",
-      "discount": 70,
+      "discount": 50,
       "region": "KR",
       "sale_type": "SALE"
     },
     {
-      "brand_en": "Michiko London",
+      "brand_en": "",
       "brand_ko": "미치코런던 코시노",
       "official_url": "https://michiko-london.kr/",
       "sale_url": "https://michiko-london.kr/",
@@ -475,7 +475,7 @@
       "sale_type": "SALE"
     },
     {
-      "brand_en": "Loeuvre",
+      "brand_en": "",
       "brand_ko": "루에브르",
       "official_url": "https://m.maisonloeuvre.com",
       "sale_url": "https://m.maisonloeuvre.com",
@@ -486,7 +486,7 @@
       "sale_type": "SALE"
     },
     {
-      "brand_en": "Teket",
+      "brand_en": "",
       "brand_ko": "테켓",
       "official_url": "https://te-ket.com",
       "sale_url": "https://te-ket.com",
@@ -497,7 +497,7 @@
       "sale_type": "SALE"
     },
     {
-      "brand_en": "Salty Pebble",
+      "brand_en": "",
       "brand_ko": "솔티페블",
       "official_url": "https://saltypebble.com",
       "sale_url": "https://saltypebble.com",
@@ -508,7 +508,7 @@
       "sale_type": "SALE"
     },
     {
-      "brand_en": "LCDC Seoul",
+      "brand_en": "",
       "brand_ko": "엘씨디씨서울",
       "official_url": "https://lcdc-seoul.com",
       "sale_url": "https://lcdc-seoul.com",
@@ -519,7 +519,7 @@
       "sale_type": "SALE"
     },
     {
-      "brand_en": "Atelier Nain",
+      "brand_en": "",
       "brand_ko": "아틀리에 나인",
       "official_url": "https://www.nain.co.kr",
       "sale_url": "https://www.nain.co.kr",
@@ -530,7 +530,7 @@
       "sale_type": "OUTLET"
     },
     {
-      "brand_en": "Eeah",
+      "brand_en": "",
       "brand_ko": "이아",
       "official_url": "https://eaah.net",
       "sale_url": "https://eaah.net",
@@ -541,7 +541,7 @@
       "sale_type": "SALE"
     },
     {
-      "brand_en": "Langer",
+      "brand_en": "",
       "brand_ko": "랑거",
       "official_url": "https://m.langer.kr",
       "sale_url": "https://m.langer.kr",
@@ -552,7 +552,7 @@
       "sale_type": "SALE"
     },
     {
-      "brand_en": "108Pound",
+      "brand_en": "",
       "brand_ko": "108파운드",
       "official_url": "https://108pound.com",
       "sale_url": "https://108pound.com",
@@ -563,7 +563,7 @@
       "sale_type": "SALE"
     },
     {
-      "brand_en": "overdue flair",
+      "brand_en": "",
       "brand_ko": "오버듀플레어",
       "official_url": "https://overdueflair.com",
       "sale_url": "https://overdueflair.com",
@@ -574,7 +574,7 @@
       "sale_type": "SALE"
     },
     {
-      "brand_en": "The Barnet",
+      "brand_en": "",
       "brand_ko": "더바넷",
       "official_url": "https://the-barnnet.com",
       "sale_url": "https://the-barnnet.com",
@@ -585,7 +585,95 @@
       "sale_type": "SALE"
     },
     {
-      "brand_en": "A.P.C.",
+      "brand_en": "",
+      "brand_ko": "모헤",
+      "official_url": "",
+      "sale_url": "",
+      "banner_url": "",
+      "status": "invalid_url",
+      "discount": 0,
+      "region": "KR",
+      "sale_type": "SALE"
+    },
+    {
+      "brand_en": "",
+      "brand_ko": "로제프란츠",
+      "official_url": "",
+      "sale_url": "",
+      "banner_url": "",
+      "status": "invalid_url",
+      "discount": 0,
+      "region": "KR",
+      "sale_type": "SALE"
+    },
+    {
+      "brand_en": "",
+      "brand_ko": "",
+      "official_url": "",
+      "sale_url": "",
+      "banner_url": "",
+      "status": "invalid_url",
+      "discount": 0,
+      "region": "KR",
+      "sale_type": "SALE"
+    },
+    {
+      "brand_en": "",
+      "brand_ko": "",
+      "official_url": "",
+      "sale_url": "",
+      "banner_url": "",
+      "status": "invalid_url",
+      "discount": 0,
+      "region": "KR",
+      "sale_type": "SALE"
+    },
+    {
+      "brand_en": "",
+      "brand_ko": "",
+      "official_url": "",
+      "sale_url": "",
+      "banner_url": "",
+      "status": "invalid_url",
+      "discount": 0,
+      "region": "KR",
+      "sale_type": "SALE"
+    },
+    {
+      "brand_en": "",
+      "brand_ko": "",
+      "official_url": "",
+      "sale_url": "",
+      "banner_url": "",
+      "status": "invalid_url",
+      "discount": 0,
+      "region": "KR",
+      "sale_type": "SALE"
+    },
+    {
+      "brand_en": "",
+      "brand_ko": "",
+      "official_url": "",
+      "sale_url": "",
+      "banner_url": "",
+      "status": "invalid_url",
+      "discount": 0,
+      "region": "KR",
+      "sale_type": "SALE"
+    },
+    {
+      "brand_en": "",
+      "brand_ko": "",
+      "official_url": "",
+      "sale_url": "",
+      "banner_url": "",
+      "status": "invalid_url",
+      "discount": 0,
+      "region": "KR",
+      "sale_type": "SALE"
+    },
+    {
+      "brand_en": "",
       "brand_ko": "아페쎄",
       "official_url": "https://www.apc-korea.com/",
       "sale_url": "https://www.apc-korea.com/",
@@ -596,7 +684,7 @@
       "sale_type": "SEASON OFF"
     },
     {
-      "brand_en": "MAJE",
+      "brand_en": "",
       "brand_ko": "마쥬",
       "official_url": "https://maje.co.kr/",
       "sale_url": "https://maje.co.kr/",
@@ -607,7 +695,7 @@
       "sale_type": "SALE"
     },
     {
-      "brand_en": "GANNI",
+      "brand_en": "",
       "brand_ko": "가니",
       "official_url": "https://www.ganni.com/",
       "sale_url": "https://www.ganni.com/",
@@ -618,7 +706,7 @@
       "sale_type": "SALE"
     },
     {
-      "brand_en": "GANT",
+      "brand_en": "",
       "brand_ko": "",
       "official_url": "",
       "sale_url": "",
@@ -629,7 +717,7 @@
       "sale_type": "SALE"
     },
     {
-      "brand_en": "Reformation",
+      "brand_en": "",
       "brand_ko": "",
       "official_url": "",
       "sale_url": "",
@@ -640,7 +728,7 @@
       "sale_type": "SALE"
     },
     {
-      "brand_en": "Pepper Mayo",
+      "brand_en": "",
       "brand_ko": "",
       "official_url": "",
       "sale_url": "",
@@ -651,7 +739,7 @@
       "sale_type": "SALE"
     },
     {
-      "brand_en": "Rouje",
+      "brand_en": "",
       "brand_ko": "",
       "official_url": "",
       "sale_url": "",
@@ -662,7 +750,7 @@
       "sale_type": "SALE"
     },
     {
-      "brand_en": "Jaded London",
+      "brand_en": "",
       "brand_ko": "",
       "official_url": "",
       "sale_url": "",
@@ -673,7 +761,7 @@
       "sale_type": "SALE"
     },
     {
-      "brand_en": "Motel Rocks",
+      "brand_en": "",
       "brand_ko": "",
       "official_url": "",
       "sale_url": "",
@@ -684,7 +772,7 @@
       "sale_type": "SALE"
     },
     {
-      "brand_en": "Sandro",
+      "brand_en": "",
       "brand_ko": "",
       "official_url": "",
       "sale_url": "",
@@ -695,7 +783,18 @@
       "sale_type": "SALE"
     },
     {
-      "brand_en": "Massimo Dutti",
+      "brand_en": "",
+      "brand_ko": "",
+      "official_url": "",
+      "sale_url": "",
+      "banner_url": "",
+      "status": "invalid_url",
+      "discount": 0,
+      "region": "KR",
+      "sale_type": "SALE"
+    },
+    {
+      "brand_en": "",
       "brand_ko": "",
       "official_url": "",
       "sale_url": "",
@@ -706,7 +805,7 @@
       "sale_type": "SALE"
     },
     {
-      "brand_en": "ARKET",
+      "brand_en": "",
       "brand_ko": "",
       "official_url": "",
       "sale_url": "",
@@ -717,7 +816,7 @@
       "sale_type": "SALE"
     },
     {
-      "brand_en": "H&M",
+      "brand_en": "",
       "brand_ko": "",
       "official_url": "",
       "sale_url": "",
@@ -728,7 +827,7 @@
       "sale_type": "SALE"
     },
     {
-      "brand_en": "COS",
+      "brand_en": "",
       "brand_ko": "",
       "official_url": "",
       "sale_url": "",
@@ -739,7 +838,7 @@
       "sale_type": "SALE"
     },
     {
-      "brand_en": "Carhartt",
+      "brand_en": "",
       "brand_ko": "",
       "official_url": "",
       "sale_url": "",
@@ -750,7 +849,7 @@
       "sale_type": "SALE"
     },
     {
-      "brand_en": "With Jean",
+      "brand_en": "",
       "brand_ko": "",
       "official_url": "",
       "sale_url": "",
@@ -761,7 +860,7 @@
       "sale_type": "SALE"
     },
     {
-      "brand_en": "All Saints",
+      "brand_en": "",
       "brand_ko": "",
       "official_url": "",
       "sale_url": "",
