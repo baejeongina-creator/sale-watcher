@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-02-12T11:29:43.991401Z",
+  "generated_at": "2026-02-12T14:43:55.863616Z",
   "sales": [
     {
       "brand_en": "",
@@ -63,7 +63,7 @@
       "sale_url": "https://s2asuras2.com/",
       "banner_url": "https://cdn.imweb.me/thumbnail/20250626/4e07ef726e867.jpg",
       "status": "sale",
-      "discount": 35,
+      "discount": 60,
       "region": "KR",
       "sale_type": "SEASON OFF"
     },
@@ -241,7 +241,7 @@
       "status": "sale",
       "discount": 0,
       "region": "KR",
-      "sale_type": "SEASON OFF"
+      "sale_type": "OUTLET"
     },
     {
       "brand_en": "",
@@ -523,11 +523,11 @@
       "brand_ko": "아틀리에 나인",
       "official_url": "https://www.nain.co.kr",
       "sale_url": "https://www.nain.co.kr",
-      "banner_url": "https://www.nain.co.kr/shopimages/byyj1/all_og__20230714141615php59aZlP.jpg",
-      "status": "sale",
-      "discount": 10,
+      "banner_url": "",
+      "status": "error",
+      "discount": 0,
       "region": "KR",
-      "sale_type": "OUTLET"
+      "sale_type": "SALE"
     },
     {
       "brand_en": "",
