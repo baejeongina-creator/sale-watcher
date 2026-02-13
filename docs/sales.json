@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-02-13T08:03:40.707009Z",
+  "generated_at": "2026-02-13T11:10:39.252416Z",
   "sales": [
     {
       "brand_en": "",
@@ -19,7 +19,7 @@
       "sale_url": "https://bohemseo.com/",
       "banner_url": "https://bohemseo.com/web/upload/share-image-1-2137323aca18ff99b801954bb662df5a.png",
       "status": "sale",
-      "discount": 0,
+      "discount": 70,
       "region": "KR",
       "sale_type": "SALE"
     },
@@ -140,7 +140,7 @@
       "sale_url": "https://dunststudio.com/",
       "banner_url": "https://lfcorp.cafe24.com/0202_LINK.jpg",
       "status": "sale",
-      "discount": 0,
+      "discount": 50,
       "region": "KR",
       "sale_type": "SEASON OFF"
     },
@@ -171,7 +171,7 @@
       "brand_ko": "인사일런스",
       "official_url": "https://www.insilence.co.kr/",
       "sale_url": "https://www.insilence.co.kr/",
-      "banner_url": "https://www.insilence.co.kr/web/product/big/202509/d1e9cadb016f364283b23e587576e2b3.jpg",
+      "banner_url": "https://www.insilence.co.kr/web/product/big/202602/446078be692c1f36af8415a3f64fd9cb.jpg",
       "status": "sale",
       "discount": 50,
       "region": "KR",
@@ -250,7 +250,7 @@
       "sale_url": "https://afterhours.co.kr/",
       "banner_url": "https://afterhours.co.kr/web/upload/share-image-1-b66a99df4d6b475c845bd1f941a46e00.jpg",
       "status": "sale",
-      "discount": 0,
+      "discount": 80,
       "region": "KR",
       "sale_type": "SALE"
     },
@@ -272,7 +272,7 @@
       "sale_url": "https://itzavibeofficial.com/",
       "banner_url": "https://itzavibe24.cafe24.com/OG/LOGO.jpg",
       "status": "sale",
-      "discount": 0,
+      "discount": 40,
       "region": "KR",
       "sale_type": "SALE"
     },
@@ -492,7 +492,7 @@
       "sale_url": "https://te-ket.com",
       "banner_url": "https://te-ket.com/web/upload/share-image-1-b9da55c1c393dec286f7ed6145b1e05b.jpg",
       "status": "sale",
-      "discount": 5,
+      "discount": 60,
       "region": "KR",
       "sale_type": "SALE"
     },
@@ -514,7 +514,7 @@
       "sale_url": "https://lcdc-seoul.com",
       "banner_url": "http://lcdcseoul.cafe24.com/web/imgs/og.jpg",
       "status": "sale",
-      "discount": 0,
+      "discount": 50,
       "region": "KR",
       "sale_type": "SALE"
     },
@@ -525,7 +525,7 @@
       "sale_url": "https://www.nain.co.kr",
       "banner_url": "https://www.nain.co.kr/shopimages/byyj1/all_og__20230714141615php59aZlP.jpg",
       "status": "sale",
-      "discount": 10,
+      "discount": 60,
       "region": "KR",
       "sale_type": "OUTLET"
     },
