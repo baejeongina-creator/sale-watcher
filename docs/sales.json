@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-02-13T14:29:39.664348Z",
+  "generated_at": "2026-02-13T17:33:20.130293Z",
   "sales": [
     {
       "brand_en": "",
@@ -171,7 +171,7 @@
       "brand_ko": "인사일런스",
       "official_url": "https://www.insilence.co.kr/",
       "sale_url": "https://www.insilence.co.kr/",
-      "banner_url": "https://www.insilence.co.kr/web/product/big/202602/446078be692c1f36af8415a3f64fd9cb.jpg",
+      "banner_url": "https://insilence.co.kr/web/product/big/202602/446078be692c1f36af8415a3f64fd9cb.jpg",
       "status": "sale",
       "discount": 50,
       "region": "KR",
@@ -314,7 +314,7 @@
       "brand_ko": "하네",
       "official_url": "https://hane.kr/",
       "sale_url": "https://hane.kr/",
-      "banner_url": "https://www.hane.kr/web/upload/share-image-1-84e7896d82e2e33d1b210f38ffd3e100.jpg",
+      "banner_url": "https://hane.kr/web/upload/share-image-1-84e7896d82e2e33d1b210f38ffd3e100.jpg",
       "status": "sale",
       "discount": 80,
       "region": "KR",
@@ -523,11 +523,11 @@
       "brand_ko": "아틀리에 나인",
       "official_url": "https://www.nain.co.kr",
       "sale_url": "https://www.nain.co.kr",
-      "banner_url": "https://www.nain.co.kr/shopimages/byyj1/all_og__20230714141615php59aZlP.jpg",
-      "status": "sale",
-      "discount": 60,
+      "banner_url": "",
+      "status": "error",
+      "discount": 0,
       "region": "KR",
-      "sale_type": "OUTLET"
+      "sale_type": "SALE"
     },
     {
       "brand_en": "",
@@ -598,61 +598,6 @@
     {
       "brand_en": "",
       "brand_ko": "로제프란츠",
-      "official_url": "",
-      "sale_url": "",
-      "banner_url": "",
-      "status": "invalid_url",
-      "discount": 0,
-      "region": "KR",
-      "sale_type": "SALE"
-    },
-    {
-      "brand_en": "",
-      "brand_ko": "",
-      "official_url": "",
-      "sale_url": "",
-      "banner_url": "",
-      "status": "invalid_url",
-      "discount": 0,
-      "region": "KR",
-      "sale_type": "SALE"
-    },
-    {
-      "brand_en": "",
-      "brand_ko": "",
-      "official_url": "",
-      "sale_url": "",
-      "banner_url": "",
-      "status": "invalid_url",
-      "discount": 0,
-      "region": "KR",
-      "sale_type": "SALE"
-    },
-    {
-      "brand_en": "",
-      "brand_ko": "",
-      "official_url": "",
-      "sale_url": "",
-      "banner_url": "",
-      "status": "invalid_url",
-      "discount": 0,
-      "region": "KR",
-      "sale_type": "SALE"
-    },
-    {
-      "brand_en": "",
-      "brand_ko": "",
-      "official_url": "",
-      "sale_url": "",
-      "banner_url": "",
-      "status": "invalid_url",
-      "discount": 0,
-      "region": "KR",
-      "sale_type": "SALE"
-    },
-    {
-      "brand_en": "",
-      "brand_ko": "",
       "official_url": "",
       "sale_url": "",
       "banner_url": "",
@@ -780,17 +725,6 @@
       "status": "invalid_url",
       "discount": 0,
       "region": "GLOBAL",
-      "sale_type": "SALE"
-    },
-    {
-      "brand_en": "",
-      "brand_ko": "",
-      "official_url": "",
-      "sale_url": "",
-      "banner_url": "",
-      "status": "invalid_url",
-      "discount": 0,
-      "region": "KR",
       "sale_type": "SALE"
     },
     {
