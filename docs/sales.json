@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-02-14T07:49:34.974554Z",
+  "generated_at": "2026-02-14T09:57:59.485937Z",
   "sales": [
     {
       "brand_en": "",
@@ -62,10 +62,10 @@
       "official_url": "https://s2asuras2.com/",
       "sale_url": "https://s2asuras2.com/",
       "banner_url": "https://cdn.imweb.me/thumbnail/20250626/4e07ef726e867.jpg",
-      "status": "error",
-      "discount": 0,
+      "status": "sale",
+      "discount": 92,
       "region": "KR",
-      "sale_type": "SALE"
+      "sale_type": "SEASON OFF"
     },
     {
       "brand_en": "",
@@ -190,17 +190,6 @@
     },
     {
       "brand_en": "",
-      "brand_ko": "아마베",
-      "official_url": "https://amabe.kr/",
-      "sale_url": "https://amabe.kr/",
-      "banner_url": "",
-      "status": "error",
-      "discount": 0,
-      "region": "KR",
-      "sale_type": "SALE"
-    },
-    {
-      "brand_en": "",
       "brand_ko": "더티스",
       "official_url": "https://thetisofficial.com/",
       "sale_url": "https://thetisofficial.com/",
@@ -263,7 +252,7 @@
       "status": "sale",
       "discount": 80,
       "region": "KR",
-      "sale_type": "SALE"
+      "sale_type": "REFURB"
     },
     {
       "brand_en": "",
