@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-02-15T13:57:10.411515Z",
+  "generated_at": "2026-02-15T15:51:30.018316Z",
   "sales": [
     {
       "brand_en": "",
@@ -64,17 +64,6 @@
       "banner_url": "https://cdn.imweb.me/thumbnail/20250626/4e07ef726e867.jpg",
       "status": "error",
       "discount": 0,
-      "region": "KR",
-      "sale_type": "SALE"
-    },
-    {
-      "brand_en": "",
-      "brand_ko": "시눈",
-      "official_url": "https://sinoon.co.kr/",
-      "sale_url": "https://sinoon.co.kr/",
-      "banner_url": "https://sinoonlab.cafe24.com/web/upload/category/editor/2023/01/logo(black).jpg",
-      "status": "sale",
-      "discount": 10,
       "region": "KR",
       "sale_type": "SALE"
     },
