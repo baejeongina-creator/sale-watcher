@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-02-15T21:53:12.198988Z",
+  "generated_at": "2026-02-16T05:23:44.082096Z",
   "sales": [
     {
       "brand_en": "",
@@ -512,11 +512,11 @@
       "brand_ko": "아틀리에 나인",
       "official_url": "https://www.nain.co.kr",
       "sale_url": "https://www.nain.co.kr",
-      "banner_url": "",
-      "status": "error",
-      "discount": 0,
+      "banner_url": "https://www.nain.co.kr/shopimages/byyj1/all_og__20230714141615php59aZlP.jpg",
+      "status": "sale",
+      "discount": 60,
       "region": "KR",
-      "sale_type": "SALE"
+      "sale_type": "OUTLET"
     },
     {
       "brand_en": "",
