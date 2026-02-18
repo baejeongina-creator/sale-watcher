@@ -509,6 +509,60 @@
             currentLang = currentLang === 'en' ? 'ko' : 'en';
             document.body.classList.remove('en', 'ko');
             document.body.classList.add(currentLang);
+            
+            // Update all UI text based on language
+            if (currentLang === 'ko') {
+                document.querySelectorAll('.nav-item').forEach(item => {
+                    const page = item.dataset.page;
+                    if (page === 'korean-brands') item.textContent = '국내 브랜드';
+                    else if (page === 'global-brands') item.textContent = '해외 브랜드';
+                    else if (page === 'editorial') item.textContent = '에디토리얼';
+                    else if (page === 'about') item.textContent = '소개';
+                });
+                document.getElementById('searchInput').placeholder = '검색';
+                document.querySelectorAll('.type-btn').forEach(btn => {
+                    const type = btn.dataset.type;
+                    if (type === 'ALL') btn.textContent = '전체';
+                    else if (type === 'SEASON OFF') btn.textContent = '시즌오프';
+                    else if (type === 'CLEARANCE') btn.textContent = '클리어런스';
+                    else if (type === 'REFURB (B-GRADE)') btn.textContent = '리퍼브';
+                    else if (type === 'OUTLET') btn.textContent = '아울렛';
+                });
+                document.getElementById('sortSelect').innerHTML = '<option value="disc_desc">정렬: 할인율 높은순</option><option value="disc_asc">정렬: 할인율 낮은순</option>';
+                document.querySelectorAll('.discount-btn').forEach(btn => {
+                    const discount = parseInt(btn.dataset.discount);
+                    if (discount === 0) btn.textContent = '전체 할인율';
+                    else if (discount === 10) btn.textContent = '10-30%';
+                    else if (discount === 40) btn.textContent = '40-60%';
+                    else if (discount === 70) btn.textContent = '70-90%';
+                });
+            } else {
+                document.querySelectorAll('.nav-item').forEach(item => {
+                    const page = item.dataset.page;
+                    if (page === 'korean-brands') item.textContent = 'KOREAN BRANDS';
+                    else if (page === 'global-brands') item.textContent = 'GLOBAL BRANDS';
+                    else if (page === 'editorial') item.textContent = 'EDITORIAL';
+                    else if (page === 'about') item.textContent = 'ABOUT';
+                });
+                document.getElementById('searchInput').placeholder = 'SEARCH';
+                document.querySelectorAll('.type-btn').forEach(btn => {
+                    const type = btn.dataset.type;
+                    if (type === 'ALL') btn.textContent = 'ALL';
+                    else if (type === 'SEASON OFF') btn.textContent = 'SEASON OFF';
+                    else if (type === 'CLEARANCE') btn.textContent = 'CLEARANCE';
+                    else if (type === 'REFURB (B-GRADE)') btn.textContent = 'REFURB (B-GRADE)';
+                    else if (type === 'OUTLET') btn.textContent = 'OUTLET';
+                });
+                document.getElementById('sortSelect').innerHTML = '<option value="disc_desc">SORT: DISCOUNT HIGH</option><option value="disc_asc">SORT: DISCOUNT LOW</option>';
+                document.querySelectorAll('.discount-btn').forEach(btn => {
+                    const discount = parseInt(btn.dataset.discount);
+                    if (discount === 0) btn.textContent = 'All Discounts';
+                    else if (discount === 10) btn.textContent = '10-30%';
+                    else if (discount === 40) btn.textContent = '40-60%';
+                    else if (discount === 70) btn.textContent = '70-90%';
+                });
+            }
+            
             render();
         }
 
@@ -518,6 +572,11 @@
                 const response = await fetch(csvUrl);
                 const csvText = await response.text();
                 
+                if (!csvText || csvText.trim().length === 0) {
+                    console.error('CSV is empty');
+                    return;
+                }
+
                 const rows = parseCSV(csvText);
                 if (rows.length < 2) {
                     console.error('CSV has no data rows');
