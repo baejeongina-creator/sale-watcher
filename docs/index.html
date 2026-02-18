@@ -457,10 +457,7 @@
         const discountRow = document.getElementById('discountRow');
         const subNav = document.getElementById('subNav');
         const searchInput = document.getElementById('searchInput');
-        const sideMenu = document.getElementById('sideMenu');
-        const overlay = document.getElementById('overlay');
 
-        // Robust CSV parser that handles quoted fields
         function parseCSV(csvText) {
             const rows = [];
             let currentRow = [];
@@ -510,45 +507,8 @@
 
         function toggleLang() {
             currentLang = currentLang === 'en' ? 'ko' : 'en';
-            document.body.className = currentLang;
-            
-            document.querySelectorAll('.nav-item').forEach(item => {
-                const key = item.getAttribute('data-page').toUpperCase().replace('-', ' ');
-                item.textContent = translations[currentLang][key] || key;
-            });
-            
-            searchInput.placeholder = translations[currentLang]['SEARCH'];
-            
-            document.querySelectorAll('.type-btn').forEach(btn => {
-                btn.textContent = btn.getAttribute('data-' + currentLang);
-            });
-            
-            document.querySelectorAll('#sortSelect option').forEach(option => {
-                const key = option.value === 'disc_desc' ? 'SORT: DISCOUNT HIGH' : 'SORT: DISCOUNT LOW';
-                option.textContent = translations[currentLang][key] || option.textContent;
-            });
-            
-            document.querySelectorAll(".discount-btn").forEach(btn => {
-                if (btn.dataset.discount === "0") {
-                    btn.textContent = translations[currentLang]["All Discounts"];
-                } else {
-                    btn.textContent = btn.getAttribute("data-" + currentLang);
-                }
-            });
-
-            document.querySelectorAll('.type-btn').forEach(btn => btn.classList.toggle('active', btn.dataset.type === currentType));
-            document.querySelectorAll('.discount-btn').forEach(btn => btn.classList.toggle('active', parseInt(btn.dataset.discount) === currentDiscount));
-
-            if (currentPage === 'korean-brands' || currentPage === 'global-brands') {
-                subNav.style.display = 'block';
-                if (currentType === 'ALL') {
-                    discountRow.classList.remove('hidden');
-                } else {
-                    discountRow.classList.add('hidden');
-                }
-            } else {
-                subNav.style.display = 'none';
-            }
+            document.body.classList.remove('en', 'ko');
+            document.body.classList.add(currentLang);
             render();
         }
 
@@ -609,7 +569,6 @@
                 render();
             } catch (e) {
                 console.error('Error loading data:', e);
-                brandGrid.innerHTML = '<div style="grid-column: 1/-1; padding: 100px; text-align: center;">Error loading data.</div>';
             }
         }
 
@@ -671,7 +630,7 @@
             });
             brandGrid.innerHTML = '';
             if (filtered.length === 0) {
-                brandGrid.innerHTML = '<div style="grid-column: 1/-1; padding: 100px; text-align: center; text-transform: uppercase; font-size: 12px; letter-spacing: 1px;">' + translations[currentLang]['NO SALES FOUND'] + '</div>';
+                brandGrid.innerHTML = '<div style="grid-column: 1/-1; padding: 100px; text-align: center; text-transform: uppercase; font-size: 12px; letter-spacing: 1px;">NO SALES FOUND</div>';
             } else {
                 filtered.forEach(item => {
                     let primaryBrandName, secondaryBrandName, primaryBrandClass, secondaryBrandClass;
