@@ -506,13 +506,64 @@
             render();
         }
 
+        // Helper function to parse CSV
+        function parseCSV(csvString) {
+            const lines = csvString.trim().split('\n');
+            if (lines.length === 0) return [];
+
+            const headers = lines[0].split(',').map(h => h.trim());
+            const data = [];
+
+            for (let i = 1; i < lines.length; i++) {
+                const values = lines[i].split(',');
+                // Ensure row has enough values for all headers
+                if (values.length >= headers.length) {
+                    const row = {};
+                    for (let j = 0; j < headers.length; j++) {
+                        row[headers[j]] = values[j] ? values[j].trim() : ''; // Handle potential empty values
+                    }
+                    data.push(row);
+                }
+            }
+            return data;
+        }
+
         async function loadData() {
             try {
-                const res = await fetch('sales.json?t=' + Date.now());
-                const data = await res.json();
-                allSales = data.sales.filter(s => s.status === 'sale');
+                // 1. Load sales.json
+                const salesJsonRes = await fetch('sales.json?t=' + Date.now());
+                const salesJsonData = await salesJsonRes.json();
+                let salesData = salesJsonData.sales;
+
+                // 2. Load Google Sheets CSV
+                const csvRes = await fetch('https://docs.google.com/spreadsheets/d/e/2PACX-1vRPol5yt4wsLuE8G-4lgzu1x2I9zo8dLRTHQQ3C7Pc5871wvpcQUHq6pLJS4FUcS05G86VLdKguSf9M/pub?output=csv');
+                const csvText = await csvRes.text();
+                const csvData = parseCSV(csvText);
+
+                // 3. Merge data: Override JSON data with CSV data and filter out 'expired' sales
+                const updatedSales = salesData.map(jsonItem => {
+                    const csvItem = csvData.find(c => c.brand_en && jsonItem.brand_en && c.brand_en.toLowerCase() === jsonItem.brand_en.toLowerCase());
+                    if (csvItem) {
+                        // Apply manual_discount if present and valid
+                        if (csvItem.manual_discount && !isNaN(parseInt(csvItem.manual_discount))) {
+                            jsonItem.discount = parseInt(csvItem.manual_discount);
+                        }
+                        // Apply manual_status if present
+                        if (csvItem.manual_status) {
+                            jsonItem.status = csvItem.manual_status.toLowerCase().trim();
+                        }
+                        // Apply sale_type if present
+                        if (csvItem.sale_type) {
+                            jsonItem.sale_type = csvItem.sale_type.toUpperCase().trim();
+                        }
+                    }
+                    return jsonItem;
+                }).filter(item => item.status === 'sale'); // Filter out expired items after merge
+
+                allSales = updatedSales;
                 render();
             } catch (e) {
+                console.error("Error loading data:", e);
                 brandGrid.innerHTML = '<div style="grid-column: 1/-1; padding: 100px; text-align: center;">Error loading data.</div>';
             }
         }
@@ -592,7 +643,7 @@
                     const discountDisplay = item.discount > 0 ? discountPrefix + item.discount + '%' : 'SALE';
                     card.innerHTML = `
                         <div class="brand-image-container">
-                            <img src="${item.banner_url || 'https://via.placeholder.com/600x800?text=' + primaryBrandName}" alt="${primaryBrandName}" onerror="this.src='https://via.placeholder.com/600x800?text=${primaryBrandName}'">
+                            <img src="${item.banner_url || 'https://via.placeholder.com/600x800?text=' + primaryBrandName}" alt="${primaryBrandName}" onerror="this.src='https://via.placeholder.com/600x800?text=${primaryBrandName}'}">
                         </div>
                         <div class="brand-info">
                             <div class="brand-name-row">
