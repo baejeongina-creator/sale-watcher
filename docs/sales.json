@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-02-19T19:53:03.362538Z",
+  "generated_at": "2026-02-19T22:01:47.911004Z",
   "sales": [
     {
       "brand_en": "",
@@ -62,10 +62,10 @@
       "official_url": "https://s2asuras2.com/",
       "sale_url": "https://s2asuras2.com/",
       "banner_url": "https://cdn.imweb.me/thumbnail/20250626/4e07ef726e867.jpg",
-      "status": "error",
-      "discount": 0,
+      "status": "sale",
+      "discount": 92,
       "region": "KR",
-      "sale_type": "SALE"
+      "sale_type": "SEASON OFF"
     },
     {
       "brand_en": "",
@@ -149,7 +149,7 @@
       "brand_ko": "인사일런스",
       "official_url": "https://www.insilence.co.kr/",
       "sale_url": "https://www.insilence.co.kr/",
-      "banner_url": "https://insilencewomen.com/web/product/big/202602/446078be692c1f36af8415a3f64fd9cb.jpg",
+      "banner_url": "https://www.insilence.co.kr/web/product/big/202602/446078be692c1f36af8415a3f64fd9cb.jpg",
       "status": "sale",
       "discount": 40,
       "region": "KR",
@@ -165,17 +165,6 @@
       "discount": 50,
       "region": "KR",
       "sale_type": "SEASON OFF"
-    },
-    {
-      "brand_en": "",
-      "brand_ko": "아마베",
-      "official_url": "https://amabe.kr/",
-      "sale_url": "https://amabe.kr/",
-      "banner_url": "",
-      "status": "error",
-      "discount": 0,
-      "region": "KR",
-      "sale_type": "SALE"
     },
     {
       "brand_en": "",
