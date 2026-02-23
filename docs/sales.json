@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-02-23T09:45:38.881482Z",
+  "generated_at": "2026-02-23T12:43:56.903251Z",
   "sales": [
     {
       "brand_en": "",
@@ -151,7 +151,7 @@
       "sale_url": "https://www.insilence.co.kr/",
       "banner_url": "https://www.insilence.co.kr/web/product/big/202602/446078be692c1f36af8415a3f64fd9cb.jpg",
       "status": "sale",
-      "discount": 40,
+      "discount": 50,
       "region": "KR",
       "sale_type": "SEASON OFF"
     },
