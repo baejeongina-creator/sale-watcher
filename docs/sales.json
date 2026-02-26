@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-02-25T21:29:10.043532Z",
+  "generated_at": "2026-02-26T01:16:46.742124Z",
   "sales": [
     {
       "brand_en": "",
@@ -88,6 +88,17 @@
       "discount": 80,
       "region": "KR",
       "sale_type": "CLEARANCE"
+    },
+    {
+      "brand_en": "",
+      "brand_ko": "썬번프로젝트",
+      "official_url": "https://sunburnproject.com/",
+      "sale_url": "https://sunburnproject.com/",
+      "banner_url": "https://sunburnproject.com/web/upload/share-image-1-112560da9ddf9e762a798b0dc399644a.jpg",
+      "status": "sale",
+      "discount": 10,
+      "region": "KR",
+      "sale_type": "SALE"
     },
     {
       "brand_en": "",
@@ -448,7 +459,7 @@
       "sale_url": "https://siyazu.co.kr/",
       "banner_url": "https://siyazu.co.kr/web/upload/og_image2.jpg",
       "status": "sale",
-      "discount": 50,
+      "discount": 0,
       "region": "KR",
       "sale_type": "SALE"
     },
