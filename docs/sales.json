@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-02-26T04:47:47.293380Z",
+  "generated_at": "2026-02-26T06:54:44.141294Z",
   "sales": [
     {
       "brand_en": "",
@@ -460,17 +460,6 @@
       "banner_url": "https://glowny.co.kr/re_img/world_wide_select_arrow.svg",
       "status": "sale",
       "discount": 15,
-      "region": "KR",
-      "sale_type": "SALE"
-    },
-    {
-      "brand_en": "",
-      "brand_ko": "미치코런던 코시노",
-      "official_url": "https://michiko-london.kr/",
-      "sale_url": "https://michiko-london.kr/",
-      "banner_url": "https://michiko-london.kr/web/upload/share-image-1-2c3f6f49e417b26872b939ad47bcf895.png",
-      "status": "sale",
-      "discount": 0,
       "region": "KR",
       "sale_type": "SALE"
     },
