@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-02-27T06:42:29.276295Z",
+  "generated_at": "2026-02-27T09:34:36.482456Z",
   "sales": [
     {
       "brand_en": "",
@@ -62,10 +62,10 @@
       "official_url": "https://s2asuras2.com/",
       "sale_url": "https://s2asuras2.com/",
       "banner_url": "https://cdn.imweb.me/thumbnail/20250626/4e07ef726e867.jpg",
-      "status": "error",
-      "discount": 0,
+      "status": "sale",
+      "discount": 92,
       "region": "KR",
-      "sale_type": "SALE"
+      "sale_type": "SEASON OFF"
     },
     {
       "brand_en": "",
@@ -176,17 +176,6 @@
       "discount": 50,
       "region": "KR",
       "sale_type": "SEASON OFF"
-    },
-    {
-      "brand_en": "",
-      "brand_ko": "아마베",
-      "official_url": "https://amabe.kr/",
-      "sale_url": "https://amabe.kr/",
-      "banner_url": "",
-      "status": "error",
-      "discount": 0,
-      "region": "KR",
-      "sale_type": "SALE"
     },
     {
       "brand_en": "",
@@ -347,7 +336,7 @@
       "brand_ko": "노미나떼",
       "official_url": "https://nominate.kr/",
       "sale_url": "https://nominate.kr/",
-      "banner_url": "https://nominate.kr/web/upload/share-image-1-c24aed343665fd36cb6fc9dba964cb8e.png",
+      "banner_url": "https://www.nominate.kr/web/upload/share-image-1-c24aed343665fd36cb6fc9dba964cb8e.png",
       "status": "sale",
       "discount": 50,
       "region": "KR",
