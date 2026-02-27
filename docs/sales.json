@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-02-27T09:34:36.482456Z",
+  "generated_at": "2026-02-27T12:38:36.649331Z",
   "sales": [
     {
       "brand_en": "",
@@ -116,7 +116,7 @@
       "brand_ko": "스컬프터",
       "official_url": "https://sculptor-worldwide.com/",
       "sale_url": "https://sculptor-worldwide.com/",
-      "banner_url": "http://sculptor-worldwide.com/cdn/shop/files/0b3bb991276f221a9a3455ef59bd5115.jpg?v=1744076387",
+      "banner_url": "http://cdn.shopify.com/s/files/1/0653/6436/1406/files/0b3bb991276f221a9a3455ef59bd5115.jpg?v=1744076387",
       "status": "sale",
       "discount": 0,
       "region": "KR",
@@ -336,7 +336,7 @@
       "brand_ko": "노미나떼",
       "official_url": "https://nominate.kr/",
       "sale_url": "https://nominate.kr/",
-      "banner_url": "https://www.nominate.kr/web/upload/share-image-1-c24aed343665fd36cb6fc9dba964cb8e.png",
+      "banner_url": "https://nominate.kr/web/upload/share-image-1-c24aed343665fd36cb6fc9dba964cb8e.png",
       "status": "sale",
       "discount": 50,
       "region": "KR",
