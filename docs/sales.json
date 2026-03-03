@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-03T09:34:46.574878Z",
+  "generated_at": "2026-03-03T12:38:02.091161Z",
   "sales": [
     {
       "brand_en": "",
@@ -62,10 +62,10 @@
       "official_url": "https://s2asuras2.com/",
       "sale_url": "https://s2asuras2.com/",
       "banner_url": "https://cdn.imweb.me/thumbnail/20250626/4e07ef726e867.jpg",
-      "status": "error",
-      "discount": 0,
+      "status": "sale",
+      "discount": 92,
       "region": "KR",
-      "sale_type": "SALE"
+      "sale_type": "SEASON OFF"
     },
     {
       "brand_en": "",
@@ -176,17 +176,6 @@
       "discount": 50,
       "region": "KR",
       "sale_type": "SEASON OFF"
-    },
-    {
-      "brand_en": "",
-      "brand_ko": "아마베",
-      "official_url": "https://amabe.kr/",
-      "sale_url": "https://amabe.kr/",
-      "banner_url": "",
-      "status": "error",
-      "discount": 0,
-      "region": "KR",
-      "sale_type": "SALE"
     },
     {
       "brand_en": "",
@@ -391,7 +380,7 @@
       "brand_ko": "포니테일",
       "official_url": "https://ponytail.shop/",
       "sale_url": "https://ponytail.shop/",
-      "banner_url": "https://ponytail.shop/web/upload/share-image-1-4dd6873a984965c08cce5216399fee3a.png",
+      "banner_url": "https://ponytail.shop/web/upload/share-image-1-787133dd5fead3b98a84530e4bfd1c85.jpg",
       "status": "sale",
       "discount": 70,
       "region": "KR",
