@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-02T21:27:08.705419Z",
+  "generated_at": "2026-03-03T01:20:29.444330Z",
   "sales": [
     {
       "brand_en": "",
@@ -505,7 +505,7 @@
       "status": "sale",
       "discount": 60,
       "region": "KR",
-      "sale_type": "SALE"
+      "sale_type": "OUTLET"
     },
     {
       "brand_en": "",
