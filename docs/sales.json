@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-03T12:38:02.091161Z",
+  "generated_at": "2026-03-03T15:40:46.015386Z",
   "sales": [
     {
       "brand_en": "",
@@ -62,10 +62,10 @@
       "official_url": "https://s2asuras2.com/",
       "sale_url": "https://s2asuras2.com/",
       "banner_url": "https://cdn.imweb.me/thumbnail/20250626/4e07ef726e867.jpg",
-      "status": "sale",
-      "discount": 92,
+      "status": "error",
+      "discount": 0,
       "region": "KR",
-      "sale_type": "SEASON OFF"
+      "sale_type": "SALE"
     },
     {
       "brand_en": "",
@@ -179,6 +179,17 @@
     },
     {
       "brand_en": "",
+      "brand_ko": "아마베",
+      "official_url": "https://amabe.kr/",
+      "sale_url": "https://amabe.kr/",
+      "banner_url": "",
+      "status": "error",
+      "discount": 0,
+      "region": "KR",
+      "sale_type": "SALE"
+    },
+    {
+      "brand_en": "",
       "brand_ko": "더티스",
       "official_url": "https://thetisofficial.com/",
       "sale_url": "https://thetisofficial.com/",
@@ -237,7 +248,7 @@
       "brand_ko": "애프터아워즈",
       "official_url": "https://afterhours.co.kr/",
       "sale_url": "https://afterhours.co.kr/",
-      "banner_url": "https://afterhours.co.kr/web/upload/share-image-1-b66a99df4d6b475c845bd1f941a46e00.jpg",
+      "banner_url": "https://www.afterhours.co.kr/web/upload/share-image-1-b66a99df4d6b475c845bd1f941a46e00.jpg",
       "status": "sale",
       "discount": 80,
       "region": "KR",
