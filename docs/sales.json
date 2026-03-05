@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-05T04:31:21.375201Z",
+  "generated_at": "2026-03-05T06:41:20.148847Z",
   "sales": [
     {
       "brand_en": "",
@@ -443,6 +443,17 @@
     },
     {
       "brand_en": "",
+      "brand_ko": "글로니",
+      "official_url": "https://glowny.co.kr/",
+      "sale_url": "https://glowny.co.kr/",
+      "banner_url": "https://glowny.co.kr/re_img/world_wide_select_arrow.svg",
+      "status": "sale",
+      "discount": 15,
+      "region": "KR",
+      "sale_type": "SALE"
+    },
+    {
+      "brand_en": "",
       "brand_ko": "미치코런던 코시노",
       "official_url": "https://michiko-london.kr/",
       "sale_url": "https://michiko-london.kr/",
@@ -537,6 +548,17 @@
       "banner_url": "https://overdueflair.com/web/upload/share-image-1-56123f34fa6544f424170309c4a85329.jpg",
       "status": "sale",
       "discount": 20,
+      "region": "KR",
+      "sale_type": "SALE"
+    },
+    {
+      "brand_en": "",
+      "brand_ko": "더바넷",
+      "official_url": "https://the-barnnet.com",
+      "sale_url": "https://the-barnnet.com",
+      "banner_url": "https://thebarnnet.cafe24.com/web/img/seo_img.jpg",
+      "status": "sale",
+      "discount": 0,
       "region": "KR",
       "sale_type": "SALE"
     },
