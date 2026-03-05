@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-05T06:41:20.148847Z",
+  "generated_at": "2026-03-05T09:36:06.075108Z",
   "sales": [
     {
       "brand_en": "",
@@ -53,6 +53,17 @@
       "banner_url": "http://www.howus.co.kr/cdn/shop/files/be8c953f66d37ff7d0a48eb106814dea.jpg?v=1721813603",
       "status": "sale",
       "discount": 30,
+      "region": "KR",
+      "sale_type": "SALE"
+    },
+    {
+      "brand_en": "",
+      "brand_ko": "러프넥",
+      "official_url": "https://roughneckseoul.com/",
+      "sale_url": "https://roughneckseoul.com/",
+      "banner_url": "https://roughneckseoul.com/web/upload/share-image-1-fb50c0c3aa68ad2e36f080ed90e5fffa.png",
+      "status": "sale",
+      "discount": 5,
       "region": "KR",
       "sale_type": "SALE"
     },
