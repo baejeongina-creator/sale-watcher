@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-06T09:31:30.086060Z",
+  "generated_at": "2026-03-06T12:36:18.608370Z",
   "sales": [
     {
       "brand_en": "",
@@ -448,7 +448,7 @@
       "sale_url": "https://siyazu.co.kr/",
       "banner_url": "https://siyazu.co.kr/web/upload/og_image2.jpg",
       "status": "sale",
-      "discount": 0,
+      "discount": 70,
       "region": "KR",
       "sale_type": "SALE"
     },
@@ -658,6 +658,17 @@
       "banner_url": "",
       "status": "invalid_url",
       "discount": 0,
+      "region": "GLOBAL",
+      "sale_type": "SALE"
+    },
+    {
+      "brand_en": "",
+      "brand_ko": "",
+      "official_url": "https://www.ralphlauren.com/",
+      "sale_url": "https://www.ralphlauren.com/",
+      "banner_url": "https://www.ralphlauren.com/on/demandware.static/-/Library-Sites-RalphLauren_NA_Library/default/dwfe2aef66/images/social-sharing/RLNA-Social-Image.jpg",
+      "status": "sale",
+      "discount": 30,
       "region": "GLOBAL",
       "sale_type": "SALE"
     },
