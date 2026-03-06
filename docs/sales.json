@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-05T21:26:59.149949Z",
+  "generated_at": "2026-03-06T01:21:51.647676Z",
   "sales": [
     {
       "brand_en": "",
@@ -61,7 +61,7 @@
       "brand_ko": "러프넥",
       "official_url": "https://roughneckseoul.com/",
       "sale_url": "https://roughneckseoul.com/",
-      "banner_url": "https://roughneckseoul.com/web/upload/share-image-1-fb50c0c3aa68ad2e36f080ed90e5fffa.png",
+      "banner_url": "https://www.roughneckseoul.com/web/upload/share-image-1-fb50c0c3aa68ad2e36f080ed90e5fffa.png",
       "status": "sale",
       "discount": 5,
       "region": "KR",
@@ -132,17 +132,6 @@
       "discount": 50,
       "region": "KR",
       "sale_type": "SALE"
-    },
-    {
-      "brand_en": "",
-      "brand_ko": "던스트",
-      "official_url": "https://dunststudio.com/",
-      "sale_url": "https://dunststudio.com/",
-      "banner_url": "https://lfcorp.cafe24.com/0223_LINK.jpg",
-      "status": "sale",
-      "discount": 50,
-      "region": "KR",
-      "sale_type": "SEASON OFF"
     },
     {
       "brand_en": "",
@@ -520,6 +509,17 @@
     },
     {
       "brand_en": "",
+      "brand_ko": "르하스",
+      "official_url": "https://l-has.com",
+      "sale_url": "https://l-has.com",
+      "banner_url": "https://l-has.com/web/upload/share-image-1-71679f17f30f8891192e37e433b1d7e8.JPG",
+      "status": "sale",
+      "discount": 0,
+      "region": "KR",
+      "sale_type": "SALE"
+    },
+    {
+      "brand_en": "",
       "brand_ko": "이아",
       "official_url": "https://eaah.net",
       "sale_url": "https://eaah.net",
@@ -613,7 +613,7 @@
       "sale_url": "https://www.apc-korea.com/",
       "banner_url": "https://www.apc-korea.com/image/apc/apcLogo.jpg",
       "status": "sale",
-      "discount": 0,
+      "discount": 10,
       "region": "GLOBAL",
       "sale_type": "SEASON OFF"
     },
