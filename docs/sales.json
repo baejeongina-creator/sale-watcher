@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-06T12:36:18.608370Z",
+  "generated_at": "2026-03-06T15:29:46.291021Z",
   "sales": [
     {
       "brand_en": "",
@@ -380,7 +380,7 @@
       "brand_ko": "포니테일",
       "official_url": "https://ponytail.shop/",
       "sale_url": "https://ponytail.shop/",
-      "banner_url": "https://ponytail.shop/web/upload/share-image-1-81b406a016b5d2716b3b95d4dd17235c.jpg",
+      "banner_url": "https://www.ponytail.shop/web/upload/share-image-1-81b406a016b5d2716b3b95d4dd17235c.jpg",
       "status": "sale",
       "discount": 70,
       "region": "KR",
@@ -658,17 +658,6 @@
       "banner_url": "",
       "status": "invalid_url",
       "discount": 0,
-      "region": "GLOBAL",
-      "sale_type": "SALE"
-    },
-    {
-      "brand_en": "",
-      "brand_ko": "",
-      "official_url": "https://www.ralphlauren.com/",
-      "sale_url": "https://www.ralphlauren.com/",
-      "banner_url": "https://www.ralphlauren.com/on/demandware.static/-/Library-Sites-RalphLauren_NA_Library/default/dwfe2aef66/images/social-sharing/RLNA-Social-Image.jpg",
-      "status": "sale",
-      "discount": 30,
       "region": "GLOBAL",
       "sale_type": "SALE"
     },
