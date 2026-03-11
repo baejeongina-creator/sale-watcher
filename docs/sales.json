@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-11T09:35:32.157816Z",
+  "generated_at": "2026-03-11T12:40:15.632494Z",
   "sales": [
     {
       "brand_en": "",
@@ -73,10 +73,10 @@
       "official_url": "https://s2asuras2.com/",
       "sale_url": "https://s2asuras2.com/",
       "banner_url": "https://cdn.imweb.me/thumbnail/20250626/4e07ef726e867.jpg",
-      "status": "error",
-      "discount": 0,
+      "status": "sale",
+      "discount": 92,
       "region": "KR",
-      "sale_type": "SALE"
+      "sale_type": "SEASON OFF"
     },
     {
       "brand_en": "",
@@ -127,7 +127,7 @@
       "brand_ko": "낫띵리튼",
       "official_url": "http://nothing-written.com/",
       "sale_url": "http://nothing-written.com/",
-      "banner_url": "http://nothing-written.com/web/upload/category/editor/2025/12/09/11c0a12dcad58d8bb0d216f5f90b6d7c.jpg",
+      "banner_url": "http://nothing-written.com/web/upload/category/editor/2026/03/11/0d2aedd5dd816f1887ac0afe488d0c9d.jpg",
       "status": "sale",
       "discount": 50,
       "region": "KR",
@@ -165,17 +165,6 @@
       "discount": 50,
       "region": "KR",
       "sale_type": "SEASON OFF"
-    },
-    {
-      "brand_en": "",
-      "brand_ko": "아마베",
-      "official_url": "https://amabe.kr/",
-      "sale_url": "https://amabe.kr/",
-      "banner_url": "",
-      "status": "error",
-      "discount": 0,
-      "region": "KR",
-      "sale_type": "SALE"
     },
     {
       "brand_en": "",
