@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-13T21:26:18.924827Z",
+  "generated_at": "2026-03-14T01:15:42.143028Z",
   "sales": [
     {
       "brand_en": "",
@@ -73,10 +73,10 @@
       "official_url": "https://s2asuras2.com/",
       "sale_url": "https://s2asuras2.com/",
       "banner_url": "https://cdn.imweb.me/thumbnail/20250626/4e07ef726e867.jpg",
-      "status": "error",
-      "discount": 0,
+      "status": "sale",
+      "discount": 92,
       "region": "KR",
-      "sale_type": "SALE"
+      "sale_type": "SEASON OFF"
     },
     {
       "brand_en": "",
@@ -165,17 +165,6 @@
       "discount": 50,
       "region": "KR",
       "sale_type": "SEASON OFF"
-    },
-    {
-      "brand_en": "",
-      "brand_ko": "아마베",
-      "official_url": "https://amabe.kr/",
-      "sale_url": "https://amabe.kr/",
-      "banner_url": "",
-      "status": "error",
-      "discount": 0,
-      "region": "KR",
-      "sale_type": "SALE"
     },
     {
       "brand_en": "",
@@ -281,7 +270,7 @@
       "brand_ko": "우마뭉",
       "official_url": "https://umarmung.kr/",
       "sale_url": "https://umarmung.kr/",
-      "banner_url": "https://www.umarmung.kr/web/upload/share-image-1-9df27ce8904867542025f20d5a910801.jpg",
+      "banner_url": "https://umarmung.kr/web/upload/share-image-1-9df27ce8904867542025f20d5a910801.jpg",
       "status": "sale",
       "discount": 60,
       "region": "KR",
