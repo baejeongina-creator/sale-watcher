@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-16T05:10:57.175688Z",
+  "generated_at": "2026-03-16T07:09:18.731035Z",
   "sales": [
     {
       "brand_en": "",
@@ -73,10 +73,10 @@
       "official_url": "https://s2asuras2.com/",
       "sale_url": "https://s2asuras2.com/",
       "banner_url": "https://cdn.imweb.me/thumbnail/20250626/4e07ef726e867.jpg",
-      "status": "sale",
-      "discount": 92,
+      "status": "error",
+      "discount": 0,
       "region": "KR",
-      "sale_type": "SEASON OFF"
+      "sale_type": "SALE"
     },
     {
       "brand_en": "",
@@ -165,6 +165,17 @@
       "discount": 50,
       "region": "KR",
       "sale_type": "SEASON OFF"
+    },
+    {
+      "brand_en": "",
+      "brand_ko": "아마베",
+      "official_url": "https://amabe.kr/",
+      "sale_url": "https://amabe.kr/",
+      "banner_url": "",
+      "status": "error",
+      "discount": 0,
+      "region": "KR",
+      "sale_type": "SALE"
     },
     {
       "brand_en": "",
@@ -292,7 +303,7 @@
       "brand_ko": "하네",
       "official_url": "https://hane.kr/",
       "sale_url": "https://hane.kr/",
-      "banner_url": "https://hane.kr/web/upload/share-image-1-84e7896d82e2e33d1b210f38ffd3e100.jpg",
+      "banner_url": "https://www.hane.kr/web/upload/share-image-1-84e7896d82e2e33d1b210f38ffd3e100.jpg",
       "status": "sale",
       "discount": 80,
       "region": "KR",
