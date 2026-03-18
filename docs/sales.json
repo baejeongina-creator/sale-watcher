@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-18T04:52:22.840302Z",
+  "generated_at": "2026-03-18T06:53:36.569957Z",
   "sales": [
     {
       "brand_en": "",
@@ -73,10 +73,10 @@
       "official_url": "https://s2asuras2.com/",
       "sale_url": "https://s2asuras2.com/",
       "banner_url": "https://cdn.imweb.me/thumbnail/20250626/4e07ef726e867.jpg",
-      "status": "sale",
-      "discount": 92,
+      "status": "error",
+      "discount": 0,
       "region": "KR",
-      "sale_type": "SEASON OFF"
+      "sale_type": "SALE"
     },
     {
       "brand_en": "",
@@ -165,6 +165,17 @@
       "discount": 50,
       "region": "KR",
       "sale_type": "SEASON OFF"
+    },
+    {
+      "brand_en": "",
+      "brand_ko": "아마베",
+      "official_url": "https://amabe.kr/",
+      "sale_url": "https://amabe.kr/",
+      "banner_url": "",
+      "status": "error",
+      "discount": 0,
+      "region": "KR",
+      "sale_type": "SALE"
     },
     {
       "brand_en": "",
@@ -537,6 +548,17 @@
       "banner_url": "https://overdueflair.com/web/upload/share-image-1-56123f34fa6544f424170309c4a85329.jpg",
       "status": "sale",
       "discount": 20,
+      "region": "KR",
+      "sale_type": "SALE"
+    },
+    {
+      "brand_en": "",
+      "brand_ko": "더바넷",
+      "official_url": "https://the-barnnet.com",
+      "sale_url": "https://the-barnnet.com",
+      "banner_url": "https://thebarnnet.cafe24.com/web/img/seo_img.jpg",
+      "status": "sale",
+      "discount": 0,
       "region": "KR",
       "sale_type": "SALE"
     },
