@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-23T15:54:26.123389Z",
+  "generated_at": "2026-03-23T18:42:13.968199Z",
   "sales": [
     {
       "brand_en": "",
@@ -116,7 +116,7 @@
       "brand_ko": "스컬프터",
       "official_url": "https://sculptor-worldwide.com/",
       "sale_url": "https://sculptor-worldwide.com/",
-      "banner_url": "http://cdn.shopify.com/s/files/1/0653/6436/1406/files/0b3bb991276f221a9a3455ef59bd5115.jpg?v=1744076387",
+      "banner_url": "http://sculptor-worldwide.com/cdn/shop/files/0b3bb991276f221a9a3455ef59bd5115.jpg?v=1744076387",
       "status": "sale",
       "discount": 0,
       "region": "KR",
@@ -270,7 +270,7 @@
       "brand_ko": "에퓨레",
       "official_url": "https://www.epure.co.kr/",
       "sale_url": "https://www.epure.co.kr/",
-      "banner_url": "https://epure.co.kr/web/upload/share-image-1-f35aca149ecf66ead4f7a9b4051da292.jpg",
+      "banner_url": "https://www.epure.co.kr/web/upload/share-image-1-f35aca149ecf66ead4f7a9b4051da292.jpg",
       "status": "sale",
       "discount": 50,
       "region": "KR",
