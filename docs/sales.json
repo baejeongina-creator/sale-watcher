@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-28T12:36:44.069184Z",
+  "generated_at": "2026-03-28T15:25:50.745805Z",
   "sales": [
     {
       "brand_en": "",
@@ -61,7 +61,7 @@
       "brand_ko": "러프넥",
       "official_url": "https://roughneckseoul.com/",
       "sale_url": "https://roughneckseoul.com/",
-      "banner_url": "https://roughneckseoul.com/web/upload/share-image-1-fb50c0c3aa68ad2e36f080ed90e5fffa.png",
+      "banner_url": "https://www.roughneckseoul.com/web/upload/share-image-1-fb50c0c3aa68ad2e36f080ed90e5fffa.png",
       "status": "sale",
       "discount": 5,
       "region": "KR",
@@ -270,7 +270,7 @@
       "brand_ko": "에퓨레",
       "official_url": "https://www.epure.co.kr/",
       "sale_url": "https://www.epure.co.kr/",
-      "banner_url": "https://www.epure.co.kr/web/upload/share-image-1-f35aca149ecf66ead4f7a9b4051da292.jpg",
+      "banner_url": "https://epure.co.kr/web/upload/share-image-1-f35aca149ecf66ead4f7a9b4051da292.jpg",
       "status": "sale",
       "discount": 50,
       "region": "KR",
@@ -380,7 +380,7 @@
       "brand_ko": "포니테일",
       "official_url": "https://ponytail.shop/",
       "sale_url": "https://ponytail.shop/",
-      "banner_url": "https://ponytail.shop/web/upload/share-image-1-81b406a016b5d2716b3b95d4dd17235c.jpg",
+      "banner_url": "https://www.ponytail.shop/web/upload/share-image-1-81b406a016b5d2716b3b95d4dd17235c.jpg",
       "status": "sale",
       "discount": 70,
       "region": "KR",
