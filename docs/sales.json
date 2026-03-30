@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-30T05:18:40.376097Z",
+  "generated_at": "2026-03-30T07:18:10.037163Z",
   "sales": [
     {
       "brand_en": "",
@@ -270,7 +270,7 @@
       "brand_ko": "에퓨레",
       "official_url": "https://www.epure.co.kr/",
       "sale_url": "https://www.epure.co.kr/",
-      "banner_url": "https://www.epure.co.kr/web/upload/share-image-1-f35aca149ecf66ead4f7a9b4051da292.jpg",
+      "banner_url": "https://epure.co.kr/web/upload/share-image-1-f35aca149ecf66ead4f7a9b4051da292.jpg",
       "status": "sale",
       "discount": 50,
       "region": "KR",
@@ -460,17 +460,6 @@
       "banner_url": "https://glowny.co.kr/re_img/world_wide_select_arrow.svg",
       "status": "sale",
       "discount": 15,
-      "region": "KR",
-      "sale_type": "SALE"
-    },
-    {
-      "brand_en": "",
-      "brand_ko": "미치코런던 코시노",
-      "official_url": "https://michiko-london.kr/",
-      "sale_url": "https://michiko-london.kr/",
-      "banner_url": "https://michiko-london.kr/web/upload/share-image-1-2c3f6f49e417b26872b939ad47bcf895.png",
-      "status": "sale",
-      "discount": 0,
       "region": "KR",
       "sale_type": "SALE"
     },
