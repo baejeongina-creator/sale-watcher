@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-01T10:01:05.562038Z",
+  "generated_at": "2026-04-01T12:59:27.636345Z",
   "sales": [
     {
       "brand_en": "",
@@ -73,10 +73,10 @@
       "official_url": "https://s2asuras2.com/",
       "sale_url": "https://s2asuras2.com/",
       "banner_url": "https://cdn.imweb.me/thumbnail/20250626/4e07ef726e867.jpg",
-      "status": "error",
-      "discount": 0,
+      "status": "sale",
+      "discount": 92,
       "region": "KR",
-      "sale_type": "SALE"
+      "sale_type": "SEASON OFF"
     },
     {
       "brand_en": "",
@@ -179,17 +179,6 @@
     },
     {
       "brand_en": "",
-      "brand_ko": "아마베",
-      "official_url": "https://amabe.kr/",
-      "sale_url": "https://amabe.kr/",
-      "banner_url": "",
-      "status": "error",
-      "discount": 0,
-      "region": "KR",
-      "sale_type": "SALE"
-    },
-    {
-      "brand_en": "",
       "brand_ko": "더티스",
       "official_url": "https://thetisofficial.com/",
       "sale_url": "https://thetisofficial.com/",
@@ -259,7 +248,7 @@
       "brand_ko": "프리베일",
       "official_url": "https://prevail.kr/",
       "sale_url": "https://prevail.kr/",
-      "banner_url": "https://www.prevail.kr/web/upload/share-image-1-541dac453e7e8879f58ab36e2fc5b359.jpg",
+      "banner_url": "https://prevail.kr/web/upload/share-image-1-541dac453e7e8879f58ab36e2fc5b359.jpg",
       "status": "sale",
       "discount": 50,
       "region": "KR",
@@ -292,7 +281,7 @@
       "brand_ko": "우마뭉",
       "official_url": "https://umarmung.kr/",
       "sale_url": "https://umarmung.kr/",
-      "banner_url": "https://umarmung.kr/web/upload/share-image-1-04a1ea49180487117ccc3ae54f3d8526.jpg",
+      "banner_url": "https://www.umarmung.kr/web/upload/share-image-1-04a1ea49180487117ccc3ae54f3d8526.jpg",
       "status": "sale",
       "discount": 60,
       "region": "KR",
