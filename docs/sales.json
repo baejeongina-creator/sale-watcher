@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-02T15:53:49.726342Z",
+  "generated_at": "2026-04-02T18:44:45.847892Z",
   "sales": [
     {
       "brand_en": "",
@@ -73,10 +73,10 @@
       "official_url": "https://s2asuras2.com/",
       "sale_url": "https://s2asuras2.com/",
       "banner_url": "https://cdn.imweb.me/thumbnail/20250626/4e07ef726e867.jpg",
-      "status": "error",
-      "discount": 0,
+      "status": "sale",
+      "discount": 92,
       "region": "KR",
-      "sale_type": "SALE"
+      "sale_type": "SEASON OFF"
     },
     {
       "brand_en": "",
@@ -176,17 +176,6 @@
       "discount": 50,
       "region": "KR",
       "sale_type": "SEASON OFF"
-    },
-    {
-      "brand_en": "",
-      "brand_ko": "아마베",
-      "official_url": "https://amabe.kr/",
-      "sale_url": "https://amabe.kr/",
-      "banner_url": "",
-      "status": "error",
-      "discount": 0,
-      "region": "KR",
-      "sale_type": "SALE"
     },
     {
       "brand_en": "",
@@ -490,7 +479,7 @@
       "brand_ko": "루에브르",
       "official_url": "https://m.maisonloeuvre.com",
       "sale_url": "https://m.maisonloeuvre.com",
-      "banner_url": "https://m.maisonloeuvre.co.kr/web/upload/share-image-1-22efad436b114701f6a353902f3c932c.jpg",
+      "banner_url": "https://m.maisonloeuvre.com/web/upload/share-image-1-22efad436b114701f6a353902f3c932c.jpg",
       "status": "sale",
       "discount": 20,
       "region": "KR",
