@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-07T01:28:48.157713Z",
+  "generated_at": "2026-04-07T05:05:18.465813Z",
   "sales": [
     {
       "brand_en": "",
@@ -152,6 +152,17 @@
       "banner_url": "https://cafe24img.poxo.com/blossomcompany/web/product/extra/small/202601/24105ecc1a768b98220e6ecffcfde8a6.jpg",
       "status": "sale",
       "discount": 30,
+      "region": "KR",
+      "sale_type": "SALE"
+    },
+    {
+      "brand_en": "",
+      "brand_ko": "인사일런스",
+      "official_url": "https://www.insilence.co.kr/",
+      "sale_url": "https://www.insilence.co.kr/",
+      "banner_url": "https://ambient.diskn.com/image/home/pop-up/2026/BELT%20COLLECTION/PC.png",
+      "status": "sale",
+      "discount": 45,
       "region": "KR",
       "sale_type": "SALE"
     },
