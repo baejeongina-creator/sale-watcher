@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-08T01:29:28.213334Z",
+  "generated_at": "2026-04-08T05:06:25.907114Z",
   "sales": [
     {
       "brand_en": "",
@@ -121,6 +121,17 @@
       "discount": 50,
       "region": "KR",
       "sale_type": "SALE"
+    },
+    {
+      "brand_en": "",
+      "brand_ko": "오픈와이와이",
+      "official_url": "http://open-yy.com/",
+      "sale_url": "http://open-yy.com/",
+      "banner_url": "https://cafe24.poxo.com/ec01/theopenproduct/p1p7L96QYgpvk7KwZPVnPw72oGqTs6KY3O2E2OOjpmNZJQQWdaYN3w+prh2Hy01deH55bnvRC1g9VOwsW9utEw==/_/open-yy//popup/_popup_ceds.jpg",
+      "status": "sale",
+      "discount": 0,
+      "region": "KR",
+      "sale_type": "SEASON OFF"
     },
     {
       "brand_en": "",
