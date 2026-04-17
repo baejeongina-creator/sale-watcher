@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-17T12:59:44.112191Z",
+  "generated_at": "2026-04-17T15:53:13.879705Z",
   "sales": [
     {
       "brand_en": "",
@@ -385,6 +385,17 @@
       "discount": 40,
       "region": "KR",
       "sale_type": "SEASON OFF"
+    },
+    {
+      "brand_en": "",
+      "brand_ko": "지비에이치",
+      "official_url": "https://gbh.kr/",
+      "sale_url": "https://gbh.kr/",
+      "banner_url": "https://cdn.imweb.me/upload/S20260211533a0fa9f6bfc/de4c99cddbb0d.png",
+      "status": "sale",
+      "discount": 0,
+      "region": "KR",
+      "sale_type": "SALE"
     },
     {
       "brand_en": "",
