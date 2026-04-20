@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-20T07:53:48.860764Z",
+  "generated_at": "2026-04-20T10:29:05.919879Z",
   "sales": [
     {
       "brand_en": "",
@@ -73,10 +73,10 @@
       "official_url": "https://s2asuras2.com/",
       "sale_url": "https://s2asuras2.com/",
       "banner_url": "https://cdn.imweb.me/thumbnail/20250626/4e07ef726e867.jpg",
-      "status": "sale",
-      "discount": 92,
+      "status": "error",
+      "discount": 0,
       "region": "KR",
-      "sale_type": "SEASON OFF"
+      "sale_type": "SALE"
     },
     {
       "brand_en": "",
@@ -198,6 +198,17 @@
       "discount": 50,
       "region": "KR",
       "sale_type": "SEASON OFF"
+    },
+    {
+      "brand_en": "",
+      "brand_ko": "아마베",
+      "official_url": "https://amabe.kr/",
+      "sale_url": "https://amabe.kr/",
+      "banner_url": "",
+      "status": "error",
+      "discount": 0,
+      "region": "KR",
+      "sale_type": "SALE"
     },
     {
       "brand_en": "",
@@ -391,8 +402,8 @@
       "brand_ko": "지비에이치",
       "official_url": "https://gbh.kr/",
       "sale_url": "https://gbh.kr/",
-      "banner_url": "https://cdn.imweb.me/upload/S20260211533a0fa9f6bfc/de4c99cddbb0d.png",
-      "status": "sale",
+      "banner_url": "",
+      "status": "error",
       "discount": 0,
       "region": "KR",
       "sale_type": "SALE"
@@ -487,10 +498,32 @@
     },
     {
       "brand_en": "",
+      "brand_ko": "글로니",
+      "official_url": "https://glowny.co.kr/",
+      "sale_url": "https://glowny.co.kr/",
+      "banner_url": "https://glowny.co.kr/re_img/world_wide_select_arrow.svg",
+      "status": "sale",
+      "discount": 15,
+      "region": "KR",
+      "sale_type": "SALE"
+    },
+    {
+      "brand_en": "",
+      "brand_ko": "미치코런던 코시노",
+      "official_url": "https://michiko-london.kr/",
+      "sale_url": "https://michiko-london.kr/",
+      "banner_url": "https://michiko-london.kr/web/upload/share-image-1-2c3f6f49e417b26872b939ad47bcf895.png",
+      "status": "sale",
+      "discount": 0,
+      "region": "KR",
+      "sale_type": "SALE"
+    },
+    {
+      "brand_en": "",
       "brand_ko": "루에브르",
       "official_url": "https://m.maisonloeuvre.com",
       "sale_url": "https://m.maisonloeuvre.com",
-      "banner_url": "https://m.maisonloeuvre.com/web/upload/share-image-1-5645af5b7d8bed1518f4e356183340d9.jpg",
+      "banner_url": "https://m.maisonloeuvre.co.kr/web/upload/share-image-1-5645af5b7d8bed1518f4e356183340d9.jpg",
       "status": "sale",
       "discount": 20,
       "region": "KR",
@@ -528,6 +561,17 @@
       "discount": 60,
       "region": "KR",
       "sale_type": "OUTLET"
+    },
+    {
+      "brand_en": "",
+      "brand_ko": "이아",
+      "official_url": "https://eaah.net",
+      "sale_url": "https://eaah.net",
+      "banner_url": "https://eaah.net/web/upload/category/editor/2026/02/06/6aea45298bbebe5ad93da6f81a45a99d.png",
+      "status": "sale",
+      "discount": 10,
+      "region": "KR",
+      "sale_type": "SALE"
     },
     {
       "brand_en": "",
