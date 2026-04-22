@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-22T13:05:44.956886Z",
+  "generated_at": "2026-04-22T16:04:19.657145Z",
   "sales": [
     {
       "brand_en": "",
@@ -73,10 +73,10 @@
       "official_url": "https://s2asuras2.com/",
       "sale_url": "https://s2asuras2.com/",
       "banner_url": "https://cdn.imweb.me/thumbnail/20250626/4e07ef726e867.jpg",
-      "status": "sale",
-      "discount": 92,
+      "status": "error",
+      "discount": 0,
       "region": "KR",
-      "sale_type": "SEASON OFF"
+      "sale_type": "SALE"
     },
     {
       "brand_en": "",
@@ -107,7 +107,7 @@
       "sale_url": "https://sunburnproject.com/",
       "banner_url": "https://sunburnproject.com/web/upload/share-image-1-e13f3cf55cd724da276c6b436330a4ff.jpg",
       "status": "sale",
-      "discount": 10,
+      "discount": 0,
       "region": "KR",
       "sale_type": "SALE"
     },
@@ -198,6 +198,17 @@
       "discount": 50,
       "region": "KR",
       "sale_type": "SEASON OFF"
+    },
+    {
+      "brand_en": "",
+      "brand_ko": "아마베",
+      "official_url": "https://amabe.kr/",
+      "sale_url": "https://amabe.kr/",
+      "banner_url": "",
+      "status": "error",
+      "discount": 0,
+      "region": "KR",
+      "sale_type": "SALE"
     },
     {
       "brand_en": "",
@@ -391,8 +402,8 @@
       "brand_ko": "지비에이치",
       "official_url": "https://gbh.kr/",
       "sale_url": "https://gbh.kr/",
-      "banner_url": "https://cdn.imweb.me/upload/S20260211533a0fa9f6bfc/de4c99cddbb0d.png",
-      "status": "sale",
+      "banner_url": "",
+      "status": "error",
       "discount": 0,
       "region": "KR",
       "sale_type": "SALE"
