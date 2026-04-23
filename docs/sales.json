@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-23T07:25:02.052503Z",
+  "generated_at": "2026-04-23T10:21:31.605053Z",
   "sales": [
     {
       "brand_en": "",
@@ -17,9 +17,9 @@
       "brand_ko": "보헤미안서울",
       "official_url": "https://bohemseo.com/",
       "sale_url": "https://bohemseo.com/",
-      "banner_url": "https://bohemseo.com/web/upload/share-image-1-2137323aca18ff99b801954bb662df5a.png",
-      "status": "sale",
-      "discount": 70,
+      "banner_url": "",
+      "status": "error",
+      "discount": 0,
       "region": "KR",
       "sale_type": "SALE"
     },
