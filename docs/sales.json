@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-23T13:06:34.091219Z",
+  "generated_at": "2026-04-23T18:58:22.609357Z",
   "sales": [
     {
       "brand_en": "",
@@ -668,17 +668,6 @@
       "sale_url": "",
       "banner_url": "",
       "status": "invalid_url",
-      "discount": 0,
-      "region": "GLOBAL",
-      "sale_type": "SALE"
-    },
-    {
-      "brand_en": "",
-      "brand_ko": "",
-      "official_url": "https://www.ralphlauren.com/",
-      "sale_url": "https://www.ralphlauren.com/",
-      "banner_url": "https://www.ralphlauren.com/on/demandware.static/-/Library-Sites-RalphLauren_NA_Library/default/dwfe2aef66/images/social-sharing/RLNA-Social-Image.jpg",
-      "status": "sale",
       "discount": 0,
       "region": "GLOBAL",
       "sale_type": "SALE"
