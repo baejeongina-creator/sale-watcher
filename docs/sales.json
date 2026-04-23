@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-22T21:44:14.873892Z",
+  "generated_at": "2026-04-23T01:52:03.628351Z",
   "sales": [
     {
       "brand_en": "",
@@ -73,10 +73,10 @@
       "official_url": "https://s2asuras2.com/",
       "sale_url": "https://s2asuras2.com/",
       "banner_url": "https://cdn.imweb.me/thumbnail/20250626/4e07ef726e867.jpg",
-      "status": "sale",
-      "discount": 92,
+      "status": "error",
+      "discount": 0,
       "region": "KR",
-      "sale_type": "SEASON OFF"
+      "sale_type": "SALE"
     },
     {
       "brand_en": "",
@@ -182,7 +182,7 @@
       "brand_ko": "인사일런스",
       "official_url": "https://www.insilence.co.kr/",
       "sale_url": "https://www.insilence.co.kr/",
-      "banner_url": "https://www.insilence.co.kr/web/product/big/202604/b7a093309f5921779848d32653f65e1c.jpg",
+      "banner_url": "https://www.insilence.co.kr/web/product/big/202604/ebb985ddafffb2362aa13a2075212956.jpg",
       "status": "sale",
       "discount": 45,
       "region": "KR",
@@ -201,10 +201,21 @@
     },
     {
       "brand_en": "",
+      "brand_ko": "아마베",
+      "official_url": "https://amabe.kr/",
+      "sale_url": "https://amabe.kr/",
+      "banner_url": "",
+      "status": "error",
+      "discount": 0,
+      "region": "KR",
+      "sale_type": "SALE"
+    },
+    {
+      "brand_en": "",
       "brand_ko": "더티스",
       "official_url": "https://thetisofficial.com/",
       "sale_url": "https://thetisofficial.com/",
-      "banner_url": "https://cafe24.poxo.com/ec01/aurau01/lt8RmgUYkoav01rVuqTixvJJs6VYZOatD7uRloxeDdPbx4qXS+4IIG3VLM6/ERo6Zi18MPVA03Eid4Enfig2mA==/_/main/260330/PC.jpg",
+      "banner_url": "https://cafe24.poxo.com/ec01/aurau01/lt8RmgUYkoav01rVuqTixvJJs6VYZOatD7uRloxeDdPbx4qXS+4IIG3VLM6/ERo6Zi18MPVA03Eid4Enfig2mA==/_/main/260423/pc.jpg",
       "status": "sale",
       "discount": 0,
       "region": "KR",
@@ -391,8 +402,8 @@
       "brand_ko": "지비에이치",
       "official_url": "https://gbh.kr/",
       "sale_url": "https://gbh.kr/",
-      "banner_url": "https://cdn.imweb.me/upload/S20260211533a0fa9f6bfc/de4c99cddbb0d.png",
-      "status": "sale",
+      "banner_url": "",
+      "status": "error",
       "discount": 0,
       "region": "KR",
       "sale_type": "SALE"
@@ -493,17 +504,6 @@
       "banner_url": "https://glowny.co.kr/re_img/world_wide_select_arrow.svg",
       "status": "sale",
       "discount": 15,
-      "region": "KR",
-      "sale_type": "SALE"
-    },
-    {
-      "brand_en": "",
-      "brand_ko": "미치코런던 코시노",
-      "official_url": "https://michiko-london.kr/",
-      "sale_url": "https://michiko-london.kr/",
-      "banner_url": "https://michiko-london.kr/web/upload/share-image-1-2c3f6f49e417b26872b939ad47bcf895.png",
-      "status": "sale",
-      "discount": 0,
       "region": "KR",
       "sale_type": "SALE"
     },
