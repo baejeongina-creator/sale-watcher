@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-23T10:21:31.605053Z",
+  "generated_at": "2026-04-23T13:06:34.091219Z",
   "sales": [
     {
       "brand_en": "",
@@ -17,9 +17,9 @@
       "brand_ko": "보헤미안서울",
       "official_url": "https://bohemseo.com/",
       "sale_url": "https://bohemseo.com/",
-      "banner_url": "",
-      "status": "error",
-      "discount": 0,
+      "banner_url": "https://bohemseo.com/web/upload/share-image-1-2137323aca18ff99b801954bb662df5a.png",
+      "status": "sale",
+      "discount": 70,
       "region": "KR",
       "sale_type": "SALE"
     },
@@ -668,6 +668,17 @@
       "sale_url": "",
       "banner_url": "",
       "status": "invalid_url",
+      "discount": 0,
+      "region": "GLOBAL",
+      "sale_type": "SALE"
+    },
+    {
+      "brand_en": "",
+      "brand_ko": "",
+      "official_url": "https://www.ralphlauren.com/",
+      "sale_url": "https://www.ralphlauren.com/",
+      "banner_url": "https://www.ralphlauren.com/on/demandware.static/-/Library-Sites-RalphLauren_NA_Library/default/dwfe2aef66/images/social-sharing/RLNA-Social-Image.jpg",
+      "status": "sale",
       "discount": 0,
       "region": "GLOBAL",
       "sale_type": "SALE"
