@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-23T21:39:44.342587Z",
+  "generated_at": "2026-04-24T01:51:36.255389Z",
   "sales": [
     {
       "brand_en": "",
@@ -105,7 +105,7 @@
       "brand_ko": "썬번프로젝트",
       "official_url": "https://sunburnproject.com/",
       "sale_url": "https://sunburnproject.com/",
-      "banner_url": "https://sunburnproject.com/web/upload/share-image-1-e13f3cf55cd724da276c6b436330a4ff.jpg",
+      "banner_url": "https://www.sunburnproject.com/web/upload/share-image-1-e13f3cf55cd724da276c6b436330a4ff.jpg",
       "status": "sale",
       "discount": 0,
       "region": "KR",
@@ -539,6 +539,17 @@
       "discount": 60,
       "region": "KR",
       "sale_type": "OUTLET"
+    },
+    {
+      "brand_en": "",
+      "brand_ko": "르하스",
+      "official_url": "https://l-has.com",
+      "sale_url": "https://l-has.com",
+      "banner_url": "https://l-has.com/web/upload/share-image-1-71679f17f30f8891192e37e433b1d7e8.JPG",
+      "status": "sale",
+      "discount": 0,
+      "region": "KR",
+      "sale_type": "SEASON OFF"
     },
     {
       "brand_en": "",
