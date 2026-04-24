@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-24T01:51:36.255389Z",
+  "generated_at": "2026-04-24T05:29:33.042667Z",
   "sales": [
     {
       "brand_en": "",
@@ -61,7 +61,7 @@
       "brand_ko": "러프넥",
       "official_url": "https://roughneckseoul.com/",
       "sale_url": "https://roughneckseoul.com/",
-      "banner_url": "https://roughneckseoul.com/web/upload/share-image-1-fb50c0c3aa68ad2e36f080ed90e5fffa.png",
+      "banner_url": "https://www.roughneckseoul.com/web/upload/share-image-1-fb50c0c3aa68ad2e36f080ed90e5fffa.png",
       "status": "sale",
       "discount": 0,
       "region": "KR",
@@ -105,7 +105,7 @@
       "brand_ko": "썬번프로젝트",
       "official_url": "https://sunburnproject.com/",
       "sale_url": "https://sunburnproject.com/",
-      "banner_url": "https://www.sunburnproject.com/web/upload/share-image-1-e13f3cf55cd724da276c6b436330a4ff.jpg",
+      "banner_url": "https://sunburnproject.com/web/upload/share-image-1-e13f3cf55cd724da276c6b436330a4ff.jpg",
       "status": "sale",
       "discount": 0,
       "region": "KR",
@@ -204,7 +204,7 @@
       "brand_ko": "더티스",
       "official_url": "https://thetisofficial.com/",
       "sale_url": "https://thetisofficial.com/",
-      "banner_url": "https://cafe24.poxo.com/ec01/aurau01/lt8RmgUYkoav01rVuqTixvJJs6VYZOatD7uRloxeDdPbx4qXS+4IIG3VLM6/ERo6Zi18MPVA03Eid4Enfig2mA==/_/main/260423/pc.jpg",
+      "banner_url": "https://cafe24.poxo.com/ec01/aurau01/rpNEpTrS8PE7n3PQcu8Suic4H6+t4VOWjFh9wwzTM+le6zo77EHnsfuRo3VKf6H8AUFK95O/PyerJ35De06E1A==/_/main/260424/pc.jpg",
       "status": "sale",
       "discount": 0,
       "region": "KR",
@@ -284,6 +284,17 @@
       "banner_url": "https://itzavibe24.cafe24.com/OG/LOGO.jpg",
       "status": "sale",
       "discount": 40,
+      "region": "KR",
+      "sale_type": "SALE"
+    },
+    {
+      "brand_en": "",
+      "brand_ko": "미세키서울",
+      "official_url": "https://misekiseoul.kr/",
+      "sale_url": "https://misekiseoul.kr/",
+      "banner_url": "https://misekiseoul.kr/web/upload/share-image-1-5ec5c620405a72903eb7aeb5d0158b46.jpg",
+      "status": "sale",
+      "discount": 0,
       "region": "KR",
       "sale_type": "SALE"
     },
@@ -549,7 +560,7 @@
       "status": "sale",
       "discount": 0,
       "region": "KR",
-      "sale_type": "SEASON OFF"
+      "sale_type": "SALE"
     },
     {
       "brand_en": "",
