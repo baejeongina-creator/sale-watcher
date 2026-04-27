@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-26T21:31:29.463370Z",
+  "generated_at": "2026-04-27T01:58:01.885559Z",
   "sales": [
     {
       "brand_en": "",
@@ -149,7 +149,7 @@
       "brand_ko": "던스트",
       "official_url": "https://dunststudio.com/",
       "sale_url": "https://dunststudio.com/",
-      "banner_url": "https://lfcorp.cafe24.com/LINK_0413.jpg",
+      "banner_url": "https://lfcorp.cafe24.com/0427_LINK.jpg",
       "status": "sale",
       "discount": 50,
       "region": "KR",
@@ -635,7 +635,7 @@
       "sale_url": "https://the-barnnet.com",
       "banner_url": "https://thebarnnet.cafe24.com/web/img/seo_img.jpg",
       "status": "sale",
-      "discount": 15,
+      "discount": 0,
       "region": "KR",
       "sale_type": "SALE"
     },
