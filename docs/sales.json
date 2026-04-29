@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-29T13:26:12.295552Z",
+  "generated_at": "2026-04-29T16:25:13.614400Z",
   "sales": [
     {
       "brand_en": "",
@@ -61,7 +61,7 @@
       "brand_ko": "러프넥",
       "official_url": "https://roughneckseoul.com/",
       "sale_url": "https://roughneckseoul.com/",
-      "banner_url": "https://www.roughneckseoul.com/web/upload/share-image-1-fb50c0c3aa68ad2e36f080ed90e5fffa.png",
+      "banner_url": "https://roughneckseoul.com/web/upload/share-image-1-fb50c0c3aa68ad2e36f080ed90e5fffa.png",
       "status": "sale",
       "discount": 0,
       "region": "KR",
@@ -515,6 +515,17 @@
       "banner_url": "https://glowny.co.kr/re_img/world_wide_select_arrow.svg",
       "status": "sale",
       "discount": 15,
+      "region": "KR",
+      "sale_type": "SALE"
+    },
+    {
+      "brand_en": "",
+      "brand_ko": "미치코런던 코시노",
+      "official_url": "https://michiko-london.kr/",
+      "sale_url": "https://michiko-london.kr/",
+      "banner_url": "https://michiko-london.kr/web/upload/share-image-1-2c3f6f49e417b26872b939ad47bcf895.png",
+      "status": "sale",
+      "discount": 0,
       "region": "KR",
       "sale_type": "SALE"
     },
