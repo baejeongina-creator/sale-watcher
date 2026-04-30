@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-29T21:54:26.513893Z",
+  "generated_at": "2026-04-30T02:06:20.789992Z",
   "sales": [
     {
       "brand_en": "",
@@ -182,9 +182,9 @@
       "brand_ko": "인사일런스",
       "official_url": "https://www.insilence.co.kr/",
       "sale_url": "https://www.insilence.co.kr/",
-      "banner_url": "https://ambient.diskn.com/image/home/pop-up/2026/spring%20re-edit/season%20off%20-4.jpg",
+      "banner_url": "https://www.insilence.co.kr/web/product/big/202604/bd16cc9b1e275c57fb80f06ae8ca21e7.jpg",
       "status": "sale",
-      "discount": 50,
+      "discount": 0,
       "region": "KR",
       "sale_type": "SALE"
     },
@@ -571,7 +571,7 @@
       "status": "sale",
       "discount": 60,
       "region": "KR",
-      "sale_type": "OUTLET"
+      "sale_type": "SALE"
     },
     {
       "brand_en": "",
