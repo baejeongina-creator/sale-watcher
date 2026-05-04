@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-04T05:56:49.011849Z",
+  "generated_at": "2026-05-04T08:20:04.187323Z",
   "sales": [
     {
       "brand_en": "",
@@ -647,6 +647,17 @@
       "banner_url": "",
       "status": "error",
       "discount": 0,
+      "region": "GLOBAL",
+      "sale_type": "SALE"
+    },
+    {
+      "brand_en": "",
+      "brand_ko": "가니",
+      "official_url": "https://www.ganni.com/",
+      "sale_url": "https://www.ganni.com/",
+      "banner_url": "https://www.ganni.com/on/demandware.static/-/Sites/default/dwcfb5b867/25-3-url.jpg",
+      "status": "sale",
+      "discount": 15,
       "region": "GLOBAL",
       "sale_type": "SALE"
     },
