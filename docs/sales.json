@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-05T13:17:44.767835Z",
+  "generated_at": "2026-05-05T16:19:34.616199Z",
   "sales": [
     {
       "brand_en": "",
@@ -62,10 +62,10 @@
       "official_url": "https://s2asuras2.com/",
       "sale_url": "https://s2asuras2.com/",
       "banner_url": "https://cdn.imweb.me/thumbnail/20250626/4e07ef726e867.jpg",
-      "status": "sale",
-      "discount": 92,
+      "status": "error",
+      "discount": 0,
       "region": "KR",
-      "sale_type": "SEASON OFF"
+      "sale_type": "SALE"
     },
     {
       "brand_en": "",
@@ -171,7 +171,7 @@
       "brand_ko": "인사일런스",
       "official_url": "https://www.insilence.co.kr/",
       "sale_url": "https://www.insilence.co.kr/",
-      "banner_url": "https://www.insilence.co.kr/web/product/big/202604/7955438d025dbdc0a9fdab6c34579c0f.jpg",
+      "banner_url": "https://insilencewomen.com/web/product/big/202604/7955438d025dbdc0a9fdab6c34579c0f.jpg",
       "status": "sale",
       "discount": 0,
       "region": "KR",
@@ -190,11 +190,11 @@
     },
     {
       "brand_en": "",
-      "brand_ko": "더티스",
-      "official_url": "https://thetisofficial.com/",
-      "sale_url": "https://thetisofficial.com/",
-      "banner_url": "https://cafe24.poxo.com/ec01/aurau01/rpNEpTrS8PE7n3PQcu8Suic4H6+t4VOWjFh9wwzTM+le6zo77EHnsfuRo3VKf6H8AUFK95O/PyerJ35De06E1A==/_/main/260424/pc.jpg",
-      "status": "sale",
+      "brand_ko": "아마베",
+      "official_url": "https://amabe.kr/",
+      "sale_url": "https://amabe.kr/",
+      "banner_url": "",
+      "status": "error",
       "discount": 0,
       "region": "KR",
       "sale_type": "SALE"
@@ -402,9 +402,9 @@
       "brand_ko": "지비에이치",
       "official_url": "https://gbh.kr/",
       "sale_url": "https://gbh.kr/",
-      "banner_url": "https://cdn.imweb.me/upload/S20260211533a0fa9f6bfc/de4c99cddbb0d.png",
-      "status": "sale",
-      "discount": 50,
+      "banner_url": "",
+      "status": "error",
+      "discount": 0,
       "region": "KR",
       "sale_type": "SALE"
     },
