@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-06T21:55:42.347411Z",
+  "generated_at": "2026-05-07T02:04:08.695130Z",
   "sales": [
     {
       "brand_en": "",
@@ -187,6 +187,17 @@
       "discount": 50,
       "region": "KR",
       "sale_type": "SEASON OFF"
+    },
+    {
+      "brand_en": "",
+      "brand_ko": "더티스",
+      "official_url": "https://thetisofficial.com/",
+      "sale_url": "https://thetisofficial.com/",
+      "banner_url": "https://cafe24.poxo.com/ec01/aurau01/rpNEpTrS8PE7n3PQcu8Suic4H6+t4VOWjFh9wwzTM+le6zo77EHnsfuRo3VKf6H8AUFK95O/PyerJ35De06E1A==/_/main/260424/pc.jpg",
+      "status": "sale",
+      "discount": 0,
+      "region": "KR",
+      "sale_type": "SALE"
     },
     {
       "brand_en": "",
@@ -534,9 +545,9 @@
       "brand_ko": "아틀리에 나인",
       "official_url": "https://www.nain.co.kr",
       "sale_url": "https://www.nain.co.kr",
-      "banner_url": "",
-      "status": "error",
-      "discount": 0,
+      "banner_url": "https://www.nain.co.kr/shopimages/byyj1/all_og__20230714141615php59aZlP.jpg",
+      "status": "sale",
+      "discount": 60,
       "region": "KR",
       "sale_type": "SALE"
     },
