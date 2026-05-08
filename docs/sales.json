@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-07T21:48:03.076000Z",
+  "generated_at": "2026-05-08T02:10:29.098950Z",
   "sales": [
     {
       "brand_en": "",
@@ -322,17 +322,6 @@
     },
     {
       "brand_en": "",
-      "brand_ko": "로우 클래식",
-      "official_url": "https://lowclassic.com/",
-      "sale_url": "https://lowclassic.com/",
-      "banner_url": "https://lowclassic.com/web/upload/share-image-1-08900e29af1fb6626ffdb527c5341488.jpg",
-      "status": "sale",
-      "discount": 0,
-      "region": "KR",
-      "sale_type": "SALE"
-    },
-    {
-      "brand_en": "",
       "brand_ko": "하네",
       "official_url": "https://hane.kr/",
       "sale_url": "https://hane.kr/",
@@ -493,6 +482,17 @@
       "banner_url": "https://siyazu.co.kr/web/upload/og_image2.jpg",
       "status": "sale",
       "discount": 0,
+      "region": "KR",
+      "sale_type": "SALE"
+    },
+    {
+      "brand_en": "",
+      "brand_ko": "글로니",
+      "official_url": "https://glowny.co.kr/",
+      "sale_url": "https://glowny.co.kr/",
+      "banner_url": "https://glowny.co.kr/re_img/world_wide_select_arrow.svg",
+      "status": "sale",
+      "discount": 15,
       "region": "KR",
       "sale_type": "SALE"
     },
