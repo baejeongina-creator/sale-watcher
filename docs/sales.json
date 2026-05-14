@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-14T02:27:02.134501Z",
+  "generated_at": "2026-05-14T06:17:51.277495Z",
   "sales": [
     {
       "brand_en": "",
@@ -281,7 +281,7 @@
       "brand_ko": "에퓨레",
       "official_url": "https://www.epure.co.kr/",
       "sale_url": "https://www.epure.co.kr/",
-      "banner_url": "https://www.epure.co.kr/web/upload/share-image-1-f35aca149ecf66ead4f7a9b4051da292.jpg",
+      "banner_url": "https://epure.co.kr/web/upload/share-image-1-f35aca149ecf66ead4f7a9b4051da292.jpg",
       "status": "sale",
       "discount": 50,
       "region": "KR",
@@ -580,7 +580,7 @@
       "sale_url": "https://the-barnnet.com",
       "banner_url": "https://thebarnnet.cafe24.com/web/img/seo_img.jpg",
       "status": "sale",
-      "discount": 0,
+      "discount": 5,
       "region": "KR",
       "sale_type": "SALE"
     },
