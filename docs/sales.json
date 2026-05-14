@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-14T06:17:51.277495Z",
+  "generated_at": "2026-05-14T11:11:09.585400Z",
   "sales": [
     {
       "brand_en": "",
@@ -50,7 +50,7 @@
       "brand_ko": "호와스",
       "official_url": "https://www.howus.co.kr",
       "sale_url": "https://www.howus.co.kr",
-      "banner_url": "http://www.howus.co.kr/cdn/shop/files/be8c953f66d37ff7d0a48eb106814dea.jpg?v=1721813603",
+      "banner_url": "http://howus.kr/cdn/shop/files/be8c953f66d37ff7d0a48eb106814dea.jpg?v=1721813603",
       "status": "sale",
       "discount": 30,
       "region": "KR",
@@ -281,7 +281,7 @@
       "brand_ko": "에퓨레",
       "official_url": "https://www.epure.co.kr/",
       "sale_url": "https://www.epure.co.kr/",
-      "banner_url": "https://epure.co.kr/web/upload/share-image-1-f35aca149ecf66ead4f7a9b4051da292.jpg",
+      "banner_url": "https://www.epure.co.kr/web/upload/share-image-1-f35aca149ecf66ead4f7a9b4051da292.jpg",
       "status": "sale",
       "discount": 50,
       "region": "KR",
