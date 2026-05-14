@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-13T22:05:30.303262Z",
+  "generated_at": "2026-05-14T02:27:02.134501Z",
   "sales": [
     {
       "brand_en": "",
@@ -62,10 +62,10 @@
       "official_url": "https://s2asuras2.com/",
       "sale_url": "https://s2asuras2.com/",
       "banner_url": "https://cdn.imweb.me/thumbnail/20250626/4e07ef726e867.jpg",
-      "status": "error",
-      "discount": 0,
+      "status": "sale",
+      "discount": 92,
       "region": "KR",
-      "sale_type": "SALE"
+      "sale_type": "SEASON OFF"
     },
     {
       "brand_en": "",
@@ -88,6 +88,17 @@
       "discount": 80,
       "region": "KR",
       "sale_type": "CLEARANCE"
+    },
+    {
+      "brand_en": "",
+      "brand_ko": "썬번프로젝트",
+      "official_url": "https://sunburnproject.com/",
+      "sale_url": "https://sunburnproject.com/",
+      "banner_url": "https://sunburnproject.com/web/upload/share-image-1-e13f3cf55cd724da276c6b436330a4ff.jpg",
+      "status": "sale",
+      "discount": 10,
+      "region": "KR",
+      "sale_type": "SEASON OFF"
     },
     {
       "brand_en": "",
@@ -160,9 +171,9 @@
       "brand_ko": "인사일런스",
       "official_url": "https://www.insilence.co.kr/",
       "sale_url": "https://www.insilence.co.kr/",
-      "banner_url": "https://www.insilence.co.kr/web/product/big/202604/7955438d025dbdc0a9fdab6c34579c0f.jpg",
+      "banner_url": "https://ambient.diskn.com/image/home/pop-up/2026/CYANOTYPE/pc.png",
       "status": "sale",
-      "discount": 0,
+      "discount": 10,
       "region": "KR",
       "sale_type": "SALE"
     },
@@ -176,17 +187,6 @@
       "discount": 50,
       "region": "KR",
       "sale_type": "SEASON OFF"
-    },
-    {
-      "brand_en": "",
-      "brand_ko": "아마베",
-      "official_url": "https://amabe.kr/",
-      "sale_url": "https://amabe.kr/",
-      "banner_url": "",
-      "status": "error",
-      "discount": 0,
-      "region": "KR",
-      "sale_type": "SALE"
     },
     {
       "brand_en": "",
@@ -380,9 +380,9 @@
       "brand_ko": "지비에이치",
       "official_url": "https://gbh.kr/",
       "sale_url": "https://gbh.kr/",
-      "banner_url": "",
-      "status": "error",
-      "discount": 0,
+      "banner_url": "https://cdn.imweb.me/upload/S20260211533a0fa9f6bfc/de4c99cddbb0d.png",
+      "status": "sale",
+      "discount": 50,
       "region": "KR",
       "sale_type": "SALE"
     },
