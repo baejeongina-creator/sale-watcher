@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-18T02:32:01.108071Z",
+  "generated_at": "2026-05-18T06:48:31.913297Z",
   "sales": [
     {
       "brand_en": "",
@@ -62,10 +62,10 @@
       "official_url": "https://s2asuras2.com/",
       "sale_url": "https://s2asuras2.com/",
       "banner_url": "https://cdn.imweb.me/thumbnail/20250626/4e07ef726e867.jpg",
-      "status": "error",
-      "discount": 0,
+      "status": "sale",
+      "discount": 92,
       "region": "KR",
-      "sale_type": "SALE"
+      "sale_type": "SEASON OFF"
     },
     {
       "brand_en": "",
@@ -190,21 +190,10 @@
     },
     {
       "brand_en": "",
-      "brand_ko": "아마베",
-      "official_url": "https://amabe.kr/",
-      "sale_url": "https://amabe.kr/",
-      "banner_url": "",
-      "status": "error",
-      "discount": 0,
-      "region": "KR",
-      "sale_type": "SALE"
-    },
-    {
-      "brand_en": "",
       "brand_ko": "더티스",
       "official_url": "https://thetisofficial.com/",
       "sale_url": "https://thetisofficial.com/",
-      "banner_url": "https://cafe24.poxo.com/ec01/aurau01/rpNEpTrS8PE7n3PQcu8Suic4H6+t4VOWjFh9wwzTM+le6zo77EHnsfuRo3VKf6H8AUFK95O/PyerJ35De06E1A==/_/main/260424/pc.jpg",
+      "banner_url": "https://cafe24.poxo.com/ec01/aurau01/rpNEpTrS8PE7n3PQcu8Suic4H6+t4VOWjFh9wwzTM+le6zo77EHnsfuRo3VKf6H8AUFK95O/PyerJ35De06E1A==/_/main/260518/pc.jpg",
       "status": "sale",
       "discount": 0,
       "region": "KR",
@@ -385,17 +374,6 @@
       "discount": 40,
       "region": "KR",
       "sale_type": "SEASON OFF"
-    },
-    {
-      "brand_en": "",
-      "brand_ko": "지비에이치",
-      "official_url": "https://gbh.kr/",
-      "sale_url": "https://gbh.kr/",
-      "banner_url": "",
-      "status": "error",
-      "discount": 0,
-      "region": "KR",
-      "sale_type": "SALE"
     },
     {
       "brand_en": "",
