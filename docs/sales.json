@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-20T06:42:15.730604Z",
+  "generated_at": "2026-05-20T11:44:52.782417Z",
   "sales": [
     {
       "brand_en": "",
@@ -62,10 +62,10 @@
       "official_url": "https://s2asuras2.com/",
       "sale_url": "https://s2asuras2.com/",
       "banner_url": "https://cdn.imweb.me/thumbnail/20250626/4e07ef726e867.jpg",
-      "status": "sale",
-      "discount": 92,
+      "status": "error",
+      "discount": 0,
       "region": "KR",
-      "sale_type": "SEASON OFF"
+      "sale_type": "SALE"
     },
     {
       "brand_en": "",
@@ -187,6 +187,17 @@
       "discount": 50,
       "region": "KR",
       "sale_type": "SEASON OFF"
+    },
+    {
+      "brand_en": "",
+      "brand_ko": "아마베",
+      "official_url": "https://amabe.kr/",
+      "sale_url": "https://amabe.kr/",
+      "banner_url": "",
+      "status": "error",
+      "discount": 0,
+      "region": "KR",
+      "sale_type": "SALE"
     },
     {
       "brand_en": "",
@@ -377,6 +388,17 @@
     },
     {
       "brand_en": "",
+      "brand_ko": "지비에이치",
+      "official_url": "https://gbh.kr/",
+      "sale_url": "https://gbh.kr/",
+      "banner_url": "",
+      "status": "error",
+      "discount": 0,
+      "region": "KR",
+      "sale_type": "SALE"
+    },
+    {
+      "brand_en": "",
       "brand_ko": "다이닛",
       "official_url": "https://deinet.co.kr/",
       "sale_url": "https://deinet.co.kr/",
@@ -468,7 +490,7 @@
       "brand_ko": "미치코런던 코시노",
       "official_url": "https://michiko-london.kr/",
       "sale_url": "https://michiko-london.kr/",
-      "banner_url": "https://www.michiko-london.kr/web/upload/share-image-1-2c3f6f49e417b26872b939ad47bcf895.png",
+      "banner_url": "https://michiko-london.kr/web/upload/share-image-1-2c3f6f49e417b26872b939ad47bcf895.png",
       "status": "sale",
       "discount": 0,
       "region": "KR",
@@ -625,17 +647,6 @@
       "banner_url": "",
       "status": "error",
       "discount": 0,
-      "region": "GLOBAL",
-      "sale_type": "SALE"
-    },
-    {
-      "brand_en": "",
-      "brand_ko": "가니",
-      "official_url": "https://www.ganni.com/",
-      "sale_url": "https://www.ganni.com/",
-      "banner_url": "https://www.ganni.com/on/demandware.static/-/Sites/default/dwcfb5b867/25-3-url.jpg",
-      "status": "sale",
-      "discount": 15,
       "region": "GLOBAL",
       "sale_type": "SALE"
     },
