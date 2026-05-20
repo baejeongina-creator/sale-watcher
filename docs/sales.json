@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-19T22:09:44.629938Z",
+  "generated_at": "2026-05-20T02:31:09.531676Z",
   "sales": [
     {
       "brand_en": "",
@@ -62,10 +62,10 @@
       "official_url": "https://s2asuras2.com/",
       "sale_url": "https://s2asuras2.com/",
       "banner_url": "https://cdn.imweb.me/thumbnail/20250626/4e07ef726e867.jpg",
-      "status": "sale",
-      "discount": 92,
+      "status": "error",
+      "discount": 0,
       "region": "KR",
-      "sale_type": "SEASON OFF"
+      "sale_type": "SALE"
     },
     {
       "brand_en": "",
@@ -190,6 +190,17 @@
     },
     {
       "brand_en": "",
+      "brand_ko": "아마베",
+      "official_url": "https://amabe.kr/",
+      "sale_url": "https://amabe.kr/",
+      "banner_url": "",
+      "status": "error",
+      "discount": 0,
+      "region": "KR",
+      "sale_type": "SALE"
+    },
+    {
+      "brand_en": "",
       "brand_ko": "더티스",
       "official_url": "https://thetisofficial.com/",
       "sale_url": "https://thetisofficial.com/",
@@ -270,7 +281,7 @@
       "brand_ko": "미세키서울",
       "official_url": "https://misekiseoul.kr/",
       "sale_url": "https://misekiseoul.kr/",
-      "banner_url": "https://www.misekiseoul.kr/web/upload/share-image-1-087bffb0bd272f3c7bddf3ecc7e58ed4.jpg",
+      "banner_url": "https://misekiseoul.kr/web/upload/share-image-1-087bffb0bd272f3c7bddf3ecc7e58ed4.jpg",
       "status": "sale",
       "discount": 0,
       "region": "KR",
@@ -374,6 +385,17 @@
       "discount": 40,
       "region": "KR",
       "sale_type": "SEASON OFF"
+    },
+    {
+      "brand_en": "",
+      "brand_ko": "지비에이치",
+      "official_url": "https://gbh.kr/",
+      "sale_url": "https://gbh.kr/",
+      "banner_url": "",
+      "status": "error",
+      "discount": 0,
+      "region": "KR",
+      "sale_type": "SALE"
     },
     {
       "brand_en": "",
