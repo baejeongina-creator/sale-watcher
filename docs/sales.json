@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-21T06:45:10.616811Z",
+  "generated_at": "2026-05-21T12:10:16.288750Z",
   "sales": [
     {
       "brand_en": "",
@@ -62,10 +62,10 @@
       "official_url": "https://s2asuras2.com/",
       "sale_url": "https://s2asuras2.com/",
       "banner_url": "https://cdn.imweb.me/thumbnail/20250626/4e07ef726e867.jpg",
-      "status": "sale",
-      "discount": 92,
+      "status": "error",
+      "discount": 0,
       "region": "KR",
-      "sale_type": "SEASON OFF"
+      "sale_type": "SALE"
     },
     {
       "brand_en": "",
@@ -176,6 +176,17 @@
       "discount": 50,
       "region": "KR",
       "sale_type": "SEASON OFF"
+    },
+    {
+      "brand_en": "",
+      "brand_ko": "아마베",
+      "official_url": "https://amabe.kr/",
+      "sale_url": "https://amabe.kr/",
+      "banner_url": "",
+      "status": "error",
+      "discount": 0,
+      "region": "KR",
+      "sale_type": "SALE"
     },
     {
       "brand_en": "",
@@ -366,6 +377,17 @@
     },
     {
       "brand_en": "",
+      "brand_ko": "지비에이치",
+      "official_url": "https://gbh.kr/",
+      "sale_url": "https://gbh.kr/",
+      "banner_url": "",
+      "status": "error",
+      "discount": 0,
+      "region": "KR",
+      "sale_type": "SALE"
+    },
+    {
+      "brand_en": "",
       "brand_ko": "다이닛",
       "official_url": "https://deinet.co.kr/",
       "sale_url": "https://deinet.co.kr/",
@@ -448,9 +470,9 @@
       "sale_url": "https://siyazu.co.kr/",
       "banner_url": "https://siyazu.co.kr/web/upload/og_image2.jpg",
       "status": "sale",
-      "discount": 0,
+      "discount": 60,
       "region": "KR",
-      "sale_type": "SALE"
+      "sale_type": "REFURB"
     },
     {
       "brand_en": "",
@@ -523,7 +545,7 @@
       "brand_ko": "랑거",
       "official_url": "https://m.langer.kr",
       "sale_url": "https://m.langer.kr",
-      "banner_url": "https://m.langer.kr/web/bloom_img/26SS%20%EB%AA%A8%EB%B0%94%EC%9D%BC%20%EB%8C%80%ED%91%9C%EC%9D%B4%EB%AF%B8%EC%A7%80%201.jpg",
+      "banner_url": "https://m.langer.kr/web/bloom_img/26SS-%EC%A0%9C%EC%A3%BC%20%EB%AA%A8%EB%B0%94%EC%9D%BC%20%EB%8C%80%ED%91%9C%EC%9D%B4%EB%AF%B8%EC%A7%80%20-1.jpg",
       "status": "sale",
       "discount": 70,
       "region": "KR",
