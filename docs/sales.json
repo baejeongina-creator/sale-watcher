@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-31T21:52:24.730600Z",
+  "generated_at": "2026-06-01T02:47:22.741108Z",
   "sales": [
     {
       "brand_en": "",
@@ -171,9 +171,9 @@
       "brand_ko": "인사일런스",
       "official_url": "https://www.insilence.co.kr/",
       "sale_url": "https://www.insilence.co.kr/",
-      "banner_url": "https://www.insilence.co.kr/web/product/big/202604/4afdf7ed1250a2cc6ee7230374fb268c.jpg",
+      "banner_url": "https://www.insilence.co.kr/web/product/big/202602/190e0e7de9adb3b1cda2bd867939391e.jpg",
       "status": "sale",
-      "discount": 60,
+      "discount": 50,
       "region": "KR",
       "sale_type": "SALE"
     },
@@ -476,6 +476,17 @@
     },
     {
       "brand_en": "",
+      "brand_ko": "글로니",
+      "official_url": "https://glowny.co.kr/",
+      "sale_url": "https://glowny.co.kr/",
+      "banner_url": "https://glowny.co.kr/re_img/world_wide_select_arrow.svg",
+      "status": "sale",
+      "discount": 15,
+      "region": "KR",
+      "sale_type": "SALE"
+    },
+    {
+      "brand_en": "",
       "brand_ko": "미치코런던 코시노",
       "official_url": "https://michiko-london.kr/",
       "sale_url": "https://michiko-london.kr/",
@@ -490,7 +501,7 @@
       "brand_ko": "루에브르",
       "official_url": "https://m.maisonloeuvre.com",
       "sale_url": "https://m.maisonloeuvre.com",
-      "banner_url": "https://m.maisonloeuvre.com/web/upload/share-image-1-5645af5b7d8bed1518f4e356183340d9.jpg",
+      "banner_url": "https://m.maisonloeuvre.com/web/upload/share-image-1-822485a6ee171cedbfcd41b152277310.jpg",
       "status": "sale",
       "discount": 20,
       "region": "KR",
@@ -528,17 +539,6 @@
       "discount": 60,
       "region": "KR",
       "sale_type": "OUTLET"
-    },
-    {
-      "brand_en": "",
-      "brand_ko": "이아",
-      "official_url": "https://eaah.net",
-      "sale_url": "https://eaah.net",
-      "banner_url": "https://eaah.net/web/upload/category/editor/2026/02/06/6aea45298bbebe5ad93da6f81a45a99d.png",
-      "status": "sale",
-      "discount": 10,
-      "region": "KR",
-      "sale_type": "SALE"
     },
     {
       "brand_en": "",
