@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-03T13:09:12.413725Z",
+  "generated_at": "2026-06-03T18:41:36.185204Z",
   "sales": [
     {
       "brand_en": "",
@@ -50,7 +50,7 @@
       "brand_ko": "호와스",
       "official_url": "https://www.howus.co.kr",
       "sale_url": "https://www.howus.co.kr",
-      "banner_url": "",
+      "banner_url": "http://howus.kr/cdn/shop/files/be8c953f66d37ff7d0a48eb106814dea.jpg?v=1721813603",
       "status": "sale",
       "discount": 30,
       "region": "KR",
@@ -88,17 +88,6 @@
       "discount": 80,
       "region": "KR",
       "sale_type": "CLEARANCE"
-    },
-    {
-      "brand_en": "",
-      "brand_ko": "썬번프로젝트",
-      "official_url": "https://sunburnproject.com/",
-      "sale_url": "https://sunburnproject.com/",
-      "banner_url": "https://sunburnproject.com/web/upload/share-image-1-e1842181eb02a17f6b366121e8c6ba02.jpg",
-      "status": "sale",
-      "discount": 10,
-      "region": "KR",
-      "sale_type": "SALE"
     },
     {
       "brand_en": "",
