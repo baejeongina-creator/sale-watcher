@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-08T07:25:11.654486Z",
+  "generated_at": "2026-06-08T13:00:08.569218Z",
   "sales": [
     {
       "brand_en": "",
@@ -281,7 +281,7 @@
       "brand_ko": "우마뭉",
       "official_url": "https://umarmung.kr/",
       "sale_url": "https://umarmung.kr/",
-      "banner_url": "https://umarmung.kr/web/upload/share-image-1-04a1ea49180487117ccc3ae54f3d8526.jpg",
+      "banner_url": "https://www.umarmung.kr/web/upload/share-image-1-04a1ea49180487117ccc3ae54f3d8526.jpg",
       "status": "sale",
       "discount": 60,
       "region": "KR",
@@ -526,6 +526,17 @@
       "banner_url": "https://www.nain.co.kr/shopimages/byyj1/all_og__20230714141615php59aZlP.jpg",
       "status": "sale",
       "discount": 60,
+      "region": "KR",
+      "sale_type": "SALE"
+    },
+    {
+      "brand_en": "",
+      "brand_ko": "이아",
+      "official_url": "https://eaah.net",
+      "sale_url": "https://eaah.net",
+      "banner_url": "https://eaah.net/web/upload/category/editor/2026/02/06/6aea45298bbebe5ad93da6f81a45a99d.png",
+      "status": "sale",
+      "discount": 10,
       "region": "KR",
       "sale_type": "SALE"
     },
