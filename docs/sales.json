@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-11T22:48:57.524564Z",
+  "generated_at": "2026-06-12T02:42:19.309153Z",
   "sales": [
     {
       "brand_en": "",
@@ -537,6 +537,17 @@
       "banner_url": "https://www.nain.co.kr/shopimages/byyj1/all_og__20230714141615php59aZlP.jpg",
       "status": "sale",
       "discount": 60,
+      "region": "KR",
+      "sale_type": "SALE"
+    },
+    {
+      "brand_en": "",
+      "brand_ko": "르하스",
+      "official_url": "https://l-has.com",
+      "sale_url": "https://l-has.com",
+      "banner_url": "https://l-has.com/web/upload/share-image-1-71679f17f30f8891192e37e433b1d7e8.JPG",
+      "status": "sale",
+      "discount": 0,
       "region": "KR",
       "sale_type": "SALE"
     },
