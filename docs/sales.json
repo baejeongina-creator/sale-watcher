@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-13T06:53:00.288828Z",
+  "generated_at": "2026-06-13T11:10:24.651460Z",
   "sales": [
     {
       "brand_en": "",
@@ -160,7 +160,7 @@
       "brand_ko": "인사일런스",
       "official_url": "https://www.insilence.co.kr/",
       "sale_url": "https://www.insilence.co.kr/",
-      "banner_url": "https://insilence.co.kr/web/product/big/202602/190e0e7de9adb3b1cda2bd867939391e.jpg",
+      "banner_url": "https://www.insilence.co.kr/web/product/big/202602/190e0e7de9adb3b1cda2bd867939391e.jpg",
       "status": "sale",
       "discount": 50,
       "region": "KR",
@@ -314,7 +314,7 @@
       "brand_ko": "하네",
       "official_url": "https://hane.kr/",
       "sale_url": "https://hane.kr/",
-      "banner_url": "https://hane.kr/web/upload/share-image-1-86cb89fc968a1ec73040f3b90973c7fe.jpg",
+      "banner_url": "https://www.hane.kr/web/upload/share-image-1-86cb89fc968a1ec73040f3b90973c7fe.jpg",
       "status": "sale",
       "discount": 80,
       "region": "KR",
