@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-24T14:09:36.994411Z",
+  "generated_at": "2026-06-24T17:00:40.792035Z",
   "sales": [
     {
       "brand_en": "",
@@ -160,7 +160,7 @@
       "brand_ko": "인사일런스",
       "official_url": "https://www.insilence.co.kr/",
       "sale_url": "https://www.insilence.co.kr/",
-      "banner_url": "https://www.insilence.co.kr/web/product/big/202602/190e0e7de9adb3b1cda2bd867939391e.jpg",
+      "banner_url": "https://insilence.co.kr/web/product/big/202602/190e0e7de9adb3b1cda2bd867939391e.jpg",
       "status": "sale",
       "discount": 50,
       "region": "KR",
@@ -493,17 +493,6 @@
       "banner_url": "https://m.maisonloeuvre.com/web/upload/share-image-1-822485a6ee171cedbfcd41b152277310.jpg",
       "status": "sale",
       "discount": 20,
-      "region": "KR",
-      "sale_type": "SALE"
-    },
-    {
-      "brand_en": "",
-      "brand_ko": "테켓",
-      "official_url": "https://te-ket.com",
-      "sale_url": "https://te-ket.com",
-      "banner_url": "https://te-ket.com/web/upload/share-image-1-abcf4044c680490236a5034b16de1479.jpg",
-      "status": "sale",
-      "discount": 60,
       "region": "KR",
       "sale_type": "SALE"
     },
