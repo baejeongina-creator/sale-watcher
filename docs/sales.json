@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-26T06:45:40.868098Z",
+  "generated_at": "2026-06-26T11:40:24.237037Z",
   "sales": [
     {
       "brand_en": "",
@@ -53,6 +53,17 @@
       "banner_url": "",
       "status": "sale",
       "discount": 30,
+      "region": "KR",
+      "sale_type": "SALE"
+    },
+    {
+      "brand_en": "",
+      "brand_ko": "러프넥",
+      "official_url": "https://roughneckseoul.com/",
+      "sale_url": "https://roughneckseoul.com/",
+      "banner_url": "https://roughneckseoul.com/web/upload/share-image-1-fb50c0c3aa68ad2e36f080ed90e5fffa.png",
+      "status": "sale",
+      "discount": 0,
       "region": "KR",
       "sale_type": "SALE"
     },
@@ -493,6 +504,17 @@
       "banner_url": "https://m.maisonloeuvre.com/web/upload/share-image-1-822485a6ee171cedbfcd41b152277310.jpg",
       "status": "sale",
       "discount": 20,
+      "region": "KR",
+      "sale_type": "SALE"
+    },
+    {
+      "brand_en": "",
+      "brand_ko": "테켓",
+      "official_url": "https://te-ket.com",
+      "sale_url": "https://te-ket.com",
+      "banner_url": "https://te-ket.com/web/upload/share-image-1-abcf4044c680490236a5034b16de1479.jpg",
+      "status": "sale",
+      "discount": 60,
       "region": "KR",
       "sale_type": "SALE"
     },
