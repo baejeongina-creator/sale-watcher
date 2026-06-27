@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-27T02:26:41.195708Z",
+  "generated_at": "2026-06-27T06:26:16.293396Z",
   "sales": [
     {
       "brand_en": "",
@@ -644,11 +644,11 @@
       "brand_ko": "아페쎄",
       "official_url": "https://www.apc-korea.com/",
       "sale_url": "https://www.apc-korea.com/",
-      "banner_url": "https://www.apc-korea.com/image/apc/apcLogo.jpg",
-      "status": "sale",
+      "banner_url": "",
+      "status": "error",
       "discount": 0,
       "region": "GLOBAL",
-      "sale_type": "SEASON OFF"
+      "sale_type": "SALE"
     },
     {
       "brand_en": "",
