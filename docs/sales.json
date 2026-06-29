@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-28T21:56:29.500522Z",
+  "generated_at": "2026-06-29T02:39:16.892147Z",
   "sales": [
     {
       "brand_en": "",
@@ -527,7 +527,7 @@
       "status": "sale",
       "discount": 0,
       "region": "KR",
-      "sale_type": "SALE"
+      "sale_type": "SEASON OFF"
     },
     {
       "brand_en": "",
@@ -559,17 +559,6 @@
       "banner_url": "https://l-has.com/web/upload/share-image-1-71679f17f30f8891192e37e433b1d7e8.JPG",
       "status": "sale",
       "discount": 0,
-      "region": "KR",
-      "sale_type": "SALE"
-    },
-    {
-      "brand_en": "",
-      "brand_ko": "이아",
-      "official_url": "https://eaah.net",
-      "sale_url": "https://eaah.net",
-      "banner_url": "https://eaah.net/web/upload/category/editor/2026/02/06/6aea45298bbebe5ad93da6f81a45a99d.png",
-      "status": "sale",
-      "discount": 10,
       "region": "KR",
       "sale_type": "SALE"
     },
