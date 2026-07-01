@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-30T22:11:12.794158Z",
+  "generated_at": "2026-07-01T02:39:26.039002Z",
   "sales": [
     {
       "brand_en": "",
@@ -549,18 +549,7 @@
       "status": "sale",
       "discount": 60,
       "region": "KR",
-      "sale_type": "OUTLET"
-    },
-    {
-      "brand_en": "",
-      "brand_ko": "르하스",
-      "official_url": "https://l-has.com",
-      "sale_url": "https://l-has.com",
-      "banner_url": "https://l-has.com/web/upload/share-image-1-71679f17f30f8891192e37e433b1d7e8.JPG",
-      "status": "sale",
-      "discount": 0,
-      "region": "KR",
-      "sale_type": "SALE"
+      "sale_type": "SEASON OFF"
     },
     {
       "brand_en": "",
