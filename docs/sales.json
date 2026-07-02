@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-02T13:41:11.461404Z",
+  "generated_at": "2026-07-02T16:46:23.530693Z",
   "sales": [
     {
       "brand_en": "",
@@ -327,7 +327,7 @@
       "sale_url": "https://lowclassic.com/",
       "banner_url": "https://lowclassic.com/web/upload/share-image-1-b74c147026373ba4bd0f735777ddef32.jpg",
       "status": "sale",
-      "discount": 0,
+      "discount": 50,
       "region": "KR",
       "sale_type": "SEASON OFF"
     },
