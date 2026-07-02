@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-01T22:14:17.068393Z",
+  "generated_at": "2026-07-02T02:31:29.871759Z",
   "sales": [
     {
       "brand_en": "",
@@ -99,6 +99,17 @@
       "discount": 80,
       "region": "KR",
       "sale_type": "CLEARANCE"
+    },
+    {
+      "brand_en": "",
+      "brand_ko": "썬번프로젝트",
+      "official_url": "https://sunburnproject.com/",
+      "sale_url": "https://sunburnproject.com/",
+      "banner_url": "https://sunburnproject.com/web/upload/share-image-1-0f539b7c7f06a871df365d023c56ab29.jpg",
+      "status": "sale",
+      "discount": 10,
+      "region": "KR",
+      "sale_type": "SALE"
     },
     {
       "brand_en": "",
@@ -622,11 +633,11 @@
       "brand_ko": "아페쎄",
       "official_url": "https://www.apc-korea.com/",
       "sale_url": "https://www.apc-korea.com/",
-      "banner_url": "https://www.apc-korea.com/image/apc/apcLogo.jpg",
-      "status": "sale",
+      "banner_url": "",
+      "status": "error",
       "discount": 0,
       "region": "GLOBAL",
-      "sale_type": "SEASON OFF"
+      "sale_type": "SALE"
     },
     {
       "brand_en": "",
