@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-03T02:04:22.892610Z",
+  "generated_at": "2026-07-03T06:23:29.872594Z",
   "sales": [
     {
       "brand_en": "",
@@ -63,7 +63,7 @@
       "sale_url": "https://roughneckseoul.com/",
       "banner_url": "https://roughneckseoul.com/web/upload/share-image-1-fb50c0c3aa68ad2e36f080ed90e5fffa.png",
       "status": "sale",
-      "discount": 0,
+      "discount": 5,
       "region": "KR",
       "sale_type": "SALE"
     },
