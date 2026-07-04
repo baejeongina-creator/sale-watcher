@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-04T10:50:59.518113Z",
+  "generated_at": "2026-07-04T13:03:37.421956Z",
   "sales": [
     {
       "brand_en": "",
@@ -105,7 +105,7 @@
       "brand_ko": "썬번프로젝트",
       "official_url": "https://sunburnproject.com/",
       "sale_url": "https://sunburnproject.com/",
-      "banner_url": "https://sunburnproject.com/web/upload/share-image-1-0f539b7c7f06a871df365d023c56ab29.jpg",
+      "banner_url": "https://www.sunburnproject.com/web/upload/share-image-1-0f539b7c7f06a871df365d023c56ab29.jpg",
       "status": "sale",
       "discount": 10,
       "region": "KR",
@@ -589,7 +589,7 @@
       "brand_ko": "오버듀플레어",
       "official_url": "https://overdueflair.com",
       "sale_url": "https://overdueflair.com",
-      "banner_url": "https://www.overdueflair.com/web/upload/share-image-1-56123f34fa6544f424170309c4a85329.jpg",
+      "banner_url": "https://overdueflair.com/web/upload/share-image-1-56123f34fa6544f424170309c4a85329.jpg",
       "status": "sale",
       "discount": 20,
       "region": "KR",
