@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-07T02:11:39.755543Z",
+  "generated_at": "2026-07-07T06:41:53.257417Z",
   "sales": [
     {
       "brand_en": "",
@@ -53,6 +53,17 @@
       "banner_url": "",
       "status": "sale",
       "discount": 30,
+      "region": "KR",
+      "sale_type": "SALE"
+    },
+    {
+      "brand_en": "",
+      "brand_ko": "러프넥",
+      "official_url": "https://roughneckseoul.com/",
+      "sale_url": "https://roughneckseoul.com/",
+      "banner_url": "https://roughneckseoul.com/web/upload/share-image-1-fb50c0c3aa68ad2e36f080ed90e5fffa.png",
+      "status": "sale",
+      "discount": 5,
       "region": "KR",
       "sale_type": "SALE"
     },
@@ -516,7 +527,7 @@
       "status": "sale",
       "discount": 0,
       "region": "KR",
-      "sale_type": "SEASON OFF"
+      "sale_type": "SALE"
     },
     {
       "brand_en": "",
@@ -534,11 +545,11 @@
       "brand_ko": "아틀리에 나인",
       "official_url": "https://www.nain.co.kr",
       "sale_url": "https://www.nain.co.kr",
-      "banner_url": "https://www.nain.co.kr/shopimages/byyj1/all_og__20230714141615php59aZlP.jpg",
-      "status": "sale",
-      "discount": 60,
+      "banner_url": "",
+      "status": "error",
+      "discount": 0,
       "region": "KR",
-      "sale_type": "SEASON OFF"
+      "sale_type": "SALE"
     },
     {
       "brand_en": "",
