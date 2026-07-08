@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-08T19:10:20.184620Z",
+  "generated_at": "2026-07-08T22:00:10.154927Z",
   "sales": [
     {
       "brand_en": "",
@@ -116,7 +116,7 @@
       "brand_ko": "스컬프터",
       "official_url": "https://sculptor-worldwide.com/",
       "sale_url": "https://sculptor-worldwide.com/",
-      "banner_url": "http://sculptor-worldwide.com/cdn/shop/files/0b3bb991276f221a9a3455ef59bd5115.jpg?v=1744076387",
+      "banner_url": "http://cdn.shopify.com/s/files/1/0653/6436/1406/files/0b3bb991276f221a9a3455ef59bd5115.jpg?v=1744076387",
       "status": "sale",
       "discount": 0,
       "region": "KR",
@@ -237,7 +237,7 @@
       "brand_ko": "애프터아워즈",
       "official_url": "https://afterhours.co.kr/",
       "sale_url": "https://afterhours.co.kr/",
-      "banner_url": "https://www.afterhours.co.kr/web/upload/share-image-1-b66a99df4d6b475c845bd1f941a46e00.jpg",
+      "banner_url": "https://afterhours.co.kr/web/upload/share-image-1-b66a99df4d6b475c845bd1f941a46e00.jpg",
       "status": "sale",
       "discount": 80,
       "region": "KR",
@@ -248,7 +248,7 @@
       "brand_ko": "프리베일",
       "official_url": "https://prevail.kr/",
       "sale_url": "https://prevail.kr/",
-      "banner_url": "https://prevail.kr/web/upload/share-image-1-541dac453e7e8879f58ab36e2fc5b359.jpg",
+      "banner_url": "https://www.prevail.kr/web/upload/share-image-1-541dac453e7e8879f58ab36e2fc5b359.jpg",
       "status": "sale",
       "discount": 50,
       "region": "KR",
