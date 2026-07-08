@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-08T13:43:33.004380Z",
+  "generated_at": "2026-07-08T16:26:28.094086Z",
   "sales": [
     {
       "brand_en": "",
@@ -99,17 +99,6 @@
       "discount": 80,
       "region": "KR",
       "sale_type": "CLEARANCE"
-    },
-    {
-      "brand_en": "",
-      "brand_ko": "썬번프로젝트",
-      "official_url": "https://sunburnproject.com/",
-      "sale_url": "https://sunburnproject.com/",
-      "banner_url": "https://sunburnproject.com/web/upload/share-image-1-0f539b7c7f06a871df365d023c56ab29.jpg",
-      "status": "sale",
-      "discount": 10,
-      "region": "KR",
-      "sale_type": "SALE"
     },
     {
       "brand_en": "",
