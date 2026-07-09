@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-09T02:04:09.745688Z",
+  "generated_at": "2026-07-09T06:36:24.044038Z",
   "sales": [
     {
       "brand_en": "",
@@ -113,10 +113,21 @@
     },
     {
       "brand_en": "",
+      "brand_ko": "마지셔우드",
+      "official_url": "https://margesherwood.com/",
+      "sale_url": "https://margesherwood.com/",
+      "banner_url": "https://ccolon.cafe24.com/web/upload/margesherwood_sns_image.jpg",
+      "status": "sale",
+      "discount": 40,
+      "region": "KR",
+      "sale_type": "SEASON OFF"
+    },
+    {
+      "brand_en": "",
       "brand_ko": "스컬프터",
       "official_url": "https://sculptor-worldwide.com/",
       "sale_url": "https://sculptor-worldwide.com/",
-      "banner_url": "http://cdn.shopify.com/s/files/1/0653/6436/1406/files/0b3bb991276f221a9a3455ef59bd5115.jpg?v=1744076387",
+      "banner_url": "http://sculptor-worldwide.com/cdn/shop/files/0b3bb991276f221a9a3455ef59bd5115.jpg?v=1744076387",
       "status": "sale",
       "discount": 0,
       "region": "KR",
@@ -470,7 +481,7 @@
       "sale_url": "https://siyazu.co.kr/",
       "banner_url": "https://siyazu.co.kr/web/upload/og_image2.jpg",
       "status": "sale",
-      "discount": 60,
+      "discount": 80,
       "region": "KR",
       "sale_type": "REFURB"
     },
