@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-10T06:35:38.224182Z",
+  "generated_at": "2026-07-10T11:44:39.791757Z",
   "sales": [
     {
       "brand_en": "",
@@ -483,7 +483,7 @@
       "status": "sale",
       "discount": 80,
       "region": "KR",
-      "sale_type": "REFURB"
+      "sale_type": "CLEARANCE"
     },
     {
       "brand_en": "",
@@ -512,7 +512,7 @@
       "brand_ko": "루에브르",
       "official_url": "https://m.maisonloeuvre.com",
       "sale_url": "https://m.maisonloeuvre.com",
-      "banner_url": "https://m.maisonloeuvre.co.kr/web/upload/share-image-1-822485a6ee171cedbfcd41b152277310.jpg",
+      "banner_url": "https://m.maisonloeuvre.com/web/upload/share-image-1-822485a6ee171cedbfcd41b152277310.jpg",
       "status": "sale",
       "discount": 60,
       "region": "KR",
