@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-13T01:55:39.301142Z",
+  "generated_at": "2026-07-13T06:00:26.933596Z",
   "sales": [
     {
       "brand_en": "",
@@ -285,7 +285,7 @@
       "status": "sale",
       "discount": 95,
       "region": "KR",
-      "sale_type": "SALE"
+      "sale_type": "CLEARANCE"
     },
     {
       "brand_en": "",
@@ -514,9 +514,9 @@
       "sale_url": "https://m.maisonloeuvre.com",
       "banner_url": "https://m.maisonloeuvre.com/web/upload/share-image-1-822485a6ee171cedbfcd41b152277310.jpg",
       "status": "sale",
-      "discount": 60,
+      "discount": 20,
       "region": "KR",
-      "sale_type": "SEASON OFF"
+      "sale_type": "SALE"
     },
     {
       "brand_en": "",
