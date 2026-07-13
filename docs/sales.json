@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-12T21:42:35.951828Z",
+  "generated_at": "2026-07-13T01:55:39.301142Z",
   "sales": [
     {
       "brand_en": "",
@@ -394,6 +394,17 @@
       "banner_url": "https://fyeo.kr/web/upload/share-image-1-3437351a6138f3c7d7e5d44b1c556be1.jpg",
       "status": "sale",
       "discount": 40,
+      "region": "KR",
+      "sale_type": "SEASON OFF"
+    },
+    {
+      "brand_en": "",
+      "brand_ko": "지비에이치",
+      "official_url": "https://gbh.kr/",
+      "sale_url": "https://gbh.kr/",
+      "banner_url": "https://cdn.imweb.me/upload/S20260211533a0fa9f6bfc/de4c99cddbb0d.png",
+      "status": "sale",
+      "discount": 0,
       "region": "KR",
       "sale_type": "SEASON OFF"
     },
