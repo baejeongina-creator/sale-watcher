@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-14T01:42:40.741073Z",
+  "generated_at": "2026-07-14T05:22:39.335961Z",
   "sales": [
     {
       "brand_en": "",
@@ -204,7 +204,7 @@
       "brand_ko": "더티스",
       "official_url": "https://thetisofficial.com/",
       "sale_url": "https://thetisofficial.com/",
-      "banner_url": "https://cafe24.poxo.com/ec01/aurau01/rpNEpTrS8PE7n3PQcu8Suic4H6+t4VOWjFh9wwzTM+le6zo77EHnsfuRo3VKf6H8AUFK95O/PyerJ35De06E1A==/_/main/260518/pc.jpg",
+      "banner_url": "https://cafe24.poxo.com/ec01/aurau01/rpNEpTrS8PE7n3PQcu8Suic4H6+t4VOWjFh9wwzTM+le6zo77EHnsfuRo3VKf6H8AUFK95O/PyerJ35De06E1A==/_/main/260714/pc.jpg",
       "status": "sale",
       "discount": 0,
       "region": "KR",
@@ -415,7 +415,7 @@
       "sale_url": "https://gbh.kr/",
       "banner_url": "https://cdn.imweb.me/upload/S20260211533a0fa9f6bfc/de4c99cddbb0d.png",
       "status": "sale",
-      "discount": 0,
+      "discount": 65,
       "region": "KR",
       "sale_type": "SEASON OFF"
     },
