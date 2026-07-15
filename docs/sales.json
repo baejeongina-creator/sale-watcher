@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-15T01:29:05.904954Z",
+  "generated_at": "2026-07-15T05:24:21.113615Z",
   "sales": [
     {
       "brand_en": "",
@@ -624,7 +624,7 @@
       "sale_url": "https://the-barnnet.com",
       "banner_url": "https://thebarnnet.cafe24.com/web/img/seo_img.jpg",
       "status": "sale",
-      "discount": 10,
+      "discount": 30,
       "region": "KR",
       "sale_type": "SALE"
     },
