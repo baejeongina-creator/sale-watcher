@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-19T21:43:37.436639Z",
+  "generated_at": "2026-07-20T02:08:30.999173Z",
   "sales": [
     {
       "brand_en": "",
@@ -110,17 +110,6 @@
       "discount": 60,
       "region": "KR",
       "sale_type": "REFURB"
-    },
-    {
-      "brand_en": "",
-      "brand_ko": "마지셔우드",
-      "official_url": "https://margesherwood.com/",
-      "sale_url": "https://margesherwood.com/",
-      "banner_url": "https://ccolon.cafe24.com/web/upload/margesherwood_sns_image.jpg",
-      "status": "sale",
-      "discount": 40,
-      "region": "KR",
-      "sale_type": "SEASON OFF"
     },
     {
       "brand_en": "",
@@ -338,7 +327,7 @@
       "sale_url": "https://lowclassic.com/",
       "banner_url": "https://lowclassic.com/web/upload/share-image-1-b74c147026373ba4bd0f735777ddef32.jpg",
       "status": "sale",
-      "discount": 50,
+      "discount": 80,
       "region": "KR",
       "sale_type": "SEASON OFF"
     },
@@ -505,7 +494,7 @@
       "status": "sale",
       "discount": 80,
       "region": "KR",
-      "sale_type": "CLEARANCE"
+      "sale_type": "REFURB"
     },
     {
       "brand_en": "",
@@ -583,17 +572,6 @@
       "discount": 60,
       "region": "KR",
       "sale_type": "SEASON OFF"
-    },
-    {
-      "brand_en": "",
-      "brand_ko": "이아",
-      "official_url": "https://eaah.net",
-      "sale_url": "https://eaah.net",
-      "banner_url": "https://eaah.net/web/upload/category/editor/2026/02/06/6aea45298bbebe5ad93da6f81a45a99d.png",
-      "status": "sale",
-      "discount": 10,
-      "region": "KR",
-      "sale_type": "SALE"
     },
     {
       "brand_en": "",
