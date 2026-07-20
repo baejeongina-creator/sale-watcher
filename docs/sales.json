@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-20T19:27:50.101119Z",
+  "generated_at": "2026-07-20T21:56:31.308087Z",
   "sales": [
     {
       "brand_en": "",
@@ -28,7 +28,7 @@
       "brand_ko": "메종마레",
       "official_url": "http://maisonmarais.com/",
       "sale_url": "http://maisonmarais.com/",
-      "banner_url": "https://maisonmarais.cafe24.com/web/upload/share-image-1-29f4f0f19b5ad40ffa1ded0f5f978437.jpg",
+      "banner_url": "http://img.echosting.cafe24.com/ec/image_admin/img_404.png",
       "status": "sale",
       "discount": 20,
       "region": "KR",
@@ -61,9 +61,9 @@
       "brand_ko": "러프넥",
       "official_url": "https://roughneckseoul.com/",
       "sale_url": "https://roughneckseoul.com/",
-      "banner_url": "https://roughneckseoul.com/web/upload/share-image-1-fb50c0c3aa68ad2e36f080ed90e5fffa.png",
-      "status": "sale",
-      "discount": 5,
+      "banner_url": "",
+      "status": "error",
+      "discount": 0,
       "region": "KR",
       "sale_type": "SALE"
     },
@@ -270,9 +270,9 @@
       "brand_ko": "잇자바이브",
       "official_url": "https://itzavibeofficial.com/",
       "sale_url": "https://itzavibeofficial.com/",
-      "banner_url": "https://itzavibe24.cafe24.com/OG/LOGO.jpg",
-      "status": "sale",
-      "discount": 40,
+      "banner_url": "",
+      "status": "error",
+      "discount": 0,
       "region": "KR",
       "sale_type": "SALE"
     },
@@ -336,7 +336,7 @@
       "brand_ko": "하네",
       "official_url": "https://hane.kr/",
       "sale_url": "https://hane.kr/",
-      "banner_url": "https://hane.kr/web/upload/share-image-1-86cb89fc968a1ec73040f3b90973c7fe.jpg",
+      "banner_url": "https://img.echosting.cafe24.com/ec/image_admin/img_404.png",
       "status": "sale",
       "discount": 80,
       "region": "KR",
@@ -436,18 +436,18 @@
       "official_url": "https://qduroy.com/",
       "sale_url": "https://qduroy.com/",
       "banner_url": "https://qduroy.com/web/product/big/202309/251f623dc8ce6cdcf2606f86129f25f6.jpg",
-      "status": "sale",
-      "discount": 90,
+      "status": "error",
+      "discount": 0,
       "region": "KR",
-      "sale_type": "CLEARANCE"
+      "sale_type": "SALE"
     },
     {
       "brand_en": "",
       "brand_ko": "포트오브콜",
       "official_url": "https://portofcall.co.kr/",
       "sale_url": "https://portofcall.co.kr/",
-      "banner_url": "https://portofcall.co.kr/web/upload/category/editor/2026/06/10/f91bb7252e4869b811d5ac52ada694e2.jpg",
-      "status": "sale",
+      "banner_url": "",
+      "status": "error",
       "discount": 0,
       "region": "KR",
       "sale_type": "SALE"
@@ -457,7 +457,7 @@
       "brand_ko": "페이드인",
       "official_url": "https://fadeiin.com/",
       "sale_url": "https://fadeiin.com/",
-      "banner_url": "https://fadeiin.com/artfinger/img/top.jpg",
+      "banner_url": "https://img.echosting.cafe24.com/ec/image_admin/img_404.png",
       "status": "sale",
       "discount": 70,
       "region": "KR",
@@ -501,8 +501,19 @@
       "brand_ko": "미치코런던 코시노",
       "official_url": "https://michiko-london.kr/",
       "sale_url": "https://michiko-london.kr/",
-      "banner_url": "https://michiko-london.kr/web/upload/share-image-1-2c3f6f49e417b26872b939ad47bcf895.png",
-      "status": "sale",
+      "banner_url": "",
+      "status": "error",
+      "discount": 0,
+      "region": "KR",
+      "sale_type": "SALE"
+    },
+    {
+      "brand_en": "",
+      "brand_ko": "오떼뜨",
+      "official_url": "https://octette.co.kr",
+      "sale_url": "https://octette.co.kr",
+      "banner_url": "",
+      "status": "error",
       "discount": 0,
       "region": "KR",
       "sale_type": "SALE"
@@ -534,8 +545,8 @@
       "brand_ko": "솔티페블",
       "official_url": "https://saltypebble.com",
       "sale_url": "https://saltypebble.com",
-      "banner_url": "http://www.saltypebble.com/images/PB_logo.jpg",
-      "status": "sale",
+      "banner_url": "",
+      "status": "error",
       "discount": 0,
       "region": "KR",
       "sale_type": "SALE"
@@ -545,9 +556,9 @@
       "brand_ko": "엘씨디씨서울",
       "official_url": "https://lcdc-seoul.com",
       "sale_url": "https://lcdc-seoul.com",
-      "banner_url": "http://lcdcseoul.cafe24.com/web/imgs/og.jpg",
-      "status": "sale",
-      "discount": 50,
+      "banner_url": "",
+      "status": "error",
+      "discount": 0,
       "region": "KR",
       "sale_type": "SALE"
     },
@@ -561,6 +572,17 @@
       "discount": 60,
       "region": "KR",
       "sale_type": "SEASON OFF"
+    },
+    {
+      "brand_en": "",
+      "brand_ko": "르하스",
+      "official_url": "https://l-has.com",
+      "sale_url": "https://l-has.com",
+      "banner_url": "",
+      "status": "error",
+      "discount": 0,
+      "region": "KR",
+      "sale_type": "SALE"
     },
     {
       "brand_en": "",
