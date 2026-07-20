@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-20T16:20:43.675969Z",
+  "generated_at": "2026-07-20T19:27:50.101119Z",
   "sales": [
     {
       "brand_en": "",
@@ -495,17 +495,6 @@
       "discount": 80,
       "region": "KR",
       "sale_type": "REFURB"
-    },
-    {
-      "brand_en": "",
-      "brand_ko": "글로니",
-      "official_url": "https://glowny.co.kr/",
-      "sale_url": "https://glowny.co.kr/",
-      "banner_url": "https://glowny.co.kr/web/upload/share-image-1-9e0321f83587cc26ab38cf7726790eee.jpg",
-      "status": "sale",
-      "discount": 15,
-      "region": "KR",
-      "sale_type": "SALE"
     },
     {
       "brand_en": "",
