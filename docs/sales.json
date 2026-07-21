@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-21T05:42:51.269944Z",
+  "generated_at": "2026-07-21T08:10:30.076808Z",
   "sales": [
     {
       "brand_en": "",
@@ -187,6 +187,17 @@
       "discount": 50,
       "region": "KR",
       "sale_type": "SEASON OFF"
+    },
+    {
+      "brand_en": "",
+      "brand_ko": "더티스",
+      "official_url": "https://thetisofficial.com/",
+      "sale_url": "https://thetisofficial.com/",
+      "banner_url": "https://cafe24.poxo.com/ec01/aurau01/vaj/l9mdww1dKU1SVXHgYrmNQFBtnhDTvA7EVJhz/owSCX0MRl42koGL07CgyBmlQzThwKSVSkPSr+ZTzHvkxg==/_/main/260721/pc.jpg",
+      "status": "sale",
+      "discount": 0,
+      "region": "KR",
+      "sale_type": "SALE"
     },
     {
       "brand_en": "",
