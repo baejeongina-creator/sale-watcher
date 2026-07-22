@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-21T21:57:18.053400Z",
+  "generated_at": "2026-07-22T01:49:26.936938Z",
   "sales": [
     {
       "brand_en": "",
@@ -561,6 +561,17 @@
       "discount": 60,
       "region": "KR",
       "sale_type": "SEASON OFF"
+    },
+    {
+      "brand_en": "",
+      "brand_ko": "이아",
+      "official_url": "https://eaah.net",
+      "sale_url": "https://eaah.net",
+      "banner_url": "https://eaah.net/web/upload/category/editor/2026/02/06/6aea45298bbebe5ad93da6f81a45a99d.png",
+      "status": "sale",
+      "discount": 0,
+      "region": "KR",
+      "sale_type": "SALE"
     },
     {
       "brand_en": "",
