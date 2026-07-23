@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-23T01:58:58.292476Z",
+  "generated_at": "2026-07-23T05:45:59.412675Z",
   "sales": [
     {
       "brand_en": "",
@@ -679,7 +679,7 @@
       "sale_url": "https://www.ganni.com/",
       "banner_url": "https://www.ganni.com/on/demandware.static/-/Sites/default/dwcfb5b867/25-3-url.jpg",
       "status": "sale",
-      "discount": 15,
+      "discount": 50,
       "region": "GLOBAL",
       "sale_type": "SALE"
     },
