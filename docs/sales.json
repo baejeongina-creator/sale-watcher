@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-25T18:54:42.634698Z",
+  "generated_at": "2026-07-25T21:45:42.958851Z",
   "sales": [
     {
       "brand_en": "",
@@ -116,7 +116,7 @@
       "brand_ko": "스컬프터",
       "official_url": "https://sculptor-worldwide.com/",
       "sale_url": "https://sculptor-worldwide.com/",
-      "banner_url": "http://cdn.shopify.com/s/files/1/0653/6436/1406/files/0b3bb991276f221a9a3455ef59bd5115.jpg?v=1744076387",
+      "banner_url": "http://sculptor-worldwide.com/cdn/shop/files/0b3bb991276f221a9a3455ef59bd5115.jpg?v=1744076387",
       "status": "sale",
       "discount": 0,
       "region": "KR",
@@ -523,7 +523,7 @@
       "brand_ko": "테켓",
       "official_url": "https://te-ket.com",
       "sale_url": "https://te-ket.com",
-      "banner_url": "https://www.te-ket.com/web/upload/share-image-1-abcf4044c680490236a5034b16de1479.jpg",
+      "banner_url": "https://te-ket.com/web/upload/share-image-1-abcf4044c680490236a5034b16de1479.jpg",
       "status": "sale",
       "discount": 60,
       "region": "KR",
