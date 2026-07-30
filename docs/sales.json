@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-30T11:00:35.830553Z",
+  "generated_at": "2026-07-30T13:29:47.150705Z",
   "sales": [
     {
       "brand_en": "",
@@ -512,7 +512,7 @@
       "brand_ko": "루에브르",
       "official_url": "https://m.maisonloeuvre.com",
       "sale_url": "https://m.maisonloeuvre.com",
-      "banner_url": "https://m.maisonloeuvre.com/web/upload/share-image-1-822485a6ee171cedbfcd41b152277310.jpg",
+      "banner_url": "https://m.maisonloeuvre.co.kr/web/upload/share-image-1-822485a6ee171cedbfcd41b152277310.jpg",
       "status": "sale",
       "discount": 20,
       "region": "KR",
@@ -613,7 +613,7 @@
       "sale_url": "https://the-barnnet.com",
       "banner_url": "https://thebarnnet.cafe24.com/web/img/seo_img.jpg",
       "status": "sale",
-      "discount": 30,
+      "discount": 20,
       "region": "KR",
       "sale_type": "SALE"
     },
