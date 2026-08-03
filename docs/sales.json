@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-03T06:11:54.034884Z",
+  "generated_at": "2026-08-03T12:14:38.760808Z",
   "sales": [
     {
       "brand_en": "",
@@ -182,7 +182,7 @@
       "brand_ko": "인사일런스",
       "official_url": "https://www.insilence.co.kr/",
       "sale_url": "https://www.insilence.co.kr/",
-      "banner_url": "https://www.insilence.co.kr/web/product/big/202605/15582e1e9ff6d8dee9426fd7bc1d17f0.jpg",
+      "banner_url": "https://www.insilence.co.kr/web/product/big/202604/4afdf7ed1250a2cc6ee7230374fb268c.jpg",
       "status": "sale",
       "discount": 50,
       "region": "KR",
@@ -572,17 +572,6 @@
       "discount": 60,
       "region": "KR",
       "sale_type": "OUTLET"
-    },
-    {
-      "brand_en": "",
-      "brand_ko": "이아",
-      "official_url": "https://eaah.net",
-      "sale_url": "https://eaah.net",
-      "banner_url": "https://eaah.net/web/upload/category/editor/2026/02/06/6aea45298bbebe5ad93da6f81a45a99d.png",
-      "status": "sale",
-      "discount": 0,
-      "region": "KR",
-      "sale_type": "SALE"
     },
     {
       "brand_en": "",
