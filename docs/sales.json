@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-04T11:19:17.176175Z",
+  "generated_at": "2026-08-04T13:50:20.966842Z",
   "sales": [
     {
       "brand_en": "",
@@ -380,7 +380,7 @@
       "brand_ko": "포에브",
       "official_url": "https://poev.kr/",
       "sale_url": "https://poev.kr/",
-      "banner_url": "https://poev.kr/web/upload/share-image-1-1e21d77af81ba1d305cec47d0694ce7a.jpg",
+      "banner_url": "https://poev.kr/web/upload/share-image-1-b5cc5aaeab8e6d5ab2a9207afd550209.jpg",
       "status": "sale",
       "discount": 61,
       "region": "KR",
@@ -424,7 +424,7 @@
       "brand_ko": "포니테일",
       "official_url": "https://ponytail.shop/",
       "sale_url": "https://ponytail.shop/",
-      "banner_url": "https://www.ponytail.shop/web/upload/share-image-1-81b406a016b5d2716b3b95d4dd17235c.jpg",
+      "banner_url": "https://ponytail.shop/web/upload/share-image-1-81b406a016b5d2716b3b95d4dd17235c.jpg",
       "status": "sale",
       "discount": 70,
       "region": "KR",
@@ -512,7 +512,7 @@
       "brand_ko": "루에브르",
       "official_url": "https://m.maisonloeuvre.com",
       "sale_url": "https://m.maisonloeuvre.com",
-      "banner_url": "https://m.maisonloeuvre.com/web/upload/share-image-1-822485a6ee171cedbfcd41b152277310.jpg",
+      "banner_url": "https://m.maisonloeuvre.co.kr/web/upload/share-image-1-822485a6ee171cedbfcd41b152277310.jpg",
       "status": "sale",
       "discount": 0,
       "region": "KR",
@@ -589,7 +589,7 @@
       "brand_ko": "오버듀플레어",
       "official_url": "https://overdueflair.com",
       "sale_url": "https://overdueflair.com",
-      "banner_url": "https://overdueflair.com/web/upload/share-image-1-56123f34fa6544f424170309c4a85329.jpg",
+      "banner_url": "https://www.overdueflair.com/web/upload/share-image-1-56123f34fa6544f424170309c4a85329.jpg",
       "status": "sale",
       "discount": 20,
       "region": "KR",
