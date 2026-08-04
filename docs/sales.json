@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-04T13:50:20.966842Z",
+  "generated_at": "2026-08-04T16:47:37.433968Z",
   "sales": [
     {
       "brand_en": "",
@@ -512,7 +512,7 @@
       "brand_ko": "루에브르",
       "official_url": "https://m.maisonloeuvre.com",
       "sale_url": "https://m.maisonloeuvre.com",
-      "banner_url": "https://m.maisonloeuvre.co.kr/web/upload/share-image-1-822485a6ee171cedbfcd41b152277310.jpg",
+      "banner_url": "https://m.maisonloeuvre.com/web/upload/share-image-1-822485a6ee171cedbfcd41b152277310.jpg",
       "status": "sale",
       "discount": 0,
       "region": "KR",
@@ -589,7 +589,7 @@
       "brand_ko": "오버듀플레어",
       "official_url": "https://overdueflair.com",
       "sale_url": "https://overdueflair.com",
-      "banner_url": "https://www.overdueflair.com/web/upload/share-image-1-56123f34fa6544f424170309c4a85329.jpg",
+      "banner_url": "https://overdueflair.com/web/upload/share-image-1-56123f34fa6544f424170309c4a85329.jpg",
       "status": "sale",
       "discount": 20,
       "region": "KR",
