@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-05T22:07:09.866248Z",
+  "generated_at": "2026-08-06T01:46:19.928389Z",
   "sales": [
     {
       "brand_en": "",
@@ -102,6 +102,17 @@
     },
     {
       "brand_en": "",
+      "brand_ko": "썬번프로젝트",
+      "official_url": "https://sunburnproject.com/",
+      "sale_url": "https://sunburnproject.com/",
+      "banner_url": "https://sunburnproject.com/web/upload/share-image-1-0f539b7c7f06a871df365d023c56ab29.jpg",
+      "status": "sale",
+      "discount": 10,
+      "region": "KR",
+      "sale_type": "SALE"
+    },
+    {
+      "brand_en": "",
       "brand_ko": "르베인",
       "official_url": "https://www.lebane.kr/",
       "sale_url": "https://www.lebane.kr/",
@@ -116,7 +127,7 @@
       "brand_ko": "스컬프터",
       "official_url": "https://sculptor-worldwide.com/",
       "sale_url": "https://sculptor-worldwide.com/",
-      "banner_url": "http://cdn.shopify.com/s/files/1/0653/6436/1406/files/0b3bb991276f221a9a3455ef59bd5115.jpg?v=1744076387",
+      "banner_url": "http://sculptor-worldwide.com/cdn/shop/files/0b3bb991276f221a9a3455ef59bd5115.jpg?v=1744076387",
       "status": "sale",
       "discount": 0,
       "region": "KR",
@@ -492,7 +503,7 @@
       "sale_url": "https://siyazu.co.kr/",
       "banner_url": "https://siyazu.co.kr/web/upload/og_image2.jpg",
       "status": "sale",
-      "discount": 0,
+      "discount": 50,
       "region": "KR",
       "sale_type": "SALE"
     },
@@ -512,7 +523,7 @@
       "brand_ko": "루에브르",
       "official_url": "https://m.maisonloeuvre.com",
       "sale_url": "https://m.maisonloeuvre.com",
-      "banner_url": "https://m.maisonloeuvre.com/web/upload/share-image-1-822485a6ee171cedbfcd41b152277310.jpg",
+      "banner_url": "https://m.maisonloeuvre.co.kr/web/upload/share-image-1-822485a6ee171cedbfcd41b152277310.jpg",
       "status": "sale",
       "discount": 0,
       "region": "KR",
