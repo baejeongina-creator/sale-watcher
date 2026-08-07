@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-07T07:01:42.824903Z",
+  "generated_at": "2026-08-07T09:53:48.693487Z",
   "sales": [
     {
       "brand_en": "",
@@ -329,7 +329,7 @@
       "status": "sale",
       "discount": 0,
       "region": "KR",
-      "sale_type": "SEASON OFF"
+      "sale_type": "SALE"
     },
     {
       "brand_en": "",
@@ -556,7 +556,7 @@
       "brand_ko": "랑거",
       "official_url": "https://m.langer.kr",
       "sale_url": "https://m.langer.kr",
-      "banner_url": "https://m.langer.kr/web/bloom_img/26SS-%EC%A0%9C%EC%A3%BC%20%EB%AA%A8%EB%B0%94%EC%9D%BC%20%EB%8C%80%ED%91%9C%EC%9D%B4%EB%AF%B8%EC%A7%80%20-1.jpg",
+      "banner_url": "https://m.langer.kr/web/bloom_img/26FW-%EB%AA%A8%EB%B0%94%EC%9D%BC%20%EB%8C%80%ED%91%9C%EC%9D%B4%EB%AF%B8%EC%A7%80-1.jpg",
       "status": "sale",
       "discount": 70,
       "region": "KR",
