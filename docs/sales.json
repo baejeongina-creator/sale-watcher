@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-09T21:23:35.735085Z",
+  "generated_at": "2026-08-10T01:03:42.512374Z",
   "sales": [
     {
       "brand_en": "",
@@ -498,6 +498,17 @@
     },
     {
       "brand_en": "",
+      "brand_ko": "글로니",
+      "official_url": "https://glowny.co.kr/",
+      "sale_url": "https://glowny.co.kr/",
+      "banner_url": "https://glowny.co.kr/web/upload/share-image-1-9e0321f83587cc26ab38cf7726790eee.jpg",
+      "status": "sale",
+      "discount": 30,
+      "region": "KR",
+      "sale_type": "SALE"
+    },
+    {
+      "brand_en": "",
       "brand_ko": "미치코런던 코시노",
       "official_url": "https://michiko-london.kr/",
       "sale_url": "https://michiko-london.kr/",
@@ -512,7 +523,7 @@
       "brand_ko": "루에브르",
       "official_url": "https://m.maisonloeuvre.com",
       "sale_url": "https://m.maisonloeuvre.com",
-      "banner_url": "https://m.maisonloeuvre.com/web/upload/share-image-1-822485a6ee171cedbfcd41b152277310.jpg",
+      "banner_url": "https://m.maisonloeuvre.com/web/upload/share-image-1-c92c14d568b94a9c5bf1e1fe252b2186.jpg",
       "status": "sale",
       "discount": 0,
       "region": "KR",
@@ -550,6 +561,17 @@
       "discount": 60,
       "region": "KR",
       "sale_type": "OUTLET"
+    },
+    {
+      "brand_en": "",
+      "brand_ko": "르하스",
+      "official_url": "https://l-has.com",
+      "sale_url": "https://l-has.com",
+      "banner_url": "https://l-has.com/web/upload/share-image-1-71679f17f30f8891192e37e433b1d7e8.JPG",
+      "status": "sale",
+      "discount": 0,
+      "region": "KR",
+      "sale_type": "SALE"
     },
     {
       "brand_en": "",
