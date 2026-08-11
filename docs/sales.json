@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-10T21:33:51.409298Z",
+  "generated_at": "2026-08-11T01:02:34.216585Z",
   "sales": [
     {
       "brand_en": "",
@@ -259,7 +259,7 @@
       "brand_ko": "프리베일",
       "official_url": "https://prevail.kr/",
       "sale_url": "https://prevail.kr/",
-      "banner_url": "https://prevail.kr/web/upload/share-image-1-541dac453e7e8879f58ab36e2fc5b359.jpg",
+      "banner_url": "https://www.prevail.kr/web/upload/share-image-1-541dac453e7e8879f58ab36e2fc5b359.jpg",
       "status": "sale",
       "discount": 50,
       "region": "KR",
@@ -679,7 +679,7 @@
       "sale_url": "https://www.ganni.com/",
       "banner_url": "https://www.ganni.com/on/demandware.static/-/Sites/default/dwcfb5b867/25-3-url.jpg",
       "status": "sale",
-      "discount": 50,
+      "discount": 15,
       "region": "GLOBAL",
       "sale_type": "SALE"
     },
