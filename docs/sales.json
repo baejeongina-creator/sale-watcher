@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-11T01:02:34.216585Z",
+  "generated_at": "2026-08-11T04:13:28.696242Z",
   "sales": [
     {
       "brand_en": "",
@@ -102,6 +102,17 @@
     },
     {
       "brand_en": "",
+      "brand_ko": "썬번프로젝트",
+      "official_url": "https://sunburnproject.com/",
+      "sale_url": "https://sunburnproject.com/",
+      "banner_url": "https://sunburnproject.com/web/upload/share-image-1-0f539b7c7f06a871df365d023c56ab29.jpg",
+      "status": "sale",
+      "discount": 0,
+      "region": "KR",
+      "sale_type": "SALE"
+    },
+    {
+      "brand_en": "",
       "brand_ko": "르베인",
       "official_url": "https://www.lebane.kr/",
       "sale_url": "https://www.lebane.kr/",
@@ -182,7 +193,7 @@
       "brand_ko": "인사일런스",
       "official_url": "https://www.insilence.co.kr/",
       "sale_url": "https://www.insilence.co.kr/",
-      "banner_url": "https://www.insilence.co.kr/web/product/big/202605/15582e1e9ff6d8dee9426fd7bc1d17f0.jpg",
+      "banner_url": "https://www.insilence.co.kr/web/product/big/202605/263f6677d109c45fbb8cb7c700783f6c.jpg",
       "status": "sale",
       "discount": 50,
       "region": "KR",
@@ -259,7 +270,7 @@
       "brand_ko": "프리베일",
       "official_url": "https://prevail.kr/",
       "sale_url": "https://prevail.kr/",
-      "banner_url": "https://www.prevail.kr/web/upload/share-image-1-541dac453e7e8879f58ab36e2fc5b359.jpg",
+      "banner_url": "https://prevail.kr/web/upload/share-image-1-541dac453e7e8879f58ab36e2fc5b359.jpg",
       "status": "sale",
       "discount": 50,
       "region": "KR",
