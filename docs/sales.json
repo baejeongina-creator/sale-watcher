@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-11T21:37:38.974356Z",
+  "generated_at": "2026-08-12T01:11:46.907965Z",
   "sales": [
     {
       "brand_en": "",
@@ -536,6 +536,17 @@
       "sale_url": "https://m.maisonloeuvre.com",
       "banner_url": "https://m.maisonloeuvre.com/web/upload/share-image-1-c92c14d568b94a9c5bf1e1fe252b2186.jpg",
       "status": "sale",
+      "discount": 0,
+      "region": "KR",
+      "sale_type": "SALE"
+    },
+    {
+      "brand_en": "",
+      "brand_ko": "테켓",
+      "official_url": "https://te-ket.com",
+      "sale_url": "https://te-ket.com",
+      "banner_url": "",
+      "status": "error",
       "discount": 0,
       "region": "KR",
       "sale_type": "SALE"
