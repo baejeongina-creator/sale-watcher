@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-12T21:36:32.286785Z",
+  "generated_at": "2026-08-13T01:11:19.315330Z",
   "sales": [
     {
       "brand_en": "",
@@ -107,7 +107,7 @@
       "sale_url": "https://sunburnproject.com/",
       "banner_url": "https://sunburnproject.com/web/upload/share-image-1-0f539b7c7f06a871df365d023c56ab29.jpg",
       "status": "sale",
-      "discount": 0,
+      "discount": 10,
       "region": "KR",
       "sale_type": "SALE"
     },
@@ -160,7 +160,7 @@
       "brand_ko": "던스트",
       "official_url": "https://dunststudio.com/",
       "sale_url": "https://dunststudio.com/",
-      "banner_url": "https://lfcorp.cafe24.com/0427_LINK.jpg",
+      "banner_url": "https://lfcorp.cafe24.com/LINK_260813.jpg",
       "status": "sale",
       "discount": 50,
       "region": "KR",
@@ -347,7 +347,7 @@
       "brand_ko": "로우 클래식",
       "official_url": "https://lowclassic.com/",
       "sale_url": "https://lowclassic.com/",
-      "banner_url": "https://lowclassic.com/web/upload/share-image-1-b74c147026373ba4bd0f735777ddef32.jpg",
+      "banner_url": "https://lowclassic.com/web/upload/share-image-1-a9c3f47d1333e75eef8600ff737bd239.jpg",
       "status": "sale",
       "discount": 0,
       "region": "KR",
