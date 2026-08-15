@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-15T12:20:20.637436Z",
+  "generated_at": "2026-08-15T15:12:43.320951Z",
   "sales": [
     {
       "brand_en": "",
@@ -193,7 +193,7 @@
       "brand_ko": "인사일런스",
       "official_url": "https://www.insilence.co.kr/",
       "sale_url": "https://www.insilence.co.kr/",
-      "banner_url": "https://www.insilence.co.kr/web/product/big/202605/263f6677d109c45fbb8cb7c700783f6c.jpg",
+      "banner_url": "https://insilence.co.kr/web/product/big/202605/263f6677d109c45fbb8cb7c700783f6c.jpg",
       "status": "sale",
       "discount": 50,
       "region": "KR",
@@ -589,7 +589,7 @@
       "brand_ko": "르하스",
       "official_url": "https://l-has.com",
       "sale_url": "https://l-has.com",
-      "banner_url": "https://l-has.co.kr/web/upload/share-image-1-71679f17f30f8891192e37e433b1d7e8.JPG",
+      "banner_url": "https://l-has.com/web/upload/share-image-1-71679f17f30f8891192e37e433b1d7e8.JPG",
       "status": "sale",
       "discount": 0,
       "region": "KR",
