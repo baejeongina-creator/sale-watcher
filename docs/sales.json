@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-18T00:42:52.754614Z",
+  "generated_at": "2026-08-18T03:37:43.483297Z",
   "sales": [
     {
       "brand_en": "",
@@ -149,7 +149,7 @@
       "brand_ko": "오픈와이와이",
       "official_url": "http://open-yy.com/",
       "sale_url": "http://open-yy.com/",
-      "banner_url": "https://cafe24.poxo.com/ec01/theopenproduct/p1p7L96QYgpvk7KwZPVnPw72oGqTs6KY3O2E2OOjpmNZJQQWdaYN3w+prh2Hy01deH55bnvRC1g9VOwsW9utEw==/_/open-yy//main/_banner_id9761_oska.jpg",
+      "banner_url": "https://cafe24.poxo.com/ec01/theopenproduct/p1p7L96QYgpvk7KwZPVnPw72oGqTs6KY3O2E2OOjpmNZJQQWdaYN3w+prh2Hy01deH55bnvRC1g9VOwsW9utEw==/_/open-yy//main/_banner_id9785_%EB%A9%94%EC%9D%B8.jpg",
       "status": "sale",
       "discount": 0,
       "region": "KR",
@@ -193,7 +193,7 @@
       "brand_ko": "인사일런스",
       "official_url": "https://www.insilence.co.kr/",
       "sale_url": "https://www.insilence.co.kr/",
-      "banner_url": "https://insilence.co.kr/web/product/big/202605/263f6677d109c45fbb8cb7c700783f6c.jpg",
+      "banner_url": "https://www.insilence.co.kr/web/product/big/202605/263f6677d109c45fbb8cb7c700783f6c.jpg",
       "status": "sale",
       "discount": 50,
       "region": "KR",
@@ -307,7 +307,7 @@
       "status": "sale",
       "discount": 95,
       "region": "KR",
-      "sale_type": "SEASON OFF"
+      "sale_type": "SALE"
     },
     {
       "brand_en": "",
@@ -583,17 +583,6 @@
       "discount": 60,
       "region": "KR",
       "sale_type": "OUTLET"
-    },
-    {
-      "brand_en": "",
-      "brand_ko": "르하스",
-      "official_url": "https://l-has.com",
-      "sale_url": "https://l-has.com",
-      "banner_url": "https://l-has.com/web/upload/share-image-1-71679f17f30f8891192e37e433b1d7e8.JPG",
-      "status": "sale",
-      "discount": 0,
-      "region": "KR",
-      "sale_type": "SALE"
     },
     {
       "brand_en": "",
