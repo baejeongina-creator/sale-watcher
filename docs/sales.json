@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-17T21:18:00.216515Z",
+  "generated_at": "2026-08-18T00:42:52.754614Z",
   "sales": [
     {
       "brand_en": "",
@@ -193,7 +193,7 @@
       "brand_ko": "인사일런스",
       "official_url": "https://www.insilence.co.kr/",
       "sale_url": "https://www.insilence.co.kr/",
-      "banner_url": "https://www.insilence.co.kr/web/product/big/202605/263f6677d109c45fbb8cb7c700783f6c.jpg",
+      "banner_url": "https://insilence.co.kr/web/product/big/202605/263f6677d109c45fbb8cb7c700783f6c.jpg",
       "status": "sale",
       "discount": 50,
       "region": "KR",
@@ -426,7 +426,7 @@
       "sale_url": "https://gbh.kr/",
       "banner_url": "https://cdn.imweb.me/upload/S20260211533a0fa9f6bfc/de4c99cddbb0d.png",
       "status": "sale",
-      "discount": 25,
+      "discount": 30,
       "region": "KR",
       "sale_type": "SALE"
     },
