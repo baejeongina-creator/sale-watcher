@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-19T12:26:38.503033Z",
+  "generated_at": "2026-08-19T15:22:38.812329Z",
   "sales": [
     {
       "brand_en": "",
@@ -107,7 +107,7 @@
       "sale_url": "https://sunburnproject.com/",
       "banner_url": "https://sunburnproject.com/web/upload/share-image-1-0f539b7c7f06a871df365d023c56ab29.jpg",
       "status": "sale",
-      "discount": 10,
+      "discount": 0,
       "region": "KR",
       "sale_type": "SALE"
     },
@@ -281,7 +281,7 @@
       "brand_ko": "프리베일",
       "official_url": "https://prevail.kr/",
       "sale_url": "https://prevail.kr/",
-      "banner_url": "https://prevail.kr/web/upload/share-image-1-541dac453e7e8879f58ab36e2fc5b359.jpg",
+      "banner_url": "https://www.prevail.kr/web/upload/share-image-1-541dac453e7e8879f58ab36e2fc5b359.jpg",
       "status": "sale",
       "discount": 50,
       "region": "KR",
