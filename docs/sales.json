@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-19T03:39:39.641429Z",
+  "generated_at": "2026-08-19T06:28:28.136606Z",
   "sales": [
     {
       "brand_en": "",
@@ -209,17 +209,6 @@
       "discount": 50,
       "region": "KR",
       "sale_type": "SEASON OFF"
-    },
-    {
-      "brand_en": "",
-      "brand_ko": "아마베",
-      "official_url": "https://amabe.kr/",
-      "sale_url": "https://amabe.kr/",
-      "banner_url": "https://cdn.imweb.me/upload/S20231024afeafbf0fc7f0/7daf658bb8553.png",
-      "status": "sale",
-      "discount": 70,
-      "region": "KR",
-      "sale_type": "SALE"
     },
     {
       "brand_en": "",
