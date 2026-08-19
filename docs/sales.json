@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-19T15:22:38.812329Z",
+  "generated_at": "2026-08-19T18:21:16.052371Z",
   "sales": [
     {
       "brand_en": "",
@@ -193,7 +193,7 @@
       "brand_ko": "인사일런스",
       "official_url": "https://www.insilence.co.kr/",
       "sale_url": "https://www.insilence.co.kr/",
-      "banner_url": "https://www.insilence.co.kr/web/product/big/202604/2e364b4c8c01e02e418313635db74694.jpg",
+      "banner_url": "https://insilence.co.kr/web/product/big/202604/2e364b4c8c01e02e418313635db74694.jpg",
       "status": "sale",
       "discount": 50,
       "region": "KR",
@@ -281,7 +281,7 @@
       "brand_ko": "프리베일",
       "official_url": "https://prevail.kr/",
       "sale_url": "https://prevail.kr/",
-      "banner_url": "https://www.prevail.kr/web/upload/share-image-1-541dac453e7e8879f58ab36e2fc5b359.jpg",
+      "banner_url": "https://prevail.kr/web/upload/share-image-1-541dac453e7e8879f58ab36e2fc5b359.jpg",
       "status": "sale",
       "discount": 50,
       "region": "KR",
