@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-20T06:30:18.139414Z",
+  "generated_at": "2026-08-20T09:28:34.065076Z",
   "sales": [
     {
       "brand_en": "",
@@ -61,7 +61,7 @@
       "brand_ko": "러프넥",
       "official_url": "https://roughneckseoul.com/",
       "sale_url": "https://roughneckseoul.com/",
-      "banner_url": "https://roughneckseoul.com/web/upload/share-image-1-fb50c0c3aa68ad2e36f080ed90e5fffa.png",
+      "banner_url": "https://www.roughneckseoul.com/web/upload/share-image-1-fb50c0c3aa68ad2e36f080ed90e5fffa.png",
       "status": "sale",
       "discount": 5,
       "region": "KR",
@@ -391,7 +391,7 @@
       "brand_ko": "포유어아이즈온리",
       "official_url": "https://fyeo.kr/",
       "sale_url": "https://fyeo.kr/",
-      "banner_url": "https://fyeo.kr/web/upload/share-image-1-45c262b15272eb310ce2882ddd909ef8.jpg",
+      "banner_url": "",
       "status": "sale",
       "discount": 40,
       "region": "KR",
