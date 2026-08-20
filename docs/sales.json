@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-20T00:42:44.811542Z",
+  "generated_at": "2026-08-20T03:39:44.035469Z",
   "sales": [
     {
       "brand_en": "",
@@ -102,17 +102,6 @@
     },
     {
       "brand_en": "",
-      "brand_ko": "썬번프로젝트",
-      "official_url": "https://sunburnproject.com/",
-      "sale_url": "https://sunburnproject.com/",
-      "banner_url": "https://sunburnproject.com/web/upload/share-image-1-0f539b7c7f06a871df365d023c56ab29.jpg",
-      "status": "sale",
-      "discount": 0,
-      "region": "KR",
-      "sale_type": "SALE"
-    },
-    {
-      "brand_en": "",
       "brand_ko": "르베인",
       "official_url": "https://www.lebane.kr/",
       "sale_url": "https://www.lebane.kr/",
@@ -193,11 +182,11 @@
       "brand_ko": "인사일런스",
       "official_url": "https://www.insilence.co.kr/",
       "sale_url": "https://www.insilence.co.kr/",
-      "banner_url": "https://insilence.co.kr/web/product/big/202604/2e364b4c8c01e02e418313635db74694.jpg",
+      "banner_url": "https://www.insilence.co.kr/web/product/big/202608/4bea76699666900f166219b585239555.jpg",
       "status": "sale",
-      "discount": 50,
+      "discount": 70,
       "region": "KR",
-      "sale_type": "SEASON OFF"
+      "sale_type": "SALE"
     },
     {
       "brand_en": "",
@@ -314,7 +303,7 @@
       "brand_ko": "에퓨레",
       "official_url": "https://www.epure.co.kr/",
       "sale_url": "https://www.epure.co.kr/",
-      "banner_url": "https://www.epure.co.kr/web/upload/share-image-1-f35aca149ecf66ead4f7a9b4051da292.jpg",
+      "banner_url": "https://epure.co.kr/web/upload/share-image-1-f35aca149ecf66ead4f7a9b4051da292.jpg",
       "status": "sale",
       "discount": 50,
       "region": "KR",
