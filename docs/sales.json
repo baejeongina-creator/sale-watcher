@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-26T12:33:31.272494Z",
+  "generated_at": "2026-08-26T16:11:54.747188Z",
   "sales": [
     {
       "brand_en": "",
@@ -160,7 +160,7 @@
       "brand_ko": "인사일런스",
       "official_url": "https://www.insilence.co.kr/",
       "sale_url": "https://www.insilence.co.kr/",
-      "banner_url": "https://www.insilence.co.kr/web/product/big/202608/4bea76699666900f166219b585239555.jpg",
+      "banner_url": "https://insilence.co.kr/web/product/big/202608/4bea76699666900f166219b585239555.jpg",
       "status": "sale",
       "discount": 70,
       "region": "KR",
@@ -281,7 +281,7 @@
       "brand_ko": "에퓨레",
       "official_url": "https://www.epure.co.kr/",
       "sale_url": "https://www.epure.co.kr/",
-      "banner_url": "https://epure.co.kr/web/upload/share-image-1-f35aca149ecf66ead4f7a9b4051da292.jpg",
+      "banner_url": "https://www.epure.co.kr/web/upload/share-image-1-f35aca149ecf66ead4f7a9b4051da292.jpg",
       "status": "sale",
       "discount": 50,
       "region": "KR",
@@ -426,6 +426,17 @@
       "sale_url": "https://portofcall.co.kr/",
       "banner_url": "https://portofcall.co.kr/web/upload/category/editor/2026/06/10/f91bb7252e4869b811d5ac52ada694e2.jpg",
       "status": "sale",
+      "discount": 0,
+      "region": "KR",
+      "sale_type": "SALE"
+    },
+    {
+      "brand_en": "",
+      "brand_ko": "시오",
+      "official_url": "https://sio.kr/",
+      "sale_url": "https://sio.kr/",
+      "banner_url": "",
+      "status": "error",
       "discount": 0,
       "region": "KR",
       "sale_type": "SALE"
