@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-26T09:32:47.941123Z",
+  "generated_at": "2026-08-26T12:33:31.272494Z",
   "sales": [
     {
       "brand_en": "",
@@ -124,17 +124,6 @@
     },
     {
       "brand_en": "",
-      "brand_ko": "오픈와이와이",
-      "official_url": "http://open-yy.com/",
-      "sale_url": "http://open-yy.com/",
-      "banner_url": "https://cafe24.poxo.com/ec01/theopenproduct/p1p7L96QYgpvk7KwZPVnPw72oGqTs6KY3O2E2OOjpmNZJQQWdaYN3w+prh2Hy01deH55bnvRC1g9VOwsW9utEw==/_/open-yy//main/_banner_id9897_main.jpg",
-      "status": "sale",
-      "discount": 0,
-      "region": "KR",
-      "sale_type": "SALE"
-    },
-    {
-      "brand_en": "",
       "brand_ko": "던스트",
       "official_url": "https://dunststudio.com/",
       "sale_url": "https://dunststudio.com/",
@@ -248,7 +237,7 @@
       "brand_ko": "애프터아워즈",
       "official_url": "https://afterhours.co.kr/",
       "sale_url": "https://afterhours.co.kr/",
-      "banner_url": "https://www.afterhours.co.kr/web/upload/share-image-1-b66a99df4d6b475c845bd1f941a46e00.jpg",
+      "banner_url": "https://afterhours.co.kr/web/upload/share-image-1-b66a99df4d6b475c845bd1f941a46e00.jpg",
       "status": "sale",
       "discount": 80,
       "region": "KR",
@@ -292,7 +281,7 @@
       "brand_ko": "에퓨레",
       "official_url": "https://www.epure.co.kr/",
       "sale_url": "https://www.epure.co.kr/",
-      "banner_url": "https://www.epure.co.kr/web/upload/share-image-1-f35aca149ecf66ead4f7a9b4051da292.jpg",
+      "banner_url": "https://epure.co.kr/web/upload/share-image-1-f35aca149ecf66ead4f7a9b4051da292.jpg",
       "status": "sale",
       "discount": 50,
       "region": "KR",
