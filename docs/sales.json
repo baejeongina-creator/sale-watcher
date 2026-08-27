@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-26T19:39:54.760472Z",
+  "generated_at": "2026-08-27T00:22:26.814217Z",
   "sales": [
     {
       "brand_en": "",
@@ -426,17 +426,6 @@
       "sale_url": "https://portofcall.co.kr/",
       "banner_url": "https://portofcall.co.kr/web/upload/category/editor/2026/06/10/f91bb7252e4869b811d5ac52ada694e2.jpg",
       "status": "sale",
-      "discount": 0,
-      "region": "KR",
-      "sale_type": "SALE"
-    },
-    {
-      "brand_en": "",
-      "brand_ko": "시오",
-      "official_url": "https://sio.kr/",
-      "sale_url": "https://sio.kr/",
-      "banner_url": "",
-      "status": "error",
       "discount": 0,
       "region": "KR",
       "sale_type": "SALE"
