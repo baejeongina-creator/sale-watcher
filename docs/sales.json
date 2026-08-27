@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-27T00:22:26.814217Z",
+  "generated_at": "2026-08-27T13:23:50.567759Z",
   "sales": [
     {
       "brand_en": "",
@@ -160,9 +160,9 @@
       "brand_ko": "인사일런스",
       "official_url": "https://www.insilence.co.kr/",
       "sale_url": "https://www.insilence.co.kr/",
-      "banner_url": "https://www.insilence.co.kr/web/product/big/202608/4bea76699666900f166219b585239555.jpg",
+      "banner_url": "https://www.insilence.co.kr/web/product/big/202608/89aeafd32deedf6b628fc843f357d4fa.jpg",
       "status": "sale",
-      "discount": 70,
+      "discount": 50,
       "region": "KR",
       "sale_type": "SALE"
     },
@@ -391,7 +391,7 @@
       "brand_ko": "다이닛",
       "official_url": "https://deinet.co.kr/",
       "sale_url": "https://deinet.co.kr/",
-      "banner_url": "https://ecimg.cafe24img.com/pg739b17156747073/deinet/web/upload/share-image-1-5341af8d7b3d103821aa1a3640358df5.jpg",
+      "banner_url": "https://ecimg.cafe24img.com/pg739b17156747073/deinet/web/upload/share-image-1-046ec6bb5b1bd57c0e142898a67b9e10.jpg",
       "status": "sale",
       "discount": 50,
       "region": "KR",
