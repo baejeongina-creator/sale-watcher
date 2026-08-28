@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-28T00:11:18.052084Z",
+  "generated_at": "2026-08-28T14:45:17.847880Z",
   "sales": [
     {
       "brand_en": "",
@@ -160,7 +160,7 @@
       "brand_ko": "인사일런스",
       "official_url": "https://www.insilence.co.kr/",
       "sale_url": "https://www.insilence.co.kr/",
-      "banner_url": "https://insilence.co.kr/web/product/big/202608/89aeafd32deedf6b628fc843f357d4fa.jpg",
+      "banner_url": "https://www.insilence.co.kr/web/product/big/202608/89aeafd32deedf6b628fc843f357d4fa.jpg",
       "status": "sale",
       "discount": 50,
       "region": "KR",
@@ -281,7 +281,7 @@
       "brand_ko": "에퓨레",
       "official_url": "https://www.epure.co.kr/",
       "sale_url": "https://www.epure.co.kr/",
-      "banner_url": "https://epure.co.kr/web/upload/share-image-1-f35aca149ecf66ead4f7a9b4051da292.jpg",
+      "banner_url": "https://www.epure.co.kr/web/upload/share-image-1-f35aca149ecf66ead4f7a9b4051da292.jpg",
       "status": "sale",
       "discount": 50,
       "region": "KR",
@@ -570,6 +570,17 @@
       "banner_url": "https://overdueflair.com/web/upload/share-image-1-56123f34fa6544f424170309c4a85329.jpg",
       "status": "sale",
       "discount": 20,
+      "region": "KR",
+      "sale_type": "SALE"
+    },
+    {
+      "brand_en": "",
+      "brand_ko": "더바넷",
+      "official_url": "https://the-barnnet.com",
+      "sale_url": "https://the-barnnet.com",
+      "banner_url": "https://thebarnnet.cafe24.com/web/img/seo_img.jpg",
+      "status": "sale",
+      "discount": 70,
       "region": "KR",
       "sale_type": "SALE"
     },
