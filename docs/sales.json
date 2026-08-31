@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-31T02:29:14.762425Z",
+  "generated_at": "2026-08-31T09:06:35.306275Z",
   "sales": [
     {
       "brand_en": "",
@@ -182,7 +182,7 @@
       "brand_ko": "더티스",
       "official_url": "https://thetisofficial.com/",
       "sale_url": "https://thetisofficial.com/",
-      "banner_url": "https://cafe24.poxo.com/ec01/aurau01/vaj/l9mdww1dKU1SVXHgYrmNQFBtnhDTvA7EVJhz/owSCX0MRl42koGL07CgyBmlQzThwKSVSkPSr+ZTzHvkxg==/_/main/260818/pc.jpg",
+      "banner_url": "https://cafe24.poxo.com/ec01/aurau01/vaj/l9mdww1dKU1SVXHgYrmNQFBtnhDTvA7EVJhz/owSCX0MRl42koGL07CgyBmlQzThwKSVSkPSr+ZTzHvkxg==/_/main/260831/pc.jpg",
       "status": "sale",
       "discount": 0,
       "region": "KR",
@@ -230,7 +230,7 @@
       "status": "sale",
       "discount": 0,
       "region": "KR",
-      "sale_type": "SEASON OFF"
+      "sale_type": "SALE"
     },
     {
       "brand_en": "",
@@ -382,7 +382,7 @@
       "sale_url": "https://gbh.kr/",
       "banner_url": "https://cdn.imweb.me/upload/S20260211533a0fa9f6bfc/de4c99cddbb0d.png",
       "status": "sale",
-      "discount": 30,
+      "discount": 15,
       "region": "KR",
       "sale_type": "SALE"
     },
@@ -580,7 +580,7 @@
       "sale_url": "https://the-barnnet.com",
       "banner_url": "https://thebarnnet.cafe24.com/web/img/seo_img.jpg",
       "status": "sale",
-      "discount": 70,
+      "discount": 55,
       "region": "KR",
       "sale_type": "SALE"
     },
