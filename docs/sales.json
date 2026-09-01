@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-31T18:29:15.643643Z",
+  "generated_at": "2026-09-01T00:14:41.605430Z",
   "sales": [
     {
       "brand_en": "",
@@ -174,17 +174,6 @@
       "banner_url": "https://fillintheblank-fitb.com/web/product/extra/small/202502/7821ae2c45882a2ed8b2ceed39d55c7e.jpg",
       "status": "sale",
       "discount": 50,
-      "region": "KR",
-      "sale_type": "SEASON OFF"
-    },
-    {
-      "brand_en": "",
-      "brand_ko": "더티스",
-      "official_url": "https://thetisofficial.com/",
-      "sale_url": "https://thetisofficial.com/",
-      "banner_url": "https://cafe24.poxo.com/ec01/aurau01/vaj/l9mdww1dKU1SVXHgYrmNQFBtnhDTvA7EVJhz/owSCX0MRl42koGL07CgyBmlQzThwKSVSkPSr+ZTzHvkxg==/_/main/260831/pc.jpg",
-      "status": "sale",
-      "discount": 0,
       "region": "KR",
       "sale_type": "SEASON OFF"
     },
@@ -495,17 +484,6 @@
       "discount": 0,
       "region": "KR",
       "sale_type": "SEASON OFF"
-    },
-    {
-      "brand_en": "",
-      "brand_ko": "루에브르",
-      "official_url": "https://m.maisonloeuvre.com",
-      "sale_url": "https://m.maisonloeuvre.com",
-      "banner_url": "https://m.maisonloeuvre.com/web/upload/share-image-1-9f9d77fb24fe5e1dd9a49f1d4a375bce.jpg",
-      "status": "sale",
-      "discount": 0,
-      "region": "KR",
-      "sale_type": "SALE"
     },
     {
       "brand_en": "",
