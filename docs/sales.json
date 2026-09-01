@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-01T00:14:41.605430Z",
+  "generated_at": "2026-09-01T08:08:52.003832Z",
   "sales": [
     {
       "brand_en": "",
@@ -50,7 +50,7 @@
       "brand_ko": "호와스",
       "official_url": "https://www.howus.co.kr",
       "sale_url": "https://www.howus.co.kr",
-      "banner_url": "",
+      "banner_url": "https://img.echosting.cafe24.com/skin/base_en_US/layout/txt_progress.gif",
       "status": "sale",
       "discount": 30,
       "region": "KR",
@@ -413,7 +413,7 @@
       "brand_ko": "포트오브콜",
       "official_url": "https://portofcall.co.kr/",
       "sale_url": "https://portofcall.co.kr/",
-      "banner_url": "https://portofcall.co.kr/web/upload/category/editor/2026/06/10/f91bb7252e4869b811d5ac52ada694e2.jpg",
+      "banner_url": "https://portofcall.co.kr/web/upload/category/editor/2026/09/01/0c3801d1a3e4bbaec6a99ce4def1e1d8.jpg",
       "status": "sale",
       "discount": 0,
       "region": "KR",
@@ -483,7 +483,7 @@
       "status": "sale",
       "discount": 0,
       "region": "KR",
-      "sale_type": "SEASON OFF"
+      "sale_type": "SALE"
     },
     {
       "brand_en": "",
