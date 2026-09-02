@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-02T07:28:30.272981Z",
+  "generated_at": "2026-09-02T13:07:12.238136Z",
   "sales": [
     {
       "brand_en": "",
@@ -160,7 +160,7 @@
       "brand_ko": "인사일런스",
       "official_url": "https://www.insilence.co.kr/",
       "sale_url": "https://www.insilence.co.kr/",
-      "banner_url": "https://insilence.co.kr/web/product/big/202608/89aeafd32deedf6b628fc843f357d4fa.jpg",
+      "banner_url": "https://www.insilence.co.kr/web/product/big/202608/89aeafd32deedf6b628fc843f357d4fa.jpg",
       "status": "sale",
       "discount": 50,
       "region": "KR",
@@ -479,7 +479,7 @@
       "brand_ko": "미치코런던 코시노",
       "official_url": "https://michiko-london.kr/",
       "sale_url": "https://michiko-london.kr/",
-      "banner_url": "https://www.michiko-london.kr/web/upload/share-image-1-2c3f6f49e417b26872b939ad47bcf895.png",
+      "banner_url": "https://michiko-london.kr/web/upload/share-image-1-2c3f6f49e417b26872b939ad47bcf895.png",
       "status": "sale",
       "discount": 0,
       "region": "KR",
