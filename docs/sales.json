@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-02T22:55:52.395895Z",
+  "generated_at": "2026-09-03T02:10:11.819209Z",
   "sales": [
     {
       "brand_en": "",
@@ -91,6 +91,17 @@
     },
     {
       "brand_en": "",
+      "brand_ko": "썬번프로젝트",
+      "official_url": "https://sunburnproject.com/",
+      "sale_url": "https://sunburnproject.com/",
+      "banner_url": "https://sunburnproject.com/web/upload/share-image-1-38cd6503fc1161cefee2ccecc2d35da5.jpg",
+      "status": "sale",
+      "discount": 10,
+      "region": "KR",
+      "sale_type": "SALE"
+    },
+    {
+      "brand_en": "",
       "brand_ko": "르베인",
       "official_url": "https://www.lebane.kr/",
       "sale_url": "https://www.lebane.kr/",
@@ -160,7 +171,7 @@
       "brand_ko": "인사일런스",
       "official_url": "https://www.insilence.co.kr/",
       "sale_url": "https://www.insilence.co.kr/",
-      "banner_url": "https://www.insilence.co.kr/web/product/big/202608/89aeafd32deedf6b628fc843f357d4fa.jpg",
+      "banner_url": "https://www.insilence.co.kr/web/product/big/202608/e2d40ac743872bda5db6c28437767136.jpg",
       "status": "sale",
       "discount": 50,
       "region": "KR",
