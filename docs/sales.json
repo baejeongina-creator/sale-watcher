@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-08T02:11:16.812249Z",
+  "generated_at": "2026-09-08T07:36:14.833643Z",
   "sales": [
     {
       "brand_en": "",
@@ -50,7 +50,7 @@
       "brand_ko": "호와스",
       "official_url": "https://www.howus.co.kr",
       "sale_url": "https://www.howus.co.kr",
-      "banner_url": "https://img.echosting.cafe24.com/skin/base_en_US/layout/txt_progress.gif",
+      "banner_url": "https://www.howus.co.kr/moa/img/icon/icon_youtube_shorts.svg",
       "status": "sale",
       "discount": 30,
       "region": "KR",
@@ -230,7 +230,7 @@
       "status": "sale",
       "discount": 0,
       "region": "KR",
-      "sale_type": "SALE"
+      "sale_type": "REFURB"
     },
     {
       "brand_en": "",
@@ -476,17 +476,6 @@
     },
     {
       "brand_en": "",
-      "brand_ko": "글로니",
-      "official_url": "https://glowny.co.kr/",
-      "sale_url": "https://glowny.co.kr/",
-      "banner_url": "https://glowny.co.kr/web/upload/share-image-1-9e0321f83587cc26ab38cf7726790eee.jpg",
-      "status": "sale",
-      "discount": 15,
-      "region": "KR",
-      "sale_type": "SALE"
-    },
-    {
-      "brand_en": "",
       "brand_ko": "미치코런던 코시노",
       "official_url": "https://michiko-london.kr/",
       "sale_url": "https://michiko-london.kr/",
@@ -613,7 +602,7 @@
       "sale_url": "https://www.apc-korea.com/",
       "banner_url": "https://www.apc-korea.com/image/apc/apcLogo.jpg",
       "status": "sale",
-      "discount": 0,
+      "discount": 10,
       "region": "GLOBAL",
       "sale_type": "SEASON OFF"
     },
