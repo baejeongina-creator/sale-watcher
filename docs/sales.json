@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-09T07:42:24.795990Z",
+  "generated_at": "2026-09-09T13:16:56.226229Z",
   "sales": [
     {
       "brand_en": "",
@@ -50,7 +50,7 @@
       "brand_ko": "호와스",
       "official_url": "https://www.howus.co.kr",
       "sale_url": "https://www.howus.co.kr",
-      "banner_url": "https://www.howus.co.kr/moa/img/icon/icon_youtube_shorts.svg",
+      "banner_url": "https://www.howus.co.kr/moa/img/default/empty_thumb.png",
       "status": "sale",
       "discount": 30,
       "region": "KR",
@@ -545,7 +545,7 @@
       "brand_ko": "오버듀플레어",
       "official_url": "https://overdueflair.com",
       "sale_url": "https://overdueflair.com",
-      "banner_url": "https://overdueflair.com/web/upload/share-image-1-56123f34fa6544f424170309c4a85329.jpg",
+      "banner_url": "https://www.overdueflair.com/web/upload/share-image-1-56123f34fa6544f424170309c4a85329.jpg",
       "status": "sale",
       "discount": 20,
       "region": "KR",
