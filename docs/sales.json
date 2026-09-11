@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-10T22:52:57.619821Z",
+  "generated_at": "2026-09-11T02:09:37.484705Z",
   "sales": [
     {
       "brand_en": "",
@@ -160,7 +160,7 @@
       "brand_ko": "인사일런스",
       "official_url": "https://www.insilence.co.kr/",
       "sale_url": "https://www.insilence.co.kr/",
-      "banner_url": "https://www.insilence.co.kr/web/product/big/202608/e2d40ac743872bda5db6c28437767136.jpg",
+      "banner_url": "https://insilence.co.kr/web/product/big/202608/e2d40ac743872bda5db6c28437767136.jpg",
       "status": "sale",
       "discount": 50,
       "region": "KR",
@@ -462,6 +462,17 @@
       "discount": 50,
       "region": "KR",
       "sale_type": "CLEARANCE"
+    },
+    {
+      "brand_en": "",
+      "brand_ko": "글로니",
+      "official_url": "https://glowny.co.kr/",
+      "sale_url": "https://glowny.co.kr/",
+      "banner_url": "https://glowny.co.kr/web/upload/share-image-1-9e0321f83587cc26ab38cf7726790eee.jpg",
+      "status": "sale",
+      "discount": 15,
+      "region": "KR",
+      "sale_type": "SALE"
     },
     {
       "brand_en": "",
