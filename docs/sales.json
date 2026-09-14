@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-13T22:44:54.413485Z",
+  "generated_at": "2026-09-14T02:30:14.982364Z",
   "sales": [
     {
       "brand_en": "",
@@ -127,7 +127,7 @@
       "brand_ko": "던스트",
       "official_url": "https://dunststudio.com/",
       "sale_url": "https://dunststudio.com/",
-      "banner_url": "https://lfcorp.cafe24.com/LINK_0831.jpg",
+      "banner_url": "https://lfcorp.cafe24.com/LINK_26FA_0914.jpg",
       "status": "sale",
       "discount": 50,
       "region": "KR",
@@ -160,7 +160,7 @@
       "brand_ko": "인사일런스",
       "official_url": "https://www.insilence.co.kr/",
       "sale_url": "https://www.insilence.co.kr/",
-      "banner_url": "https://insilence.co.kr/web/product/big/202608/e2d40ac743872bda5db6c28437767136.jpg",
+      "banner_url": "https://www.insilence.co.kr/web/product/big/202608/e2d40ac743872bda5db6c28437767136.jpg",
       "status": "sale",
       "discount": 50,
       "region": "KR",
@@ -270,7 +270,7 @@
       "brand_ko": "에퓨레",
       "official_url": "https://www.epure.co.kr/",
       "sale_url": "https://www.epure.co.kr/",
-      "banner_url": "https://www.epure.co.kr/web/upload/share-image-1-f35aca149ecf66ead4f7a9b4051da292.jpg",
+      "banner_url": "https://epure.co.kr/web/upload/share-image-1-f35aca149ecf66ead4f7a9b4051da292.jpg",
       "status": "sale",
       "discount": 50,
       "region": "KR",
@@ -371,7 +371,7 @@
       "sale_url": "https://gbh.kr/",
       "banner_url": "https://cdn.imweb.me/upload/S20260211533a0fa9f6bfc/de4c99cddbb0d.png",
       "status": "sale",
-      "discount": 35,
+      "discount": 30,
       "region": "KR",
       "sale_type": "SALE"
     },
