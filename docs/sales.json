@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-15T02:34:41.873512Z",
+  "generated_at": "2026-09-15T08:12:44.815739Z",
   "sales": [
     {
       "brand_en": "",
@@ -160,7 +160,7 @@
       "brand_ko": "인사일런스",
       "official_url": "https://www.insilence.co.kr/",
       "sale_url": "https://www.insilence.co.kr/",
-      "banner_url": "https://www.insilence.co.kr/web/product/big/202608/e2d40ac743872bda5db6c28437767136.jpg",
+      "banner_url": "https://insilence.co.kr/web/product/big/202608/e2d40ac743872bda5db6c28437767136.jpg",
       "status": "sale",
       "discount": 50,
       "region": "KR",
@@ -347,7 +347,7 @@
       "brand_ko": "포에브",
       "official_url": "https://poev.kr/",
       "sale_url": "https://poev.kr/",
-      "banner_url": "https://www.poev.kr/web/upload/share-image-1-a5e2aa7c12643df636efc56282d81c09.jpg",
+      "banner_url": "https://poev.kr/web/upload/share-image-1-a5e2aa7c12643df636efc56282d81c09.jpg",
       "status": "sale",
       "discount": 61,
       "region": "KR",
