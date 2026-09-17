@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-17T02:33:10.735431Z",
+  "generated_at": "2026-09-17T08:12:33.816832Z",
   "sales": [
     {
       "brand_en": "",
@@ -487,17 +487,6 @@
     },
     {
       "brand_en": "",
-      "brand_ko": "솔티페블",
-      "official_url": "https://saltypebble.com",
-      "sale_url": "https://saltypebble.com",
-      "banner_url": "http://www.saltypebble.com/images/PB_logo.jpg",
-      "status": "sale",
-      "discount": 0,
-      "region": "KR",
-      "sale_type": "SALE"
-    },
-    {
-      "brand_en": "",
       "brand_ko": "엘씨디씨서울",
       "official_url": "https://lcdc-seoul.com",
       "sale_url": "https://lcdc-seoul.com",
@@ -604,7 +593,7 @@
       "status": "sale",
       "discount": 10,
       "region": "GLOBAL",
-      "sale_type": "SEASON OFF"
+      "sale_type": "CLEARANCE"
     },
     {
       "brand_en": "",
