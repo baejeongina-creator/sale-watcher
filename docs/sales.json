@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-21T08:23:48.968573Z",
+  "generated_at": "2026-09-21T15:31:02.634554Z",
   "sales": [
     {
       "brand_en": "",
@@ -306,6 +306,17 @@
       "banner_url": "https://ecimg.cafe24img.com/pg1068b30634145023/ehdus075800/web/upload/share-image-1-eb54f12856a19c12c1db02bf9409bb4d.png",
       "status": "sale",
       "discount": 80,
+      "region": "KR",
+      "sale_type": "SALE"
+    },
+    {
+      "brand_en": "",
+      "brand_ko": "로우 클래식",
+      "official_url": "https://lowclassic.com/",
+      "sale_url": "https://lowclassic.com/",
+      "banner_url": "https://lowclassic.com/web/upload/share-image-1-a9c3f47d1333e75eef8600ff737bd239.jpg",
+      "status": "sale",
+      "discount": 0,
       "region": "KR",
       "sale_type": "SALE"
     },
