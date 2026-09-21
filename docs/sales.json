@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-21T02:28:24.667844Z",
+  "generated_at": "2026-09-21T08:23:48.968573Z",
   "sales": [
     {
       "brand_en": "",
@@ -53,6 +53,17 @@
       "banner_url": "https://www.howus.co.kr/moa/img/default/empty_thumb.png",
       "status": "sale",
       "discount": 30,
+      "region": "KR",
+      "sale_type": "SALE"
+    },
+    {
+      "brand_en": "",
+      "brand_ko": "러프넥",
+      "official_url": "https://roughneckseoul.com/",
+      "sale_url": "https://roughneckseoul.com/",
+      "banner_url": "https://roughneckseoul.com/web/upload/share-image-1-fb50c0c3aa68ad2e36f080ed90e5fffa.png",
+      "status": "sale",
+      "discount": 5,
       "region": "KR",
       "sale_type": "SALE"
     },
@@ -542,6 +553,17 @@
     },
     {
       "brand_en": "",
+      "brand_ko": "더바넷",
+      "official_url": "https://the-barnnet.com",
+      "sale_url": "https://the-barnnet.com",
+      "banner_url": "https://thebarnnet.cafe24.com/web/img/seo_img.jpg",
+      "status": "sale",
+      "discount": 10,
+      "region": "KR",
+      "sale_type": "SALE"
+    },
+    {
+      "brand_en": "",
       "brand_ko": "모헤",
       "official_url": "",
       "sale_url": "",
@@ -580,7 +602,7 @@
       "sale_url": "https://www.apc-korea.com/",
       "banner_url": "https://www.apc-korea.com/image/apc/apcLogo.jpg",
       "status": "sale",
-      "discount": 10,
+      "discount": 0,
       "region": "GLOBAL",
       "sale_type": "CLEARANCE"
     },
