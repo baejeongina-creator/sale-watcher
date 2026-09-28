@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-27T23:31:31.517384Z",
+  "generated_at": "2026-09-28T02:41:57.501824Z",
   "sales": [
     {
       "brand_en": "",
@@ -226,7 +226,7 @@
       "brand_ko": "프리베일",
       "official_url": "https://prevail.kr/",
       "sale_url": "https://prevail.kr/",
-      "banner_url": "https://prevail.kr/web/upload/share-image-1-541dac453e7e8879f58ab36e2fc5b359.jpg",
+      "banner_url": "https://www.prevail.kr/web/upload/share-image-1-541dac453e7e8879f58ab36e2fc5b359.jpg",
       "status": "sale",
       "discount": 50,
       "region": "KR",
@@ -495,17 +495,6 @@
       "discount": 60,
       "region": "KR",
       "sale_type": "OUTLET"
-    },
-    {
-      "brand_en": "",
-      "brand_ko": "이아",
-      "official_url": "https://eaah.net",
-      "sale_url": "https://eaah.net",
-      "banner_url": "https://eaah.net/web/upload/category/editor/2026/02/06/6aea45298bbebe5ad93da6f81a45a99d.png",
-      "status": "sale",
-      "discount": 10,
-      "region": "KR",
-      "sale_type": "SALE"
     },
     {
       "brand_en": "",
