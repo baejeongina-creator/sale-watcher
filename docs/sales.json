@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-30T03:06:51.460744Z",
+  "generated_at": "2026-09-30T11:37:48.597146Z",
   "sales": [
     {
       "brand_en": "",
@@ -39,7 +39,7 @@
       "brand_ko": "호와스",
       "official_url": "https://www.howus.co.kr",
       "sale_url": "https://www.howus.co.kr",
-      "banner_url": "https://www.howus.co.kr/moa/img/default/empty_thumb.png",
+      "banner_url": "https://img.echosting.cafe24.com/skin/skin/common/img_loading.gif",
       "status": "sale",
       "discount": 30,
       "region": "KR",
@@ -226,7 +226,7 @@
       "brand_ko": "프리베일",
       "official_url": "https://prevail.kr/",
       "sale_url": "https://prevail.kr/",
-      "banner_url": "https://prevail.kr/web/upload/share-image-1-541dac453e7e8879f58ab36e2fc5b359.jpg",
+      "banner_url": "https://prevail.kr/web/upload/share-image-1-a66a4aa6a0b4d82e9d7fb688e02d81fd.jpg",
       "status": "sale",
       "discount": 50,
       "region": "KR",
