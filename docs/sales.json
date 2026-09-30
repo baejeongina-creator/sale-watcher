@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-29T21:41:27.977378Z",
+  "generated_at": "2026-09-30T03:06:51.460744Z",
   "sales": [
     {
       "brand_en": "",
@@ -371,7 +371,7 @@
       "sale_url": "https://gbh.kr/",
       "banner_url": "https://cdn.imweb.me/upload/S20260211533a0fa9f6bfc/de4c99cddbb0d.png",
       "status": "sale",
-      "discount": 50,
+      "discount": 30,
       "region": "KR",
       "sale_type": "SALE"
     },
