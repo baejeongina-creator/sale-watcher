@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-30T21:42:12.075923Z",
+  "generated_at": "2026-10-01T03:13:19.298970Z",
   "sales": [
     {
       "brand_en": "",
@@ -151,7 +151,7 @@
       "sale_url": "https://www.insilence.co.kr/",
       "banner_url": "https://ambient.diskn.com/image/home/pop-up/2026/AUTUMN%20SPECIAL/AUTUMNSPECIAL_PC.png",
       "status": "sale",
-      "discount": 50,
+      "discount": 80,
       "region": "KR",
       "sale_type": "SALE"
     },
@@ -582,7 +582,7 @@
       "status": "sale",
       "discount": 0,
       "region": "GLOBAL",
-      "sale_type": "CLEARANCE"
+      "sale_type": "SALE"
     },
     {
       "brand_en": "",
