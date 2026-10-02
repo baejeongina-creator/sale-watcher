@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-02T00:22:46.201867Z",
+  "generated_at": "2026-10-02T09:15:54.844504Z",
   "sales": [
     {
       "brand_en": "",
@@ -39,7 +39,7 @@
       "brand_ko": "호와스",
       "official_url": "https://www.howus.co.kr",
       "sale_url": "https://www.howus.co.kr",
-      "banner_url": "https://img.echosting.cafe24.com/skin/skin/common/img_loading.gif",
+      "banner_url": "https://www.howus.co.kr/moa/img/default/empty_thumb.png",
       "status": "sale",
       "discount": 30,
       "region": "KR",
@@ -270,7 +270,7 @@
       "brand_ko": "우마뭉",
       "official_url": "https://umarmung.kr/",
       "sale_url": "https://umarmung.kr/",
-      "banner_url": "https://umarmung.kr/web/upload/share-image-1-35517eeecedb7cb08d612da3d7e600c4.jpg",
+      "banner_url": "https://umarmung.kr/web/upload/share-image-1-e650cd298bb344b4c07d5473f910080e.jpg",
       "status": "sale",
       "discount": 60,
       "region": "KR",
