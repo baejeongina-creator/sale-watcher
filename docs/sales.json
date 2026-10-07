@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-07T00:19:42.486251Z",
+  "generated_at": "2026-10-07T09:38:23.219006Z",
   "sales": [
     {
       "brand_en": "",
@@ -149,7 +149,7 @@
       "brand_ko": "인사일런스",
       "official_url": "https://www.insilence.co.kr/",
       "sale_url": "https://www.insilence.co.kr/",
-      "banner_url": "https://ambient.diskn.com/image/home/pop-up/2026/AUTUMN%20SPECIAL/AUTUMNSPECIAL_PC.png",
+      "banner_url": "https://www.insilence.co.kr/web/product/big/202609/efcc45644928e568fe81fdc5f43a7d0b.jpg",
       "status": "sale",
       "discount": 80,
       "region": "KR",
@@ -248,7 +248,7 @@
       "brand_ko": "미세키서울",
       "official_url": "https://misekiseoul.kr/",
       "sale_url": "https://misekiseoul.kr/",
-      "banner_url": "https://misekiseoul.kr/web/upload/share-image-1-484b99770ddad7970d4660ec0f785a81.jpg",
+      "banner_url": "https://misekiseoul.kr/web/upload/share-image-1-9078724573565ef6ed4061863fbdb3b5.jpg",
       "status": "sale",
       "discount": 86,
       "region": "KR",
@@ -580,7 +580,7 @@
       "sale_url": "https://www.apc-korea.com/",
       "banner_url": "https://www.apc-korea.com/image/apc/apcLogo.jpg",
       "status": "sale",
-      "discount": 0,
+      "discount": 10,
       "region": "GLOBAL",
       "sale_type": "SALE"
     },
