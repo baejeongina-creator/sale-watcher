@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-09T09:54:17.434616Z",
+  "generated_at": "2026-10-09T17:50:11.274863Z",
   "sales": [
     {
       "brand_en": "",
@@ -160,7 +160,7 @@
       "brand_ko": "인사일런스",
       "official_url": "https://www.insilence.co.kr/",
       "sale_url": "https://www.insilence.co.kr/",
-      "banner_url": "https://www.insilence.co.kr/web/product/big/202609/efcc45644928e568fe81fdc5f43a7d0b.jpg",
+      "banner_url": "https://insilence.co.kr/web/product/big/202609/efcc45644928e568fe81fdc5f43a7d0b.jpg",
       "status": "sale",
       "discount": 80,
       "region": "KR",
@@ -259,7 +259,7 @@
       "brand_ko": "미세키서울",
       "official_url": "https://misekiseoul.kr/",
       "sale_url": "https://misekiseoul.kr/",
-      "banner_url": "https://www.misekiseoul.kr/web/upload/share-image-1-9078724573565ef6ed4061863fbdb3b5.jpg",
+      "banner_url": "https://misekiseoul.kr/web/upload/share-image-1-9078724573565ef6ed4061863fbdb3b5.jpg",
       "status": "sale",
       "discount": 86,
       "region": "KR",
@@ -270,7 +270,7 @@
       "brand_ko": "에퓨레",
       "official_url": "https://www.epure.co.kr/",
       "sale_url": "https://www.epure.co.kr/",
-      "banner_url": "https://www.epure.co.kr/web/upload/share-image-1-f35aca149ecf66ead4f7a9b4051da292.jpg",
+      "banner_url": "https://epure.co.kr/web/upload/share-image-1-f35aca149ecf66ead4f7a9b4051da292.jpg",
       "status": "sale",
       "discount": 50,
       "region": "KR",
@@ -602,7 +602,7 @@
       "sale_url": "https://www.ganni.com/",
       "banner_url": "https://ganni.kleecks-cdn.com/on/demandware.static/-/Sites/default/dwcfb5b867/25-3-url.jpg",
       "status": "sale",
-      "discount": 15,
+      "discount": 40,
       "region": "GLOBAL",
       "sale_type": "SALE"
     },
