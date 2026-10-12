@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-11T21:20:44.013662Z",
+  "generated_at": "2026-10-12T03:29:07.201641Z",
   "sales": [
     {
       "brand_en": "",
@@ -498,17 +498,6 @@
     },
     {
       "brand_en": "",
-      "brand_ko": "이아",
-      "official_url": "https://eaah.net",
-      "sale_url": "https://eaah.net",
-      "banner_url": "https://eaah.net/web/upload/category/editor/2026/02/06/6aea45298bbebe5ad93da6f81a45a99d.png",
-      "status": "sale",
-      "discount": 10,
-      "region": "KR",
-      "sale_type": "SALE"
-    },
-    {
-      "brand_en": "",
       "brand_ko": "랑거",
       "official_url": "https://m.langer.kr",
       "sale_url": "https://m.langer.kr",
@@ -536,7 +525,7 @@
       "sale_url": "https://overdueflair.com",
       "banner_url": "https://overdueflair.com/web/upload/share-image-1-56123f34fa6544f424170309c4a85329.jpg",
       "status": "sale",
-      "discount": 20,
+      "discount": 40,
       "region": "KR",
       "sale_type": "SALE"
     },
