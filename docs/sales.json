@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-14T00:07:06.606544Z",
+  "generated_at": "2026-10-14T08:18:24.772436Z",
   "sales": [
     {
       "brand_en": "",
@@ -270,7 +270,7 @@
       "brand_ko": "에퓨레",
       "official_url": "https://www.epure.co.kr/",
       "sale_url": "https://www.epure.co.kr/",
-      "banner_url": "https://epure.co.kr/web/upload/share-image-1-f35aca149ecf66ead4f7a9b4051da292.jpg",
+      "banner_url": "https://www.epure.co.kr/web/upload/share-image-1-f35aca149ecf66ead4f7a9b4051da292.jpg",
       "status": "sale",
       "discount": 50,
       "region": "KR",
@@ -465,12 +465,34 @@
     },
     {
       "brand_en": "",
+      "brand_ko": "글로니",
+      "official_url": "https://glowny.co.kr/",
+      "sale_url": "https://glowny.co.kr/",
+      "banner_url": "https://glowny.co.kr/web/upload/share-image-1-9e0321f83587cc26ab38cf7726790eee.jpg",
+      "status": "sale",
+      "discount": 15,
+      "region": "KR",
+      "sale_type": "SALE"
+    },
+    {
+      "brand_en": "",
       "brand_ko": "미치코런던 코시노",
       "official_url": "https://michiko-london.kr/",
       "sale_url": "https://michiko-london.kr/",
       "banner_url": "https://michiko-london.kr/web/upload/share-image-1-2c3f6f49e417b26872b939ad47bcf895.png",
       "status": "sale",
       "discount": 0,
+      "region": "KR",
+      "sale_type": "SALE"
+    },
+    {
+      "brand_en": "",
+      "brand_ko": "테켓",
+      "official_url": "https://te-ket.com",
+      "sale_url": "https://te-ket.com",
+      "banner_url": "https://te-ket.com/web/upload/share-image-1-989b3380991003c25a3b155513efd426.jpg",
+      "status": "sale",
+      "discount": 60,
       "region": "KR",
       "sale_type": "SALE"
     },
@@ -569,7 +591,7 @@
       "sale_url": "https://www.apc-korea.com/",
       "banner_url": "https://www.apc-korea.com/image/apc/apcLogo.jpg",
       "status": "sale",
-      "discount": 10,
+      "discount": 0,
       "region": "GLOBAL",
       "sale_type": "SALE"
     },
@@ -591,7 +613,7 @@
       "sale_url": "https://www.ganni.com/",
       "banner_url": "https://ganni.kleecks-cdn.com/on/demandware.static/-/Sites/default/dwcfb5b867/25-3-url.jpg",
       "status": "sale",
-      "discount": 40,
+      "discount": 15,
       "region": "GLOBAL",
       "sale_type": "SALE"
     },
