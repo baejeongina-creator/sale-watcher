@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-14T14:17:33.589043Z",
+  "generated_at": "2026-10-14T19:09:34.926533Z",
   "sales": [
     {
       "brand_en": "",
@@ -77,17 +77,6 @@
       "discount": 80,
       "region": "KR",
       "sale_type": "CLEARANCE"
-    },
-    {
-      "brand_en": "",
-      "brand_ko": "썬번프로젝트",
-      "official_url": "https://sunburnproject.com/",
-      "sale_url": "https://sunburnproject.com/",
-      "banner_url": "https://sunburnproject.com/web/upload/share-image-1-10e40ea23fb802184b33c1c89921337b.jpg",
-      "status": "sale",
-      "discount": 10,
-      "region": "KR",
-      "sale_type": "SALE"
     },
     {
       "brand_en": "",
@@ -259,7 +248,7 @@
       "brand_ko": "미세키서울",
       "official_url": "https://misekiseoul.kr/",
       "sale_url": "https://misekiseoul.kr/",
-      "banner_url": "https://www.misekiseoul.kr/web/upload/share-image-1-9078724573565ef6ed4061863fbdb3b5.jpg",
+      "banner_url": "https://misekiseoul.kr/web/upload/share-image-1-9078724573565ef6ed4061863fbdb3b5.jpg",
       "status": "sale",
       "discount": 86,
       "region": "KR",
