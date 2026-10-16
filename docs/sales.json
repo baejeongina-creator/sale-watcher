@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-16T02:26:01.246311Z",
+  "generated_at": "2026-10-16T07:46:45.009484Z",
   "sales": [
     {
       "brand_en": "",
@@ -259,7 +259,7 @@
       "brand_ko": "에퓨레",
       "official_url": "https://www.epure.co.kr/",
       "sale_url": "https://www.epure.co.kr/",
-      "banner_url": "https://www.epure.co.kr/web/upload/share-image-1-f35aca149ecf66ead4f7a9b4051da292.jpg",
+      "banner_url": "https://epure.co.kr/web/upload/share-image-1-f35aca149ecf66ead4f7a9b4051da292.jpg",
       "status": "sale",
       "discount": 50,
       "region": "KR",
@@ -448,7 +448,7 @@
       "sale_url": "https://siyazu.co.kr/",
       "banner_url": "https://siyazu.co.kr/web/upload/og_image2.jpg",
       "status": "sale",
-      "discount": 50,
+      "discount": 60,
       "region": "KR",
       "sale_type": "CLEARANCE"
     },
