@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-24T02:40:39.033246Z",
+  "generated_at": "2026-10-24T07:50:38.785931Z",
   "sales": [
     {
       "brand_en": "",
@@ -149,7 +149,7 @@
       "brand_ko": "인사일런스",
       "official_url": "https://www.insilence.co.kr/",
       "sale_url": "https://www.insilence.co.kr/",
-      "banner_url": "https://insilence.co.kr/web/product/big/202609/697abe374d20223fa5f3c64c3db466ed.jpg",
+      "banner_url": "https://www.insilence.co.kr/web/product/big/202609/697abe374d20223fa5f3c64c3db466ed.jpg",
       "status": "sale",
       "discount": 80,
       "region": "KR",
@@ -281,7 +281,7 @@
       "brand_ko": "우마뭉",
       "official_url": "https://umarmung.kr/",
       "sale_url": "https://umarmung.kr/",
-      "banner_url": "https://www.umarmung.kr/web/upload/share-image-1-e650cd298bb344b4c07d5473f910080e.jpg",
+      "banner_url": "https://umarmung.kr/web/upload/share-image-1-e650cd298bb344b4c07d5473f910080e.jpg",
       "status": "sale",
       "discount": 60,
       "region": "KR",
@@ -314,7 +314,7 @@
       "brand_ko": "르",
       "official_url": "https://le-official.co.kr/",
       "sale_url": "https://le-official.co.kr/",
-      "banner_url": "https://www.le-official.co.kr/web/upload/share-image-1-ebc975eafae2ceb9bb52da9c45d4f6db.jpg",
+      "banner_url": "https://le-official.co.kr/web/upload/share-image-1-ebc975eafae2ceb9bb52da9c45d4f6db.jpg",
       "status": "sale",
       "discount": 90,
       "region": "KR",
@@ -545,7 +545,7 @@
       "brand_ko": "오버듀플레어",
       "official_url": "https://overdueflair.com",
       "sale_url": "https://overdueflair.com",
-      "banner_url": "https://overdueflair.com/web/upload/share-image-1-56123f34fa6544f424170309c4a85329.jpg",
+      "banner_url": "https://www.overdueflair.com/web/upload/share-image-1-56123f34fa6544f424170309c4a85329.jpg",
       "status": "sale",
       "discount": 20,
       "region": "KR",
