@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-25T23:01:38.757704Z",
+  "generated_at": "2026-10-26T02:28:26.096074Z",
   "sales": [
     {
       "brand_en": "",
@@ -476,12 +476,12 @@
     },
     {
       "brand_en": "",
-      "brand_ko": "테켓",
-      "official_url": "https://te-ket.com",
-      "sale_url": "https://te-ket.com",
-      "banner_url": "https://te-ket.com/web/upload/share-image-1-989b3380991003c25a3b155513efd426.jpg",
+      "brand_ko": "루에브르",
+      "official_url": "https://m.maisonloeuvre.com",
+      "sale_url": "https://m.maisonloeuvre.com",
+      "banner_url": "https://m.maisonloeuvre.com/web/upload/share-image-1-e49695e40df1b99691ce80ee9dad44d0.jpg",
       "status": "sale",
-      "discount": 60,
+      "discount": 65,
       "region": "KR",
       "sale_type": "SALE"
     },
