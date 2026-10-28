@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-27T21:42:00.496190Z",
+  "generated_at": "2026-10-28T03:13:44.392680Z",
   "sales": [
     {
       "brand_en": "",
@@ -215,7 +215,7 @@
       "brand_ko": "밀로아카이브",
       "official_url": "https://milloarchive.com/",
       "sale_url": "https://milloarchive.com/",
-      "banner_url": "https://millowomen.com/web/upload/share-image-1-a6b826993a8dc6132fb7b225fd0b7d2e.jpg",
+      "banner_url": "https://milloarchive.com/web/upload/share-image-1-a6b826993a8dc6132fb7b225fd0b7d2e.jpg",
       "status": "sale",
       "discount": 0,
       "region": "KR",
@@ -314,7 +314,7 @@
       "brand_ko": "르",
       "official_url": "https://le-official.co.kr/",
       "sale_url": "https://le-official.co.kr/",
-      "banner_url": "https://www.le-official.com/web/upload/share-image-1-ebc975eafae2ceb9bb52da9c45d4f6db.jpg",
+      "banner_url": "https://le-official.co.kr/web/upload/share-image-1-ebc975eafae2ceb9bb52da9c45d4f6db.jpg",
       "status": "sale",
       "discount": 90,
       "region": "KR",
@@ -558,7 +558,7 @@
       "sale_url": "https://overdueflair.com",
       "banner_url": "https://overdueflair.com/web/upload/share-image-1-56123f34fa6544f424170309c4a85329.jpg",
       "status": "sale",
-      "discount": 20,
+      "discount": 70,
       "region": "KR",
       "sale_type": "SALE"
     },
