@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-30T09:23:27.479233Z",
+  "generated_at": "2026-10-30T17:33:59.817779Z",
   "sales": [
     {
       "brand_en": "",
@@ -281,7 +281,7 @@
       "brand_ko": "에퓨레",
       "official_url": "https://www.epure.co.kr/",
       "sale_url": "https://www.epure.co.kr/",
-      "banner_url": "https://epure.co.kr/web/upload/share-image-1-f35aca149ecf66ead4f7a9b4051da292.jpg",
+      "banner_url": "https://www.epure.co.kr/web/upload/share-image-1-f35aca149ecf66ead4f7a9b4051da292.jpg",
       "status": "sale",
       "discount": 50,
       "region": "KR",
@@ -424,7 +424,7 @@
       "brand_ko": "포트오브콜",
       "official_url": "https://portofcall.co.kr/",
       "sale_url": "https://portofcall.co.kr/",
-      "banner_url": "https://portofcall.co.kr/web/upload/category/editor/2026/09/28/38a7c4674850d43d924d0e50de4096d2.jpg",
+      "banner_url": "https://portofcall.co.kr/web/upload/category/editor/2026/10/30/b95ec17fc98366f4b645d5767f87db41.jpg",
       "status": "sale",
       "discount": 0,
       "region": "KR",
@@ -471,17 +471,6 @@
       "banner_url": "https://siyazu.co.kr/web/upload/og_image2.jpg",
       "status": "sale",
       "discount": 50,
-      "region": "KR",
-      "sale_type": "CLEARANCE"
-    },
-    {
-      "brand_en": "",
-      "brand_ko": "글로니",
-      "official_url": "https://glowny.co.kr/",
-      "sale_url": "https://glowny.co.kr/",
-      "banner_url": "https://glowny.co.kr/web/upload/share-image-1-9e0321f83587cc26ab38cf7726790eee.jpg",
-      "status": "sale",
-      "discount": 60,
       "region": "KR",
       "sale_type": "CLEARANCE"
     },
@@ -567,7 +556,7 @@
       "brand_ko": "오버듀플레어",
       "official_url": "https://overdueflair.com",
       "sale_url": "https://overdueflair.com",
-      "banner_url": "https://www.overdueflair.com/web/upload/share-image-1-56123f34fa6544f424170309c4a85329.jpg",
+      "banner_url": "https://overdueflair.com/web/upload/share-image-1-56123f34fa6544f424170309c4a85329.jpg",
       "status": "sale",
       "discount": 70,
       "region": "KR",
