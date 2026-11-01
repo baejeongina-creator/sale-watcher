@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-31T23:57:30.645638Z",
+  "generated_at": "2026-11-01T03:27:26.148653Z",
   "sales": [
     {
       "brand_en": "",
@@ -382,7 +382,7 @@
       "sale_url": "https://gbh.kr/",
       "banner_url": "https://cdn.imweb.me/upload/S20260211533a0fa9f6bfc/de4c99cddbb0d.png",
       "status": "sale",
-      "discount": 80,
+      "discount": 50,
       "region": "KR",
       "sale_type": "SEASON OFF"
     },
