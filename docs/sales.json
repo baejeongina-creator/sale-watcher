@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-03T04:44:53.137883Z",
+  "generated_at": "2026-11-03T13:22:02.608544Z",
   "sales": [
     {
       "brand_en": "",
@@ -226,7 +226,7 @@
       "brand_ko": "밀로아카이브",
       "official_url": "https://milloarchive.com/",
       "sale_url": "https://milloarchive.com/",
-      "banner_url": "https://milloarchive.com/web/upload/share-image-1-a6b826993a8dc6132fb7b225fd0b7d2e.jpg",
+      "banner_url": "https://www.milloarchive.com/web/upload/share-image-1-a6b826993a8dc6132fb7b225fd0b7d2e.jpg",
       "status": "sale",
       "discount": 12,
       "region": "KR",
@@ -325,7 +325,7 @@
       "brand_ko": "르",
       "official_url": "https://le-official.co.kr/",
       "sale_url": "https://le-official.co.kr/",
-      "banner_url": "https://www.le-official.co.kr/web/upload/share-image-1-ebc975eafae2ceb9bb52da9c45d4f6db.jpg",
+      "banner_url": "https://le-official.co.kr/web/upload/share-image-1-ebc975eafae2ceb9bb52da9c45d4f6db.jpg",
       "status": "sale",
       "discount": 90,
       "region": "KR",
