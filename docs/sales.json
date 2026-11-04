@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-04T01:03:39.250245Z",
+  "generated_at": "2026-11-04T19:12:14.724710Z",
   "sales": [
     {
       "brand_en": "",
@@ -160,7 +160,7 @@
       "brand_ko": "인사일런스",
       "official_url": "https://www.insilence.co.kr/",
       "sale_url": "https://www.insilence.co.kr/",
-      "banner_url": "https://insilence.co.kr/web/product/big/202609/697abe374d20223fa5f3c64c3db466ed.jpg",
+      "banner_url": "https://www.insilence.co.kr/web/product/big/202609/697abe374d20223fa5f3c64c3db466ed.jpg",
       "status": "sale",
       "discount": 80,
       "region": "KR",
@@ -226,7 +226,7 @@
       "brand_ko": "밀로아카이브",
       "official_url": "https://milloarchive.com/",
       "sale_url": "https://milloarchive.com/",
-      "banner_url": "https://www.milloarchive.com/web/upload/share-image-1-a6b826993a8dc6132fb7b225fd0b7d2e.jpg",
+      "banner_url": "https://millowomen.com/web/upload/share-image-1-a6b826993a8dc6132fb7b225fd0b7d2e.jpg",
       "status": "sale",
       "discount": 12,
       "region": "KR",
@@ -558,7 +558,7 @@
       "sale_url": "https://overdueflair.com",
       "banner_url": "https://overdueflair.com/web/upload/share-image-1-56123f34fa6544f424170309c4a85329.jpg",
       "status": "sale",
-      "discount": 70,
+      "discount": 20,
       "region": "KR",
       "sale_type": "SALE"
     },
