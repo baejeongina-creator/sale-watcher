@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-05T10:09:28.541911Z",
+  "generated_at": "2026-11-05T19:20:24.543185Z",
   "sales": [
     {
       "brand_en": "",
@@ -481,9 +481,9 @@
       "sale_url": "https://glowny.co.kr/",
       "banner_url": "https://glowny.co.kr/web/upload/share-image-1-9e0321f83587cc26ab38cf7726790eee.jpg",
       "status": "sale",
-      "discount": 60,
+      "discount": 15,
       "region": "KR",
-      "sale_type": "CLEARANCE"
+      "sale_type": "SALE"
     },
     {
       "brand_en": "",
