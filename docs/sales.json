@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-06T18:46:47.389839Z",
+  "generated_at": "2026-11-07T00:35:25.127730Z",
   "sales": [
     {
       "brand_en": "",
@@ -50,7 +50,7 @@
       "brand_ko": "러프넥",
       "official_url": "https://roughneckseoul.com/",
       "sale_url": "https://roughneckseoul.com/",
-      "banner_url": "https://roughneckseoul.com/web/upload/share-image-1-fb50c0c3aa68ad2e36f080ed90e5fffa.png",
+      "banner_url": "https://www.roughneckseoul.com/web/upload/share-image-1-fb50c0c3aa68ad2e36f080ed90e5fffa.png",
       "status": "sale",
       "discount": 5,
       "region": "KR",
@@ -567,7 +567,7 @@
       "brand_ko": "오버듀플레어",
       "official_url": "https://overdueflair.com",
       "sale_url": "https://overdueflair.com",
-      "banner_url": "https://www.overdueflair.com/web/upload/share-image-1-56123f34fa6544f424170309c4a85329.jpg",
+      "banner_url": "https://overdueflair.com/web/upload/share-image-1-56123f34fa6544f424170309c4a85329.jpg",
       "status": "sale",
       "discount": 20,
       "region": "KR",
