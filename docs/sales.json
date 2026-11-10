@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-09T21:52:45.658846Z",
+  "generated_at": "2026-11-10T05:24:19.092500Z",
   "sales": [
     {
       "brand_en": "",
@@ -149,7 +149,7 @@
       "brand_ko": "인사일런스",
       "official_url": "https://www.insilence.co.kr/",
       "sale_url": "https://www.insilence.co.kr/",
-      "banner_url": "https://insilence.co.kr/web/product/big/202609/697abe374d20223fa5f3c64c3db466ed.jpg",
+      "banner_url": "https://www.insilence.co.kr/web/product/big/202609/697abe374d20223fa5f3c64c3db466ed.jpg",
       "status": "sale",
       "discount": 80,
       "region": "KR",
@@ -512,9 +512,9 @@
       "brand_ko": "아틀리에 나인",
       "official_url": "https://www.nain.co.kr",
       "sale_url": "https://www.nain.co.kr",
-      "banner_url": "",
-      "status": "error",
-      "discount": 0,
+      "banner_url": "https://www.nain.co.kr/shopimages/byyj1/all_og__20230714141615php59aZlP.jpg",
+      "status": "sale",
+      "discount": 60,
       "region": "KR",
       "sale_type": "SALE"
     },
