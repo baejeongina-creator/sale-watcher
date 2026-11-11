@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-10T21:11:04.667852Z",
+  "generated_at": "2026-11-11T03:55:40.071245Z",
   "sales": [
     {
       "brand_en": "",
@@ -215,7 +215,7 @@
       "brand_ko": "밀로아카이브",
       "official_url": "https://milloarchive.com/",
       "sale_url": "https://milloarchive.com/",
-      "banner_url": "https://www.milloarchive.com/web/upload/share-image-1-a6b826993a8dc6132fb7b225fd0b7d2e.jpg",
+      "banner_url": "https://milloarchive.com/web/upload/share-image-1-a6b826993a8dc6132fb7b225fd0b7d2e.jpg",
       "status": "sale",
       "discount": 12,
       "region": "KR",
@@ -270,7 +270,7 @@
       "brand_ko": "에퓨레",
       "official_url": "https://www.epure.co.kr/",
       "sale_url": "https://www.epure.co.kr/",
-      "banner_url": "https://www.epure.co.kr/web/upload/share-image-1-f35aca149ecf66ead4f7a9b4051da292.jpg",
+      "banner_url": "https://epure.co.kr/web/upload/share-image-1-f35aca149ecf66ead4f7a9b4051da292.jpg",
       "status": "sale",
       "discount": 50,
       "region": "KR",
@@ -314,7 +314,7 @@
       "brand_ko": "르",
       "official_url": "https://le-official.co.kr/",
       "sale_url": "https://le-official.co.kr/",
-      "banner_url": "https://www.le-official.co.kr/web/upload/share-image-1-ebc975eafae2ceb9bb52da9c45d4f6db.jpg",
+      "banner_url": "https://le-official.co.kr/web/upload/share-image-1-ebc975eafae2ceb9bb52da9c45d4f6db.jpg",
       "status": "sale",
       "discount": 90,
       "region": "KR",
@@ -479,7 +479,7 @@
       "brand_ko": "미치코런던 코시노",
       "official_url": "https://michiko-london.kr/",
       "sale_url": "https://michiko-london.kr/",
-      "banner_url": "https://michiko-london.kr/web/upload/share-image-1-2c3f6f49e417b26872b939ad47bcf895.png",
+      "banner_url": "https://www.michiko-london.kr/web/upload/share-image-1-2c3f6f49e417b26872b939ad47bcf895.png",
       "status": "sale",
       "discount": 0,
       "region": "KR",
@@ -556,11 +556,11 @@
       "brand_ko": "오버듀플레어",
       "official_url": "https://overdueflair.com",
       "sale_url": "https://overdueflair.com",
-      "banner_url": "https://www.overdueflair.com/web/upload/share-image-1-56123f34fa6544f424170309c4a85329.jpg",
+      "banner_url": "https://overdueflair.com/web/upload/share-image-1-56123f34fa6544f424170309c4a85329.jpg",
       "status": "sale",
       "discount": 20,
       "region": "KR",
-      "sale_type": "CLEARANCE"
+      "sale_type": "SALE"
     },
     {
       "brand_en": "",
