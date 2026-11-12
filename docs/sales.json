@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-12T14:23:19.317889Z",
+  "generated_at": "2026-11-12T21:44:27.722558Z",
   "sales": [
     {
       "brand_en": "",
@@ -281,7 +281,7 @@
       "brand_ko": "우마뭉",
       "official_url": "https://umarmung.kr/",
       "sale_url": "https://umarmung.kr/",
-      "banner_url": "https://umarmung.kr/web/upload/share-image-1-e650cd298bb344b4c07d5473f910080e.jpg",
+      "banner_url": "https://www.umarmung.kr/web/upload/share-image-1-e650cd298bb344b4c07d5473f910080e.jpg",
       "status": "sale",
       "discount": 60,
       "region": "KR",
@@ -303,7 +303,7 @@
       "brand_ko": "하네",
       "official_url": "https://hane.kr/",
       "sale_url": "https://hane.kr/",
-      "banner_url": "https://www.hane.kr/web/upload/share-image-1-86cb89fc968a1ec73040f3b90973c7fe.jpg",
+      "banner_url": "https://hane.kr/web/upload/share-image-1-86cb89fc968a1ec73040f3b90973c7fe.jpg",
       "status": "sale",
       "discount": 80,
       "region": "KR",
@@ -479,7 +479,7 @@
       "brand_ko": "미치코런던 코시노",
       "official_url": "https://michiko-london.kr/",
       "sale_url": "https://michiko-london.kr/",
-      "banner_url": "https://michiko-london.kr/web/upload/share-image-1-2c3f6f49e417b26872b939ad47bcf895.png",
+      "banner_url": "https://www.michiko-london.kr/web/upload/share-image-1-2c3f6f49e417b26872b939ad47bcf895.png",
       "status": "sale",
       "discount": 0,
       "region": "KR",
