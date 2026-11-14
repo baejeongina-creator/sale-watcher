@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-14T04:15:51.010489Z",
+  "generated_at": "2026-11-14T12:51:23.018618Z",
   "sales": [
     {
       "brand_en": "",
@@ -127,7 +127,7 @@
       "brand_ko": "몽돌",
       "official_url": "https://mongdolstore.com/",
       "sale_url": "https://mongdolstore.com/",
-      "banner_url": "https://mongdolstore.com/web/upload/share-image-1-1579b48585937b87e8fb4f6b5541b630.jpg",
+      "banner_url": "https://www.mongdolstore.com/web/upload/share-image-1-1579b48585937b87e8fb4f6b5541b630.jpg",
       "status": "sale",
       "discount": 72,
       "region": "KR",
@@ -270,7 +270,7 @@
       "brand_ko": "에퓨레",
       "official_url": "https://www.epure.co.kr/",
       "sale_url": "https://www.epure.co.kr/",
-      "banner_url": "https://www.epure.co.kr/web/upload/share-image-1-f35aca149ecf66ead4f7a9b4051da292.jpg",
+      "banner_url": "https://epure.co.kr/web/upload/share-image-1-f35aca149ecf66ead4f7a9b4051da292.jpg",
       "status": "sale",
       "discount": 50,
       "region": "KR",
@@ -281,7 +281,7 @@
       "brand_ko": "우마뭉",
       "official_url": "https://umarmung.kr/",
       "sale_url": "https://umarmung.kr/",
-      "banner_url": "https://umarmung.kr/web/upload/share-image-1-e650cd298bb344b4c07d5473f910080e.jpg",
+      "banner_url": "https://www.umarmung.kr/web/upload/share-image-1-e650cd298bb344b4c07d5473f910080e.jpg",
       "status": "sale",
       "discount": 60,
       "region": "KR",
