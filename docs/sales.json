@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-13T21:10:24.068105Z",
+  "generated_at": "2026-11-14T04:15:51.010489Z",
   "sales": [
     {
       "brand_en": "",
@@ -127,7 +127,7 @@
       "brand_ko": "몽돌",
       "official_url": "https://mongdolstore.com/",
       "sale_url": "https://mongdolstore.com/",
-      "banner_url": "https://www.mongdolstore.com/web/upload/share-image-1-1579b48585937b87e8fb4f6b5541b630.jpg",
+      "banner_url": "https://mongdolstore.com/web/upload/share-image-1-1579b48585937b87e8fb4f6b5541b630.jpg",
       "status": "sale",
       "discount": 72,
       "region": "KR",
@@ -215,7 +215,7 @@
       "brand_ko": "밀로아카이브",
       "official_url": "https://milloarchive.com/",
       "sale_url": "https://milloarchive.com/",
-      "banner_url": "https://millowomen.com/web/upload/share-image-1-a6b826993a8dc6132fb7b225fd0b7d2e.jpg",
+      "banner_url": "https://milloarchive.com/web/upload/share-image-1-a6b826993a8dc6132fb7b225fd0b7d2e.jpg",
       "status": "sale",
       "discount": 12,
       "region": "KR",
@@ -512,9 +512,9 @@
       "brand_ko": "아틀리에 나인",
       "official_url": "https://www.nain.co.kr",
       "sale_url": "https://www.nain.co.kr",
-      "banner_url": "https://www.nain.co.kr/shopimages/byyj1/all_og__20230714141615php59aZlP.jpg",
-      "status": "sale",
-      "discount": 60,
+      "banner_url": "",
+      "status": "error",
+      "discount": 0,
       "region": "KR",
       "sale_type": "SALE"
     },
