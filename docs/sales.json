@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-15T10:15:59.675570Z",
+  "generated_at": "2026-11-15T18:20:00.743905Z",
   "sales": [
     {
       "brand_en": "",
@@ -215,7 +215,7 @@
       "brand_ko": "밀로아카이브",
       "official_url": "https://milloarchive.com/",
       "sale_url": "https://milloarchive.com/",
-      "banner_url": "https://www.milloarchive.com/web/upload/share-image-1-a6b826993a8dc6132fb7b225fd0b7d2e.jpg",
+      "banner_url": "https://milloarchive.com/web/upload/share-image-1-a6b826993a8dc6132fb7b225fd0b7d2e.jpg",
       "status": "sale",
       "discount": 12,
       "region": "KR",
@@ -259,7 +259,7 @@
       "brand_ko": "미세키서울",
       "official_url": "https://misekiseoul.kr/",
       "sale_url": "https://misekiseoul.kr/",
-      "banner_url": "https://www.misekiseoul.kr/web/upload/share-image-1-9078724573565ef6ed4061863fbdb3b5.jpg",
+      "banner_url": "https://misekiseoul.kr/web/upload/share-image-1-9078724573565ef6ed4061863fbdb3b5.jpg",
       "status": "sale",
       "discount": 86,
       "region": "KR",
@@ -468,7 +468,7 @@
       "brand_ko": "글로니",
       "official_url": "https://glowny.co.kr/",
       "sale_url": "https://glowny.co.kr/",
-      "banner_url": "https://glowny.co.kr/web/upload/share-image-1-9e0321f83587cc26ab38cf7726790eee.jpg",
+      "banner_url": "https://www.glowny.co.kr/web/upload/share-image-1-9e0321f83587cc26ab38cf7726790eee.jpg",
       "status": "sale",
       "discount": 15,
       "region": "KR",
@@ -604,17 +604,6 @@
       "status": "invalid_url",
       "discount": 0,
       "region": "KR",
-      "sale_type": "SALE"
-    },
-    {
-      "brand_en": "",
-      "brand_ko": "자라",
-      "official_url": "https://www.zara.com/",
-      "sale_url": "https://www.zara.com/",
-      "banner_url": "",
-      "status": "error",
-      "discount": 0,
-      "region": "GLOBAL",
       "sale_type": "SALE"
     },
     {
