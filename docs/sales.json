@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-16T10:28:04.466920Z",
+  "generated_at": "2026-11-16T21:31:48.311284Z",
   "sales": [
     {
       "brand_en": "",
@@ -259,7 +259,7 @@
       "brand_ko": "미세키서울",
       "official_url": "https://misekiseoul.kr/",
       "sale_url": "https://misekiseoul.kr/",
-      "banner_url": "https://misekiseoul.kr/web/upload/share-image-1-9078724573565ef6ed4061863fbdb3b5.jpg",
+      "banner_url": "https://www.misekiseoul.kr/web/upload/share-image-1-9078724573565ef6ed4061863fbdb3b5.jpg",
       "status": "sale",
       "discount": 92,
       "region": "KR",
@@ -593,17 +593,6 @@
       "status": "invalid_url",
       "discount": 0,
       "region": "KR",
-      "sale_type": "SALE"
-    },
-    {
-      "brand_en": "",
-      "brand_ko": "자라",
-      "official_url": "https://www.zara.com/",
-      "sale_url": "https://www.zara.com/",
-      "banner_url": "",
-      "status": "error",
-      "discount": 0,
-      "region": "GLOBAL",
       "sale_type": "SALE"
     },
     {
