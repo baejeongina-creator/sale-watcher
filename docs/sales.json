@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-21T01:58:16.914410Z",
+  "generated_at": "2026-11-21T10:33:16.180341Z",
   "sales": [
     {
       "brand_en": "",
@@ -215,7 +215,7 @@
       "brand_ko": "밀로아카이브",
       "official_url": "https://milloarchive.com/",
       "sale_url": "https://milloarchive.com/",
-      "banner_url": "https://www.milloarchive.com/web/upload/share-image-1-a6b826993a8dc6132fb7b225fd0b7d2e.jpg",
+      "banner_url": "https://milloarchive.com/web/upload/share-image-1-a6b826993a8dc6132fb7b225fd0b7d2e.jpg",
       "status": "sale",
       "discount": 12,
       "region": "KR",
@@ -270,7 +270,7 @@
       "brand_ko": "에퓨레",
       "official_url": "https://www.epure.co.kr/",
       "sale_url": "https://www.epure.co.kr/",
-      "banner_url": "https://www.epure.co.kr/web/upload/share-image-1-f35aca149ecf66ead4f7a9b4051da292.jpg",
+      "banner_url": "https://epure.co.kr/web/upload/share-image-1-f35aca149ecf66ead4f7a9b4051da292.jpg",
       "status": "sale",
       "discount": 50,
       "region": "KR",
