@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-23T01:20:10.286421Z",
+  "generated_at": "2026-11-23T11:36:08.776249Z",
   "sales": [
     {
       "brand_en": "",
@@ -149,7 +149,7 @@
       "brand_ko": "인사일런스",
       "official_url": "https://www.insilence.co.kr/",
       "sale_url": "https://www.insilence.co.kr/",
-      "banner_url": "https://ambient.diskn.com/image/home/pop-up/2026/BLACKFRIDAY/26BF_PC_ENG.png",
+      "banner_url": "https://www.insilence.co.kr/web/product/big/202609/697abe374d20223fa5f3c64c3db466ed.jpg",
       "status": "sale",
       "discount": 80,
       "region": "KR",
@@ -270,7 +270,7 @@
       "brand_ko": "에퓨레",
       "official_url": "https://www.epure.co.kr/",
       "sale_url": "https://www.epure.co.kr/",
-      "banner_url": "https://www.epure.co.kr/web/upload/share-image-1-f35aca149ecf66ead4f7a9b4051da292.jpg",
+      "banner_url": "https://epure.co.kr/web/upload/share-image-1-f35aca149ecf66ead4f7a9b4051da292.jpg",
       "status": "sale",
       "discount": 50,
       "region": "KR",
@@ -314,7 +314,7 @@
       "brand_ko": "르",
       "official_url": "https://le-official.co.kr/",
       "sale_url": "https://le-official.co.kr/",
-      "banner_url": "https://le-official.co.kr/web/upload/share-image-1-ebc975eafae2ceb9bb52da9c45d4f6db.jpg",
+      "banner_url": "https://www.le-official.co.kr/web/upload/share-image-1-ebc975eafae2ceb9bb52da9c45d4f6db.jpg",
       "status": "sale",
       "discount": 90,
       "region": "KR",
@@ -413,7 +413,7 @@
       "brand_ko": "포트오브콜",
       "official_url": "https://portofcall.co.kr/",
       "sale_url": "https://portofcall.co.kr/",
-      "banner_url": "https://portofcall.co.kr/web/upload/category/editor/2026/10/30/b95ec17fc98366f4b645d5767f87db41.jpg",
+      "banner_url": "https://portofcall.co.kr/web/upload/category/editor/2026/11/23/b7564160722168e73623ed662fb86fee.jpg",
       "status": "sale",
       "discount": 0,
       "region": "KR",
