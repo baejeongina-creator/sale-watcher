@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-23T23:10:50.742085Z",
+  "generated_at": "2026-11-24T07:45:37.434778Z",
   "sales": [
     {
       "brand_en": "",
@@ -127,7 +127,7 @@
       "brand_ko": "몽돌",
       "official_url": "https://mongdolstore.com/",
       "sale_url": "https://mongdolstore.com/",
-      "banner_url": "https://www.mongdolstore.com/web/upload/share-image-1-1579b48585937b87e8fb4f6b5541b630.jpg",
+      "banner_url": "https://mongdolstore.com/web/upload/share-image-1-1579b48585937b87e8fb4f6b5541b630.jpg",
       "status": "sale",
       "discount": 72,
       "region": "KR",
@@ -171,7 +171,7 @@
       "brand_ko": "더티스",
       "official_url": "https://thetisofficial.com/",
       "sale_url": "https://thetisofficial.com/",
-      "banner_url": "https://cafe24.poxo.com/ec01/aurau01/vaj/l9mdww1dKU1SVXHgYrmNQFBtnhDTvA7EVJhz/owSCX0MRl42koGL07CgyBmlQzThwKSVSkPSr+ZTzHvkxg==/_/main/2026/1111/pc.jpg",
+      "banner_url": "https://cafe24.poxo.com/ec01/aurau01/vaj/l9mdww1dKU1SVXHgYrmNQFBtnhDTvA7EVJhz/owSCX0MRl42koGL07CgyBmlQzThwKSVSkPSr+ZTzHvkxg==/_/main/2026/1124/pc.jpg",
       "status": "sale",
       "discount": 0,
       "region": "KR",
@@ -215,7 +215,7 @@
       "brand_ko": "밀로아카이브",
       "official_url": "https://milloarchive.com/",
       "sale_url": "https://milloarchive.com/",
-      "banner_url": "https://www.milloarchive.com/web/upload/share-image-1-a6b826993a8dc6132fb7b225fd0b7d2e.jpg",
+      "banner_url": "https://milloarchive.com/web/upload/share-image-1-a6b826993a8dc6132fb7b225fd0b7d2e.jpg",
       "status": "sale",
       "discount": 12,
       "region": "KR",
@@ -371,7 +371,7 @@
       "sale_url": "https://gbh.kr/",
       "banner_url": "https://cdn.imweb.me/upload/S20260211533a0fa9f6bfc/de4c99cddbb0d.png",
       "status": "sale",
-      "discount": 10,
+      "discount": 0,
       "region": "KR",
       "sale_type": "SALE"
     },
